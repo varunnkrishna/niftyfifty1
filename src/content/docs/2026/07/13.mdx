@@ -1,39 +1,67 @@
 ---
-title: "Nifty outlook — 13 Jul 2026"
-description: "Nifty outlook — 13 Jul 2026. Pre-market bias is Mildly Long on firm US closes and steady DII buying."
+title: Nifty outlook — 13 Jul 2026
+description: Nifty outlook — 13 Jul 2026. Pre-market bias is Mildly Long.
 date: "2026-07-13"
-type: "trading-day"
-data_quality: "full"
+type: trading-day
+data_quality: full
 missing: []
 eod_written: false
 premarket:
-  gift_nifty: { value: "24,580", delta_pct: -0.18, vote: 0 }
-  sp500_overnight: { delta_pct: 0.22, vote: 1 }
-  nasdaq_overnight: { delta_pct: 0.31, vote: 1 }
-  us10y_yield: { value: "4.31%", delta: 0.02, vote: 0 }
-  dxy: { value: "98.10", delta: -0.05, vote: 0 }
-  fii_net_cash: { value: 340, vote: 0 }
-  dii_net_cash: { value: 960, vote: 1 }
-  usdinr: { value: "83.58", delta: -0.02, vote: 0 }
-  prev_close_in_range: { value: "middle third", vote: 0 }
-  india_vix: { value: "13.9", delta: -0.3, vote: null }
-  brent: { value: "81.90", delta_pct: -0.4, vote: null }
+  gift_nifty:
+    value: 24,580
+    delta_pct: -0.18
+    vote: 0
+  sp500_overnight:
+    delta_pct: 0.22
+    vote: 1
+  nasdaq_overnight:
+    delta_pct: 0.31
+    vote: 1
+  us10y_yield:
+    value: 4.31%
+    delta: 0.02
+    vote: 0
+  dxy:
+    value: "98.10"
+    delta: -0.05
+    vote: 0
+  fii_net_cash:
+    value: 340
+    vote: 0
+  dii_net_cash:
+    value: 960
+    vote: 1
+  usdinr:
+    value: "83.58"
+    delta: -0.02
+    vote: 0
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: "13.9"
+    delta: -0.3
+    vote: null
+  brent:
+    value: "81.90"
+    delta_pct: -0.4
+    vote: null
   bias_score: 3
-  bias_label: "Long"
-  bias_intensity: "Mildly"
-  conviction: "normal"
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
   market_expectations: "A mixed but modestly positive setup: GIFT Nifty is a touch softer, but firm S&P and Nasdaq closes overnight and continued DII buying provide the tilt higher. Nothing in the cross-asset picture (yields, DXY, USD/INR) is moving enough to cast a vote either way, and VIX stays calm."
   news:
-    - headline_reworded: "Wall Street closes higher on cooling inflation data, lifting Asian futures"
-      why_it_matters: "Firm US closes are one of two positive votes feeding this morning's Mildly Long call."
-      source_name: "ET Markets"
-      source_url: "https://economictimes.indiatimes.com/markets/wall-street-inflation-data-asian-futures"
-      timestamp: "2026-07-13T07:30:00+05:30"
-    - headline_reworded: "Domestic institutions add to auto and banking positions ahead of results season"
-      why_it_matters: "DII buying continues to be the more consistent domestic flow this week versus choppy FII activity."
-      source_name: "Moneycontrol"
-      source_url: "https://www.moneycontrol.com/news/business/markets/dii-auto-banking-positions"
-      timestamp: "2026-07-13T08:05:00+05:30"
+  - headline_reworded: Wall Street closes higher on cooling inflation data, lifting Asian futures
+    why_it_matters: Firm US closes are one of two positive votes feeding this morning's Mildly Long call.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/wall-street-inflation-data-asian-futures
+    timestamp: "2026-07-13T07:30:00+05:30"
+  - headline_reworded: Domestic institutions add to auto and banking positions ahead of results season
+    why_it_matters: DII buying continues to be the more consistent domestic flow this week versus choppy FII activity.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/business/markets/dii-auto-banking-positions
+    timestamp: "2026-07-13T08:05:00+05:30"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
@@ -54,7 +82,7 @@ import AwaitingEod from '../../../../components/AwaitingEod.astro';
 
 ### Signal
 
-**Bias: {`${frontmatter.premarket.bias_intensity} ${frontmatter.premarket.bias_label}`} · {frontmatter.premarket.bias_score > 0 ? '+' : ''}{frontmatter.premarket.bias_score}**
+**Bias: {`${frontmatter.premarket.bias_intensity} ${frontmatter.premarket.bias_label}`} · {frontmatter.premarket.bias_score > 0 ? '+' : ''}{frontmatter.premarket.bias_score}{frontmatter.premarket.conviction === 'reduced' ? ' · conviction reduced (VIX elevated)' : ''}**
 
 <WarningBanner />
 

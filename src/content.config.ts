@@ -2,11 +2,14 @@ import { defineCollection, z } from 'astro:content';
 import { docsLoader } from '@astrojs/starlight/loaders';
 import { docsSchema } from '@astrojs/starlight/schema';
 
-// Draft frontmatter shape for day pages (PLANNING.md §4). This is Phase 1's
-// "loose" schema — just enough shape for the fixtures to type-check and
-// render. Phase 2 replaces this with the strict, discriminated-union Zod
-// contract that gates the pipeline's writes (malformed JSON must fail the
-// build loudly — PLANNING §4, CLAUDE.md "validation is a feature").
+// Frontmatter shape for day pages (PLANNING.md §4) — the astro-build-time
+// gate (ORCHESTRATION §6b). The pipeline's own pre-commit gate is the
+// equivalent Pydantic schema at pipeline/validate/schema.py; this is
+// intentional redundancy (ORCHESTRATION §6's "three layers"), not
+// duplication to avoid. `type` is used as a soft discriminant via
+// superRefine rather than z.discriminatedUnion() because <StarlightPage/>
+// utility pages (homepage, /about/, year/month indexes) validate against
+// this same schema and must be able to omit `type`/`date` entirely.
 
 const votedMetric = z.object({
 	value: z.union([z.string(), z.number()]).optional(),
@@ -81,6 +84,41 @@ const daySchema = z.object({
 
 	// Weekend / holiday only
 	news: z.array(newsItem).optional(),
+}).superRefine((data, ctx) => {
+	// Utility pages (no `type`) skip day-page validation entirely.
+	if (!data.type) return;
+
+	if (!data.date) {
+		ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['date'], message: 'date is required on day pages' });
+	}
+
+	if (data.type === 'trading-day') {
+		if (!data.premarket) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['premarket'], message: 'premarket is required for trading-day pages' });
+		}
+		if (!data.data_quality) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['data_quality'], message: 'data_quality is required for trading-day pages' });
+		}
+		if (data.eod_written === undefined) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['eod_written'], message: 'eod_written is required for trading-day pages' });
+		}
+		if (data.eod_written && !data.eod) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['eod'], message: 'eod is required once eod_written is true' });
+		}
+		if (!data.eod_written && data.eod) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['eod'], message: 'eod must be absent until eod_written is true (CLAUDE.md rule 2)' });
+		}
+		if (data.premarket && (data.premarket.bias_label === null) !== (data.premarket.bias_score === null)) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['premarket', 'bias_label'], message: 'bias_label and bias_score must both be null (suppressed) or both set' });
+		}
+	} else if (data.type === 'weekend' || data.type === 'holiday') {
+		if (!data.news || data.news.length === 0) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['news'], message: 'news is required for weekend/holiday pages' });
+		}
+		if (data.type === 'holiday' && !data.reason) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['reason'], message: 'reason is required for holiday pages' });
+		}
+	}
 });
 
 export const collections = {

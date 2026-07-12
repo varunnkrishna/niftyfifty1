@@ -19,3 +19,11 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Python pipeline
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+

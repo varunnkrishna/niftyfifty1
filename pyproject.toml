@@ -1,0 +1,24 @@
+[project]
+name = "niftyfiftyone-pipeline"
+version = "0.1.0"
+description = "Deterministic data-fetch/compute/compose/assemble/validate pipeline for niftyfiftyone (ORCHESTRATION.md)."
+requires-python = ">=3.12"
+dependencies = [
+	"pydantic>=2.9",
+	"PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+	"pytest>=8.3",
+]
+
+[tool.setuptools.packages.find]
+include = ["pipeline*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["pipeline/tests"]

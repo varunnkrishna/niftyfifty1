@@ -1,39 +1,69 @@
 ---
-title: "Nifty outlook — 07 Jul 2026"
-description: "Nifty outlook — 07 Jul 2026. Signal suppressed today — four of nine inputs unavailable after a data vendor outage."
+title: Nifty outlook — 07 Jul 2026
+description: Nifty outlook — 07 Jul 2026. Signal suppressed today — too many inputs unavailable.
 date: "2026-07-07"
-type: "trading-day"
-data_quality: "partial"
-missing: ["nasdaq_overnight", "us10y_yield", "dxy", "fii_net_cash"]
+type: trading-day
+data_quality: partial
+missing:
+- nasdaq_overnight
+- us10y_yield
+- dxy
+- fii_net_cash
 eod_written: false
 premarket:
-  gift_nifty: { value: "24,390", delta_pct: 0.12, vote: 0 }
-  sp500_overnight: { delta_pct: -0.05, vote: 0 }
-  nasdaq_overnight: { vote: null, unavailable: true }
-  us10y_yield: { vote: null, unavailable: true }
-  dxy: { vote: null, unavailable: true }
-  fii_net_cash: { vote: null, unavailable: true }
-  dii_net_cash: { value: 540, vote: 1 }
-  usdinr: { value: "83.65", delta: 0.08, vote: 0 }
-  prev_close_in_range: { value: "middle third", vote: 0 }
-  india_vix: { value: "16.4", delta: 1.1, vote: null }
-  brent: { value: "83.05", delta_pct: 1.2, vote: null }
+  gift_nifty:
+    value: 24,390
+    delta_pct: 0.12
+    vote: 0
+  sp500_overnight:
+    delta_pct: -0.05
+    vote: 0
+  nasdaq_overnight:
+    unavailable: true
+    vote: null
+  us10y_yield:
+    unavailable: true
+    vote: null
+  dxy:
+    unavailable: true
+    vote: null
+  fii_net_cash:
+    unavailable: true
+    vote: null
+  dii_net_cash:
+    value: 540
+    vote: 1
+  usdinr:
+    value: "83.65"
+    delta: 0.08
+    vote: 0
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: "16.4"
+    delta: 1.1
+    vote: null
+  brent:
+    value: "83.05"
+    delta_pct: 1.2
+    vote: null
   bias_score: null
   bias_label: null
   bias_intensity: null
-  conviction: "normal"
-  market_expectations: "A data vendor outage this morning means four of the usual nine directional inputs — Nasdaq overnight, US 10Y yield, DXY, and FII net cash — could not be fetched. With more than a third of the inputs missing, no net bias is published today; the table below shows exactly what did come through."
+  conviction: normal
+  market_expectations: A data vendor outage this morning means four of the usual nine directional inputs — Nasdaq overnight, US 10Y yield, DXY, and FII net cash — could not be fetched. With more than a third of the inputs missing, no net bias is published today; the table below shows exactly what did come through.
   news:
-    - headline_reworded: "A wider data vendor outage affects several market-data feeds industry-wide this morning"
-      why_it_matters: "This is why four of today's inputs are unavailable and no bias call is published."
-      source_name: "ET Markets"
-      source_url: "https://economictimes.indiatimes.com/markets/data-vendor-outage-industry-wide"
-      timestamp: "2026-07-07T08:15:00+05:30"
-    - headline_reworded: "GIFT Nifty trades flat to marginally higher in early pre-open indication"
-      why_it_matters: "One of the few inputs that did fetch successfully this morning, though the move is too small to vote either way."
-      source_name: "Moneycontrol"
-      source_url: "https://www.moneycontrol.com/news/business/markets/gift-nifty-flat-preopen"
-      timestamp: "2026-07-07T08:25:00+05:30"
+  - headline_reworded: A wider data vendor outage affects several market-data feeds industry-wide this morning
+    why_it_matters: This is why four of today's inputs are unavailable and no bias call is published.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/data-vendor-outage-industry-wide
+    timestamp: "2026-07-07T08:15:00+05:30"
+  - headline_reworded: GIFT Nifty trades flat to marginally higher in early pre-open indication
+    why_it_matters: One of the few inputs that did fetch successfully this morning, though the move is too small to vote either way.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/business/markets/gift-nifty-flat-preopen
+    timestamp: "2026-07-07T08:25:00+05:30"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
