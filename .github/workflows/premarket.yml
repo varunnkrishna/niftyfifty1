@@ -1,0 +1,41 @@
+name: Pre-Market
+
+# ORCHESTRATION §1 — lands ~08:30-08:50 IST with cron drift buffer.
+# Fires on all weekdays; the day-type resolver inside the script is what
+# actually decides whether today gets a trading-day write (weekend/holiday
+# dates are a no-op here, handled by daily-news.yml instead).
+on:
+  schedule:
+    - cron: '0 3 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline-write
+  cancel-in-progress: false
+
+jobs:
+  premarket:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pipeline dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Configure git identity for the pipeline's own commits
+        run: |
+          git config user.name "niftyfiftyone-pipeline"
+          git config user.email "pipeline@users.noreply.github.com"
+
+      - name: Run pre-market pipeline
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: python -m pipeline.orchestrate.run_premarket

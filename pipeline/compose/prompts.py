@@ -16,11 +16,27 @@ You always respond with strict JSON only: no markdown code fences, no preamble, 
 just the JSON object itself."""
 
 
-def _news_block(news_items: list[dict]) -> str:
+def news_block(news_items: list[dict]) -> str:
 	lines = []
 	for item in news_items:
 		lines.append(f"{item['index']}. [{item['source_name']}] {item['title']} ({item['timestamp']})")
 	return "\n".join(lines)
+
+
+def build_news_only_prompt(news_items: list[dict]) -> tuple[str, str]:
+	"""Weekend/holiday pages (PLANNING §2): reworded news only, no setup
+	summary, no paragraph field — markets aren't open, there's no signal."""
+	user_prompt = f"""Candidate news items (numbered):
+
+{news_block(news_items)}
+
+For EACH numbered item above, write:
+- "headline_reworded": the headline in your own original words (not a copy of the original)
+- "why_it_matters": one sentence on why this matters
+
+Respond with strict JSON only, in exactly this shape:
+{{"news": [{{"index": 0, "headline_reworded": "...", "why_it_matters": "..."}}, ...]}}"""
+	return SYSTEM_PROMPT, user_prompt
 
 
 def build_premarket_prompt(news_items: list[dict], setup_summary: str) -> tuple[str, str]:
@@ -31,7 +47,7 @@ figures beyond what's needed; do not invent any numbers not shown here):
 
 Candidate news items (numbered):
 
-{_news_block(news_items)}
+{news_block(news_items)}
 
 For EACH numbered item above, write:
 - "headline_reworded": the headline in your own original words (not a copy of the original)
@@ -55,7 +71,7 @@ figures beyond what's needed; do not invent any numbers not shown here):
 
 Candidate news items (numbered):
 
-{_news_block(news_items)}
+{news_block(news_items)}
 
 For EACH numbered item above, write:
 - "headline_reworded": the headline in your own original words (not a copy of the original)

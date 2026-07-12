@@ -30,18 +30,30 @@ def _bootstrapped_session(timeout: int):
 	return session
 
 
-def fetch_india_vix(timeout: int = DEFAULT_TIMEOUT) -> dict:
-	"""Returns {"value": level, "delta": change}."""
+def fetch_index(index_name: str, timeout: int = DEFAULT_TIMEOUT) -> dict:
+	"""Returns {"value": level, "delta": absolute change, "delta_pct": ...}
+	for any row in NSE's allIndices response, e.g. "INDIA VIX", "NIFTY 50",
+	"NIFTY BANK". Sensex is a BSE index and never appears here."""
 	session = _bootstrapped_session(timeout)
 	resp = session.get(ALL_INDICES_URL, timeout=timeout)
 	resp.raise_for_status()
 	data = resp.json()
 
 	for row in data.get("data", []):
-		if row.get("index", "").upper() == "INDIA VIX":
-			return {"value": float(row["last"]), "delta": float(row["variation"])}
+		if row.get("index", "").upper() == index_name.upper():
+			return {
+				"value": float(row["last"]),
+				"delta": float(row["variation"]),
+				"delta_pct": float(row["percentChange"]),
+			}
 
-	raise ValueError("India VIX not present in NSE allIndices response")
+	raise ValueError(f"{index_name!r} not present in NSE allIndices response")
+
+
+def fetch_india_vix(timeout: int = DEFAULT_TIMEOUT) -> dict:
+	"""Returns {"value": level, "delta": change}."""
+	row = fetch_index("INDIA VIX", timeout=timeout)
+	return {"value": row["value"], "delta": row["delta"]}
 
 
 def fetch_fii_dii_net(timeout: int = DEFAULT_TIMEOUT) -> dict:

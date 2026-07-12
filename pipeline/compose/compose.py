@@ -25,7 +25,7 @@ def _attempt(system_prompt: str, user_prompt: str) -> tuple[dict | None, str | N
 		return None, f"JSON parse failed: {exc}. Raw response: {raw_text[:500]!r}"
 
 
-def _compose_with_retry(system_prompt: str, user_prompt: str) -> dict:
+def compose_with_retry(system_prompt: str, user_prompt: str) -> dict:
 	last_error: str | None = None
 	for _attempt_num in range(MAX_RETRIES + 1):
 		prompt = user_prompt
@@ -68,7 +68,7 @@ def _validate_and_reconstruct(parsed: dict, news_items: list[dict], known_number
 
 def compose_premarket(news_items: list[dict], premarket_numbers: dict, setup_summary: str) -> dict:
 	system_prompt, user_prompt = build_premarket_prompt(news_items, setup_summary)
-	parsed = _compose_with_retry(system_prompt, user_prompt)
+	parsed = compose_with_retry(system_prompt, user_prompt)
 	known_numbers = known_numbers_from(premarket_numbers)
 	news, market_expectations = _validate_and_reconstruct(parsed, news_items, known_numbers, "market_expectations")
 	return {"news": news, "market_expectations": market_expectations}
@@ -76,7 +76,7 @@ def compose_premarket(news_items: list[dict], premarket_numbers: dict, setup_sum
 
 def compose_eod(news_items: list[dict], eod_numbers: dict, setup_summary: str) -> dict:
 	system_prompt, user_prompt = build_eod_prompt(news_items, setup_summary)
-	parsed = _compose_with_retry(system_prompt, user_prompt)
+	parsed = compose_with_retry(system_prompt, user_prompt)
 	known_numbers = known_numbers_from(eod_numbers)
 	news, conclusion = _validate_and_reconstruct(parsed, news_items, known_numbers, "conclusion")
 	return {"news": news, "conclusion": conclusion}

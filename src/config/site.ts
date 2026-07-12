@@ -1,14 +1,14 @@
 // Brand as a variable (PLANNING.md §11 / CLAUDE.md rule 6).
-// This is the ONLY place the site name, domain, and tagline may be written.
-// Every template, meta tag, JSON-LD field, and llms.txt entry must import from here —
-// never hardcode the brand into components, content, or comments.
+// The actual values live in /config/site.json — the ONE source of truth
+// shared by both this TS site and the Python pipeline (pipeline/config.py
+// reads the same file). Every template, meta tag, JSON-LD field, and
+// llms.txt entry must import from here — never hardcode the brand.
+import siteConfig from '../../config/site.json';
 
-export const site = {
-	/** Current, temporary brand name. A rename should only ever touch this file. */
-	name: "niftyfiftyone",
-	/** Canonical domain, no protocol, no trailing slash. */
-	domain: "niftyfiftyone.com",
-	tagline: "A quiet reference for the Indian market",
-} as const;
+export const site = siteConfig as {
+	name: string;
+	domain: string;
+	tagline: string;
+};
 
 export const siteUrl = `https://${site.domain}`;

@@ -1,0 +1,56 @@
+name: CI
+
+# ORCHESTRATION §6b — three checks on every push: the site still builds,
+# an `eod *` commit never touched `premarket`, and performance hasn't
+# regressed. This is what actually gates bad content from ever going live,
+# regardless of which workflow produced the commit.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # need HEAD~1 for the immutability check
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install site dependencies
+        run: npm ci
+
+      - name: Astro build gate
+        run: npm run build
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pipeline dependencies
+        run: pip install -e .
+
+      - name: Pre-market immutability check
+        run: python -m pipeline.orchestrate.check_immutability HEAD
+
+      - name: Lighthouse performance gate (mobile, ≥95)
+        run: |
+          npm install -g lighthouse
+          npx astro preview --port 4322 &
+          npx wait-on http://localhost:4322 --timeout 30000
+          lighthouse http://localhost:4322/2026/07/09/ \
+            --only-categories=performance --preset=perf \
+            --form-factor=mobile --screenEmulation.mobile \
+            --chrome-flags="--headless --no-sandbox" \
+            --output=json --output-path=/tmp/lh.json --quiet
+          node -e "
+            const r = require('/tmp/lh.json');
+            const score = r.categories.performance.score * 100;
+            console.log('Lighthouse performance score:', score);
+            if (score < 95) { console.error('FAILED: below the 95 gate'); process.exit(1); }
+          "

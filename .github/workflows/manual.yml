@@ -1,0 +1,52 @@
+name: Manual Run
+
+# ORCHESTRATION §1 — the single entrypoint for reruns and backfills. Every
+# run is idempotent (ORCHESTRATION §3): rerunning an already-published
+# phase is a safe no-op, so this is always safe to fire, including on a
+# phase that already succeeded (PHASES.md Phase 7 acceptance).
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'ISO date to run for (YYYY-MM-DD)'
+        required: true
+      phase:
+        description: 'Which phase to run'
+        required: true
+        type: choice
+        options:
+          - premarket
+          - eod
+          - news
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline-write
+  cancel-in-progress: false
+
+jobs:
+  manual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install pipeline dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Configure git identity for the pipeline's own commits
+        run: |
+          git config user.name "niftyfiftyone-pipeline"
+          git config user.email "pipeline@users.noreply.github.com"
+
+      - name: Run ${{ inputs.phase }} for ${{ inputs.date }}
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: python -m pipeline.orchestrate.run_${{ inputs.phase }} ${{ inputs.date }}
