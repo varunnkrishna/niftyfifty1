@@ -27,3 +27,7 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 
+# Pipeline-internal scratch state (raw FETCH-stage output, consumed by
+# COMPUTE within a run) — not the committed sidecar archive (data/days/).
+data/raw/
+

@@ -6,11 +6,15 @@ requires-python = ">=3.12"
 dependencies = [
 	"pydantic>=2.9",
 	"PyYAML>=6.0",
+	"requests>=2.32",       # NSE/Yahoo/Stooq/Moneycontrol all need cookie/header-aware sessions; stdlib urllib is painful for this.
+	"feedparser>=6.0",      # RSS parsing is exactly the "genuinely gnarly" case CLAUDE.md calls out for a maintained library.
+	"beautifulsoup4>=4.12", # HTML fallback scraping (Moneycontrol) — hand-rolled regex over live third-party HTML is not worth it.
 ]
 
 [project.optional-dependencies]
 dev = [
 	"pytest>=8.3",
+	"responses>=0.25",     # mocks `requests` calls for retry/fallback/missing-marker tests without hitting the network.
 ]
 
 [tool.setuptools.packages.find]
