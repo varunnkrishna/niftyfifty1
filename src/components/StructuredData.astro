@@ -1,0 +1,70 @@
+---
+// Renders the page's JSON-LD graph. `<script type="application/ld+json">`
+// is inert data for crawlers, not executable JS — doesn't count against
+// CLAUDE.md rule 7's zero-client-JS rule (SEO.md §6/§4).
+import {
+	breadcrumbListSchema,
+	datasetSchema,
+	jsonLdGraph,
+	newsArticleSchema,
+	organizationSchema,
+	speakableSchema,
+	websiteSchema,
+	type Breadcrumb,
+} from '../helpers/schema';
+import { site, siteUrl } from '../config/site';
+
+interface Props {
+	frontmatter?: {
+		title: string;
+		description: string;
+		date?: string;
+		type?: 'trading-day' | 'weekend' | 'holiday';
+		eod_written?: boolean;
+		premarket?: Record<string, unknown>;
+		eod?: { conclusion?: string };
+	};
+	breadcrumbs?: Breadcrumb[];
+}
+
+const { frontmatter, breadcrumbs } = Astro.props;
+const pageUrl = new URL(Astro.url.pathname, siteUrl).href;
+
+const nodes: Array<object | null | false> = [websiteSchema(), organizationSchema()];
+
+// Day pages can derive Home › Year › Month › Day for free from their own
+// date — explicit `breadcrumbs` (year/month index pages) take precedence.
+const derivedBreadcrumbs: Breadcrumb[] | undefined =
+	breadcrumbs ??
+	(frontmatter?.date
+		? (() => {
+				const [y, m, d] = frontmatter.date!.split('-');
+				return [
+					{ name: 'Home', url: `${siteUrl}/` },
+					{ name: y, url: `${siteUrl}/${y}/` },
+					{ name: m, url: `${siteUrl}/${y}/${m}/` },
+					{ name: `${y}-${m}-${d}`, url: pageUrl },
+				];
+			})()
+		: undefined);
+
+if (derivedBreadcrumbs?.length) {
+	nodes.push(breadcrumbListSchema(derivedBreadcrumbs));
+}
+
+if (frontmatter?.date && frontmatter.type) {
+	const dayFm = frontmatter as Required<Pick<typeof frontmatter, 'title' | 'description' | 'date' | 'type'>> & typeof frontmatter;
+	nodes.push(newsArticleSchema(dayFm, pageUrl));
+
+	if (frontmatter.premarket) {
+		nodes.push(datasetSchema(frontmatter.premarket, dayFm, pageUrl));
+	}
+	if (frontmatter.eod_written && frontmatter.eod?.conclusion) {
+		nodes.push(speakableSchema(['.eod-conclusion']));
+	}
+}
+
+const jsonLd = jsonLdGraph(nodes);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

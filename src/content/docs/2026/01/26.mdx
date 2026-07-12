@@ -19,7 +19,10 @@ news:
 
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
+<StructuredData frontmatter={frontmatter} />
 <Eyebrow text={`MARKET HOLIDAY · ${frontmatter.reason.toUpperCase()}`} />
 
 Markets closed today — {frontmatter.reason}. No cash or derivatives session; regular trading resumes next session.
@@ -27,3 +30,5 @@ Markets closed today — {frontmatter.reason}. No cash or derivatives session; r
 ### News
 
 <NewsList items={frontmatter.news} />
+
+<PrevNextLinks date={frontmatter.date} />

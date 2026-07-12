@@ -170,6 +170,20 @@ table {
 	margin: var(--space-6) 0;
 }
 
+/* Prev/next session links (SEO.md §2.11). */
+.prev-next-links {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--space-2);
+	margin-top: var(--space-6);
+	padding-top: var(--space-2);
+	border-top: 1px solid var(--rule);
+	font: var(--text-data);
+}
+.prev-next-links a:only-child {
+	margin-left: auto;
+}
+
 /* Active sidebar day — accent + a left rule, never a fill (DESIGN.md §Layout). */
 [aria-current='page'] {
 	background-color: transparent !important;

@@ -1,0 +1,37 @@
+---
+// Descriptive prev/next internal links between consecutive day pages
+// (SEO.md §2.11) — real anchor text, not "click here".
+import { getCollection } from 'astro:content';
+import { dayHref } from '../lib/dayList';
+
+interface Props {
+	date: string;
+}
+const { date } = Astro.props;
+
+const all = await getCollection('docs', (entry) => Boolean(entry.data.date));
+const sorted = all
+	.map((e) => ({ date: e.data.date as string, title: e.data.title as string }))
+	.sort((a, b) => a.date.localeCompare(b.date));
+
+const index = sorted.findIndex((e) => e.date === date);
+const prev = index > 0 ? sorted[index - 1] : null;
+const next = index >= 0 && index < sorted.length - 1 ? sorted[index + 1] : null;
+---
+
+{
+	(prev || next) && (
+		<nav class="prev-next-links" aria-label="Session navigation">
+			{prev && (
+				<a href={dayHref(prev.date)} rel="prev">
+					← Previous session: {prev.title}
+				</a>
+			)}
+			{next && (
+				<a href={dayHref(next.date)} rel="next">
+					Next session: {next.title} →
+				</a>
+			)}
+		</nav>
+	)
+}

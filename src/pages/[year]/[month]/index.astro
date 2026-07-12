@@ -1,8 +1,10 @@
 ---
 // Month index (PLANNING §3): /YYYY/MM/ — days in that month, reverse-chron.
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import StructuredData from '../../../components/StructuredData.astro';
 import { getCollection } from 'astro:content';
 import { sortByDateDesc, dayHref, daySummary } from '../../../lib/dayList';
+import { siteUrl } from '../../../config/site';
 
 const MONTH_NAMES = [
 	'January', 'February', 'March', 'April', 'May', 'June',
@@ -31,6 +33,13 @@ const monthName = MONTH_NAMES[Number(month) - 1];
 		tableOfContents: false,
 	}}
 >
+	<StructuredData
+		breadcrumbs={[
+			{ name: 'Home', url: `${siteUrl}/` },
+			{ name: year, url: `${siteUrl}/${year}/` },
+			{ name: monthName, url: `${siteUrl}/${year}/${month}/` },
+		]}
+	/>
 	<p class="eyebrow">Archive</p>
 	<ul class="news-list">
 		{

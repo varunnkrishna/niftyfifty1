@@ -1,0 +1,29 @@
+---
+// Overrides Starlight's default Head to add a per-page og:image pointing
+// at the build-time-generated card (SEO.md §2.7) — the only per-page head
+// injection Starlight's own config doesn't support out of the box, since
+// it needs the current page's date, computed here rather than duplicated
+// into the Python assembler (brand/domain stays config-only, CLAUDE.md
+// rule 6 — this is TypeScript-side, reading src/config/site.ts).
+import { siteUrl } from '../config/site';
+
+const { head, entry } = Astro.locals.starlightRoute;
+const date = entry.data.date as string | undefined;
+const ogImageUrl = date ? `${siteUrl}/og/${date.replaceAll('-', '/')}.png` : undefined;
+
+// noindex the 404 page (SEO.md §2.12) — the only utility page in this site's
+// routing that isn't real content.
+const isNotFoundPage = entry.id === '404';
+---
+
+{head.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
+{isNotFoundPage && <meta name="robots" content="noindex" />}
+{
+	ogImageUrl && (
+		<>
+			<meta property="og:image" content={ogImageUrl} />
+			<meta name="twitter:image" content={ogImageUrl} />
+			<meta name="twitter:card" content="summary_large_image" />
+		</>
+	)
+}

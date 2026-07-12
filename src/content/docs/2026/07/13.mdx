@@ -69,6 +69,10 @@ import WarningBanner from '../../../../components/WarningBanner.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
 import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
 
 <Eyebrow text="PRE-MARKET · 08:40 IST" />
 
@@ -91,3 +95,5 @@ import AwaitingEod from '../../../../components/AwaitingEod.astro';
 <NewsList items={frontmatter.premarket.news} />
 
 <AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />

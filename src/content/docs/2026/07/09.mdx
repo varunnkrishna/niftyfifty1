@@ -108,6 +108,10 @@ import WarningBanner from '../../../../components/WarningBanner.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
 import CloseTable from '../../../../components/CloseTable.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
 
 <Eyebrow text="PRE-MARKET · 08:40 IST" />
 
@@ -137,7 +141,7 @@ import CloseTable from '../../../../components/CloseTable.astro';
 
 ### Close
 
-{frontmatter.eod.conclusion}
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
 
 <CloseTable
 	nifty_close={frontmatter.eod.nifty_close}
@@ -150,3 +154,5 @@ import CloseTable from '../../../../components/CloseTable.astro';
 ### News
 
 <NewsList items={frontmatter.eod.news} />
+
+<PrevNextLinks date={frontmatter.date} />

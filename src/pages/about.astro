@@ -2,10 +2,12 @@
 // /about/ — what this is, methodology, disclaimer (PLANNING §3).
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import WarningBanner from '../components/WarningBanner.astro';
-import { site } from '../config/site';
+import StructuredData from '../components/StructuredData.astro';
+import { site, siteUrl } from '../config/site';
 ---
 
 <StarlightPage frontmatter={{ title: 'About', description: `What ${site.name} is, how it's built, and its limits.` }}>
+	<StructuredData breadcrumbs={[{ name: 'Home', url: `${siteUrl}/` }, { name: 'About', url: `${siteUrl}/about/` }]} />
 	<p class="eyebrow">About</p>
 
 	<h2 class="sl-markdown-content" style="font: var(--text-h2)">What this is</h2>

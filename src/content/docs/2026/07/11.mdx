@@ -23,7 +23,10 @@ news:
 
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
+<StructuredData frontmatter={frontmatter} />
 <Eyebrow text="WEEKEND" />
 
 Markets are closed today. Here's the market-relevant news.
@@ -31,3 +34,5 @@ Markets are closed today. Here's the market-relevant news.
 ### News
 
 <NewsList items={frontmatter.news} />
+
+<PrevNextLinks date={frontmatter.date} />

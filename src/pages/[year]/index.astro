@@ -1,7 +1,9 @@
 ---
 // Year index (PLANNING §3): /YYYY/ — months in that year, reverse-chron, with counts.
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import StructuredData from '../../components/StructuredData.astro';
 import { getCollection } from 'astro:content';
+import { siteUrl } from '../../config/site';
 
 const MONTH_NAMES = [
 	'January', 'February', 'March', 'April', 'May', 'June',
@@ -27,6 +29,7 @@ const months = [...monthCounts.entries()].sort((a, b) => b[0].localeCompare(a[0]
 ---
 
 <StarlightPage frontmatter={{ title: `${year}`, description: `Archive index for ${year}.`, tableOfContents: false }}>
+	<StructuredData breadcrumbs={[{ name: 'Home', url: `${siteUrl}/` }, { name: year, url: `${siteUrl}/${year}/` }]} />
 	<p class="eyebrow">Archive</p>
 	<ul class="news-list">
 		{

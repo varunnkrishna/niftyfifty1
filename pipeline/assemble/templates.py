@@ -21,10 +21,11 @@ def render_trading_day_body(sidecar: TradingDaySidecar, premarket_eyebrow: str, 
 	parts: list[str] = []
 
 	if sidecar.eod_written:
-		parts.append(_imports("SignalTable", "WarningBanner", "NewsList", "Eyebrow", "CloseTable"))
+		parts.append(_imports("SignalTable", "WarningBanner", "NewsList", "Eyebrow", "CloseTable", "StructuredData", "PrevNextLinks"))
 	else:
-		parts.append(_imports("SignalTable", "WarningBanner", "NewsList", "Eyebrow", "AwaitingEod"))
+		parts.append(_imports("SignalTable", "WarningBanner", "NewsList", "Eyebrow", "AwaitingEod", "StructuredData", "PrevNextLinks"))
 
+	parts.append("\n<StructuredData frontmatter={frontmatter} />")
 	parts.append(f'\n<Eyebrow text="{premarket_eyebrow}" />')
 	parts.append("\n## Pre-Market")
 	parts.append("\n### Markets Data")
@@ -48,7 +49,7 @@ def render_trading_day_body(sidecar: TradingDaySidecar, premarket_eyebrow: str, 
 		parts.append(f'\n<Eyebrow text="{eod_eyebrow}" />')
 		parts.append("\n## EOD")
 		parts.append("\n### Close")
-		parts.append("\n{frontmatter.eod.conclusion}")
+		parts.append('\n<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>')
 		parts.append(
 			"\n<CloseTable\n"
 			"\tnifty_close={frontmatter.eod.nifty_close}\n"
@@ -65,25 +66,31 @@ def render_trading_day_body(sidecar: TradingDaySidecar, premarket_eyebrow: str, 
 	else:
 		parts.append('\n<AwaitingEod expected="~16:15 IST" />')
 
+	parts.append("\n<PrevNextLinks date={frontmatter.date} />")
+
 	return "\n".join(parts) + "\n"
 
 
 def render_weekend_body(sidecar: WeekendHolidaySidecar) -> str:
 	return (
-		f"{_imports('NewsList', 'Eyebrow')}\n"
+		f"{_imports('NewsList', 'Eyebrow', 'StructuredData', 'PrevNextLinks')}\n"
+		"\n<StructuredData frontmatter={frontmatter} />"
 		'\n<Eyebrow text="WEEKEND" />\n'
 		"\nMarkets are closed today. Here's the market-relevant news.\n"
 		"\n### News\n"
 		"\n<NewsList items={frontmatter.news} />\n"
+		"\n<PrevNextLinks date={frontmatter.date} />\n"
 	)
 
 
 def render_holiday_body(sidecar: WeekendHolidaySidecar) -> str:
 	return (
-		f"{_imports('NewsList', 'Eyebrow')}\n"
+		f"{_imports('NewsList', 'Eyebrow', 'StructuredData', 'PrevNextLinks')}\n"
+		"\n<StructuredData frontmatter={frontmatter} />"
 		"\n<Eyebrow text={`MARKET HOLIDAY · ${frontmatter.reason.toUpperCase()}`} />\n"
 		"\nMarkets closed today — {frontmatter.reason}. No cash or derivatives session; "
 		"regular trading resumes next session.\n"
 		"\n### News\n"
 		"\n<NewsList items={frontmatter.news} />\n"
+		"\n<PrevNextLinks date={frontmatter.date} />\n"
 	)
