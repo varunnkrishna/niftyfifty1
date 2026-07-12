@@ -1,0 +1,43 @@
+---
+// Year index (PLANNING §3): /YYYY/ — months in that year, reverse-chron, with counts.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getCollection } from 'astro:content';
+
+const MONTH_NAMES = [
+	'January', 'February', 'March', 'April', 'May', 'June',
+	'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+export async function getStaticPaths() {
+	const all = await getCollection('docs');
+	const years = [...new Set(all.map((e) => (e.data.date as string).slice(0, 4)))];
+	return years.map((year) => ({ params: { year }, props: { year } }));
+}
+
+const { year } = Astro.props;
+const all = await getCollection('docs');
+const inYear = all.filter((e) => (e.data.date as string).startsWith(`${year}-`));
+
+const monthCounts = new Map<string, number>();
+for (const e of inYear) {
+	const month = (e.data.date as string).slice(5, 7);
+	monthCounts.set(month, (monthCounts.get(month) ?? 0) + 1);
+}
+const months = [...monthCounts.entries()].sort((a, b) => b[0].localeCompare(a[0]));
+---
+
+<StarlightPage frontmatter={{ title: `${year}`, description: `Archive index for ${year}.`, tableOfContents: false }}>
+	<p class="eyebrow">Archive</p>
+	<ul class="news-list">
+		{
+			months.map(([month, count]) => (
+				<li>
+					<a href={`/${year}/${month}/`}>
+						{MONTH_NAMES[Number(month) - 1]} {year}
+					</a>
+					<div class="news-why">{count} day{count === 1 ? '' : 's'}</div>
+				</li>
+			))
+		}
+	</ul>
+</StarlightPage>

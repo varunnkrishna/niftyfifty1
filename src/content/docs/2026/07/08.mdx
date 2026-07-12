@@ -1,0 +1,104 @@
+---
+title: "Nifty & Sensex — 08 Jul 2026"
+description: "How markets closed — 08 Jul 2026. Nifty +0.22% on a quiet session; two data inputs unavailable this morning."
+date: "2026-07-08"
+type: "trading-day"
+data_quality: "partial"
+missing: ["us10y_yield", "dxy"]
+eod_written: true
+premarket:
+  gift_nifty: { value: "24,470", delta_pct: 0.38, vote: 1 }
+  sp500_overnight: { delta_pct: 0.28, vote: 1 }
+  nasdaq_overnight: { delta_pct: 0.05, vote: 0 }
+  us10y_yield: { vote: null, unavailable: true }
+  dxy: { vote: null, unavailable: true }
+  fii_net_cash: { value: -1420, vote: -1 }
+  dii_net_cash: { value: 1105, vote: 1 }
+  usdinr: { value: "83.60", delta: 0.03, vote: 0 }
+  prev_close_in_range: { value: "top third", vote: 1 }
+  india_vix: { value: "15.2", delta: 0.2, vote: null }
+  brent: { value: "82.10", delta_pct: 0.3, vote: null }
+  bias_score: 3
+  bias_label: "Long"
+  bias_intensity: "Mildly"
+  conviction: "normal"
+  market_expectations: "A mildly positive setup on the inputs that did come through this morning: GIFT Nifty and S&P futures are both firm, and DII buying continues. US 10Y yield and DXY couldn't be fetched this morning, so today's call leans on 7 of the usual 9 directional inputs."
+  news:
+    - headline_reworded: "GIFT Nifty extends gains as US futures point to a firmer Wall Street open"
+      why_it_matters: "GIFT Nifty is one of the morning's clearest positive signals."
+      source_name: "Moneycontrol"
+      source_url: "https://www.moneycontrol.com/news/business/markets/gift-nifty-us-futures-firm"
+      timestamp: "2026-07-08T08:10:00+05:30"
+    - headline_reworded: "Data vendor outage delays this morning's DXY and US 10-year yield feeds"
+      why_it_matters: "Two of today's inputs are unavailable; the signal table marks them and the bias call is based on what fetched successfully."
+      source_name: "ET Markets"
+      source_url: "https://economictimes.indiatimes.com/markets/data-vendor-outage-yields-dxy"
+      timestamp: "2026-07-08T08:20:00+05:30"
+eod:
+  nifty_close: { value: 24488.6, delta_pct: 0.22 }
+  sensex_close: { value: 80710.4, delta_pct: 0.19 }
+  banknifty_close: { value: 54980.2, delta_pct: 0.15 }
+  advance_decline: "1,610 advances / 1,405 declines"
+  sector_leaders: ["IT", "Pharma"]
+  sector_laggards: ["Realty"]
+  conclusion: "Nifty closed up 0.22% at 24,489, a quiet session that held onto the morning's mild-Long call despite two missing data inputs. IT and Pharma led, Realty was the lone laggard after last week's rally, and breadth stayed mildly positive with advances ahead of declines."
+  news:
+    - headline_reworded: "Nifty holds onto morning gains to close modestly higher despite a quiet session"
+      why_it_matters: "The mild-Long morning call held through to the close, though gains were thin."
+      source_name: "Moneycontrol"
+      source_url: "https://www.moneycontrol.com/news/business/markets/nifty-close-modest-gains-quiet-session"
+      timestamp: "2026-07-08T15:45:00+05:30"
+    - headline_reworded: "Realty stocks slip on profit-taking after last week's sharp rally"
+      why_it_matters: "Realty was the session's only notable laggard sector."
+      source_name: "Livemint"
+      source_url: "https://www.livemint.com/market/realty-stocks-profit-taking"
+      timestamp: "2026-07-08T15:50:00+05:30"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import WarningBanner from '../../../../components/WarningBanner.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+{frontmatter.premarket.market_expectations}
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### Signal
+
+**Bias: {`${frontmatter.premarket.bias_intensity} ${frontmatter.premarket.bias_label}`} · {frontmatter.premarket.bias_score > 0 ? '+' : ''}{frontmatter.premarket.bias_score}**
+
+<WarningBanner />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} />
+
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+{frontmatter.eod.conclusion}
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+/>
+
+{frontmatter.eod.advance_decline} · Leaders: {frontmatter.eod.sector_leaders.join(', ')} · Laggards: {frontmatter.eod.sector_laggards.join(', ')}
+
+### News
+
+<NewsList items={frontmatter.eod.news} />

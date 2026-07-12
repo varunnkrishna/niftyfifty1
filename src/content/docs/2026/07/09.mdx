@@ -1,0 +1,114 @@
+---
+title: "Nifty & Sensex — 09 Jul 2026"
+description: "How markets closed — 09 Jul 2026. Nifty +0.38%, Sensex +0.34%, IT led, bias was Mildly Long."
+date: "2026-07-09"
+type: "trading-day"
+data_quality: "full"
+missing: []
+eod_written: true
+premarket:
+  gift_nifty: { value: "24,415", delta_pct: 0.42, vote: 1 }
+  sp500_overnight: { delta_pct: -0.15, vote: 0 }
+  nasdaq_overnight: { delta_pct: -0.32, vote: -1 }
+  us10y_yield: { value: "4.28%", delta: -0.04, vote: 1 }
+  dxy: { value: "97.85", delta: 0.1, vote: 0 }
+  fii_net_cash: { value: -2140, vote: -1 }
+  dii_net_cash: { value: 1880, vote: 1 }
+  usdinr: { value: "83.62", delta: 0.05, vote: 0 }
+  prev_close_in_range: { value: "top third", vote: 1 }
+  india_vix: { value: "14.8", delta: 0.6, vote: null }
+  brent: { value: "82.40", delta_pct: 0.8, vote: null }
+  bias_score: 2
+  bias_label: "Long"
+  bias_intensity: "Mildly"
+  conviction: "normal"
+  market_expectations: "Markets look set for a mildly positive open, tracking a firm GIFT Nifty even as Wall Street closed mixed overnight. Falling US yields and steady DII buying offset continued FII selling; USD/INR and DXY are both roughly flat, leaving no strong cross-asset push either way. India VIX stays subdued, so today's setup carries normal conviction rather than a cautious one."
+  news:
+    - headline_reworded: "IT stocks poised for a firm start as the rupee holds steady against the dollar"
+      why_it_matters: "A stable rupee supports margin expectations for export-heavy IT names ahead of the sector's earnings season."
+      source_name: "Moneycontrol"
+      source_url: "https://www.moneycontrol.com/news/business/markets/it-stocks-rupee-outlook"
+      timestamp: "2026-07-09T08:12:00+05:30"
+    - headline_reworded: "Foreign investors extend their selling streak into a second straight week"
+      why_it_matters: "Continued FII outflows are one of the morning's few headwinds for the bias call."
+      source_name: "ET Markets"
+      source_url: "https://economictimes.indiatimes.com/markets/fii-outflow-second-week"
+      timestamp: "2026-07-09T07:40:00+05:30"
+    - headline_reworded: "Domestic funds keep buying as insurers and mutual funds absorb the FII selling"
+      why_it_matters: "DII net buying is the main domestic offset to the FII outflow this week."
+      source_name: "Livemint"
+      source_url: "https://www.livemint.com/market/dii-buying-offsets-fii-selling"
+      timestamp: "2026-07-09T07:55:00+05:30"
+eod:
+  nifty_close: { value: 24512.3, delta_pct: 0.38 }
+  sensex_close: { value: 80845.1, delta_pct: 0.34 }
+  banknifty_close: { value: 55210.75, delta_pct: 0.52 }
+  advance_decline: "1,842 advances / 1,203 declines"
+  sector_leaders: ["IT", "Auto"]
+  sector_laggards: ["Metal", "PSU Bank"]
+  conclusion: "Nifty closed up 0.38% at 24,512, extending the morning's mild-Long call through to the close. IT led on rupee stability and firm US futures, while metals lagged on soft Chinese demand data. Breadth stayed constructive with advances outnumbering declines, and Bank Nifty was the day's strongest index on private-lender buying."
+  news:
+    - headline_reworded: "IT majors lead the rally after a steady rupee and firm US futures lifted sentiment"
+      why_it_matters: "IT was the session's strongest sector, directly lifting the Nifty off its morning levels."
+      source_name: "Moneycontrol"
+      source_url: "https://www.moneycontrol.com/news/business/markets/it-majors-lead-close"
+      timestamp: "2026-07-09T15:45:00+05:30"
+    - headline_reworded: "Metal stocks drag as weak Chinese demand data weighs on base metal prices"
+      why_it_matters: "Metals were the day's biggest laggard, capping the broader index's gains."
+      source_name: "Business Standard"
+      source_url: "https://www.business-standard.com/markets/metal-stocks-china-demand"
+      timestamp: "2026-07-09T15:50:00+05:30"
+    - headline_reworded: "Bank Nifty outperforms on renewed buying in private lenders"
+      why_it_matters: "Bank Nifty's 0.52% gain was the session's strongest index move."
+      source_name: "ET Markets"
+      source_url: "https://economictimes.indiatimes.com/markets/banknifty-private-lenders-buying"
+      timestamp: "2026-07-09T16:02:00+05:30"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import WarningBanner from '../../../../components/WarningBanner.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+{frontmatter.premarket.market_expectations}
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### Signal
+
+**Bias: {`${frontmatter.premarket.bias_intensity} ${frontmatter.premarket.bias_label}`} · {frontmatter.premarket.bias_score > 0 ? '+' : ''}{frontmatter.premarket.bias_score}{frontmatter.premarket.conviction === 'reduced' ? ' · conviction reduced (VIX elevated)' : ''}**
+
+<WarningBanner />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} />
+
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+{frontmatter.eod.conclusion}
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+/>
+
+{frontmatter.eod.advance_decline} · Leaders: {frontmatter.eod.sector_leaders.join(', ')} · Laggards: {frontmatter.eod.sector_laggards.join(', ')}
+
+### News
+
+<NewsList items={frontmatter.eod.news} />

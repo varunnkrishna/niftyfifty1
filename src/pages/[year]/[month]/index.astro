@@ -1,0 +1,45 @@
+---
+// Month index (PLANNING §3): /YYYY/MM/ — days in that month, reverse-chron.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getCollection } from 'astro:content';
+import { sortByDateDesc, dayHref, daySummary } from '../../../lib/dayList';
+
+const MONTH_NAMES = [
+	'January', 'February', 'March', 'April', 'May', 'June',
+	'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+export async function getStaticPaths() {
+	const all = await getCollection('docs');
+	const combos = [...new Set(all.map((e) => (e.data.date as string).slice(0, 7)))]; // YYYY-MM
+	return combos.map((ym) => {
+		const [year, month] = ym.split('-');
+		return { params: { year, month }, props: { year, month } };
+	});
+}
+
+const { year, month } = Astro.props;
+const all = await getCollection('docs');
+const inMonth = sortByDateDesc(all.filter((e) => (e.data.date as string).startsWith(`${year}-${month}`)));
+const monthName = MONTH_NAMES[Number(month) - 1];
+---
+
+<StarlightPage
+	frontmatter={{
+		title: `${monthName} ${year}`,
+		description: `Daily market archive for ${monthName} ${year}.`,
+		tableOfContents: false,
+	}}
+>
+	<p class="eyebrow">Archive</p>
+	<ul class="news-list">
+		{
+			inMonth.map((entry) => (
+				<li>
+					<a href={dayHref(entry.data.date as string)}>{entry.data.title}</a>
+					<div class="news-why">{daySummary(entry)}</div>
+				</li>
+			))
+		}
+	</ul>
+</StarlightPage>

@@ -1,0 +1,195 @@
+/* Structural skin — DESIGN.md §Structure, §Layout, §What to avoid.
+   Hairlines + whitespace do all structural work. No cards, no shadows, no
+   rounded containers, anywhere. This is a hard, sitewide design invariant
+   (CLAUDE.md rule 8), so it's enforced with !important against the
+   component library's own scoped styles rather than chased selector by
+   selector. */
+*,
+*::before,
+*::after {
+	border-radius: 0 !important;
+	box-shadow: none !important;
+}
+
+body {
+	font: var(--text-body);
+}
+
+.sl-markdown-content :is(h1, h2, h3, h4) {
+	font-family: var(--font-serif);
+	font-weight: 600;
+	letter-spacing: 0;
+}
+.sl-markdown-content h1 {
+	font: var(--text-display);
+}
+.sl-markdown-content h2 {
+	font: var(--text-h2);
+	margin-top: var(--space-8);
+	padding-top: var(--space-6);
+	border-top: 1px solid var(--rule);
+}
+.sl-markdown-content h3 {
+	font: var(--text-h3);
+}
+.sl-markdown-content {
+	font: var(--text-body);
+}
+
+/* Numbers everywhere: tabular figures. */
+.sl-markdown-content code,
+.data,
+table {
+	font-family: var(--font-mono);
+	font-variant-numeric: tabular-nums;
+}
+
+/* Eyebrow — a section's phase + timestamp, real information not decoration. */
+.eyebrow {
+	display: block;
+	font: var(--text-label);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+	margin-bottom: var(--space-1);
+}
+
+/* Metric / signal tables — hairline rows, no zebra, no cell borders. */
+.metrics-table,
+.signal-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: var(--space-2) 0;
+}
+.metrics-table th,
+.signal-table th {
+	font: var(--text-label);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+	text-align: left;
+	padding: var(--space-1) var(--space-1) var(--space-1) 0;
+	border-bottom: 1px solid var(--rule);
+	font-weight: 500;
+}
+.metrics-table td,
+.signal-table td {
+	font: var(--text-data);
+	padding: 12px 12px 12px 0;
+	border-bottom: 1px solid var(--rule);
+	white-space: nowrap;
+}
+.metrics-table th:last-child,
+.metrics-table td:last-child,
+.signal-table th:last-child,
+.signal-table td:last-child {
+	text-align: right;
+	padding-right: 0;
+}
+.signal-table tr.net-row td,
+.signal-table tr.net-row th {
+	border-top: 1px solid var(--rule);
+	border-bottom: none;
+	padding-top: var(--space-2);
+	font-weight: 600;
+}
+
+/* Vote / delta coloring — the ONLY saturated color on the page, meaning only. */
+.vote-up,
+.delta-up {
+	color: var(--up);
+}
+.vote-down,
+.delta-down {
+	color: var(--down);
+}
+.vote-flat,
+.delta-flat,
+.value-unavailable {
+	color: var(--flat);
+}
+.value-unavailable {
+	font-style: normal;
+}
+
+/* Warning banner — a standing fixture next to every signal display
+   (CLAUDE.md rule 9), muted, not alarmist. */
+.warning-banner {
+	font: var(--text-label);
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: 0;
+	color: var(--text-muted);
+	border-top: 1px solid var(--rule);
+	padding-top: var(--space-1);
+	margin: var(--space-2) 0 var(--space-6);
+}
+
+/* Degraded / suppressed / awaiting-EOD notices — quiet, muted, never red. */
+.data-notice,
+.awaiting-eod {
+	font: var(--text-label);
+	text-transform: none;
+	letter-spacing: 0;
+	color: var(--text-muted);
+	font-family: var(--font-mono);
+}
+.suppressed-note {
+	font-family: var(--font-serif);
+	font-size: 16px;
+	font-style: italic;
+	color: var(--text-muted);
+}
+
+/* News list */
+.news-list {
+	list-style: none;
+	margin: var(--space-2) 0;
+	padding: 0;
+}
+.news-list li {
+	padding: var(--space-1) 0;
+	border-bottom: 1px solid var(--rule);
+}
+.news-list .news-why {
+	color: var(--text-muted);
+	font-size: 14px;
+	margin-top: 2px;
+}
+.news-list a {
+	text-decoration: none;
+}
+.news-list a:hover {
+	text-decoration: underline;
+}
+
+/* Section divider between Pre-Market and EOD. */
+.section-divider {
+	border: none;
+	border-top: 1px solid var(--rule);
+	margin: var(--space-6) 0;
+}
+
+/* Active sidebar day — accent + a left rule, never a fill (DESIGN.md §Layout). */
+[aria-current='page'] {
+	background-color: transparent !important;
+	color: var(--accent) !important;
+	border-left: 2px solid var(--accent);
+	padding-left: calc(var(--sl-sidebar-item-padding-inline) - 2px) !important;
+}
+
+/* Focus visibility (quality floor). */
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}

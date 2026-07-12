@@ -1,0 +1,51 @@
+---
+// /about/ — what this is, methodology, disclaimer (PLANNING §3).
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import WarningBanner from '../components/WarningBanner.astro';
+import { site } from '../config/site';
+---
+
+<StarlightPage frontmatter={{ title: 'About', description: `What ${site.name} is, how it's built, and its limits.` }}>
+	<p class="eyebrow">About</p>
+
+	<h2 class="sl-markdown-content" style="font: var(--text-h2)">What this is</h2>
+	<p class="sl-markdown-content">
+		{site.name} is a daily, date-indexed reference archive of the Indian equity market. Every
+		trading day gets one page, written twice: a Pre-Market read before the open, and an End-of-Day
+		recap after the close — appended below the morning section, never overwriting it. Weekends and
+		market holidays get a simpler, news-only page. There is no editing after the fact: what the
+		morning said stays visible next to what actually happened.
+	</p>
+
+	<h2 class="sl-markdown-content" style="font: var(--text-h2)">The Long/Short signal</h2>
+	<p class="sl-markdown-content">
+		Each day's Pre-Market section includes a transparent table of market inputs — GIFT Nifty,
+		US overnight indices, yields, FII/DII flows, USD/INR, and more — each cast as a −1, 0, or +1
+		vote by fixed, published thresholds. The votes sum to a net score, which maps to a label
+		(Neutral, Mildly/Strongly Long, Mildly/Strongly Short). Nothing about this is discretionary or
+		hand-tuned per day; the same rules run every morning.
+	</p>
+	<p class="sl-markdown-content">
+		Historically, signals built this way predict the day's <em>opening</em> direction only
+		slightly better than chance (roughly 52–56%), and do worse at predicting where the market
+		closes. That's exactly why the morning call is never edited once the close is known — it's
+		meant to be checked against the outcome, not polished to look right in hindsight.
+	</p>
+	<WarningBanner />
+
+	<h2 class="sl-markdown-content" style="font: var(--text-h2)">How it's written</h2>
+	<p class="sl-markdown-content">
+		Every page is produced by an unattended pipeline: ordinary code fetches public market data and
+		computes every number, vote, and label — no language model ever touches a number. A language
+		model is used for exactly two things: rewording news headlines into original text and writing
+		short connecting prose. News items are never pasted from their source; each is a reworded
+		summary with a direct outbound link to the original.
+	</p>
+
+	<h2 class="sl-markdown-content" style="font: var(--text-h2)">Disclaimer</h2>
+	<p class="sl-markdown-content">
+		Nothing on this site is financial advice or a recommendation to buy or sell any security. The
+		Long/Short signal is an automated, mechanical guess derived only from publicly available data,
+		and it is frequently wrong. Do your own research before making any investment decision.
+	</p>
+</StarlightPage>

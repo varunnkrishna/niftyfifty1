@@ -1,0 +1,28 @@
+---
+interface NewsItem {
+	headline_reworded: string;
+	why_it_matters: string;
+	source_name: string;
+	source_url: string;
+	timestamp: string;
+}
+interface Props {
+	items: NewsItem[];
+}
+const { items } = Astro.props;
+---
+
+<ul class="news-list">
+	{
+		items.map((item) => (
+			<li>
+				<a href={item.source_url} target="_blank" rel="noopener noreferrer">
+					{item.headline_reworded}
+				</a>
+				<div class="news-why">
+					{item.why_it_matters} — <span class="data">{item.source_name}</span>
+				</div>
+			</li>
+		))
+	}
+</ul>

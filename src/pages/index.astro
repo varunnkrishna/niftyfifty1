@@ -1,0 +1,44 @@
+---
+// Homepage (PLANNING §3): latest day rendered in full + a compact recent-days
+// rail. Always shows fresh, fully-rendered content above the fold.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getCollection, render } from 'astro:content';
+import { site } from '../config/site';
+import { sortByDateDesc, dayHref, daySummary } from '../lib/dayList';
+
+const all = await getCollection('docs');
+const sorted = sortByDateDesc(all);
+const latest = sorted[0];
+const recent = sorted.slice(1, 8);
+const { Content } = latest ? await render(latest) : { Content: null };
+---
+
+<StarlightPage frontmatter={{ title: site.name, description: site.tagline, tableOfContents: false }}>
+	{
+		latest && (
+			<>
+				<p class="eyebrow">Latest</p>
+				<h1 class="sl-markdown-content" style="font: var(--text-display); margin: 0 0 var(--space-2)">
+					{latest.data.title}
+				</h1>
+				<div class="sl-markdown-content">
+					<Content />
+				</div>
+			</>
+		)
+	}
+
+	<hr class="section-divider" />
+
+	<h2 class="sl-markdown-content" style="font: var(--text-h2)">Recent Days</h2>
+	<ul class="news-list">
+		{
+			recent.map((entry) => (
+				<li>
+					<a href={dayHref(entry.data.date as string)}>{entry.data.title}</a>
+					<div class="news-why">{daySummary(entry)}</div>
+				</li>
+			))
+		}
+	</ul>
+</StarlightPage>

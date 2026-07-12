@@ -1,0 +1,26 @@
+/* Self-hosted fonts (DESIGN.md §Typography). Latin-only subsets — the site's
+   content language is English (SEO.md §5) — so cyrillic/greek/vietnamese
+   subsets that ship in the full Fontsource packages are deliberately excluded.
+   No runtime font logic; these are build-time bundled by Vite. */
+
+/* Source Serif 4 — display/headings, weights 400 & 600 only (DESIGN.md). */
+@import "@fontsource/source-serif-4/latin-400.css";
+@import "@fontsource/source-serif-4/latin-600.css";
+
+/* Geist Sans — body/UI, variable weight. */
+@font-face {
+	font-family: "Geist Sans Variable";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url("@fontsource-variable/geist/files/geist-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+/* Geist Mono — numbers/data, variable weight, tabular figures. */
+@font-face {
+	font-family: "Geist Mono Variable";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url("@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2") format("woff2-variations");
+}

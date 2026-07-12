@@ -1,0 +1,63 @@
+/* Design tokens — DESIGN.md §Color, §Typography.
+   Color carries meaning only (CLAUDE.md rule 8): --up/--down on % changes and
+   votes exclusively, --accent on interaction only. Everything else greyscale. */
+
+:root {
+	/* Color */
+	--bg: #0e0e10;
+	--surface: #161618;
+	--rule: #26262a;
+	--text: #ededea;
+	--text-muted: #9a9aa2;
+	--accent: #8b8bf5;
+	--up: #4ade80;
+	--down: #f87171;
+	--flat: #9a9aa2;
+
+	/* Type families */
+	--font-serif: "Source Serif 4", serif;
+	--font-sans: "Geist Sans Variable", "Geist Sans", system-ui, sans-serif;
+	--font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, monospace;
+
+	/* Type scale — DESIGN.md §Typography */
+	--text-display: 600 34px/1.15 var(--font-serif);
+	--text-h2: 600 24px/1.2 var(--font-serif);
+	--text-h3: 600 18px/1.3 var(--font-serif);
+	--text-body: 400 16px/1.6 var(--font-sans);
+	--text-label: 500 12px/1.2 var(--font-mono);
+	--text-data: 500 15px/1.4 var(--font-mono);
+
+	/* Spacing — base unit 8px */
+	--space-1: 8px;
+	--space-2: 16px;
+	--space-3: 24px;
+	--space-6: 48px;
+	--space-8: 64px;
+
+	/* Map onto Starlight's own theme variables so native chrome (header,
+	   sidebar, search, right-rail ToC) inherits the same palette + fonts
+	   without needing per-component overrides. */
+	--sl-color-bg: var(--bg);
+	--sl-color-bg-nav: var(--bg);
+	--sl-color-bg-sidebar: var(--bg);
+	--sl-color-bg-inline-code: var(--surface);
+	--sl-color-black: var(--bg);
+	--sl-color-gray-1: #f4f4f2;
+	--sl-color-gray-2: var(--text);
+	--sl-color-gray-3: var(--text-muted);
+	--sl-color-gray-4: #55555c;
+	--sl-color-gray-5: #38383e;
+	--sl-color-gray-6: #201f22;
+	--sl-color-gray-7: var(--surface);
+	--sl-color-white: var(--text);
+	--sl-color-text: var(--text);
+	--sl-color-text-accent: var(--accent);
+	--sl-color-accent-low: #201f38;
+	--sl-color-accent: var(--accent);
+	--sl-color-accent-high: #c7c7fb;
+	--sl-color-hairline-light: var(--rule);
+	--sl-color-hairline: var(--rule);
+	--sl-color-hairline-shade: var(--rule);
+	--sl-font: var(--font-sans);
+	--sl-font-mono: var(--font-mono);
+}

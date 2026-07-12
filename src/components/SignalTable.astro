@@ -1,0 +1,142 @@
+---
+// The signature element (DESIGN.md §Signature element). Metric → vote table,
+// full transparency — this is what an AI cites. Handles the degraded
+// (missing metric → "—" / vote 0) and suppressed (no bias_label) states
+// per DESIGN.md §Page states; the table always renders whatever was fetched.
+
+interface Metric {
+	value?: string | number;
+	delta_pct?: number;
+	delta?: number;
+	vote: -1 | 0 | 1 | null;
+	unavailable?: boolean;
+}
+
+interface Props {
+	premarket: {
+		gift_nifty: Metric;
+		sp500_overnight: Metric;
+		nasdaq_overnight: Metric;
+		us10y_yield: Metric;
+		dxy: Metric;
+		fii_net_cash: Metric;
+		dii_net_cash: Metric;
+		usdinr: Metric;
+		prev_close_in_range: Metric;
+		india_vix: Metric;
+		brent: Metric;
+		bias_score: number | null;
+		bias_label: 'Long' | 'Short' | 'Neutral' | 'Cautious' | null;
+		bias_intensity?: 'Mildly' | 'Strongly' | null;
+		conviction?: 'normal' | 'reduced';
+	};
+}
+
+const { premarket } = Astro.props;
+
+const arrow = (n?: number) => (n === undefined || n === null ? '' : n > 0 ? ' ▲' : n < 0 ? ' ▼' : '');
+const pct = (n?: number) => (n === undefined || n === null ? '—' : `${n > 0 ? '+' : ''}${n.toFixed(2)}%`);
+const cr = (n?: string | number) =>
+	n === undefined || n === null
+		? '—'
+		: `${Number(n) > 0 ? '+' : ''}${Number(n).toLocaleString('en-IN')} cr`;
+const level = (n?: string | number) => (n === undefined || n === null ? '—' : String(n));
+const voteText = (v: -1 | 0 | 1 | null) => (v === 1 ? '+1' : v === -1 ? '−1' : v === 0 ? '0' : '—');
+const voteClass = (v: -1 | 0 | 1 | null) => (v === 1 ? 'vote-up' : v === -1 ? 'vote-down' : 'vote-flat');
+
+const directionalRows = [
+	{ m: premarket.gift_nifty, label: 'GIFT Nifty', format: (m: Metric) => pct(m.delta_pct) },
+	{ m: premarket.sp500_overnight, label: 'S&P 500 o/n', format: (m: Metric) => pct(m.delta_pct) },
+	{ m: premarket.nasdaq_overnight, label: 'Nasdaq o/n', format: (m: Metric) => pct(m.delta_pct) },
+	{
+		m: premarket.us10y_yield,
+		label: 'US 10Y yield',
+		format: (m: Metric) => level(m.value) + arrow(m.delta),
+	},
+	{ m: premarket.dxy, label: 'DXY', format: (m: Metric) => level(m.value) + arrow(m.delta) },
+	{ m: premarket.fii_net_cash, label: 'FII net (prev)', format: (m: Metric) => cr(m.value) },
+	{ m: premarket.dii_net_cash, label: 'DII net (prev)', format: (m: Metric) => cr(m.value) },
+	{
+		m: premarket.usdinr,
+		label: 'USD/INR',
+		format: (m: Metric) => level(m.value) + arrow(m.delta),
+	},
+	{
+		m: premarket.prev_close_in_range,
+		label: 'Prev close in range',
+		format: (m: Metric) => level(m.value),
+	},
+];
+
+const contextRows = [
+	{
+		m: premarket.india_vix,
+		label: 'India VIX',
+		format: (m: Metric) => level(m.value) + arrow(m.delta),
+		note: premarket.conviction === 'reduced' ? 'conviction ↓' : '—',
+	},
+	{
+		m: premarket.brent,
+		label: 'Brent',
+		format: (m: Metric) => (m.value === undefined || m.value === null ? '—' : `$${m.value}${arrow(m.delta_pct)}`),
+		note: 'context',
+	},
+];
+
+const missingCount = [...directionalRows].filter((r) => r.m.unavailable).length;
+const suppressed = premarket.bias_label === null;
+const netLabel = suppressed
+	? null
+	: [premarket.bias_intensity, premarket.bias_label].filter(Boolean).join(' ');
+---
+
+<table class="signal-table">
+	<thead>
+		<tr>
+			<th>Input</th>
+			<th>Value</th>
+			<th>Vote</th>
+		</tr>
+	</thead>
+	<tbody>
+		{
+			directionalRows.map((row) => (
+				<tr>
+					<td>{row.label}</td>
+					<td class:list={{ 'value-unavailable': row.m.unavailable }}>
+						{row.m.unavailable ? '— unavailable' : row.format(row.m)}
+					</td>
+					<td class={voteClass(row.m.vote)}>{voteText(row.m.vote)}</td>
+				</tr>
+			))
+		}
+		{
+			contextRows.map((row) => (
+				<tr>
+					<td>{row.label}</td>
+					<td class:list={{ 'value-unavailable': row.m.unavailable }}>
+						{row.m.unavailable ? '— unavailable' : row.format(row.m)}
+					</td>
+					<td class="vote-flat">{row.note}</td>
+				</tr>
+			))
+		}
+		<tr class="net-row">
+			<td>NET BIAS</td>
+			<td colspan="1">{suppressed ? '' : netLabel}</td>
+			<td class={voteClass(premarket.bias_score === null ? 0 : premarket.bias_score >= 0 ? 1 : -1)}>
+				{premarket.bias_score === null ? '—' : (premarket.bias_score > 0 ? '+' : '') + premarket.bias_score}
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+{
+	suppressed ? (
+		<p class="suppressed-note">Insufficient data for a signal this morning.</p>
+	) : missingCount > 0 ? (
+		<p class="data-notice">
+			{missingCount} of {directionalRows.length} inputs unavailable this morning.
+		</p>
+	) : null
+}

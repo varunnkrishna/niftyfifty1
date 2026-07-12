@@ -1,0 +1,41 @@
+---
+interface CloseMetric {
+	value: number;
+	delta_pct: number;
+}
+interface Props {
+	nifty_close: CloseMetric;
+	sensex_close: CloseMetric;
+	banknifty_close: CloseMetric;
+}
+const { nifty_close, sensex_close, banknifty_close } = Astro.props;
+
+const pct = (n: number) => `${n > 0 ? '+' : ''}${n.toFixed(2)}%`;
+const voteClass = (n: number) => (n > 0 ? 'vote-up' : n < 0 ? 'vote-down' : 'vote-flat');
+const rows = [
+	{ label: 'Nifty 50', m: nifty_close },
+	{ label: 'Sensex', m: sensex_close },
+	{ label: 'Bank Nifty', m: banknifty_close },
+];
+---
+
+<table class="metrics-table">
+	<thead>
+		<tr>
+			<th>Index</th>
+			<th>Close</th>
+			<th>Change</th>
+		</tr>
+	</thead>
+	<tbody>
+		{
+			rows.map((row) => (
+				<tr>
+					<td>{row.label}</td>
+					<td>{row.m.value.toLocaleString('en-IN')}</td>
+					<td class={voteClass(row.m.delta_pct)}>{pct(row.m.delta_pct)}</td>
+				</tr>
+			))
+		}
+	</tbody>
+</table>

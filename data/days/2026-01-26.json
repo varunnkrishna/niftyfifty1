@@ -1,0 +1,21 @@
+{
+	"date": "2026-01-26",
+	"type": "holiday",
+	"reason": "Republic Day",
+	"news": [
+		{
+			"headline_reworded": "NSE and BSE remain closed for trading in observance of Republic Day",
+			"why_it_matters": "No cash or derivatives session today; the next trading session resumes tomorrow.",
+			"source_name": "NSE",
+			"source_url": "https://www.nseindia.com/resources/exchange-communication-holidays",
+			"timestamp": "2026-01-26T09:00:00+05:30"
+		},
+		{
+			"headline_reworded": "Finance ministry officials reiterate the fiscal glide path ahead of the upcoming budget session",
+			"why_it_matters": "Budget-adjacent commentary tends to set the tone for the next few trading sessions.",
+			"source_name": "Business Standard",
+			"source_url": "https://www.business-standard.com/economy/fiscal-glide-path-budget-session",
+			"timestamp": "2026-01-26T12:00:00+05:30"
+		}
+	]
+}
