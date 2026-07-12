@@ -1,0 +1,28 @@
+{
+	"year": 2026,
+	"source": "NSE published 2026 trading holiday list (equity segment), cross-checked against Zerodha and ClearTax holiday calendars",
+	"retrieved": "2026-07-12",
+	"holidays": [
+		{ "date": "2026-01-15", "reason": "Maharashtra Municipal Corporation Elections" },
+		{ "date": "2026-01-26", "reason": "Republic Day" },
+		{ "date": "2026-03-03", "reason": "Holi" },
+		{ "date": "2026-03-26", "reason": "Shri Ram Navami" },
+		{ "date": "2026-03-31", "reason": "Shri Mahavir Jayanti" },
+		{ "date": "2026-04-03", "reason": "Good Friday" },
+		{ "date": "2026-04-14", "reason": "Dr. Baba Saheb Ambedkar Jayanti" },
+		{ "date": "2026-05-01", "reason": "Maharashtra Day" },
+		{ "date": "2026-05-28", "reason": "Bakri Id" },
+		{ "date": "2026-06-26", "reason": "Muharram" },
+		{ "date": "2026-09-14", "reason": "Ganesh Chaturthi" },
+		{ "date": "2026-10-02", "reason": "Mahatma Gandhi Jayanti" },
+		{ "date": "2026-10-20", "reason": "Dussehra" },
+		{ "date": "2026-11-10", "reason": "Diwali - Balipratipada" },
+		{ "date": "2026-11-24", "reason": "Prakash Gurpurb Sri Guru Nanak Dev" },
+		{ "date": "2026-12-25", "reason": "Christmas" }
+	],
+	"notes": [
+		"Muhurat trading (Diwali Laxmi Pujan) falls on Sunday 2026-11-08 — already a weekend, no separate holiday entry needed; exact one-hour session timing to be announced by NSE closer to the date (ORCHESTRATION §2 — treat as a holiday-page note, no special pipeline).",
+		"Shri Ram Navami (Mar 26, Thursday) shifts the March monthly derivatives expiry to Wednesday Mar 25.",
+		"Bakri Id (May 28, Thursday) shifts the May monthly derivatives expiry to Wednesday May 27."
+	]
+}

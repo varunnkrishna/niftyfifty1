@@ -1,0 +1,57 @@
+{
+	"version": 1,
+	"note": "First-pass thresholds/weights for the LeanSide-derived Long/Short signal (PLANNING §5, ORCHESTRATION §9). Config-driven so tuning never requires code edits (CLAUDE.md conventions). Consumed by pipeline/compute/ starting Phase 4.",
+
+	"directional_inputs": [
+		{ "key": "gift_nifty", "label": "GIFT Nifty", "rule": "threshold_pct", "vs": "prev_nifty_close", "threshold_pct": 0.3, "note": "Δ% >= +0.3 -> +1, Δ% <= -0.3 -> -1, else 0" },
+		{ "key": "sp500_overnight", "label": "S&P 500 o/n", "rule": "threshold_pct", "vs": "prior_us_close", "threshold_pct": 0.2 },
+		{ "key": "nasdaq_overnight", "label": "Nasdaq o/n", "rule": "threshold_pct", "vs": "prior_us_close", "threshold_pct": 0.2 },
+		{ "key": "us10y_yield", "label": "US 10Y yield", "rule": "threshold_delta", "unit": "bp", "threshold": 3, "invert": true, "note": "falling yield = risk-on = +1; rising = -1" },
+		{ "key": "dxy", "label": "DXY", "rule": "threshold_pct", "threshold_pct": 0.15, "invert": true, "note": "rising DXY = -1 for India (capital outflow pressure); falling = +1" },
+		{ "key": "fii_net_cash", "label": "FII net (prev day)", "rule": "threshold_absolute", "unit": "inr_cr", "threshold": 500, "note": "net buy >= 500cr -> +1, net sell <= -500cr -> -1, else 0 (materiality floor to ignore noise near zero)" },
+		{ "key": "dii_net_cash", "label": "DII net (prev day)", "rule": "threshold_absolute", "unit": "inr_cr", "threshold": 500 },
+		{ "key": "usdinr", "label": "USD/INR", "rule": "threshold_pct", "threshold_pct": 0.1, "invert": true, "note": "rupee weakening (USD/INR up) = -1; strengthening = +1" },
+		{ "key": "prev_close_in_range", "label": "Prev close in day range", "rule": "range_thirds", "note": "top third of prior day's own range -> +1, bottom third -> -1, middle third -> 0" }
+	],
+
+	"conviction_dampeners": [
+		{
+			"key": "india_vix",
+			"label": "India VIX",
+			"elevated_level": 18,
+			"spike_level": 22,
+			"spike_delta_pct": 15,
+			"note": "elevated (level >= 18) applies mild conviction reduction; spike (level >= 22 OR day-over-day change >= +15%) applies strong conviction reduction. Never votes on direction."
+		}
+	],
+
+	"context_only": [
+		{
+			"key": "brent",
+			"label": "Brent crude",
+			"sharp_move_pct": 2,
+			"note": "no directional vote, ever; flagged as a context note only when |Δ%| >= threshold"
+		}
+	],
+
+	"degradation_ladder": {
+		"directional_input_count": 9,
+		"total_input_count": 11,
+		"one_or_more_missing": "each missing directional input votes 0, value rendered '—' / unavailable, data_quality='partial'",
+		"vix_missing": "conviction damping skipped, noted, no direction vote either way",
+		"suppress_at_missing_count": 4,
+		"outage_when_all_metrics_failed": true
+	},
+
+	"label_bands": {
+		"note": "Conservative public bands (decided 2026-07-12): same vote mechanics as the private LeanSide engine, but a higher |bias_score| is required before a confident label is shown publicly. bias_label stored in frontmatter is one of Long/Short/Neutral/Cautious (PLANNING §4a, exactly 4 values); 'Mildly'/'Strongly' intensity below is a DISPLAY-ONLY computation from bias_score at render time, not a separate stored enum. 'Cautious' is reserved for near-neutral score (-1..+1) occurring simultaneously with active VIX conviction damping — flagging this reconciliation for confirmation before Phase 4 locks the compute layer (see plan notes).",
+		"max_possible_score": 9,
+		"bands": [
+			{ "score_min": 5, "score_max": 9, "bias_label": "Long", "intensity": "Strongly" },
+			{ "score_min": 2, "score_max": 4, "bias_label": "Long", "intensity": "Mildly" },
+			{ "score_min": -1, "score_max": 1, "bias_label": "Neutral", "intensity": null },
+			{ "score_min": -4, "score_max": -2, "bias_label": "Short", "intensity": "Mildly" },
+			{ "score_min": -9, "score_max": -5, "bias_label": "Short", "intensity": "Strongly" }
+		]
+	}
+}
