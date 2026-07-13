@@ -13,6 +13,7 @@ from unittest.mock import patch
 
 import pytest
 
+from pipeline.config import load_site_config
 from pipeline.orchestrate import check_immutability, postdeploy, run_premarket
 from pipeline.orchestrate.resolve import resolve
 
@@ -137,11 +138,12 @@ class TestIndexNow:
 		):
 			result = postdeploy.ping_indexnow("2026-07-09")
 
+		expected_domain = load_site_config()["domain"]
 		assert result is True
 		assert captured["url"] == "https://api.indexnow.org/indexnow"
 		assert captured["payload"]["key"] == "fake-indexnow-key"
-		assert captured["payload"]["urlList"] == ["https://niftyfiftyone.com/2026/07/09/"]
-		assert captured["payload"]["host"] == "niftyfiftyone.com"
+		assert captured["payload"]["urlList"] == [f"https://{expected_domain}/2026/07/09/"]
+		assert captured["payload"]["host"] == expected_domain
 
 	def test_missing_key_skips_ping(self):
 		with patch("pipeline.orchestrate.postdeploy.os.environ.get", return_value=None):
