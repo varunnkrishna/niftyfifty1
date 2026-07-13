@@ -13,6 +13,15 @@ export default defineConfig({
 		starlight({
 			title: site.name,
 			description: site.tagline,
+			// Google Search Console site-ownership verification (HTML tag method —
+			// the HTML-file method redirects through Cloudflare Pages' automatic
+			// .html-extension-stripping, which breaks Google's no-redirect check).
+			head: [
+				{
+					tag: 'meta',
+					attrs: { name: 'google-site-verification', content: '_sTKP2ordN6n8z1OxcLlfa1b8ctHR_3CIA5xteDhenE' },
+				},
+			],
 			// Date-tree sidebar: year → month → day, reverse-chron, with counts
 			// (PLANNING §3) — built from the filesystem, see src/config/sidebar.ts.
 			sidebar: buildDateTreeSidebar(),
