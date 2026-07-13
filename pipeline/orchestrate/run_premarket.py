@@ -115,7 +115,9 @@ def run(iso_date: str) -> int:
 		print(f"[run] premarket {iso_date}: done.", flush=True)
 		return 0
 	except Exception as exc:  # noqa: BLE001 - the top-level run boundary
-		send_alert("high", f"Pre-market run failed for {iso_date} at some stage: {exc}")
+		message = f"Pre-market run failed for {iso_date} at some stage: {exc}"
+		print(f"[run] premarket {iso_date}: FAILED — {message}", flush=True)
+		send_alert("high", message)
 		return 1
 
 

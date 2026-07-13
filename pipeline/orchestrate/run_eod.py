@@ -86,7 +86,9 @@ def run(iso_date: str) -> int:
 
 		return 0
 	except Exception as exc:  # noqa: BLE001 - top-level run boundary
-		send_alert("high", f"EOD run failed for {iso_date} at some stage: {exc}")
+		message = f"EOD run failed for {iso_date} at some stage: {exc}"
+		print(f"[run] eod {iso_date}: FAILED — {message}", flush=True)
+		send_alert("high", message)
 		return 1
 
 

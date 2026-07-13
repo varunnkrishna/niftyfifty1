@@ -13,7 +13,9 @@ working.
 
 from __future__ import annotations
 
+import calendar
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 
 import feedparser
 import requests
@@ -42,6 +44,17 @@ class RssFetchResult:
 	warnings: list[str] = field(default_factory=list)
 
 
+def _to_iso8601(entry: dict) -> str:
+	# feedparser normalizes published/updated into a UTC struct_time when it
+	# can parse the feed's native format (RFC 822 in practice, for these
+	# feeds) — converting that rather than passing the raw string through is
+	# what makes the timestamp satisfy the sidecar schema's ISO 8601 check.
+	parsed = entry.get("published_parsed") or entry.get("updated_parsed")
+	if parsed:
+		return datetime.fromtimestamp(calendar.timegm(parsed), tz=timezone.utc).isoformat()
+	return entry.get("published", entry.get("updated", ""))
+
+
 def fetch_feed(source_name: str, url: str, timeout: int = DEFAULT_TIMEOUT) -> list[RssItem]:
 	# Deliberately NOT the shared browser-spoofing session (sources/http.py) —
 	# observed live (Phase 3): Moneycontrol's RSS accepts the default
@@ -59,7 +72,7 @@ def fetch_feed(source_name: str, url: str, timeout: int = DEFAULT_TIMEOUT) -> li
 			source_name=source_name,
 			title=entry.get("title", "").strip(),
 			link=entry.get("link", ""),
-			published=entry.get("published", entry.get("updated", "")),
+			published=_to_iso8601(entry),
 		)
 		for entry in parsed.entries
 		if entry.get("title") and entry.get("link")
