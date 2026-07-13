@@ -26,14 +26,18 @@ class FetchOutcome:
 	errors: list[str]
 
 
-def _try_source(name: str, fn: Callable[[], T], backoffs: tuple[int, ...], sleep_fn: Callable[[float], None]) -> tuple[T | None, list[str]]:
+def _try_source(metric: str, name: str, fn: Callable[[], T], backoffs: tuple[int, ...], sleep_fn: Callable[[float], None]) -> tuple[T | None, list[str]]:
 	errors: list[str] = []
 	for attempt, delay in enumerate((0, *backoffs)):
 		if delay:
 			sleep_fn(delay)
+		print(f"[fetch] {metric}: trying {name}, attempt {attempt + 1}...", flush=True)
 		try:
-			return fn(), errors
+			value = fn()
+			print(f"[fetch] {metric}: {name} succeeded on attempt {attempt + 1}", flush=True)
+			return value, errors
 		except Exception as exc:  # noqa: BLE001 - any source failure is a soft failure here
+			print(f"[fetch] {metric}: {name} attempt {attempt + 1} failed: {exc}", flush=True)
 			errors.append(f"{name} attempt {attempt + 1}: {exc}")
 	return None, errors
 
@@ -46,15 +50,16 @@ def fetch_with_fallback(
 	sleep_fn: Callable[[float], None] = time.sleep,
 ) -> FetchOutcome:
 	primary_name, primary_fn = primary
-	value, errors = _try_source(primary_name, primary_fn, backoffs, sleep_fn)
+	value, errors = _try_source(metric, primary_name, primary_fn, backoffs, sleep_fn)
 	if value is not None:
 		return FetchOutcome(metric=metric, value=value, source=primary_name, unavailable=False, errors=errors)
 
 	if fallback is not None:
 		fallback_name, fallback_fn = fallback
-		value, fallback_errors = _try_source(fallback_name, fallback_fn, backoffs, sleep_fn)
+		value, fallback_errors = _try_source(metric, fallback_name, fallback_fn, backoffs, sleep_fn)
 		errors = errors + fallback_errors
 		if value is not None:
 			return FetchOutcome(metric=metric, value=value, source=fallback_name, unavailable=False, errors=errors)
 
+	print(f"[fetch] {metric}: unavailable after all sources exhausted", flush=True)
 	return FetchOutcome(metric=metric, value=None, source=None, unavailable=True, errors=errors)

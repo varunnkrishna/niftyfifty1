@@ -32,17 +32,22 @@ def _news_item_to_dict(item: RssItem) -> dict:
 
 
 def build_raw_fetch(iso_date: str, prev_day_sidecar: dict | None, backoffs=DEFAULT_BACKOFFS_SECONDS, sleep_fn=None) -> dict:
+	print(f"[fetch] starting metrics fetch for {iso_date}...", flush=True)
 	metric_outcomes = fetch_all_metrics(prev_day_sidecar=prev_day_sidecar, backoffs=backoffs, sleep_fn=sleep_fn)
 	missing = sorted(name for name, outcome in metric_outcomes.items() if outcome.unavailable)
+	print(f"[fetch] metrics fetch done — {len(missing)} missing: {missing}", flush=True)
 
 	rss_warnings: list[str] = []
 	news_items: list[dict] = []
+	print("[fetch] starting RSS fetch...", flush=True)
 	try:
 		rss_result = fetch_all_feeds()
 		news_items = [_news_item_to_dict(item) for item in rss_result.items]
 		rss_warnings = rss_result.warnings
+		print(f"[fetch] RSS fetch done — {len(news_items)} items, {len(rss_warnings)} feed warnings", flush=True)
 	except RuntimeError as exc:
 		rss_warnings = [str(exc)]
+		print(f"[fetch] RSS fetch failed entirely: {exc}", flush=True)
 
 	return {
 		"date": iso_date,
