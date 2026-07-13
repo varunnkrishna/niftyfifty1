@@ -73,7 +73,7 @@ const daySchema = z.object({
 			nifty_close: closeMetric,
 			sensex_close: closeMetric,
 			banknifty_close: closeMetric,
-			advance_decline: z.string().optional(),
+			advance_decline: z.string().nullable().optional(),
 			sector_leaders: z.array(z.string()).optional(),
 			sector_laggards: z.array(z.string()).optional(),
 			news: z.array(newsItem).optional(),
