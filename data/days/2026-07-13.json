@@ -1,41 +1,167 @@
 {
+	"data_quality": "full",
 	"date": "2026-07-13",
-	"type": "trading-day",
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.11898482320659375,
+			"value": 58131.45
+		},
+		"conclusion": "Markets ended lower today, with both Sensex and Nifty experiencing declines. Despite early gains, the session saw a reversal as volatility and geopolitical concerns weighed on investor sentiment. The focus remains on corporate earnings and global developments, which continue to shape market direction. Regulatory updates and sector-specific performances also played a role in today's trading dynamics.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain gains, end slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's inability to maintain momentum despite early optimism."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscores the ongoing bullish sentiment supported by reduced volatility."
+			},
+			{
+				"headline_reworded": "Market rallies as volatility cools sharply",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It reflects the impact of declining volatility on boosting investor confidence."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains for third day, focus shifts to Q4 results",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It emphasizes the role of corporate earnings in driving market direction."
+			},
+			{
+				"headline_reworded": "Sensex edges up, Nifty reclaims 24,200 as markets recover losses",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-rises-47-points-nifty-closes-above-24200-as-market-recovers-all-morning-losses-whats-ahead/articleshow/132363441.cms",
+				"timestamp": "2026-07-13T10:16:45+00:00",
+				"why_it_matters": "It shows the market's resilience in bouncing back from early setbacks."
+			},
+			{
+				"headline_reworded": "Puravankara reports 28% rise in Q1 sales bookings",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/puravankara-q1-sales-bookings-up-28-to-rs-1439-cr-on-higher-volumes-price-growth/articleshow/132362818.cms",
+				"timestamp": "2026-07-13T09:40:19+00:00",
+				"why_it_matters": "It highlights strong performance in the real estate sector."
+			},
+			{
+				"headline_reworded": "Eurozone bond yields rise amid Middle East tensions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-eurozone-bond-yields-climb-as-middle-east-tensions-rekindle-inflation-concerns/articleshow/132362710.cms",
+				"timestamp": "2026-07-13T09:35:00+00:00",
+				"why_it_matters": "It points to global inflationary pressures affecting market sentiment."
+			},
+			{
+				"headline_reworded": "Sebi strengthens ethical guidelines for employees",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-tightens-ethics-rules-for-current-former-employees/articleshow/132362647.cms",
+				"timestamp": "2026-07-13T09:30:31+00:00",
+				"why_it_matters": "It signals regulatory efforts to enhance market integrity."
+			},
+			{
+				"headline_reworded": "European stocks dip as Middle East tensions weigh",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-stocks-edge-lower-as-middle-east-escalation-dampens-investor-sentiment/articleshow/132361444.cms",
+				"timestamp": "2026-07-13T08:31:48+00:00",
+				"why_it_matters": "It reflects global geopolitical risks impacting investor sentiment."
+			},
+			{
+				"headline_reworded": "SBI Funds trims IPO size ahead of listing",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/sbi-funds-reduces-ipo-size-to-rs-9812-crore-after-pre-offer-placement-will-it-impact-listing-gains/articleshow/132361142.cms",
+				"timestamp": "2026-07-13T08:27:52+00:00",
+				"why_it_matters": "It raises questions about potential impacts on IPO performance."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.7693032825519421,
+			"value": 24211.0
+		},
+		"sensex_close": {
+			"delta_pct": -0.7218147901426426,
+			"value": 77616.4
+		}
+	},
+	"eod_written": true,
+	"missing": [],
 	"premarket": {
-		"gift_nifty": { "value": "24,580", "delta_pct": -0.18, "vote": 0 },
-		"sp500_overnight": { "delta_pct": 0.22, "vote": 1 },
-		"nasdaq_overnight": { "delta_pct": 0.31, "vote": 1 },
-		"us10y_yield": { "value": "4.31%", "delta": 0.02, "vote": 0 },
-		"dxy": { "value": "98.10", "delta": -0.05, "vote": 0 },
-		"fii_net_cash": { "value": 340, "vote": 0 },
-		"dii_net_cash": { "value": 960, "vote": 1 },
-		"usdinr": { "value": "83.58", "delta": -0.02, "vote": 0 },
-		"prev_close_in_range": { "value": "middle third", "vote": 0 },
-		"india_vix": { "value": "13.9", "delta": -0.3, "vote": null },
-		"brent": { "value": "81.90", "delta_pct": -0.4, "vote": null },
-		"bias_score": 3,
-		"bias_label": "Long",
 		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 3,
+		"brent": {
+			"delta_pct": -0.4,
+			"value": "81.90",
+			"vote": null
+		},
 		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 960,
+			"vote": 1
+		},
+		"dxy": {
+			"delta": -0.05,
+			"value": "98.10",
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": 340,
+			"vote": 0
+		},
+		"gift_nifty": {
+			"delta_pct": -0.18,
+			"value": "24,580",
+			"vote": 0
+		},
+		"india_vix": {
+			"delta": -0.3,
+			"value": "13.9",
+			"vote": null
+		},
 		"market_expectations": "A mixed but modestly positive setup: GIFT Nifty is a touch softer, but firm S&P and Nasdaq closes overnight and continued DII buying provide the tilt higher. Nothing in the cross-asset picture (yields, DXY, USD/INR) is moving enough to cast a vote either way, and VIX stays calm.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.31,
+			"vote": 1
+		},
 		"news": [
 			{
 				"headline_reworded": "Wall Street closes higher on cooling inflation data, lifting Asian futures",
-				"why_it_matters": "Firm US closes are one of two positive votes feeding this morning's Mildly Long call.",
 				"source_name": "ET Markets",
 				"source_url": "https://economictimes.indiatimes.com/markets/wall-street-inflation-data-asian-futures",
-				"timestamp": "2026-07-13T07:30:00+05:30"
+				"timestamp": "2026-07-13T07:30:00+05:30",
+				"why_it_matters": "Firm US closes are one of two positive votes feeding this morning's Mildly Long call."
 			},
 			{
 				"headline_reworded": "Domestic institutions add to auto and banking positions ahead of results season",
-				"why_it_matters": "DII buying continues to be the more consistent domestic flow this week versus choppy FII activity.",
 				"source_name": "Moneycontrol",
 				"source_url": "https://www.moneycontrol.com/news/business/markets/dii-auto-banking-positions",
-				"timestamp": "2026-07-13T08:05:00+05:30"
+				"timestamp": "2026-07-13T08:05:00+05:30",
+				"why_it_matters": "DII buying continues to be the more consistent domestic flow this week versus choppy FII activity."
 			}
-		]
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.22,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.02,
+			"value": "4.31%",
+			"vote": 0
+		},
+		"usdinr": {
+			"delta": -0.02,
+			"value": "83.58",
+			"vote": 0
+		}
 	},
-	"data_quality": "full",
-	"missing": [],
-	"eod_written": false
+	"type": "trading-day"
 }

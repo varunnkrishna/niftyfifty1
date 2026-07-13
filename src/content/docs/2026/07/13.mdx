@@ -1,11 +1,11 @@
 ---
-title: Nifty outlook — 13 Jul 2026
-description: Nifty outlook — 13 Jul 2026. Pre-market bias is Mildly Long.
+title: Nifty & Sensex — 13 Jul 2026
+description: How markets closed — 13 Jul 2026. Nifty -0.77%, bias was Long.
 date: "2026-07-13"
 type: trading-day
 data_quality: full
 missing: []
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     value: 24,580
@@ -62,13 +62,78 @@ premarket:
     source_name: Moneycontrol
     source_url: https://www.moneycontrol.com/news/business/markets/dii-auto-banking-positions
     timestamp: "2026-07-13T08:05:00+05:30"
+eod:
+  nifty_close:
+    value: 24211.0
+    delta_pct: -0.7693032825519421
+  sensex_close:
+    value: 77616.4
+    delta_pct: -0.7218147901426426
+  banknifty_close:
+    value: 58131.45
+    delta_pct: -0.11898482320659375
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Markets ended lower today, with both Sensex and Nifty experiencing declines. Despite early gains, the session saw a reversal as volatility and geopolitical concerns weighed on investor sentiment. The focus remains on corporate earnings and global developments, which continue to shape market direction. Regulatory updates and sector-specific performances also played a role in today's trading dynamics.
+  news:
+  - headline_reworded: Markets struggle to sustain gains, end slightly higher
+    why_it_matters: It highlights the market's inability to maintain momentum despite early optimism.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty continue upward trend for third consecutive day
+    why_it_matters: It underscores the ongoing bullish sentiment supported by reduced volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Market rallies as volatility cools sharply
+    why_it_matters: It reflects the impact of declining volatility on boosting investor confidence.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty extend gains for third day, focus shifts to Q4 results
+    why_it_matters: It emphasizes the role of corporate earnings in driving market direction.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Sensex edges up, Nifty reclaims 24,200 as markets recover losses
+    why_it_matters: It shows the market's resilience in bouncing back from early setbacks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sensex-rises-47-points-nifty-closes-above-24200-as-market-recovers-all-morning-losses-whats-ahead/articleshow/132363441.cms
+    timestamp: "2026-07-13T10:16:45+00:00"
+  - headline_reworded: Puravankara reports 28% rise in Q1 sales bookings
+    why_it_matters: It highlights strong performance in the real estate sector.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/puravankara-q1-sales-bookings-up-28-to-rs-1439-cr-on-higher-volumes-price-growth/articleshow/132362818.cms
+    timestamp: "2026-07-13T09:40:19+00:00"
+  - headline_reworded: Eurozone bond yields rise amid Middle East tensions
+    why_it_matters: It points to global inflationary pressures affecting market sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-eurozone-bond-yields-climb-as-middle-east-tensions-rekindle-inflation-concerns/articleshow/132362710.cms
+    timestamp: "2026-07-13T09:35:00+00:00"
+  - headline_reworded: Sebi strengthens ethical guidelines for employees
+    why_it_matters: It signals regulatory efforts to enhance market integrity.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-tightens-ethics-rules-for-current-former-employees/articleshow/132362647.cms
+    timestamp: "2026-07-13T09:30:31+00:00"
+  - headline_reworded: European stocks dip as Middle East tensions weigh
+    why_it_matters: It reflects global geopolitical risks impacting investor sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-stocks-edge-lower-as-middle-east-escalation-dampens-investor-sentiment/articleshow/132361444.cms
+    timestamp: "2026-07-13T08:31:48+00:00"
+  - headline_reworded: SBI Funds trims IPO size ahead of listing
+    why_it_matters: It raises questions about potential impacts on IPO performance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/sbi-funds-reduces-ipo-size-to-rs-9812-crore-after-pre-offer-placement-will-it-impact-listing-gains/articleshow/132361142.cms
+    timestamp: "2026-07-13T08:27:52+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import WarningBanner from '../../../../components/WarningBanner.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -94,6 +159,26 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+/>
+
+{frontmatter.eod.advance_decline} · Leaders: {frontmatter.eod.sector_leaders.join(', ')} · Laggards: {frontmatter.eod.sector_laggards.join(', ')}
+
+### News
+
+<NewsList items={frontmatter.eod.news} />
 
 <PrevNextLinks date={frontmatter.date} />
