@@ -29,6 +29,12 @@ concurrency:
 jobs:
   manual:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      # Python fully-buffers stdout when it's not a TTY (as in CI) — without
+      # this, a crash before the buffer flushes silently loses all log
+      # output, exactly as happened debugging the first live run of this.
+      PYTHONUNBUFFERED: "1"
     steps:
       - uses: actions/checkout@v4
 
