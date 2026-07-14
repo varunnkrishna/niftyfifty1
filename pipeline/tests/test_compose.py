@@ -61,7 +61,7 @@ def test_malformed_json_retries_then_fails_cleanly():
 		return "this is not JSON at all {{{"
 
 	with patch("pipeline.compose.compose.call_llm", side_effect=always_broken):
-		with pytest.raises(ComposeError, match="failed to parse as JSON after 3 attempts"):
+		with pytest.raises(ComposeError, match="failed after 3 attempts"):
 			compose_premarket(NEWS_ITEMS, PREMARKET_NUMBERS, "setup summary text")
 
 	assert call_count["n"] == 3  # initial attempt + 2 retries, never more
@@ -78,6 +78,43 @@ def test_malformed_json_then_recovers_on_retry():
 
 	assert result["news"][0]["source_url"] == "https://www.moneycontrol.com/x"  # passthrough intact
 	assert result["market_expectations"] == "Markets look set for a firm start today."
+
+
+def test_verbatim_headline_retries_then_recovers():
+	responses = iter([
+		json.dumps({
+			"news": [{"index": 0, "headline_reworded": "Sensex gains 300 points as IT stocks rally", "why_it_matters": "IT strength is lifting the index this morning."}],
+			"market_expectations": "Markets look set for a firm start today.",
+		}),
+		json.dumps({
+			"news": [{"index": 0, "headline_reworded": "IT-led gains lift the index ahead of the bell", "why_it_matters": "Tech strength is setting an upbeat tone."}],
+			"market_expectations": "Markets look set for a firm start today.",
+		}),
+	])
+
+	with patch("pipeline.compose.compose.call_llm", side_effect=lambda *a, **k: next(responses)):
+		result = compose_premarket(NEWS_ITEMS, PREMARKET_NUMBERS, "setup summary text")
+
+	assert result["news"][0]["headline_reworded"] == "IT-led gains lift the index ahead of the bell"
+
+
+def test_verbatim_headline_retries_then_fails_cleanly():
+	call_count = {"n": 0}
+
+	def always_verbatim(*args, **kwargs):
+		call_count["n"] += 1
+		return json.dumps(
+			{
+				"news": [{"index": 0, "headline_reworded": "Sensex gains 300 points as IT stocks rally", "why_it_matters": "IT strength is lifting the index this morning."}],
+				"market_expectations": "Markets look set for a firm start today.",
+			}
+		)
+
+	with patch("pipeline.compose.compose.call_llm", side_effect=always_verbatim):
+		with pytest.raises(ComposeError, match="verbatim copy"):
+			compose_premarket(NEWS_ITEMS, PREMARKET_NUMBERS, "setup summary text")
+
+	assert call_count["n"] == 3  # initial attempt + 2 retries, never more
 
 
 def test_url_in_prose_is_caught():
