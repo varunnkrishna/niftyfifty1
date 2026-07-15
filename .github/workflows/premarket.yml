@@ -6,7 +6,7 @@ name: Pre-Market
 # dates are a no-op here, handled by daily-news.yml instead).
 on:
   schedule:
-    - cron: '0 3 * * 1-5'
+    - cron: '12 3 * * 1-5'
 
 permissions:
   contents: write
