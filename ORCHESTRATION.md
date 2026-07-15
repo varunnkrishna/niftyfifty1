@@ -34,7 +34,7 @@ Why this over the alternatives:
 
 | Run | Cron (UTC) | Lands (IST, with drift) | Day filter |
 |---|---|---|---|
-| **Pre-Market** | `0 3 * * 1-5` | 08:30–08:50 | trading days only (see §2) |
+| **Pre-Market** | `45 2 * * 1-5` | 08:15–08:35 | trading days only (see §2) |
 | **EOD** | `45 10 * * 1-5` | 16:15–16:35 | trading days only |
 | **Weekend / Holiday** | `30 5 * * *` | 11:00–11:20 | runs daily; exits unless today is a weekend or NSE holiday |
 | **Manual** | `workflow_dispatch` | on demand | takes `date` + `phase` (premarket / eod / news) inputs for reruns and backfills |

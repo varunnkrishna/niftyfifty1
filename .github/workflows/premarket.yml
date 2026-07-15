@@ -1,12 +1,12 @@
 name: Pre-Market
 
-# ORCHESTRATION §1 — lands ~08:30-08:50 IST with cron drift buffer.
+# ORCHESTRATION §1 — lands ~08:15-08:35 IST with cron drift buffer.
 # Fires on all weekdays; the day-type resolver inside the script is what
 # actually decides whether today gets a trading-day write (weekend/holiday
 # dates are a no-op here, handled by daily-news.yml instead).
 on:
   schedule:
-    - cron: '12 3 * * 1-5'
+    - cron: '45 2 * * 1-5'
 
 permissions:
   contents: write
