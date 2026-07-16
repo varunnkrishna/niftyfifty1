@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-16",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.7987644260834984,
+			"value": 57582.25
+		},
+		"conclusion": "Indian markets closed lower today, with both the Nifty and Sensex experiencing declines. Despite early gains and a midday rally driven by reduced volatility, the indices failed to sustain momentum, ending the session in negative territory. The focus now shifts to upcoming quarterly earnings reports, which are expected to guide stock-specific movements in the near term.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to maintain early gains, close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's inability to sustain momentum despite initial optimism."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It reflects continued investor confidence amid easing market volatility."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It underscores the impact of reduced volatility on market sentiment."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty notch third straight day of gains, focus shifts to Q4 results",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It emphasizes the role of corporate earnings in driving market direction."
+			},
+			{
+				"headline_reworded": "Indian bonds gain amid stable oil prices and reduced US rate hike concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/indian-bonds-rise-on-steady-oil-easing-us-rate-hike-fears/articleshow/132438415.cms",
+				"timestamp": "2026-07-16T11:44:52+00:00",
+				"why_it_matters": "It highlights external factors influencing bond market performance."
+			},
+			{
+				"headline_reworded": "BHEL shares surge after strong Q1 earnings report",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/bhel-shares-jump-4-after-maharatna-psu-posts-net-profit-of-rs-377-crore-in-q1-revenue-jumps-40/articleshow/132438300.cms",
+				"timestamp": "2026-07-16T11:41:30+00:00",
+				"why_it_matters": "It demonstrates the impact of positive earnings on stock performance."
+			},
+			{
+				"headline_reworded": "Joel Greenblatt emphasizes simplicity in long-term investing",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/quote-of-the-day-by-joel-greenblatt-when-it-comes-to-long-term-investing-doing-less-is-often-more/articleshow/132428714.cms",
+				"timestamp": "2026-07-16T11:29:16+00:00",
+				"why_it_matters": "It offers a reminder of the value of patience and focus in investment strategies."
+			},
+			{
+				"headline_reworded": "Wipro announces interim dividend and sets record date",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/wipro-declares-interim-dividend-worth-rs-2/share-fixes-record-date-check-details/articleshow/132437571.cms",
+				"timestamp": "2026-07-16T11:17:48+00:00",
+				"why_it_matters": "It highlights corporate actions that can influence investor sentiment."
+			},
+			{
+				"headline_reworded": "Google founders' wealth surges as Buffett credits Alphabet investment decision",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/larry-page-sergey-brin-get-15-billion-richer-as-warren-buffett-says-alphabet-bet-was-his-call/articleshow/132437443.cms",
+				"timestamp": "2026-07-16T11:08:16+00:00",
+				"why_it_matters": "It underscores the significance of major investment decisions on personal wealth."
+			},
+			{
+				"headline_reworded": "Tech Mahindra reports robust Q1 growth in profit and revenue",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tech-mahindra-q1-results-net-profit-rises-28-yoy-to-rs-1465-crore-revenue-up-18/articleshow/132436967.cms",
+				"timestamp": "2026-07-16T10:50:03+00:00",
+				"why_it_matters": "It showcases the company's strong financial performance and its market impact."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.5541808327377791,
+			"value": 24072.75
+		},
+		"sensex_close": {
+			"delta_pct": -0.4931326648308103,
+			"value": 77186.87
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
