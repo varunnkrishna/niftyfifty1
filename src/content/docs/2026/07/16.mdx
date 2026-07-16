@@ -1,0 +1,116 @@
+---
+title: Nifty outlook — 16 Jul 2026
+description: Nifty outlook — 16 Jul 2026. Pre-market bias is Mildly Long.
+date: "2026-07-16"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7572.4
+    delta_pct: 1.1986299081482457
+    vote: 1
+  nasdaq_overnight:
+    value: 26269.227
+    delta_pct: 1.5406532112644926
+    vote: 1
+  us10y_yield:
+    value: 4.58
+    delta: -0.040000000000000036
+    vote: 1
+  dxy:
+    value: 100.49
+    delta_pct: -0.7800157977883159
+    vote: 1
+  fii_net_cash:
+    value: -735.83
+    vote: -1
+  dii_net_cash:
+    value: 704.93
+    vote: 1
+  usdinr:
+    value: 96.305
+    delta_pct: 0.9590083677359036
+    vote: -1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 12.86
+    delta: -0.41
+    vote: null
+  brent:
+    value: 84.46
+    delta_pct: 1.3925570228091195
+    vote: null
+  bias_score: 4
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Expect bullish momentum as overnight gains in US indices and falling dollar support risk appetite, though foreign institutional selling and rupee weakness may cap upside. Reduced volatility and Brent crude's climb create favorable conditions for long positions, with domestic institutional buying providing counterbalance to FII outflows. The market starts in the upper third of its recent range with normal conviction behind the upward bias.
+  news:
+  - headline_reworded: Markets relinquish early gains to close slightly higher
+    why_it_matters: Shows underlying volatility despite marginal gains, hinting at cautious investor sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive rise as lower volatility fuels bullish momentum
+    why_it_matters: Sustained gains and reduced volatility signal potential for continued upward movement.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as India VIX records sharpest decline in four years
+    why_it_matters: Plummeting volatility indices often precede sustained rallies, boosting trader confidence.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to three sessions with focus shifting to earnings reports
+    why_it_matters: Corporate results will drive individual stock performance amid broader market strength.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Crude oil stability at elevated levels raises questions about energy market impacts
+    why_it_matters: Persistent high oil prices could squeeze corporate margins and influence inflation trends.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/commodities/news/oil-is-crude-once-again-is-95-the-new-normal-and-what-it-means-for-indian-investors/articleshow/132430022.cms
+    timestamp: "2026-07-16T04:57:51+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import WarningBanner from '../../../../components/WarningBanner.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+{frontmatter.premarket.market_expectations}
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### Signal
+
+**Bias: {`${frontmatter.premarket.bias_intensity} ${frontmatter.premarket.bias_label}`} · {frontmatter.premarket.bias_score > 0 ? '+' : ''}{frontmatter.premarket.bias_score}{frontmatter.premarket.conviction === 'reduced' ? ' · conviction reduced (VIX elevated)' : ''}**
+
+<WarningBanner />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
