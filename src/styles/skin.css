@@ -408,6 +408,10 @@ table {
 	padding: 0;
 }
 .news-list li {
+	/* margin: 0 overrides Starlight's `:where()` prose flow-spacing (zero
+	   specificity, so any explicit rule beats it) — otherwise every row but
+	   the first gets a stray margin-top and rows read unevenly spaced. */
+	margin: 0;
 	padding: var(--space-2);
 	border-bottom: 1px solid var(--rule);
 	transition: background 150ms ease-out;
@@ -462,6 +466,7 @@ table {
 	border-radius: 0;
 }
 .day-list li {
+	margin: 0; /* same Starlight prose flow-spacing override as above */
 	border-bottom: 1px solid var(--rule);
 }
 .day-list li:last-child {
@@ -500,12 +505,19 @@ table {
 	margin: 0 0 var(--space-3);
 }
 .stat-card {
-	flex: 1 1 180px;
-	max-width: 300px;
+	/* flex-basis 0 + equal grow means all cards split available width evenly
+	   regardless of label/value length — "same length" regardless of count.
+	   margin: 0 overrides Starlight's `:where()` prose flow-spacing, which
+	   otherwise adds margin-top to every card but the first (zero specificity
+	   on their side, so this small rule wins outright). */
+	flex: 1 1 0;
+	min-width: 160px;
+	max-width: 260px;
+	margin: 0;
 	border: 1px solid var(--rule-strong);
 	border-radius: var(--radius);
 	background: var(--surface);
-	padding: var(--space-2);
+	padding: 12px 14px;
 }
 .stat-card--up {
 	background: var(--up-fill);
@@ -557,6 +569,10 @@ table {
 	padding: 0;
 }
 .day-grid li {
+	/* margin: 0 — same Starlight prose-flow-spacing override as .stat-card
+	   and .news-list li above; a grid item picking up a stray margin-top
+	   would throw off row alignment the same way it broke the stat strip. */
+	margin: 0;
 	border: 1px solid var(--rule-strong);
 	border-radius: var(--radius);
 	background: var(--surface);

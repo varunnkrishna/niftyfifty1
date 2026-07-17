@@ -75,7 +75,7 @@ Three roles, three families. All free, SIL/OFL-licensed, self-hosted (no runtime
 | `body` | 16 / 1.6 | Geist Sans 400 | Prose, news summaries |
 | `label` | 12 / 1.2 | Geist Mono 500, uppercase, +0.08em tracking | Eyebrows, metric labels, table headers |
 | `data` | 15 / 1.4 | Geist Mono 500, tabular-nums | Metric values, % changes, votes |
-| `stat-hero` | 40 / 1.05 | Geist Mono 600, tabular-nums | Homepage hero-strip stat numbers only — the one place a number is allowed to dominate the page |
+| `stat-hero` | 26 / 1.15 | Geist Mono 600, tabular-nums | Homepage hero-strip stat numbers only — deliberately medium, a step up from `data` but not a giant display digit |
 
 **Smart quotes on**, sentence case for UI, tabular figures wherever numbers stack.
 
@@ -145,7 +145,7 @@ Both rows sit on the deepest `--bg` black — **hairlines, not grey fills, do th
 
 The homepage differs from a day page: it opens with a **masthead hero** (the site h1 in serif, the tagline directly beneath in serif italic `--text-muted`, then a hairline), then the **hero stat strip**, then the full latest day, then a **Recent Days card grid**. The tagline comes from `src/config/site.ts` — never hardcoded.
 
-**Hero stat strip** — flex row of small cards (each `flex: 1 1 180px`, capped at ~300px so a lone card never becomes a full-width slab), each with a mono label and a `stat-hero`-scale number, background tinted `--up-fill`/`--down-fill` and border tinted `--up-border`/`--down-border` by sign:
+**Hero stat strip** — flex row of small cards, each `flex: 1 1 0` (equal-width regardless of label/value length — 1, 3, or 4 stats all come out the same size), floored at 160px and capped at 260px so a lone card never becomes a full-width slab. Each card: a mono label and a medium `stat-hero`-scale number, background tinted `--up-fill`/`--down-fill` and border tinted `--up-border`/`--down-border` by sign:
 
 - **Before today's EOD lands:** a single card — today's Pre-Market Net Bias (score + label, e.g. `+4` / "Mildly Long"), tinted by the score's sign, flat/untinted if the score is `0`.
 - **After today's EOD lands:** three cards — Nifty, Sensex, Bank Nifty close % change, each tinted by its own sign.

@@ -44,7 +44,7 @@
 	--text-body: 400 16px/1.6 var(--font-sans);
 	--text-label: 500 12px/1.2 var(--font-mono);
 	--text-data: 500 15px/1.4 var(--font-mono);
-	--text-stat-hero: 600 40px/1.05 var(--font-mono); /* homepage hero strip only */
+	--text-stat-hero: 600 26px/1.15 var(--font-mono); /* homepage hero strip only */
 
 	/* Spacing — base unit 8px */
 	--space-1: 8px;
