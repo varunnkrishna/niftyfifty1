@@ -16,7 +16,15 @@ from pipeline.compose.prompts import build_news_only_prompt
 from pipeline.compose.validate_prose import validate_news_item
 from pipeline.fetch.rss import fetch_all_feeds
 from pipeline.orchestrate.alert import send_alert
-from pipeline.orchestrate.common import REPO_ROOT, git_pull, load_day_sidecar, select_news_items, today_ist, write_json
+from pipeline.orchestrate.common import (
+	REPO_ROOT,
+	git_pull,
+	load_day_sidecar,
+	missed_day_check,
+	select_news_items,
+	today_ist,
+	write_json,
+)
 from pipeline.orchestrate.postdeploy import ping_indexnow, verify_live
 from pipeline.orchestrate.publish import commit_and_push
 from pipeline.orchestrate.resolve import ResolverError, resolve
@@ -50,6 +58,11 @@ def _compose_weekend_news(news_items: list[dict]) -> list[dict]:
 
 def run(iso_date: str) -> int:
 	git_pull()
+
+	# The news run is the only entrypoint that fires on weekends/holidays,
+	# so it must carry the gap check too — premarket alone never sees a
+	# weekend morning (ORCHESTRATION §4).
+	missed_day_check(date.fromisoformat(iso_date))
 
 	try:
 		day_type, reason = resolve(date.fromisoformat(iso_date))

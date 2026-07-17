@@ -46,6 +46,13 @@ header.header,
 .content-panel {
 	background: var(--bg-panel);
 }
+/* Center the content column in its panel. Starlight's default is
+   `--sl-content-margin-inline: auto 0` — packed against the right ToC
+   rail — which on wide screens reads as right-aligned with a dead gutter
+   beside the sidebar (DESIGN.md §Layout: the day sits centered). */
+.main-pane {
+	--sl-content-margin-inline: auto;
+}
 .right-sidebar,
 .right-sidebar-container {
 	background: var(--bg) !important;
@@ -672,6 +679,13 @@ table {
 	color: var(--accent) !important;
 	border-left: 2px solid var(--accent);
 	padding-left: calc(var(--sl-sidebar-item-padding-inline) - 2px) !important;
+}
+
+/* Mobile hamburger — Starlight centers it against the full --sl-nav-height,
+   which with the two-row header lands it on the ticker strip. Center it in
+   the main row only (total height minus the ticker). */
+starlight-menu-button button {
+	top: calc((var(--sl-nav-height) - var(--nav-ticker-height) - var(--sl-menu-button-size)) / 2) !important;
 }
 
 /* Focus visibility (quality floor). */

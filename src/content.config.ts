@@ -66,6 +66,9 @@ const daySchema = z.object({
 	data_quality: z.enum(['full', 'partial', 'outage']).optional(),
 	missing: z.array(z.string()).optional(),
 	eod_written: z.boolean().optional(),
+	// EOD permanently missed (pipeline outage) — renders "not captured"
+	// instead of the forever-"awaiting" state. Never true once eod_written is.
+	eod_missed: z.boolean().optional(),
 
 	// Trading-day only — EOD
 	eod: z
@@ -84,6 +87,8 @@ const daySchema = z.object({
 
 	// Weekend / holiday only
 	news: z.array(newsItem).optional(),
+	// Backfilled outage page (weekend/holiday) — the only empty-news case.
+	outage: z.boolean().optional(),
 }).superRefine((data, ctx) => {
 	// Utility pages (no `type`) skip day-page validation entirely.
 	if (!data.type) return;
@@ -108,12 +113,15 @@ const daySchema = z.object({
 		if (!data.eod_written && data.eod) {
 			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['eod'], message: 'eod must be absent until eod_written is true (CLAUDE.md rule 2)' });
 		}
+		if (data.eod_missed && data.eod_written) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['eod_missed'], message: 'eod_missed cannot be true once eod_written is true' });
+		}
 		if (data.premarket && (data.premarket.bias_label === null) !== (data.premarket.bias_score === null)) {
 			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['premarket', 'bias_label'], message: 'bias_label and bias_score must both be null (suppressed) or both set' });
 		}
 	} else if (data.type === 'weekend' || data.type === 'holiday') {
-		if (!data.news || data.news.length === 0) {
-			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['news'], message: 'news is required for weekend/holiday pages' });
+		if (!data.outage && (!data.news || data.news.length === 0)) {
+			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['news'], message: 'news is required for weekend/holiday pages (except backfilled outage pages)' });
 		}
 		if (data.type === 'holiday' && !data.reason) {
 			ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['reason'], message: 'reason is required for holiday pages' });

@@ -47,18 +47,35 @@ def load_prev_day_sidecar(today: date) -> dict | None:
 	return load_day_sidecar((today - timedelta(days=1)).isoformat())
 
 
-def missed_day_check(today: date) -> None:
-	"""Does yesterday's expected page exist? (ORCHESTRATION §4)"""
-	yesterday = today - timedelta(days=1)
-	try:
-		day_type, _ = resolve(yesterday)
-	except ResolverError:
-		return  # the resolver's own alert path handles a missing calendar
+MISSED_DAY_LOOKBACK = 7
 
-	if day_type == "weekend":
+
+def missed_day_check(today: date) -> None:
+	"""Scan the last MISSED_DAY_LOOKBACK calendar days for archive gaps
+	(ORCHESTRATION §4). Weekends count — a weekend page is expected content
+	(PLANNING §4b); the earlier yesterday-only check skipped them, which let
+	a missing Sunday page go unnoticed. Days before the archive's first
+	sidecar are pre-launch, not gaps. One aggregated alert per run so a
+	multi-day outage doesn't spam the topic."""
+	existing = sorted(p.stem for p in DAYS_DIR.glob("*.json"))
+	if not existing:
 		return
-	if load_day_sidecar(yesterday.isoformat()) is None:
-		send_alert("missed-day", f"No page exists for {yesterday.isoformat()} ({day_type}).")
+	archive_start = date.fromisoformat(existing[0])
+
+	missing: list[str] = []
+	for offset in range(1, MISSED_DAY_LOOKBACK + 1):
+		day = today - timedelta(days=offset)
+		if day < archive_start:
+			break
+		try:
+			day_type, _ = resolve(day)
+		except ResolverError:
+			return  # the resolver's own alert path handles a missing calendar
+		if load_day_sidecar(day.isoformat()) is None:
+			missing.append(f"{day.isoformat()} ({day_type})")
+
+	if missing:
+		send_alert("missed-day", "No page exists for: " + ", ".join(missing))
 
 
 def select_news_items(raw_news: list[dict], limit: int) -> list[dict]:

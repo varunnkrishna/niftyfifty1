@@ -212,6 +212,8 @@ Four states beyond the "full trading day" need explicit styling — all of them 
 
 **Weekend / holiday.** Single-section page: eyebrow (`WEEKEND` or `MARKET HOLIDAY · REPUBLIC DAY`), serif title, news list. No metrics table, no signal, no ToC split — the right rail may collapse to a single "News" anchor. No hero strip on the homepage for this day.
 
+**Outage (backfilled).** A day the pipeline never ran for, added afterward to keep the calendar continuous (ORCHESTRATION §4 recovery decision). Trading-day form: the signal table renders with every value `— unavailable`, the suppressed-signal line, the standing warning banner, and a `setup-copy` paragraph stating plainly that no data was captured; the EOD card reads `EOD · NOT CAPTURED`. Weekend form: eyebrow `WEEKEND · OUTAGE` and the same plain statement, no news card. Same quiet styling as every other degraded state — an outage is a fact, not an error, and never gets alarm styling. Nothing on these pages is reconstructed.
+
 ---
 
 ## Motion

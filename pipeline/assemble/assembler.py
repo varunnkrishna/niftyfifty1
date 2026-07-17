@@ -116,6 +116,8 @@ def _build_frontmatter(sidecar: TradingDaySidecar | WeekendHolidaySidecar, title
 		fm["data_quality"] = sidecar.data_quality
 		fm["missing"] = list(sidecar.missing)
 		fm["eod_written"] = sidecar.eod_written
+		if sidecar.eod_missed:
+			fm["eod_missed"] = True
 
 		pm = sidecar.premarket
 		fm["premarket"] = {
@@ -148,6 +150,8 @@ def _build_frontmatter(sidecar: TradingDaySidecar | WeekendHolidaySidecar, title
 	else:
 		if sidecar.type == "holiday":
 			fm["reason"] = sidecar.reason
+		if sidecar.outage:
+			fm["outage"] = True
 		fm["news"] = _news_list(sidecar.news)
 
 	return fm

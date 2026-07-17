@@ -1,0 +1,70 @@
+{
+	"data_quality": "outage",
+	"date": "2026-07-10",
+	"eod_missed": true,
+	"eod_written": false,
+	"missing": [
+		"dii_net_cash",
+		"dxy",
+		"fii_net_cash",
+		"gift_nifty",
+		"nasdaq_overnight",
+		"prev_close_in_range",
+		"sp500_overnight",
+		"us10y_yield",
+		"usdinr"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": null,
+		"bias_score": null,
+		"brent": {
+			"unavailable": true,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"unavailable": true,
+			"vote": null
+		},
+		"dxy": {
+			"unavailable": true,
+			"vote": null
+		},
+		"fii_net_cash": {
+			"unavailable": true,
+			"vote": null
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"unavailable": true,
+			"vote": null
+		},
+		"market_expectations": "The pipeline did not run for this session \u2014 no pre-market data was captured. This page was added afterward to keep the archive continuous; every metric is honestly marked unavailable and nothing on it is reconstructed.",
+		"nasdaq_overnight": {
+			"unavailable": true,
+			"vote": null
+		},
+		"news": [],
+		"prev_close_in_range": {
+			"unavailable": true,
+			"vote": null
+		},
+		"sp500_overnight": {
+			"unavailable": true,
+			"vote": null
+		},
+		"us10y_yield": {
+			"unavailable": true,
+			"vote": null
+		},
+		"usdinr": {
+			"unavailable": true,
+			"vote": null
+		}
+	},
+	"type": "trading-day"
+}

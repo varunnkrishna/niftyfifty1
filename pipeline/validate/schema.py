@@ -98,7 +98,9 @@ class Premarket(BaseModel):
 	bias_intensity: BiasIntensity | None = None
 	conviction: Conviction = "normal"
 	market_expectations: str = Field(min_length=1)
-	news: list[NewsItem] = Field(min_length=1)
+	# min-1 news is enforced at the sidecar level, where data_quality is
+	# visible — an outage day legitimately has nothing to list.
+	news: list[NewsItem] = Field(default_factory=list, max_length=10)
 
 	@model_validator(mode="after")
 	def _bias_label_and_score_agree(self) -> "Premarket":
@@ -138,6 +140,10 @@ class TradingDaySidecar(BaseModel):
 	missing: list[str] = Field(default_factory=list)
 	eod_written: bool
 	eod: Eod | None = None
+	# True when the EOD write is known to have been permanently missed
+	# (pipeline outage) — flips the page from "awaiting EOD" to an honest
+	# "EOD not captured" note instead of waiting forever.
+	eod_missed: bool = False
 
 	@field_validator("date")
 	@classmethod
@@ -156,6 +162,16 @@ class TradingDaySidecar(BaseModel):
 			raise ValueError("eod is required once eod_written is true")
 		if not self.eod_written and self.eod is not None:
 			raise ValueError("eod must be absent until eod_written is true")
+		if self.eod_missed and self.eod_written:
+			raise ValueError("eod_missed cannot be true once eod_written is true")
+		return self
+
+	@model_validator(mode="after")
+	def _news_required_unless_outage(self) -> "TradingDaySidecar":
+		# The one sanctioned empty-news case: an outage page honestly has
+		# nothing to list (ORCHESTRATION §4 recovery decision, 2026-07-17).
+		if self.data_quality != "outage" and not self.premarket.news:
+			raise ValueError("premarket.news requires at least one item except on outage days")
 		return self
 
 	@model_validator(mode="after")
@@ -183,7 +199,10 @@ class WeekendHolidaySidecar(BaseModel):
 	date: str
 	type: Literal["weekend", "holiday"]
 	reason: str | None = None
-	news: list[NewsItem] = Field(min_length=1)
+	# True only on a backfilled outage page — the pipeline never ran, so
+	# there is honestly nothing to list (the only empty-news case).
+	outage: bool = False
+	news: list[NewsItem] = Field(default_factory=list)
 
 	@field_validator("date")
 	@classmethod
@@ -197,6 +216,12 @@ class WeekendHolidaySidecar(BaseModel):
 	def _holiday_requires_reason(self) -> "WeekendHolidaySidecar":
 		if self.type == "holiday" and not self.reason:
 			raise ValueError("reason is required for holiday pages (e.g. 'Republic Day')")
+		return self
+
+	@model_validator(mode="after")
+	def _news_required_unless_outage(self) -> "WeekendHolidaySidecar":
+		if not self.outage and not self.news:
+			raise ValueError("news requires at least one item except on outage pages")
 		return self
 
 

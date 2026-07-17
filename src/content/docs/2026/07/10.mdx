@@ -1,0 +1,86 @@
+---
+title: Nifty outlook — 10 Jul 2026
+description: Nifty outlook — 10 Jul 2026. Signal suppressed today — too many inputs unavailable.
+date: "2026-07-10"
+type: trading-day
+data_quality: outage
+missing:
+- dii_net_cash
+- dxy
+- fii_net_cash
+- gift_nifty
+- nasdaq_overnight
+- prev_close_in_range
+- sp500_overnight
+- us10y_yield
+- usdinr
+eod_written: false
+eod_missed: true
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    unavailable: true
+    vote: null
+  nasdaq_overnight:
+    unavailable: true
+    vote: null
+  us10y_yield:
+    unavailable: true
+    vote: null
+  dxy:
+    unavailable: true
+    vote: null
+  fii_net_cash:
+    unavailable: true
+    vote: null
+  dii_net_cash:
+    unavailable: true
+    vote: null
+  usdinr:
+    unavailable: true
+    vote: null
+  prev_close_in_range:
+    unavailable: true
+    vote: null
+  india_vix:
+    unavailable: true
+    vote: null
+  brent:
+    unavailable: true
+    vote: null
+  bias_score: null
+  bias_label: null
+  bias_intensity: null
+  conviction: normal
+  market_expectations: The pipeline did not run for this session — no pre-market data was captured. This page was added afterward to keep the archive continuous; every metric is honestly marked unavailable and nothing on it is reconstructed.
+  news: []
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod missed />
+
+<PrevNextLinks date={frontmatter.date} />

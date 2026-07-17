@@ -1,6 +1,7 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-14",
+	"eod_missed": true,
 	"eod_written": false,
 	"missing": [
 		"gift_nifty"

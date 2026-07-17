@@ -107,7 +107,8 @@ FETCH = RSS only → COMPOSE = reworded items → ASSEMBLE → VALIDATE → PUBL
 
 ### Start-of-run hygiene (every run)
 - `git pull` first (never build on stale state).
-- **Missed-run check:** does yesterday's expected page exist? If not → alert with severity `missed-day`. (Recovery is manual via `workflow_dispatch` — see §7. No auto-backfill in v1; a reconstructed page pretending to be a live one would undermine the archive's honesty.)
+- **Missed-run check:** scan the last 7 calendar days (weekends included — a weekend page is expected content) for archive gaps; any missing day → one aggregated alert with severity `missed-day`. Days before the archive's first sidecar are pre-launch, not gaps. *(Amended 2026-07-17: the original check looked only at yesterday and skipped weekends, which let a missing Sunday page go unnoticed.)*
+- **Recovery for a missed day** is manual, and never reconstructs data. If the day is recent enough to run live (same day, via `workflow_dispatch` — see §7), do that. If the window to capture live data has passed, the sanctioned recovery is a **hand-written outage sidecar**: every metric marked unavailable, `data_quality: "outage"`, signal suppressed, empty news, and prose that states plainly the pipeline did not run — nothing invented, nothing back-dated as if live. (`eod_missed: true` similarly converts a forever-"awaiting EOD" page into an honest "EOD not captured" note.) This keeps CLAUDE.md rule 4's "never skip a calendar day" satisfied without violating the no-reconstruction principle — an outage page doesn't pretend to be a live one. *(Decision 2026-07-17, applied to 2026-07-10/12/15 and 07-14's missing EOD.)*
 
 ---
 

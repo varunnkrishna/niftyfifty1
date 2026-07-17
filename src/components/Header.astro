@@ -93,7 +93,7 @@ if (latestEod) {
 	   all sides and sizes its own rows, so the main row is exactly centered
 	   (padding-based centering drifted once the ticker bled off the bottom). */
 	.nav-shell {
-		--ticker-h: 2.2rem;
+		--ticker-h: var(--nav-ticker-height, 2.2rem);
 		height: var(--sl-nav-height);
 		margin: calc(-1 * var(--sl-nav-pad-y)) calc(-1 * var(--sl-nav-pad-x));
 		display: flex;

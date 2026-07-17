@@ -81,6 +81,8 @@
 	--sl-font-mono: var(--font-mono);
 
 	/* Two-row header: main nav bar + ticker strip (src/components/Header.astro).
-	   Starlight derives sidebar/menu offsets from this. */
+	   Starlight derives sidebar/menu offsets from the total; the ticker height
+	   is shared so the mobile hamburger can center in the main row alone. */
 	--sl-nav-height: 6rem;
+	--nav-ticker-height: 2.2rem;
 }

@@ -148,3 +148,67 @@ class TestIndexNow:
 	def test_missing_key_skips_ping(self):
 		with patch("pipeline.orchestrate.postdeploy.os.environ.get", return_value=None):
 			assert postdeploy.ping_indexnow("2026-07-09") is False
+
+
+class TestMissedDayCheck:
+	"""The archive-gap scan (ORCHESTRATION §4). The original yesterday-only
+	check skipped weekends entirely — which is how a missing Sunday page
+	(2026-07-12) went unnoticed in production. These pin the fixed contract:
+	weekends count, multi-day gaps aggregate into one alert, pre-launch days
+	are not gaps."""
+
+	def _archive(self, tmp_path, monkeypatch, dates: list[str]):
+		from pipeline.orchestrate import common
+
+		days_dir = tmp_path / "days"
+		days_dir.mkdir()
+		for iso in dates:
+			(days_dir / f"{iso}.json").write_text("{}")
+		monkeypatch.setattr(common, "DAYS_DIR", days_dir)
+		return common
+
+	def test_missing_weekend_page_alerts(self, tmp_path, monkeypatch):
+		# 2026-07-12 is a Sunday; its news-only page is expected content.
+		common = self._archive(
+			tmp_path, monkeypatch,
+			["2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-13"],
+		)
+		with patch.object(common, "send_alert") as alert:
+			common.missed_day_check(date(2026, 7, 14))
+		alert.assert_called_once()
+		severity, message = alert.call_args.args
+		assert severity == "missed-day"
+		assert "2026-07-12 (weekend)" in message
+
+	def test_multi_day_gap_is_one_aggregated_alert(self, tmp_path, monkeypatch):
+		common = self._archive(
+			tmp_path, monkeypatch,
+			["2026-07-07", "2026-07-08", "2026-07-09", "2026-07-11", "2026-07-13"],
+		)
+		with patch.object(common, "send_alert") as alert:
+			common.missed_day_check(date(2026, 7, 14))
+		alert.assert_called_once()
+		_, message = alert.call_args.args
+		assert "2026-07-10" in message and "2026-07-12" in message
+
+	def test_complete_archive_stays_silent(self, tmp_path, monkeypatch):
+		common = self._archive(
+			tmp_path, monkeypatch,
+			["2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13"],
+		)
+		with patch.object(common, "send_alert") as alert:
+			common.missed_day_check(date(2026, 7, 14))
+		alert.assert_not_called()
+
+	def test_days_before_archive_start_are_not_gaps(self, tmp_path, monkeypatch):
+		# Archive begins 2026-07-11; the lookback must not flag pre-launch days.
+		common = self._archive(tmp_path, monkeypatch, ["2026-07-11", "2026-07-12", "2026-07-13"])
+		with patch.object(common, "send_alert") as alert:
+			common.missed_day_check(date(2026, 7, 14))
+		alert.assert_not_called()
+
+	def test_empty_archive_is_a_noop(self, tmp_path, monkeypatch):
+		common = self._archive(tmp_path, monkeypatch, [])
+		with patch.object(common, "send_alert") as alert:
+			common.missed_day_check(date(2026, 7, 14))
+		alert.assert_not_called()

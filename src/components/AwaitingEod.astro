@@ -1,18 +1,28 @@
 ---
-// DESIGN.md §Page states — "Awaiting EOD". A muted mono line inside a
-// bordered card where EOD will land. No spinner, no skeleton.
+// DESIGN.md §Page states — "Awaiting EOD" / "EOD not captured". A muted mono
+// line inside a bordered card where EOD will land (or should have). No
+// spinner, no skeleton. The missed variant is the honest terminal state for
+// a day whose EOD write is known to have been permanently missed — better
+// than promising a close section that will never arrive.
 interface Props {
 	expected?: string;
+	missed?: boolean;
 }
-const { expected = '~16:15 IST' } = Astro.props;
+const { expected = '~16:15 IST', missed = false } = Astro.props;
 ---
 
 <div class="card" data-card="awaiting-eod">
 	<div class="card__head">
 		<span class="card__label">EOD</span>
-		<span class="card__meta vote-flat">Expected {expected}</span>
+		<span class="card__meta vote-flat">{missed ? 'Not captured' : `Expected ${expected}`}</span>
 	</div>
 	<div class="card__body card__body--padded">
-		<p class="awaiting-eod awaiting-eod--inline">Close section lands after the session ends.</p>
+		<p class="awaiting-eod awaiting-eod--inline">
+			{
+				missed
+					? 'The EOD section was not captured for this session — the pipeline did not run after the close. The pre-market record above is preserved exactly as written.'
+					: 'Close section lands after the session ends.'
+			}
+		</p>
 	</div>
 </div>

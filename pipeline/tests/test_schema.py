@@ -81,3 +81,43 @@ def test_suppressed_signal_requires_bias_label_and_score_both_null(valid_trading
 	bad["premarket"]["bias_label"] = None  # score still set -> inconsistent
 	with pytest.raises(ValidationError):
 		parse_sidecar(bad)
+
+
+# Outage-page rules (ORCHESTRATION §4 recovery decision, 2026-07-17): empty
+# news is legal only on an outage page, and eod_missed is a pre-EOD-only flag.
+
+
+def test_empty_news_fails_on_a_normal_trading_day(valid_trading_day):
+	bad = copy.deepcopy(valid_trading_day)
+	bad["premarket"]["news"] = []
+	with pytest.raises(ValidationError, match="outage"):
+		parse_sidecar(bad)
+
+
+def test_outage_trading_day_with_empty_news_is_valid():
+	raw = json.loads((FIXTURES_DIR / "2026-07-10.json").read_text())
+	parsed = parse_sidecar(raw)
+	assert parsed.data_quality == "outage"
+	assert parsed.premarket.news == []
+	assert parsed.eod_missed is True
+
+
+def test_empty_news_fails_on_a_normal_weekend(valid_holiday):
+	bad = copy.deepcopy(valid_holiday)
+	bad["news"] = []
+	with pytest.raises(ValidationError, match="outage"):
+		parse_sidecar(bad)
+
+
+def test_outage_weekend_with_empty_news_is_valid():
+	parsed = parse_sidecar(json.loads((FIXTURES_DIR / "2026-07-12.json").read_text()))
+	assert parsed.outage is True
+	assert parsed.news == []
+
+
+def test_eod_missed_after_eod_written_fails(valid_trading_day):
+	bad = copy.deepcopy(valid_trading_day)
+	assert bad["eod_written"] is True
+	bad["eod_missed"] = True
+	with pytest.raises(ValidationError, match="eod_missed"):
+		parse_sidecar(bad)

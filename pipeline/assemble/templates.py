@@ -53,6 +53,8 @@ def render_trading_day_body(sidecar: TradingDaySidecar, premarket_eyebrow: str, 
 		)
 		parts.append("\n### News")
 		parts.append('\n<NewsList items={frontmatter.eod.news} label="EOD News" />')
+	elif sidecar.eod_missed:
+		parts.append("\n<AwaitingEod missed />")
 	else:
 		parts.append("\n<AwaitingEod expected=\"~16:15 IST\" />")
 
@@ -62,6 +64,17 @@ def render_trading_day_body(sidecar: TradingDaySidecar, premarket_eyebrow: str, 
 
 
 def render_weekend_body(sidecar: WeekendHolidaySidecar) -> str:
+	if sidecar.outage:
+		# Backfilled outage page (ORCHESTRATION §4 recovery decision,
+		# 2026-07-17): keep the calendar continuous, invent nothing.
+		return (
+			f"{_imports('Eyebrow', 'StructuredData', 'PrevNextLinks')}\n"
+			"\n<StructuredData frontmatter={frontmatter} />"
+			'\n<Eyebrow text="WEEKEND · OUTAGE" />\n'
+			'\n<p class="setup-copy">The pipeline did not run this day — weekend news was not captured. '
+			"This page was added afterward to keep the archive continuous; nothing on it is reconstructed.</p>\n"
+			"\n<PrevNextLinks date={frontmatter.date} />\n"
+		)
 	return (
 		f"{_imports('NewsList', 'Eyebrow', 'StructuredData', 'PrevNextLinks')}\n"
 		"\n<StructuredData frontmatter={frontmatter} />"
