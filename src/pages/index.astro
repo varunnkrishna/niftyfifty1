@@ -11,16 +11,75 @@ const sorted = sortByDateDesc(all);
 const latest = sorted[0];
 const recent = sorted.slice(1, 8);
 const { Content } = latest ? await render(latest) : { Content: null };
+
+// Hero stat strip (DESIGN.md §Homepage layout). Dynamic per the latest day's
+// state: today's Pre-Market Net Bias before EOD lands, the three index
+// closes after. Omitted for weekend/holiday days and when the signal is
+// suppressed — never an invented or stale number.
+type Sign = 'up' | 'down' | 'flat';
+interface HeroStat {
+	label: string;
+	value: string;
+	sub?: string;
+	sign: Sign;
+}
+
+const signOf = (n: number): Sign => (n > 0 ? 'up' : n < 0 ? 'down' : 'flat');
+const pct = (n: number) => `${n > 0 ? '+' : ''}${n.toFixed(2)}%`;
+
+const latestData = latest?.data as any;
+let heroStats: HeroStat[] = [];
+if (latestData?.type === 'trading-day') {
+	if (latestData.eod_written && latestData.eod) {
+		heroStats = [
+			{ label: 'Nifty 50', m: latestData.eod.nifty_close },
+			{ label: 'Sensex', m: latestData.eod.sensex_close },
+			{ label: 'Bank Nifty', m: latestData.eod.banknifty_close },
+		]
+			.filter((row) => row.m)
+			.map((row) => ({
+				label: row.label,
+				value: pct(row.m.delta_pct),
+				sign: signOf(row.m.delta_pct),
+			}));
+	} else if (latestData.premarket?.bias_label) {
+		const score = latestData.premarket.bias_score;
+		heroStats = [
+			{
+				label: 'Pre-Market Net Bias',
+				value: `${score > 0 ? '+' : ''}${score}`,
+				sub: [latestData.premarket.bias_intensity, latestData.premarket.bias_label]
+					.filter(Boolean)
+					.join(' '),
+				sign: signOf(score),
+			},
+		];
+	}
+}
 ---
 
 <StarlightPage frontmatter={{ title: site.name, description: site.tagline, tableOfContents: false }}>
+	<p class="home-tagline">{site.tagline}</p>
+	<hr class="home-hero-rule" />
+	{
+		heroStats.length > 0 && (
+			<div class="stat-strip">
+				{heroStats.map((stat) => (
+					<div class:list={['stat-card', stat.sign !== 'flat' && `stat-card--${stat.sign}`]}>
+						<span class="stat-card__label">{stat.label}</span>
+						<span class="stat-card__value">{stat.value}</span>
+						{stat.sub && <span class="stat-card__sub">{stat.sub}</span>}
+					</div>
+				))}
+			</div>
+		)
+	}
+
 	{
 		latest && (
 			<>
 				<p class="eyebrow">Latest</p>
-				<h1 class="sl-markdown-content" style="font: var(--text-display); margin: 0 0 var(--space-2)">
-					{latest.data.title}
-				</h1>
+				<h1 class="home-title">{latest.data.title}</h1>
 				<div class="sl-markdown-content">
 					<Content />
 				</div>
@@ -30,13 +89,15 @@ const { Content } = latest ? await render(latest) : { Content: null };
 
 	<hr class="section-divider" />
 
-	<h2 class="sl-markdown-content" style="font: var(--text-h2)">Recent Days</h2>
-	<ul class="news-list">
+	<p class="eyebrow">Recent Days</p>
+	<ul class="day-grid">
 		{
 			recent.map((entry) => (
 				<li>
-					<a href={dayHref(entry.data.date as string)}>{entry.data.title}</a>
-					<div class="news-why">{daySummary(entry)}</div>
+					<a href={dayHref(entry.data.date as string)}>
+						<div class="day-list-title">{entry.data.title}</div>
+						<div class="day-list-meta">{daySummary(entry)}</div>
+					</a>
 				</li>
 			))
 		}

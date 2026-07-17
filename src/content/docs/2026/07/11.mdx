@@ -29,10 +29,10 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 <StructuredData frontmatter={frontmatter} />
 <Eyebrow text="WEEKEND" />
 
-Markets are closed today. Here's the market-relevant news.
+<p class="setup-copy">Markets are closed today. Here's the market-relevant news.</p>
 
 ### News
 
-<NewsList items={frontmatter.news} />
+<NewsList items={frontmatter.news} label="Weekend News" />
 
 <PrevNextLinks date={frontmatter.date} />

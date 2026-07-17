@@ -1,22 +1,40 @@
 /* Design tokens — DESIGN.md §Color, §Typography.
-   Color carries meaning only (CLAUDE.md rule 8): --up/--down on % changes and
-   votes exclusively, --accent on interaction only. Everything else greyscale. */
+   Color carries meaning only: --up/--down/--up-fill/--down-fill on % changes,
+   votes, and their stat-card tints exclusively; --accent on interaction only.
+   Everything else greyscale, on a layered near-black ramp so chrome, content,
+   and cards read as distinct planes — not one flat black. */
 
 :root {
-	/* Color */
-	--bg: #0e0e10;
-	--surface: #161618;
-	--rule: #26262a;
+	/* Layered near-black ramp (cool slate). Never pure #000.
+	   Each step is ~4–6% lighter so depth is felt without looking grey. */
+	--bg: #09090b; /* deepest page canvas */
+	--bg-panel: #0e0e12; /* content column / main frame */
+	--surface: #141418; /* card bodies, raised content */
+	--surface-2: #1a1a20; /* card heads, header strip, search */
+	--surface-3: #22222a; /* hover, net-bias row, selected chrome */
+	--rule: #2c2c36; /* hairlines — rows/dividers inside a card */
+	--rule-strong: #3a3a46; /* card borders */
+	--grid-line: rgba(237, 237, 234, 0.035); /* background grid texture on --bg only */
+
 	--text: #ededea;
 	--text-muted: #9a9aa2;
 	--accent: #8b8bf5;
 	--up: #4ade80;
 	--down: #f87171;
 	--flat: #9a9aa2;
+	--up-fill: rgba(74, 222, 128, 0.12); /* stat-card tint, positive */
+	--down-fill: rgba(248, 113, 113, 0.12); /* stat-card tint, negative */
+	--up-border: rgba(74, 222, 128, 0.35); /* stat-card border tint — full --up reads alarmist */
+	--down-border: rgba(248, 113, 113, 0.35);
 
-	/* Type families */
-	--font-serif: "Source Serif 4", serif;
-	--font-sans: "Geist Sans Variable", "Geist Sans", system-ui, sans-serif;
+	/* Two radius values (DESIGN.md §Structure — card system):
+	   --radius for cards, --radius-sm for compact chips/controls. */
+	--radius: 10px;
+	--radius-sm: 6px;
+
+	/* Type families — Source Serif 4 + Geist Sans + Geist Mono (DESIGN.md). */
+	--font-serif: "Source Serif 4", ui-serif, Georgia, serif;
+	--font-sans: "Geist Sans Variable", "Geist Sans", system-ui, -apple-system, sans-serif;
 	--font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, monospace;
 
 	/* Type scale — DESIGN.md §Typography */
@@ -26,6 +44,7 @@
 	--text-body: 400 16px/1.6 var(--font-sans);
 	--text-label: 500 12px/1.2 var(--font-mono);
 	--text-data: 500 15px/1.4 var(--font-mono);
+	--text-stat-hero: 600 40px/1.05 var(--font-mono); /* homepage hero strip only */
 
 	/* Spacing — base unit 8px */
 	--space-1: 8px;
@@ -35,29 +54,33 @@
 	--space-8: 64px;
 
 	/* Map onto Starlight's own theme variables so native chrome (header,
-	   sidebar, search, right-rail ToC) inherits the same palette + fonts
-	   without needing per-component overrides. */
-	--sl-color-bg: var(--bg);
+	   sidebar, search, right-rail ToC) inherits layered blacks without
+	   needing per-component overrides. */
+	--sl-color-bg: var(--bg-panel);
 	--sl-color-bg-nav: var(--bg);
 	--sl-color-bg-sidebar: var(--bg);
-	--sl-color-bg-inline-code: var(--surface);
+	--sl-color-bg-inline-code: var(--surface-2);
 	--sl-color-black: var(--bg);
 	--sl-color-gray-1: #f4f4f2;
 	--sl-color-gray-2: var(--text);
 	--sl-color-gray-3: var(--text-muted);
-	--sl-color-gray-4: #55555c;
-	--sl-color-gray-5: #38383e;
-	--sl-color-gray-6: #201f22;
+	--sl-color-gray-4: #6b6b74;
+	--sl-color-gray-5: #3e3e48;
+	--sl-color-gray-6: var(--surface-3);
 	--sl-color-gray-7: var(--surface);
 	--sl-color-white: var(--text);
 	--sl-color-text: var(--text);
 	--sl-color-text-accent: var(--accent);
-	--sl-color-accent-low: #201f38;
+	--sl-color-accent-low: #1a1a2e;
 	--sl-color-accent: var(--accent);
 	--sl-color-accent-high: #c7c7fb;
 	--sl-color-hairline-light: var(--rule);
 	--sl-color-hairline: var(--rule);
-	--sl-color-hairline-shade: var(--rule);
+	--sl-color-hairline-shade: var(--rule-strong);
 	--sl-font: var(--font-sans);
 	--sl-font-mono: var(--font-mono);
+
+	/* Two-row header: main nav bar + ticker strip (src/components/Header.astro).
+	   Starlight derives sidebar/menu offsets from this. */
+	--sl-nav-height: 6rem;
 }

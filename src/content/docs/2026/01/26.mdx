@@ -25,10 +25,10 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 <StructuredData frontmatter={frontmatter} />
 <Eyebrow text={`MARKET HOLIDAY · ${frontmatter.reason.toUpperCase()}`} />
 
-Markets closed today — {frontmatter.reason}. No cash or derivatives session; regular trading resumes next session.
+<p class="setup-copy">Markets closed today — {frontmatter.reason}. No cash or derivatives session; regular trading resumes next session.</p>
 
 ### News
 
-<NewsList items={frontmatter.news} />
+<NewsList items={frontmatter.news} label="Holiday News" />
 
 <PrevNextLinks date={frontmatter.date} />

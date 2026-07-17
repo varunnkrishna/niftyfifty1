@@ -43,7 +43,9 @@ def test_eod_write_changes_only_eod_region_and_meta():
 	the mechanical form of CLAUDE.md rule 2 / ORCHESTRATION §3's immutability
 	rule, verified by diffing the parsed frontmatter directly.
 	"""
-	before_raw = json.loads((FIXTURES_DIR / "2026-07-13.json").read_text())
+	# Use an awaiting-EOD fixture (live days get eod_written=True after the
+	# close run; 2026-07-07 is the stable pre-EOD shell fixture).
+	before_raw = json.loads((FIXTURES_DIR / "2026-07-07.json").read_text())
 	assert before_raw["eod_written"] is False
 
 	after_raw = copy.deepcopy(before_raw)
@@ -62,7 +64,7 @@ def test_eod_write_changes_only_eod_region_and_meta():
 				"why_it_matters": "Auto was the session's clearest sector story.",
 				"source_name": "Moneycontrol",
 				"source_url": "https://www.moneycontrol.com/news/business/markets/auto-festive-demand-close",
-				"timestamp": "2026-07-13T15:45:00+05:30",
+				"timestamp": "2026-07-07T15:45:00+05:30",
 			}
 		],
 	}

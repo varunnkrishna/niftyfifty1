@@ -1,0 +1,216 @@
+---
+// Custom two-row nav (DESIGN.md §Chrome & nav): main bar + market ticker
+// strip, the signature move of financial-stat sites — but static and honest:
+// the ticker is built at compile time from the latest EOD sidecar data and
+// always carries an "As of" date stamp. Pure HTML/CSS, zero client JS
+// (CLAUDE.md rule 7); Search's modal is Starlight's own allowed exception.
+import Search from '@astrojs/starlight/components/Search.astro';
+import SiteTitle from '@astrojs/starlight/components/SiteTitle.astro';
+import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
+import { getCollection } from 'astro:content';
+import { sortByDateDesc } from '../lib/dayList';
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+interface TickerItem {
+	label: string;
+	value: string;
+	delta?: string;
+	sign?: 'up' | 'down' | 'flat';
+}
+
+const pct = (n: number) => `${n > 0 ? '+' : ''}${n.toFixed(2)}%`;
+const signOf = (n: number): 'up' | 'down' | 'flat' => (n > 0 ? 'up' : n < 0 ? 'down' : 'flat');
+
+const all = await getCollection('docs');
+const sorted = sortByDateDesc(all);
+const latestEod = sorted.find((e) => (e.data as any).eod_written && (e.data as any).eod);
+
+const ticker: TickerItem[] = [];
+let stamp = `Archive · ${sorted.length} sessions indexed`;
+if (latestEod) {
+	const d = latestEod.data as any;
+	const closeRows: [string, { value: number; delta_pct: number } | undefined][] = [
+		['Nifty 50', d.eod.nifty_close],
+		['Sensex', d.eod.sensex_close],
+		['Bank Nifty', d.eod.banknifty_close],
+	];
+	for (const [label, m] of closeRows) {
+		if (m?.value != null && m?.delta_pct != null) {
+			ticker.push({
+				label,
+				value: Number(m.value).toLocaleString('en-IN'),
+				delta: pct(m.delta_pct),
+				sign: signOf(m.delta_pct),
+			});
+		}
+	}
+	const [, mo, day] = (d.date as string).split('-');
+	stamp = `As of ${Number(day)} ${MONTHS[Number(mo) - 1]} close · IST`;
+}
+---
+
+<div class="nav-shell">
+	<div class="nav-main">
+		<div class="title-wrapper sl-flex">
+			<SiteTitle />
+		</div>
+		<div class="nav-search sl-flex print:hidden">
+			<Search />
+		</div>
+		<div class="nav-right sl-hidden md:sl-flex print:hidden">
+			<a class="nav-link" href="/about/">About</a>
+			<span class="nav-cta" title="Bookmark this page — ⌘D on Mac, Ctrl+D on Windows/Linux">
+				<span class="nav-cta__star" aria-hidden="true">☆</span>
+				Bookmark
+				<kbd>⌘D</kbd>
+			</span>
+			<ThemeSelect />
+		</div>
+	</div>
+	{
+		ticker.length > 0 ? (
+			<div class="nav-ticker">
+				<span class="nav-ticker__stamp">{stamp}</span>
+				{ticker.map((t) => (
+					<span class="nav-ticker__item">
+						<span class="nav-ticker__label">{t.label}</span>
+						<span class="nav-ticker__value">{t.value}</span>
+						{t.delta && <span class:list={['nav-ticker__delta', `delta-${t.sign}`]}>{t.delta}</span>}
+					</span>
+				))}
+			</div>
+		) : (
+			<div class="nav-ticker">
+				<span class="nav-ticker__stamp">{stamp}</span>
+			</div>
+		)
+	}
+</div>
+
+<style>
+	/* Explicit geometry — the shell bleeds over the outer header padding on
+	   all sides and sizes its own rows, so the main row is exactly centered
+	   (padding-based centering drifted once the ticker bled off the bottom). */
+	.nav-shell {
+		--ticker-h: 2.2rem;
+		height: var(--sl-nav-height);
+		margin: calc(-1 * var(--sl-nav-pad-y)) calc(-1 * var(--sl-nav-pad-x));
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-main {
+		height: calc(var(--sl-nav-height) - var(--ticker-h));
+		display: flex;
+		align-items: center;
+		gap: var(--sl-nav-gap, 1rem);
+		padding: 0 var(--sl-nav-pad-x);
+	}
+	.title-wrapper {
+		overflow: clip;
+		padding: 0.25rem;
+		margin: -0.25rem;
+		min-width: 0;
+	}
+	.nav-search {
+		flex: 1;
+		justify-content: center;
+	}
+	.nav-search :global(site-search) {
+		width: 100%;
+		max-width: 30rem;
+	}
+	.nav-right {
+		gap: var(--space-2);
+		align-items: center;
+	}
+	.nav-link {
+		font: var(--text-label);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--text-muted);
+		text-decoration: none;
+		transition: color 150ms ease-out;
+	}
+	.nav-link:hover {
+		color: var(--accent);
+	}
+	.nav-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		font: var(--text-label);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--text-muted);
+		border: 1px solid var(--rule-strong);
+		border-radius: var(--radius-sm);
+		padding: 6px 10px;
+		cursor: default;
+		transition: border-color 150ms ease-out;
+	}
+	.nav-cta:hover {
+		border-color: var(--accent);
+	}
+	.nav-cta__star {
+		color: var(--text);
+	}
+	.nav-cta kbd {
+		font: 500 11px/1 var(--font-mono);
+		color: var(--text);
+		background: var(--surface-3);
+		border: 1px solid var(--rule);
+		border-radius: var(--radius-sm);
+		padding: 2px 5px;
+	}
+
+	/* Ticker strip — full-bleed row under the main bar. A dated snapshot,
+	   never presented as live (no motion, no blinking). */
+	.nav-ticker {
+		display: flex;
+		align-items: center;
+		gap: var(--space-3);
+		margin: 0;
+		padding: 0 var(--sl-nav-pad-x);
+		height: var(--ticker-h);
+		flex: none;
+		border-top: 1px solid var(--rule);
+		background: var(--bg);
+		overflow-x: auto;
+		scrollbar-width: none;
+		white-space: nowrap;
+	}
+	.nav-ticker::-webkit-scrollbar {
+		display: none;
+	}
+	.nav-ticker__stamp {
+		font: var(--text-label);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--text-muted);
+		padding-right: var(--space-2);
+		border-right: 1px solid var(--rule);
+		flex: none;
+	}
+	.nav-ticker__item {
+		display: inline-flex;
+		align-items: baseline;
+		gap: 8px;
+		flex: none;
+	}
+	.nav-ticker__label {
+		font: var(--text-label);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: var(--text-muted);
+	}
+	.nav-ticker__value {
+		font: 500 13px/1 var(--font-mono);
+		font-variant-numeric: tabular-nums;
+		color: var(--text);
+	}
+	.nav-ticker__delta {
+		font: 500 12px/1 var(--font-mono);
+		font-variant-numeric: tabular-nums;
+	}
+</style>

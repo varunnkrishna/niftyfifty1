@@ -130,7 +130,6 @@ eod:
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
-import WarningBanner from '../../../../components/WarningBanner.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
 import CloseTable from '../../../../components/CloseTable.astro';
@@ -145,19 +144,13 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 ### Markets Data
 
-{frontmatter.premarket.market_expectations}
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
 
 <SignalTable premarket={frontmatter.premarket} />
 
-### Signal
-
-**Bias: {`${frontmatter.premarket.bias_intensity} ${frontmatter.premarket.bias_label}`} · {frontmatter.premarket.bias_score > 0 ? '+' : ''}{frontmatter.premarket.bias_score}{frontmatter.premarket.conviction === 'reduced' ? ' · conviction reduced (VIX elevated)' : ''}**
-
-<WarningBanner />
-
 ### News
 
-<NewsList items={frontmatter.premarket.news} />
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
 <hr class="section-divider" />
 
@@ -173,12 +166,13 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 	nifty_close={frontmatter.eod.nifty_close}
 	sensex_close={frontmatter.eod.sensex_close}
 	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
 />
-
-{frontmatter.eod.advance_decline} · Leaders: {frontmatter.eod.sector_leaders.join(', ')} · Laggards: {frontmatter.eod.sector_laggards.join(', ')}
 
 ### News
 
-<NewsList items={frontmatter.eod.news} />
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />

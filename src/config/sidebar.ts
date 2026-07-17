@@ -40,10 +40,17 @@ export function buildDateTreeSidebar() {
 				.map((d) => d.name.replace(/\.mdx$/, ''))
 				.sort((a, b) => b.localeCompare(a)); // newest day first
 
-			const dayItems = days.map((day) => ({
-				label: day,
-				slug: `${year}/${month}/${day}`,
-			}));
+			const dayItems = days.map((day) => {
+				// Weekday tooltip (deterministic from the date) — the chip shows
+				// only the day number, the title attribute carries the full date.
+				const date = new Date(`${year}-${month}-${day}T00:00:00+05:30`);
+				const weekday = date.toLocaleDateString('en-IN', { weekday: 'short', timeZone: 'Asia/Kolkata' });
+				return {
+					label: day,
+					slug: `${year}/${month}/${day}`,
+					attrs: { title: `${weekday}, ${Number(day)} ${MONTH_NAMES[Number(month) - 1]} ${year}` },
+				};
+			});
 
 			const monthName = MONTH_NAMES[Number(month) - 1];
 			return {

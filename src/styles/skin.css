@@ -1,36 +1,170 @@
-/* Structural skin — DESIGN.md §Structure, §Layout, §What to avoid.
-   Hairlines + whitespace do all structural work. No cards, no shadows, no
-   rounded containers, anywhere. This is a hard, sitewide design invariant
-   (CLAUDE.md rule 8), so it's enforced with !important against the
-   component library's own scoped styles rather than chased selector by
-   selector. */
+/* Structural skin — DESIGN.md §Structure, §Layout, §Motion.
+   Cards (bordered, single-radius, layered surfaces) + hairlines inside them
+   do the structural work (CLAUDE.md rule 8, overridden 2026-07-15 for cards —
+   see DESIGN.md "Card override"). Shadows remain fully out of scope. */
+:root {
+	--bg-grid: repeating-linear-gradient(to right, var(--grid-line) 0 1px, transparent 1px 32px),
+		repeating-linear-gradient(to bottom, var(--grid-line) 0 1px, transparent 1px 32px);
+}
 *,
 *::before,
 *::after {
-	border-radius: 0 !important;
+	border-radius: 0;
 	box-shadow: none !important;
 }
 
+html {
+	background-color: var(--bg);
+	background-image: var(--bg-grid);
+}
 body {
 	font: var(--text-body);
+	background: var(--bg);
+	color: var(--text);
+	scroll-behavior: smooth;
+}
+
+/* Starlight chrome: layered blacks so header / sidebar / content separate. */
+.page {
+	background: var(--bg);
+}
+/* Header sits on the deepest black — hairlines, not a grey strip, separate
+   it from the page (borders differentiate; fills don't). */
+header.header,
+.header {
+	background: var(--bg) !important;
+	border-bottom: 1px solid var(--rule-strong) !important;
+}
+.sidebar-pane,
+#starlight__sidebar,
+.sidebar-content {
+	background-color: var(--bg) !important;
+	background-image: var(--bg-grid) !important;
+}
+.main-frame,
+.main-pane,
+.content-panel {
+	background: var(--bg-panel);
+}
+.right-sidebar,
+.right-sidebar-container {
+	background: var(--bg) !important;
+	border-color: var(--rule) !important;
+}
+/* Wordmark — serif, set in --text like a masthead, accent only on hover
+   (interaction). The lavender-by-default treatment read as a template. */
+.site-title,
+.site-title span {
+	font: 600 21px/1 var(--font-serif) !important;
+	letter-spacing: -0.01em;
+	color: var(--text) !important;
+	text-decoration: none;
+	transition: color 150ms ease-out;
+}
+.site-title:hover,
+.site-title:hover span {
+	color: var(--accent) !important;
+}
+
+/* Search control sits on the raised header strip — compact-control radius. */
+site-search button,
+[data-open-modal] {
+	background: var(--surface) !important;
+	border: 1px solid var(--rule-strong) !important;
+	border-radius: var(--radius-sm) !important;
+	color: var(--text-muted) !important;
+	transition: border-color 150ms ease-out;
+}
+site-search button:hover,
+[data-open-modal]:hover {
+	border-color: var(--accent) !important;
+}
+
+/* ── Sidebar date tree → calendar chips ────────────────────────────────────
+   Year = serif head, month = mono eyebrow, days = a grid of bordered mono
+   chips (a compact calendar, not a bullet list). DESIGN.md §Layout. */
+#starlight__sidebar ul.top-level > li > details > summary .group-label .large {
+	font: 600 17px/1.2 var(--font-serif);
+	color: var(--text);
+	letter-spacing: -0.01em;
+}
+#starlight__sidebar ul.top-level > li > details > ul .group-label .large {
+	font: var(--text-label);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+}
+#starlight__sidebar ul.top-level > li > details > ul li > details > ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+	gap: 6px;
+	padding: 6px 2px 14px;
+	margin: 0;
+	border: none;
+}
+#starlight__sidebar ul.top-level > li > details > ul li > details > ul li {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#starlight__sidebar ul.top-level > li > details > ul li > details > ul a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 0;
+	margin: 0;
+	font: var(--text-data);
+	font-variant-numeric: tabular-nums;
+	color: var(--text-muted);
+	background: var(--surface);
+	border: 1px solid var(--rule);
+	border-radius: var(--radius-sm);
+	text-decoration: none;
+	transition:
+		border-color 150ms ease-out,
+		background 150ms ease-out,
+		color 150ms ease-out;
+}
+#starlight__sidebar ul.top-level > li > details > ul li > details > ul a:hover {
+	border-color: var(--accent);
+	background: var(--surface-3);
+	color: var(--text);
+}
+/* Active day chip — accent outline, no left-rule hack (that rule is for
+   plain text nav rows; chips carry their own border). */
+#starlight__sidebar ul.top-level > li > details > ul li > details > ul a[aria-current='page'] {
+	border: 1px solid var(--accent) !important;
+	border-left-width: 1px !important;
+	color: var(--accent) !important;
+	background: var(--surface) !important;
+	padding-left: 0 !important;
 }
 
 .sl-markdown-content :is(h1, h2, h3, h4) {
 	font-family: var(--font-serif);
 	font-weight: 600;
-	letter-spacing: 0;
+	letter-spacing: -0.01em;
 }
-.sl-markdown-content h1 {
+.sl-markdown-content h1,
+h1#_top {
 	font: var(--text-display);
+	letter-spacing: -0.01em;
 }
 .sl-markdown-content h2 {
 	font: var(--text-h2);
-	margin-top: var(--space-8);
-	padding-top: var(--space-6);
+	margin-top: var(--space-6);
+	padding-top: var(--space-3);
 	border-top: 1px solid var(--rule);
+}
+.sl-markdown-content h2:first-of-type {
+	margin-top: var(--space-3);
+	padding-top: 0;
+	border-top: none;
 }
 .sl-markdown-content h3 {
 	font: var(--text-h3);
+	margin-top: var(--space-3);
+	margin-bottom: var(--space-1);
 }
 .sl-markdown-content {
 	font: var(--text-body);
@@ -54,9 +188,86 @@ table {
 	margin-bottom: var(--space-1);
 }
 
-/* Metric / signal tables — hairline rows, no zebra, no cell borders. */
+/* ── Card system ────────────────────────────────────────────────────────────
+   Bordered, single-radius, layered-surface compartments (DESIGN.md §Structure,
+   "card override"). Hairlines still govern rows/lists inside a card. */
+.card {
+	border: 1px solid var(--rule-strong);
+	border-radius: var(--radius);
+	background: var(--surface);
+	margin: var(--space-2) 0 var(--space-3);
+	overflow: hidden;
+}
+.card__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-1) var(--space-2);
+	padding: 10px var(--space-2);
+	border-bottom: 1px solid var(--rule);
+	background: var(--surface-2);
+}
+.card__label {
+	font: var(--text-label);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+}
+.card__meta {
+	font: var(--text-data);
+	color: var(--text);
+	font-weight: 600;
+}
+.card__body {
+	padding: 0;
+}
+.card__body--padded {
+	padding: var(--space-2);
+}
+.card__body > :first-child {
+	margin-top: 0;
+}
+.card__body > :last-child {
+	margin-bottom: 0;
+}
+.card .metrics-table,
+.card .signal-table {
+	margin: 0;
+}
+.card .metrics-table th,
+.card .signal-table th,
+.card .metrics-table td,
+.card .signal-table td {
+	padding-left: var(--space-2);
+	padding-right: var(--space-2);
+}
+.card .metrics-table th:first-child,
+.card .signal-table th:first-child,
+.card .metrics-table td:first-child,
+.card .signal-table td:first-child {
+	padding-left: var(--space-2);
+}
+.card .metrics-table th:last-child,
+.card .signal-table th:last-child,
+.card .metrics-table td:last-child,
+.card .signal-table td:last-child {
+	padding-right: var(--space-2);
+}
+.card .metrics-table tr:last-child td,
+.card .signal-table tr:last-child td,
+.card .signal-table tr.net-row td {
+	border-bottom: none;
+}
+
+/* Metric / signal tables — hairline rows, no zebra, no cell borders.
+   display:table beats Starlight's `table { display: block }`, which would
+   shrink-wrap the table instead of filling the card. */
 .metrics-table,
-.signal-table {
+.signal-table,
+.sl-markdown-content .metrics-table,
+.sl-markdown-content .signal-table {
+	display: table;
 	width: 100%;
 	border-collapse: collapse;
 	margin: var(--space-2) 0;
@@ -92,6 +303,13 @@ table {
 	border-bottom: none;
 	padding-top: var(--space-2);
 	font-weight: 600;
+	background: var(--surface-3);
+}
+
+/* Table header strip — one step above card body. */
+.metrics-table thead th,
+.signal-table thead th {
+	background: var(--surface-2);
 }
 
 /* Vote / delta coloring — the ONLY saturated color on the page, meaning only. */
@@ -112,8 +330,8 @@ table {
 	font-style: normal;
 }
 
-/* Warning banner — a standing fixture next to every signal display
-   (CLAUDE.md rule 9), muted, not alarmist. */
+/* Warning banner — standing fixture next to every signal display
+   (CLAUDE.md rule 9), muted, sits inside the signal card when present. */
 .warning-banner {
 	font: var(--text-label);
 	font-weight: 400;
@@ -121,8 +339,9 @@ table {
 	letter-spacing: 0;
 	color: var(--text-muted);
 	border-top: 1px solid var(--rule);
-	padding-top: var(--space-1);
-	margin: var(--space-2) 0 var(--space-6);
+	padding: var(--space-2);
+	margin: 0;
+	background: var(--surface-2);
 }
 
 /* Degraded / suppressed / awaiting-EOD notices — quiet, muted, never red. */
@@ -134,33 +353,262 @@ table {
 	color: var(--text-muted);
 	font-family: var(--font-mono);
 }
+.data-notice {
+	padding: var(--space-1) var(--space-2) var(--space-2);
+	border-top: 1px solid var(--rule);
+	margin: 0;
+	background: var(--surface-2);
+}
 .suppressed-note {
-	font-family: var(--font-serif);
-	font-size: 16px;
-	font-style: italic;
+	font-family: var(--font-sans);
+	font-size: 15px;
+	font-style: normal;
 	color: var(--text-muted);
+	padding: var(--space-2);
+	margin: 0;
+	border-top: 1px solid var(--rule);
+	background: var(--surface-2);
+}
+.awaiting-eod {
+	border: 1px solid var(--rule);
+	padding: var(--space-2);
+	margin: var(--space-2) 0 var(--space-3);
+}
+.awaiting-eod--inline {
+	border: none;
+	padding: 0;
+	margin: 0;
 }
 
-/* News list */
+/* Close breadth / leaders meta — only rendered when data exists. */
+.close-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-1) var(--space-3);
+	padding: var(--space-2);
+	border-top: 1px solid var(--rule);
+	font: var(--text-data);
+	color: var(--text-muted);
+	background: var(--surface-2);
+}
+.close-meta span strong {
+	font-weight: 500;
+	color: var(--text);
+	font-family: var(--font-mono);
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	margin-right: 6px;
+}
+
+/* News list — each item is a full-width row inside the card. */
 .news-list {
 	list-style: none;
-	margin: var(--space-2) 0;
+	margin: 0;
 	padding: 0;
 }
 .news-list li {
-	padding: var(--space-1) 0;
+	padding: var(--space-2);
 	border-bottom: 1px solid var(--rule);
+	transition: background 150ms ease-out;
+}
+.news-list li:last-child {
+	border-bottom: none;
+}
+.news-list li:hover {
+	background: var(--surface-3);
+}
+.news-list .news-headline {
+	display: block;
+	font: var(--text-body);
+	font-weight: 500;
+	line-height: 1.45;
+	color: var(--text);
+	text-decoration: none;
+}
+.news-list .news-headline:hover {
+	color: var(--accent);
+	text-decoration: underline;
+	text-underline-offset: 3px;
 }
 .news-list .news-why {
 	color: var(--text-muted);
 	font-size: 14px;
-	margin-top: 2px;
+	line-height: 1.45;
+	margin-top: 6px;
+}
+.news-list .news-source {
+	font: var(--text-label);
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--text-muted);
 }
 .news-list a {
 	text-decoration: none;
 }
-.news-list a:hover {
-	text-decoration: underline;
+
+/* Day / archive index rows (month, year listings) — bordered card, hairline rows. */
+.day-list {
+	list-style: none;
+	margin: var(--space-2) 0;
+	padding: 0;
+	border: 1px solid var(--rule-strong);
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+.day-list--flush {
+	margin: 0;
+	border: none;
+	border-radius: 0;
+}
+.day-list li {
+	border-bottom: 1px solid var(--rule);
+}
+.day-list li:last-child {
+	border-bottom: none;
+}
+.day-list a {
+	display: block;
+	padding: var(--space-2);
+	text-decoration: none;
+	color: var(--text);
+	transition: background 150ms ease-out;
+}
+.day-list a:hover {
+	background: var(--surface-3);
+}
+.day-list .day-list-title {
+	font: var(--text-body);
+	font-weight: 500;
+}
+.day-list .day-list-meta {
+	color: var(--text-muted);
+	font-size: 14px;
+	margin-top: 4px;
+}
+.day-list .day-list-meta.vote-up,
+.day-list .day-list-meta.vote-down {
+	font-family: var(--font-mono);
+}
+
+/* Homepage hero stat strip — DESIGN.md §Homepage layout. The one place a
+   number is allowed to dominate the page; still a static build-time value. */
+.stat-strip {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-2);
+	margin: 0 0 var(--space-3);
+}
+.stat-card {
+	flex: 1 1 180px;
+	max-width: 300px;
+	border: 1px solid var(--rule-strong);
+	border-radius: var(--radius);
+	background: var(--surface);
+	padding: var(--space-2);
+}
+.stat-card--up {
+	background: var(--up-fill);
+	border-color: var(--up-border);
+}
+.stat-card--down {
+	background: var(--down-fill);
+	border-color: var(--down-border);
+}
+.stat-card__label {
+	display: block;
+	font: var(--text-label);
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: var(--text-muted);
+	margin-bottom: 4px;
+}
+.stat-card--up .stat-card__label,
+.stat-card--down .stat-card__label {
+	color: var(--text-muted);
+}
+.stat-card__value {
+	display: block;
+	font: var(--text-stat-hero);
+	color: var(--text);
+}
+.stat-card--up .stat-card__value {
+	color: var(--up);
+}
+.stat-card--down .stat-card__value {
+	color: var(--down);
+}
+.stat-card__sub {
+	display: block;
+	margin-top: 4px;
+	font: var(--text-body);
+	font-size: 13px;
+	color: var(--text-muted);
+}
+
+/* Homepage Recent Days — bordered card grid, same border/radius language as
+   the stat strip (DESIGN.md §Homepage layout). */
+.day-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: var(--space-2);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.day-grid li {
+	border: 1px solid var(--rule-strong);
+	border-radius: var(--radius);
+	background: var(--surface);
+	overflow: hidden;
+	transition:
+		border-color 150ms ease-out,
+		background 150ms ease-out,
+		transform 150ms ease-out;
+}
+.day-grid li:hover {
+	border-color: var(--accent);
+	background: var(--surface-3);
+	transform: translateY(-1px);
+}
+.day-grid a {
+	display: block;
+	padding: var(--space-2);
+	text-decoration: none;
+	color: var(--text);
+}
+.day-grid .day-list-title {
+	font: var(--text-h3);
+	font-size: 16px;
+	margin: 0;
+}
+.day-grid .day-list-meta {
+	color: var(--text-muted);
+	font-size: 14px;
+	margin-top: 6px;
+	font-family: var(--font-mono);
+}
+
+/* Homepage title (outside Starlight content prose). */
+.home-title {
+	font: var(--text-display);
+	letter-spacing: -0.01em;
+	margin: 0 0 var(--space-2);
+	color: var(--text);
+}
+
+/* Homepage hero — tagline sits directly under the masthead h1, serif italic,
+   then a hairline before the stat strip (DESIGN.md §Homepage layout). */
+.home-tagline {
+	font: 400 18px/1.5 var(--font-serif);
+	font-style: italic;
+	color: var(--text-muted);
+	margin: calc(-1 * var(--space-1)) 0 0;
+}
+.home-hero-rule {
+	border: none;
+	border-top: 1px solid var(--rule);
+	margin: var(--space-3) 0;
 }
 
 /* Section divider between Pre-Market and EOD. */
@@ -170,15 +618,33 @@ table {
 	margin: var(--space-6) 0;
 }
 
+/* Prose conclusions inside day pages. */
+.eod-conclusion,
+.setup-copy {
+	margin: 0 0 var(--space-2);
+	color: var(--text);
+	line-height: 1.6;
+}
+
 /* Prev/next session links (SEO.md §2.11). */
 .prev-next-links {
 	display: flex;
 	justify-content: space-between;
 	gap: var(--space-2);
 	margin-top: var(--space-6);
-	padding-top: var(--space-2);
-	border-top: 1px solid var(--rule);
+	padding: var(--space-2);
+	border: 1px solid var(--rule-strong);
+	border-radius: var(--radius);
+	background: var(--surface);
 	font: var(--text-data);
+}
+.prev-next-links a {
+	text-decoration: none;
+}
+.prev-next-links a:hover {
+	color: var(--accent);
+	text-decoration: underline;
+	text-underline-offset: 3px;
 }
 .prev-next-links a:only-child {
 	margin-left: auto;
@@ -199,6 +665,9 @@ table {
 }
 
 @media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 	*,
 	*::before,
 	*::after {

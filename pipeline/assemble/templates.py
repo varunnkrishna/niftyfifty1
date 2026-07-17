@@ -20,29 +20,20 @@ def _imports(*names: str) -> str:
 def render_trading_day_body(sidecar: TradingDaySidecar, premarket_eyebrow: str, eod_eyebrow: str) -> str:
 	parts: list[str] = []
 
+	# WarningBanner is composed inside SignalTable (CLAUDE.md rule 9 fixture).
 	if sidecar.eod_written:
-		parts.append(_imports("SignalTable", "WarningBanner", "NewsList", "Eyebrow", "CloseTable", "StructuredData", "PrevNextLinks"))
+		parts.append(_imports("SignalTable", "NewsList", "Eyebrow", "CloseTable", "StructuredData", "PrevNextLinks"))
 	else:
-		parts.append(_imports("SignalTable", "WarningBanner", "NewsList", "Eyebrow", "AwaitingEod", "StructuredData", "PrevNextLinks"))
+		parts.append(_imports("SignalTable", "NewsList", "Eyebrow", "AwaitingEod", "StructuredData", "PrevNextLinks"))
 
 	parts.append("\n<StructuredData frontmatter={frontmatter} />")
 	parts.append(f'\n<Eyebrow text="{premarket_eyebrow}" />')
 	parts.append("\n## Pre-Market")
 	parts.append("\n### Markets Data")
-	parts.append(f"\n{{frontmatter.premarket.market_expectations}}")
+	parts.append('\n<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>')
 	parts.append("\n<SignalTable premarket={frontmatter.premarket} />")
-	parts.append("\n### Signal")
-
-	if sidecar.premarket.bias_label is not None:
-		parts.append(
-			"\n**Bias: {`${frontmatter.premarket.bias_intensity} ${frontmatter.premarket.bias_label}`} · "
-			"{frontmatter.premarket.bias_score > 0 ? '+' : ''}{frontmatter.premarket.bias_score}"
-			"{frontmatter.premarket.conviction === 'reduced' ? ' · conviction reduced (VIX elevated)' : ''}**"
-		)
-
-	parts.append("\n<WarningBanner />")
 	parts.append("\n### News")
-	parts.append("\n<NewsList items={frontmatter.premarket.news} />")
+	parts.append('\n<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />')
 
 	if sidecar.eod_written:
 		parts.append('\n<hr class="section-divider" />')
@@ -55,16 +46,15 @@ def render_trading_day_body(sidecar: TradingDaySidecar, premarket_eyebrow: str, 
 			"\tnifty_close={frontmatter.eod.nifty_close}\n"
 			"\tsensex_close={frontmatter.eod.sensex_close}\n"
 			"\tbanknifty_close={frontmatter.eod.banknifty_close}\n"
+			"\tadvance_decline={frontmatter.eod.advance_decline}\n"
+			"\tsector_leaders={frontmatter.eod.sector_leaders}\n"
+			"\tsector_laggards={frontmatter.eod.sector_laggards}\n"
 			"/>"
 		)
-		parts.append(
-			"\n{frontmatter.eod.advance_decline} · Leaders: {frontmatter.eod.sector_leaders.join(', ')} · "
-			"Laggards: {frontmatter.eod.sector_laggards.join(', ')}"
-		)
 		parts.append("\n### News")
-		parts.append("\n<NewsList items={frontmatter.eod.news} />")
+		parts.append('\n<NewsList items={frontmatter.eod.news} label="EOD News" />')
 	else:
-		parts.append('\n<AwaitingEod expected="~16:15 IST" />')
+		parts.append("\n<AwaitingEod expected=\"~16:15 IST\" />")
 
 	parts.append("\n<PrevNextLinks date={frontmatter.date} />")
 
@@ -76,9 +66,9 @@ def render_weekend_body(sidecar: WeekendHolidaySidecar) -> str:
 		f"{_imports('NewsList', 'Eyebrow', 'StructuredData', 'PrevNextLinks')}\n"
 		"\n<StructuredData frontmatter={frontmatter} />"
 		'\n<Eyebrow text="WEEKEND" />\n'
-		"\nMarkets are closed today. Here's the market-relevant news.\n"
+		'\n<p class="setup-copy">Markets are closed today. Here\'s the market-relevant news.</p>\n'
 		"\n### News\n"
-		"\n<NewsList items={frontmatter.news} />\n"
+		'\n<NewsList items={frontmatter.news} label="Weekend News" />\n'
 		"\n<PrevNextLinks date={frontmatter.date} />\n"
 	)
 
@@ -88,9 +78,9 @@ def render_holiday_body(sidecar: WeekendHolidaySidecar) -> str:
 		f"{_imports('NewsList', 'Eyebrow', 'StructuredData', 'PrevNextLinks')}\n"
 		"\n<StructuredData frontmatter={frontmatter} />"
 		"\n<Eyebrow text={`MARKET HOLIDAY · ${frontmatter.reason.toUpperCase()}`} />\n"
-		"\nMarkets closed today — {frontmatter.reason}. No cash or derivatives session; "
-		"regular trading resumes next session.\n"
+		"\n<p class=\"setup-copy\">Markets closed today — {frontmatter.reason}. No cash or derivatives session; "
+		"regular trading resumes next session.</p>\n"
 		"\n### News\n"
-		"\n<NewsList items={frontmatter.news} />\n"
+		'\n<NewsList items={frontmatter.news} label="Holiday News" />\n'
 		"\n<PrevNextLinks date={frontmatter.date} />\n"
 	)

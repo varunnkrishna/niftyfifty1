@@ -34,8 +34,9 @@ export default defineConfig({
 			customCss: ['./src/styles/fonts.css', './src/styles/tokens.css', './src/styles/skin.css'],
 			// Per-page og:image (SEO.md §2.7) needs the current page's date,
 			// which Starlight's static `head` config can't compute — see
-			// src/components/Head.astro.
-			components: { Head: './src/components/Head.astro' },
+			// src/components/Head.astro. Header override: two-row nav with the
+			// build-time market ticker strip (DESIGN.md §Chrome & nav).
+			components: { Head: './src/components/Head.astro', Header: './src/components/Header.astro' },
 		}),
 	],
 });

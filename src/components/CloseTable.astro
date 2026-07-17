@@ -7,8 +7,18 @@ interface Props {
 	nifty_close: CloseMetric;
 	sensex_close: CloseMetric;
 	banknifty_close: CloseMetric;
+	advance_decline?: string | null;
+	sector_leaders?: string[] | null;
+	sector_laggards?: string[] | null;
 }
-const { nifty_close, sensex_close, banknifty_close } = Astro.props;
+const {
+	nifty_close,
+	sensex_close,
+	banknifty_close,
+	advance_decline = null,
+	sector_leaders = null,
+	sector_laggards = null,
+} = Astro.props;
 
 const pct = (n: number) => `${n > 0 ? '+' : ''}${n.toFixed(2)}%`;
 const voteClass = (n: number) => (n > 0 ? 'vote-up' : n < 0 ? 'vote-down' : 'vote-flat');
@@ -17,25 +27,63 @@ const rows = [
 	{ label: 'Sensex', m: sensex_close },
 	{ label: 'Bank Nifty', m: banknifty_close },
 ];
+
+const leaders = sector_leaders?.filter(Boolean) ?? [];
+const laggards = sector_laggards?.filter(Boolean) ?? [];
+const hasMeta = Boolean(advance_decline) || leaders.length > 0 || laggards.length > 0;
 ---
 
-<table class="metrics-table">
-	<thead>
-		<tr>
-			<th>Index</th>
-			<th>Close</th>
-			<th>Change</th>
-		</tr>
-	</thead>
-	<tbody>
-		{
-			rows.map((row) => (
+<div class="card" data-card="close">
+	<div class="card__head">
+		<span class="card__label">Close</span>
+		<span class:list={['card__meta', voteClass(nifty_close.delta_pct)]}>
+			Nifty {pct(nifty_close.delta_pct)}
+		</span>
+	</div>
+	<div class="card__body">
+		<table class="metrics-table">
+			<thead>
 				<tr>
-					<td>{row.label}</td>
-					<td>{row.m.value.toLocaleString('en-IN')}</td>
-					<td class={voteClass(row.m.delta_pct)}>{pct(row.m.delta_pct)}</td>
+					<th>Index</th>
+					<th>Close</th>
+					<th>Change</th>
 				</tr>
-			))
+			</thead>
+			<tbody>
+				{
+					rows.map((row) => (
+						<tr>
+							<td>{row.label}</td>
+							<td>{row.m.value.toLocaleString('en-IN')}</td>
+							<td class={voteClass(row.m.delta_pct)}>{pct(row.m.delta_pct)}</td>
+						</tr>
+					))
+				}
+			</tbody>
+		</table>
+		{
+			hasMeta && (
+				<div class="close-meta">
+					{advance_decline && (
+						<span>
+							<strong>Breadth</strong>
+							{advance_decline}
+						</span>
+					)}
+					{leaders.length > 0 && (
+						<span>
+							<strong>Leaders</strong>
+							{leaders.join(', ')}
+						</span>
+					)}
+					{laggards.length > 0 && (
+						<span>
+							<strong>Laggards</strong>
+							{laggards.join(', ')}
+						</span>
+					)}
+				</div>
+			)
 		}
-	</tbody>
-</table>
+	</div>
+</div>

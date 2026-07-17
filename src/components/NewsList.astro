@@ -8,21 +8,40 @@ interface NewsItem {
 }
 interface Props {
 	items: NewsItem[];
+	label?: string;
 }
-const { items } = Astro.props;
+const { items, label = 'News' } = Astro.props;
+const count = items?.length ?? 0;
 ---
 
-<ul class="news-list">
-	{
-		items.map((item) => (
-			<li>
-				<a href={item.source_url} target="_blank" rel="noopener noreferrer">
-					{item.headline_reworded}
-				</a>
-				<div class="news-why">
-					{item.why_it_matters} — <span class="data">{item.source_name}</span>
-				</div>
-			</li>
-		))
-	}
-</ul>
+<div class="card" data-card="news">
+	<div class="card__head">
+		<span class="card__label">{label}</span>
+		{count > 0 && <span class="card__meta vote-flat">{count}</span>}
+	</div>
+	<div class="card__body">
+		{
+			count === 0 ? (
+				<p class="data-notice">No news items for this section.</p>
+			) : (
+				<ul class="news-list">
+					{items.map((item) => (
+						<li>
+							<a
+								class="news-headline"
+								href={item.source_url}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{item.headline_reworded}
+							</a>
+							<div class="news-why">
+								{item.why_it_matters} — <span class="news-source">{item.source_name}</span>
+							</div>
+						</li>
+					))}
+				</ul>
+			)
+		}
+	</div>
+</div>

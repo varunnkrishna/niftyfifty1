@@ -1,8 +1,8 @@
 ---
-// The signature element (DESIGN.md §Signature element). Metric → vote table,
-// full transparency — this is what an AI cites. Handles the degraded
-// (missing metric → "—" / vote 0) and suppressed (no bias_label) states
-// per DESIGN.md §Page states; the table always renders whatever was fetched.
+// The signature element (DESIGN.md §Signature element). Metric → vote table
+// inside a bordered card. Warning banner is a fixture inside this
+// card (CLAUDE.md rule 9) — always present, including suppressed state.
+import WarningBanner from './WarningBanner.astro';
 
 interface Metric {
 	value?: string | number;
@@ -88,55 +88,73 @@ const suppressed = premarket.bias_label === null;
 const netLabel = suppressed
 	? null
 	: [premarket.bias_intensity, premarket.bias_label].filter(Boolean).join(' ');
+const scoreText =
+	premarket.bias_score === null
+		? '—'
+		: `${premarket.bias_score > 0 ? '+' : ''}${premarket.bias_score}`;
+const scoreClass = voteClass(
+	premarket.bias_score === null ? 0 : premarket.bias_score > 0 ? 1 : premarket.bias_score < 0 ? -1 : 0,
+);
+const headMeta = suppressed
+	? 'Insufficient data'
+	: `${netLabel}${premarket.conviction === 'reduced' ? ' · conviction ↓' : ''} · ${scoreText}`;
 ---
 
-<table class="signal-table">
-	<thead>
-		<tr>
-			<th>Input</th>
-			<th>Value</th>
-			<th>Vote</th>
-		</tr>
-	</thead>
-	<tbody>
-		{
-			directionalRows.map((row) => (
+<div class="card" data-card="signal">
+	<div class="card__head">
+		<span class="card__label">Signal</span>
+		<span class:list={['card__meta', suppressed ? 'vote-flat' : scoreClass]}>{headMeta}</span>
+	</div>
+	<div class="card__body">
+		<table class="signal-table">
+			<thead>
 				<tr>
-					<td>{row.label}</td>
-					<td class:list={{ 'value-unavailable': row.m.unavailable }}>
-						{row.m.unavailable ? '— unavailable' : row.format(row.m)}
-					</td>
-					<td class={voteClass(row.m.vote)}>{voteText(row.m.vote)}</td>
+					<th>Input</th>
+					<th>Value</th>
+					<th>Vote</th>
 				</tr>
-			))
-		}
-		{
-			contextRows.map((row) => (
-				<tr>
-					<td>{row.label}</td>
-					<td class:list={{ 'value-unavailable': row.m.unavailable }}>
-						{row.m.unavailable ? '— unavailable' : row.format(row.m)}
-					</td>
-					<td class="vote-flat">{row.note}</td>
+			</thead>
+			<tbody>
+				{
+					directionalRows.map((row) => (
+						<tr>
+							<td>{row.label}</td>
+							<td class:list={{ 'value-unavailable': row.m.unavailable }}>
+								{row.m.unavailable ? '— unavailable' : row.format(row.m)}
+							</td>
+							<td class={voteClass(row.m.vote)}>{voteText(row.m.vote)}</td>
+						</tr>
+					))
+				}
+				{
+					contextRows.map((row) => (
+						<tr>
+							<td>{row.label}</td>
+							<td class:list={{ 'value-unavailable': row.m.unavailable }}>
+								{row.m.unavailable ? '— unavailable' : row.format(row.m)}
+							</td>
+							<td class="vote-flat">{row.note}</td>
+						</tr>
+					))
+				}
+				<tr class="net-row">
+					<td>NET BIAS</td>
+					<td colspan="1">{suppressed ? '' : netLabel}</td>
+					<td class={scoreClass}>{scoreText}</td>
 				</tr>
-			))
-		}
-		<tr class="net-row">
-			<td>NET BIAS</td>
-			<td colspan="1">{suppressed ? '' : netLabel}</td>
-			<td class={voteClass(premarket.bias_score === null ? 0 : premarket.bias_score >= 0 ? 1 : -1)}>
-				{premarket.bias_score === null ? '—' : (premarket.bias_score > 0 ? '+' : '') + premarket.bias_score}
-			</td>
-		</tr>
-	</tbody>
-</table>
+			</tbody>
+		</table>
 
-{
-	suppressed ? (
-		<p class="suppressed-note">Insufficient data for a signal this morning.</p>
-	) : missingCount > 0 ? (
-		<p class="data-notice">
-			{missingCount} of {directionalRows.length} inputs unavailable this morning.
-		</p>
-	) : null
-}
+		{
+			suppressed ? (
+				<p class="suppressed-note">Insufficient data for a signal this morning.</p>
+			) : missingCount > 0 ? (
+				<p class="data-notice">
+					{missingCount} of {directionalRows.length} inputs unavailable this morning.
+				</p>
+			) : null
+		}
+
+		<WarningBanner />
+	</div>
+</div>

@@ -31,16 +31,29 @@ const months = [...monthCounts.entries()].sort((a, b) => b[0].localeCompare(a[0]
 <StarlightPage frontmatter={{ title: `${year}`, description: `Archive index for ${year}.`, tableOfContents: false }}>
 	<StructuredData breadcrumbs={[{ name: 'Home', url: `${siteUrl}/` }, { name: year, url: `${siteUrl}/${year}/` }]} />
 	<p class="eyebrow">Archive</p>
-	<ul class="news-list">
-		{
-			months.map(([month, count]) => (
-				<li>
-					<a href={`/${year}/${month}/`}>
-						{MONTH_NAMES[Number(month) - 1]} {year}
-					</a>
-					<div class="news-why">{count} day{count === 1 ? '' : 's'}</div>
-				</li>
-			))
-		}
-	</ul>
+
+	<div class="card" data-card="year-months">
+		<div class="card__head">
+			<span class="card__label">{year}</span>
+			<span class="card__meta vote-flat">{months.length} months</span>
+		</div>
+		<div class="card__body">
+			<ul class="day-list day-list--flush">
+				{
+					months.map(([month, count]) => (
+						<li>
+							<a href={`/${year}/${month}/`}>
+								<div class="day-list-title">
+									{MONTH_NAMES[Number(month) - 1]} {year}
+								</div>
+								<div class="day-list-meta">
+									{count} day{count === 1 ? '' : 's'}
+								</div>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
 </StarlightPage>

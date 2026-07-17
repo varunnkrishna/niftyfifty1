@@ -67,7 +67,6 @@ premarket:
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
-import WarningBanner from '../../../../components/WarningBanner.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
 import AwaitingEod from '../../../../components/AwaitingEod.astro';
@@ -82,17 +81,13 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 ### Markets Data
 
-{frontmatter.premarket.market_expectations}
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
 
 <SignalTable premarket={frontmatter.premarket} />
 
-### Signal
-
-<WarningBanner />
-
 ### News
 
-<NewsList items={frontmatter.premarket.news} />
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
 <AwaitingEod expected="~16:15 IST" />
 

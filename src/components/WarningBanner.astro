@@ -1,10 +1,26 @@
 ---
 // A standing fixture next to every signal display, including
 // suppressed/degraded states — never conditional (CLAUDE.md rule 9).
+// Inside SignalTable it is the card's bottom strip; standalone (e.g. /about/)
+// it gets its own bordered card.
+interface Props {
+	standalone?: boolean;
+}
+const { standalone = false } = Astro.props;
+
+const copy =
+	'⚠ Not financial advice. The Long/Short signal is an automated guess derived only from publicly available market data. It is frequently wrong, especially about where the market closes. Do your own research.';
 ---
 
-<p class="warning-banner">
-	⚠ Not financial advice. The Long/Short signal is an automated guess derived only from publicly
-	available market data. It is frequently wrong, especially about where the market closes. Do your
-	own research.
-</p>
+{
+	standalone ? (
+		<div class="card" data-card="warning">
+			<div class="card__head">
+				<span class="card__label">Disclaimer</span>
+			</div>
+			<p class="warning-banner">{copy}</p>
+		</div>
+	) : (
+		<p class="warning-banner">{copy}</p>
+	)
+}

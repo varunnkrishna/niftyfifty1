@@ -94,7 +94,7 @@ Your instinct is exactly right: **speed is a ranking factor and an AI-crawlabili
 - Heavy analytics (GA4 with everything on). If you want analytics, use a **lightweight, cookieless** option (Plausible/Umami) — one small script, or self-host. Better yet, read traffic from Search Console and skip client analytics entirely for v1.
 - Chat widgets, consent-banner bloat, tag managers, A/B tools, ad scripts.
 - Any React/Vue island that isn't genuinely interactive. Your pages are text — they should hydrate *nothing* by default.
-- Multiple font families/weights. You have three families (Source Serif 4, Geist Sans, Geist Mono) — subset them, `font-display: swap`, self-host, and don't add a fourth.
+- Multiple font families/weights. You have two families (Inter, JetBrains Mono) — subset them, `font-display: swap`, self-host, and don't add a third.
 - Client-side data fetching for market numbers. Numbers are baked in at build by the agent, never fetched in the browser.
 
 **Guardrail to write into the build:** a Lighthouse/CWV check in CI that fails the build if performance drops below ~95. Keeps the discipline automatic instead of relying on memory.

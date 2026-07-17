@@ -41,14 +41,25 @@ const monthName = MONTH_NAMES[Number(month) - 1];
 		]}
 	/>
 	<p class="eyebrow">Archive</p>
-	<ul class="news-list">
-		{
-			inMonth.map((entry) => (
-				<li>
-					<a href={dayHref(entry.data.date as string)}>{entry.data.title}</a>
-					<div class="news-why">{daySummary(entry)}</div>
-				</li>
-			))
-		}
-	</ul>
+
+	<div class="card" data-card="month-days">
+		<div class="card__head">
+			<span class="card__label">{monthName} {year}</span>
+			<span class="card__meta vote-flat">{inMonth.length} days</span>
+		</div>
+		<div class="card__body">
+			<ul class="day-list day-list--flush">
+				{
+					inMonth.map((entry) => (
+						<li>
+							<a href={dayHref(entry.data.date as string)}>
+								<div class="day-list-title">{entry.data.title}</div>
+								<div class="day-list-meta">{daySummary(entry)}</div>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
 </StarlightPage>

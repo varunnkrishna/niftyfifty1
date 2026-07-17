@@ -1,11 +1,18 @@
 ---
-// DESIGN.md §Page states — "Awaiting EOD". Nothing but a muted mono
-// eyebrow-style line where EOD will land. No spinner, no skeleton.
+// DESIGN.md §Page states — "Awaiting EOD". A muted mono line inside a
+// bordered card where EOD will land. No spinner, no skeleton.
 interface Props {
 	expected?: string;
 }
 const { expected = '~16:15 IST' } = Astro.props;
 ---
 
-<hr class="section-divider" />
-<p class="awaiting-eod">EOD · EXPECTED {expected}</p>
+<div class="card" data-card="awaiting-eod">
+	<div class="card__head">
+		<span class="card__label">EOD</span>
+		<span class="card__meta vote-flat">Expected {expected}</span>
+	</div>
+	<div class="card__body card__body--padded">
+		<p class="awaiting-eod awaiting-eod--inline">Close section lands after the session ends.</p>
+	</div>
+</div>
