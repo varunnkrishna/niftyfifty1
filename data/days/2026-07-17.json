@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-17",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.6708072824607065,
+			"value": 58521.4
+		},
+		"conclusion": "Markets closed higher for the third straight session despite losing some early gains. The advance came amid reduced volatility and ahead of key earnings reports, with banking stocks leading the charge. While indices showed resilience, currency weakness and sector rotations suggested underlying caution as investors awaited corporate results to guide future moves.",
+		"news": [
+			{
+				"headline_reworded": "Markets edge up slightly after losing earlier momentum",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlighted the session's struggle to maintain initial gains, reflecting cautious investor sentiment."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive rise as volatility subsides",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "The sustained upward trend signaled resilience amid stabilizing market conditions."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in market fear gauge",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The dramatic drop in volatility indices spurred a temporary rally during trading hours."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued gains set the stage for potential stock-specific movements based on upcoming results."
+			},
+			{
+				"headline_reworded": "Session highlights: Best and worst performers across major indices",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-top-gainers-and-losers-on-nifty-and-sensex-today/articleshow/132460186.cms",
+				"timestamp": "2026-07-17T11:35:36+00:00",
+				"why_it_matters": "This provided insight into sectoral rotations driving market movements."
+			},
+			{
+				"headline_reworded": "Federal Bank leads quartet of stocks reaching annual peaks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/federal-bank-among-4-stocks-that-hit-52-week-highs-and-rallied-up-to-25-in-a-month/slideshow/132460099.cms",
+				"timestamp": "2026-07-17T11:20:11+00:00",
+				"why_it_matters": "Highlighted strong momentum plays attracting investor interest."
+			},
+			{
+				"headline_reworded": "Shapoorji Pallonji secures long-awaited financing deal",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/shapoorji-pallonji-group-completes-long-delayed-debt-fundraising-sources-say/articleshow/132459713.cms",
+				"timestamp": "2026-07-17T10:59:53+00:00",
+				"why_it_matters": "The debt resolution marked progress for the conglomerate's restructuring efforts."
+			},
+			{
+				"headline_reworded": "Rupee suffers worst weekly slide in over a year on oil pressures",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-closes-at-96-28-vs-usd-logs-sharpest-weekly-drop-since-may-as-oil-price-jump-stings/articleshow/132458678.cms",
+				"timestamp": "2026-07-17T10:11:57+00:00",
+				"why_it_matters": "Currency weakness reflected broader macroeconomic concerns impacting markets."
+			},
+			{
+				"headline_reworded": "All eyes on Reliance as earnings announcement looms",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ril-q1-results-live-updates-reliance-industries-ltd-q1-fy27-revenue-earning-net-profit-loss-bonus-shares-date-time/liveblog/132458673.cms",
+				"timestamp": "2026-07-17T10:10:35+00:00",
+				"why_it_matters": "Anticipation built around the conglomerate's performance affecting broader sentiment."
+			},
+			{
+				"headline_reworded": "Reliance promoters boost holdings significantly in latest quarter",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/rs-9000-crore-bet-reliance-industries-promoters-increase-stake-by-0-5-in-june-quarter/articleshow/132458644.cms",
+				"timestamp": "2026-07-17T10:10:15+00:00",
+				"why_it_matters": "Insider buying signaled confidence in the company's prospects."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 0.5092726446656448,
+			"value": 24334.3
+		},
+		"sensex_close": {
+			"delta_pct": 0.689351734942619,
+			"value": 78151.45
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
