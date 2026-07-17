@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-07-17",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 1,
+		"brent": {
+			"delta_pct": 2.004801920768309,
+			"value": 84.97,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2986.41,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.48973143759873133,
+			"value": 100.784,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -4205.56,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.34,
+			"value": 13.22,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias expected with mixed signals. S&P futures dipped slightly while Nasdaq fell more sharply. Bond yields and dollar weakened, but domestic institutional buying provided support. Rising oil prices and rupee depreciation add pressure. Previous close near the high end of its range suggests some upward momentum remains.",
+		"nasdaq_overnight": {
+			"delta_pct": -1.2399143889259632,
+			"value": 25881.947,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets edge up slightly after losing earlier gains",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Shows resilience despite volatility, hinting at cautious optimism."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third straight rise as volatility subsides",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains and lower volatility could attract more buyers."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp drop in volatility index",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Signals potential bullish momentum if volatility remains subdued."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to three sessions amid earnings focus",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Highlights market sensitivity to upcoming corporate results."
+			},
+			{
+				"headline_reworded": "CEAT plummets after reporting massive profit decline",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ceat-shares-crash-9-after-q1-net-profit-tumbles-96-yoy-to-rs-4-crore-what-lies-ahead/articleshow/132452864.cms",
+				"timestamp": "2026-07-17T04:58:23+00:00",
+				"why_it_matters": "Underscores how poor earnings can trigger severe stock reactions."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.13083869325683478,
+			"value": 7533.77,
+			"vote": 0
+		},
+		"us10y_yield": {
+			"delta": -0.03000000000000025,
+			"value": 4.55,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": 1.062155782848154,
+			"value": 96.3375,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
