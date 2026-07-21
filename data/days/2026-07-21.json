@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-21",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.13418089489134377,
+			"value": 57835.35
+		},
+		"conclusion": "Indian equities extended gains for a third straight session, though momentum waned from earlier highs. The benchmarks closed moderately higher as reduced volatility supported the bullish undertone, while corporate earnings reports drove stock-specific activity. Banking stocks underperformed the broader market's advance during the session.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the session's struggle to maintain momentum despite positive openings."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive day of gains amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained upward movement signals resilience in the current bullish trend."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The steepest VIX drop in years provided tailwinds for the afternoon rally."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak as earnings season guides trading",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Corporate results are driving selective stock movements amid broader gains."
+			},
+			{
+				"headline_reworded": "Session's standout performers and laggards across major indices",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-top-gainers-and-losers-on-nifty-and-sensex-today/articleshow/132534866.cms",
+				"timestamp": "2026-07-21T11:24:15+00:00",
+				"why_it_matters": "Identified which sectors and stocks led or dragged during the trading day."
+			},
+			{
+				"headline_reworded": "Rupee strengthens alongside retreating crude oil prices",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/indian-rupee-gains-as-oil-comes-off-inflows-rbi-intervention-in-focus/articleshow/132534364.cms",
+				"timestamp": "2026-07-21T10:53:57+00:00",
+				"why_it_matters": "Currency traders monitored energy costs and central bank actions closely."
+			},
+			{
+				"headline_reworded": "Market anticipates Blinkit's impact on Eternal's quarterly earnings",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/eternal-q1-results-preview-all-eyes-on-blinkit-to-drive-earnings-heres-what-investors-can-expect/articleshow/132534271.cms",
+				"timestamp": "2026-07-21T10:47:57+00:00",
+				"why_it_matters": "Investors focused on how the acquisition might shape the company's financials."
+			},
+			{
+				"headline_reworded": "Adani Total Gas reports profit decline despite revenue growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/adani-total-gas-q1-results-profit-falls-14-yoy-to-rs-142-crore-revenue-jumps-27/articleshow/132533438.cms",
+				"timestamp": "2026-07-21T10:08:37+00:00",
+				"why_it_matters": "Mixed results showed the energy company's contrasting top and bottom line trends."
+			},
+			{
+				"headline_reworded": "European banks tighten lending amid geopolitical uncertainty",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-euro-zone-banks-tighten-credit-standards-amid-geopolitical-risks-ecb-survey-shows/articleshow/132532469.cms",
+				"timestamp": "2026-07-21T09:19:24+00:00",
+				"why_it_matters": "ECB survey revealed how global risks are affecting credit availability."
+			},
+			{
+				"headline_reworded": "TVS Motor shares surge on strong quarterly profit growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/tvs-motor-shares-jump-6-after-q1-net-profit-soars-67-to-rs-1019-crore-revenue-up-33/articleshow/132532206.cms",
+				"timestamp": "2026-07-21T09:10:17+00:00",
+				"why_it_matters": "Robust earnings demonstrated the automaker's improved operational performance."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 0.4535166227132119,
+			"value": 24187.7
+		},
+		"sensex_close": {
+			"delta_pct": 0.3688260854412648,
+			"value": 77470.11
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
