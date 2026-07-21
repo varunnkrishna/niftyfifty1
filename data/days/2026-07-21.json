@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-07-21",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Short",
+		"bias_score": -3,
+		"brent": {
+			"delta_pct": 5.318770034429526,
+			"value": 88.71,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 1312.03,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.2104636156060648,
+			"value": 100.942,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -1121.04,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.25,
+			"value": 12.73,
+			"vote": null
+		},
+		"market_expectations": "Markets face downward pressure with negative overnight cues from US indices and dollar strength, though domestic institutional buying provides some support. The bias leans short given weak FII flows, elevated yields, and Brent crude's spike. With India VIX cooling sharply after recent highs, the setup suggests fragile gains vulnerable to global risk-off sentiment.",
+		"nasdaq_overnight": {
+			"delta_pct": -1.4111446679534567,
+			"value": 25508.072,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflects ongoing volatility and cautious sentiment despite marginal gains."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third straight session of gains amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained upward movement suggests resilience, but easing volatility may signal complacency."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility plunges most sharply in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Sharp VIX drop could indicate reduced fear, but such extremes often precede reversals."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to three days with focus on earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued gains hinge on corporate results matching elevated expectations."
+			},
+			{
+				"headline_reworded": "PNB stock surges post-earnings, sparking debate on valuation",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/pnb-shares-jump-7-in-2-days-after-q1-earnings-should-you-buy-sell-or-hold/articleshow/132528828.cms",
+				"timestamp": "2026-07-21T05:37:59+00:00",
+				"why_it_matters": "Bank stock reactions will test appetite for financial sector amid tightening liquidity."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.9588388549287243,
+			"value": 7443.28,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.020000000000000462,
+			"value": 4.55,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": -0.10142566318175038,
+			"value": 96.3275,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}

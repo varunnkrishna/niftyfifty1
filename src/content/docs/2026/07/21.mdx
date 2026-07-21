@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 21 Jul 2026
+description: Nifty outlook — 21 Jul 2026. Pre-market bias is Mildly Short.
+date: "2026-07-21"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7443.28
+    delta_pct: -0.9588388549287243
+    vote: -1
+  nasdaq_overnight:
+    value: 25508.072
+    delta_pct: -1.4111446679534567
+    vote: -1
+  us10y_yield:
+    value: 4.55
+    delta: -0.020000000000000462
+    vote: 0
+  dxy:
+    value: 100.942
+    delta_pct: 0.2104636156060648
+    vote: -1
+  fii_net_cash:
+    value: -1121.04
+    vote: -1
+  dii_net_cash:
+    value: 1312.03
+    vote: 1
+  usdinr:
+    value: 96.3275
+    delta_pct: -0.10142566318175038
+    vote: 1
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 12.73
+    delta: -0.25
+    vote: null
+  brent:
+    value: 88.71
+    delta_pct: 5.318770034429526
+    vote: null
+  bias_score: -3
+  bias_label: Short
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets face downward pressure with negative overnight cues from US indices and dollar strength, though domestic institutional buying provides some support. The bias leans short given weak FII flows, elevated yields, and Brent crude's spike. With India VIX cooling sharply after recent highs, the setup suggests fragile gains vulnerable to global risk-off sentiment.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflects ongoing volatility and cautious sentiment despite marginal gains.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight session of gains amid lower volatility
+    why_it_matters: Sustained upward movement suggests resilience, but easing volatility may signal complacency.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as volatility plunges most sharply in four years
+    why_it_matters: Sharp VIX drop could indicate reduced fear, but such extremes often precede reversals.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to three days with focus on earnings
+    why_it_matters: Continued gains hinge on corporate results matching elevated expectations.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: PNB stock surges post-earnings, sparking debate on valuation
+    why_it_matters: Bank stock reactions will test appetite for financial sector amid tightening liquidity.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/pnb-shares-jump-7-in-2-days-after-q1-earnings-should-you-buy-sell-or-hold/articleshow/132528828.cms
+    timestamp: "2026-07-21T05:37:59+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
