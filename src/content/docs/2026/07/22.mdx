@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 22 Jul 2026
+description: Nifty outlook — 22 Jul 2026. Pre-market bias is Strongly Short.
+date: "2026-07-22"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7509.2
+    delta_pct: -0.4558837370535823
+    vote: -1
+  nasdaq_overnight:
+    value: 25837.207
+    delta_pct: -1.033450402784539
+    vote: -1
+  us10y_yield:
+    value: 4.6
+    delta: 0.04999999999999982
+    vote: -1
+  dxy:
+    value: 101.137
+    delta_pct: 0.38411910669975236
+    vote: -1
+  fii_net_cash:
+    value: 1650.16
+    vote: 1
+  dii_net_cash:
+    value: -656.88
+    vote: -1
+  usdinr:
+    value: 96.4475
+    delta_pct: -0.0529541361221728
+    vote: 0
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 13.04
+    delta: 0.44
+    vote: null
+  brent:
+    value: 92.39
+    delta_pct: 4.869466515323503
+    vote: null
+  bias_score: -5
+  bias_label: Short
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: Markets face downward pressure today with negative overnight cues from US indices and rising Treasury yields. The bias leans short as foreign investors remain net sellers while domestic institutions show modest buying. Brent crude's sharp spike adds inflationary concerns, though the rupee holds steady. With the previous close in the bottom third of its range and elevated volatility, caution prevails despite recent gains.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: Shows resilience despite volatility, setting a cautious tone for today.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight gain as volatility eases
+    why_it_matters: Sustained upward momentum could attract more buyers if volatility remains subdued.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as India VIX posts sharpest decline in four years
+    why_it_matters: Plummeting volatility signals reduced fear, potentially supporting further upside.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to third session ahead of earnings
+    why_it_matters: Continued gains amid earnings season highlights stock-specific opportunities.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: BlueStone Jewellery skyrockets on strong quarterly results
+    why_it_matters: Exceptional performance in consumer discretionary sector may draw retail interest.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/bluestone-jewellery-shares-soar-29-in-2-days-after-stellar-q1-show-should-you-buy-sell-or-hold-the-stock/articleshow/132551458.cms
+    timestamp: "2026-07-22T05:12:23+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
