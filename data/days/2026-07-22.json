@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-22",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.7909555461969567,
+			"value": 57126.8
+		},
+		"conclusion": "Markets closed lower today, with Nifty and Sensex both declining amid mixed sector performances. Oil price surges and geopolitical tensions weighed on sentiment, while strong earnings from banks like IndusInd provided some support. Key stocks reacted sharply to earnings reports and corporate actions, highlighting a day of selective investor focus amidst broader caution.",
+		"news": [
+			{
+				"headline_reworded": "Oil price surge impacts Indian bond market, though investor interest cushions the drop",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/oil-rally-weighs-on-indian-bonds-value-buyers-limit-fall/articleshow/132558831.cms",
+				"timestamp": "2026-07-22T12:03:06+00:00",
+				"why_it_matters": "Rising oil prices typically pressure bond yields, influencing broader market sentiment."
+			},
+			{
+				"headline_reworded": "IndusInd Bank reports significant profit growth in Q1, though net interest income remains unchanged",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/indusind-bank-q1-results-profit-soars-72-yoy-to-rs-1037-crore-nii-flat/articleshow/132557800.cms",
+				"timestamp": "2026-07-22T11:20:17+00:00",
+				"why_it_matters": "Strong bank earnings can signal sector health, affecting investor confidence in financial stocks."
+			},
+			{
+				"headline_reworded": "Buffett and Munger's skepticism towards EBITDA highlights alternative valuation perspectives",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/why-warren-buffett-and-charlie-munger-dont-like-ebitda-as-an-earnings-metric/articleshow/132557098.cms",
+				"timestamp": "2026-07-22T11:01:22+00:00",
+				"why_it_matters": "Their views can sway investor approaches to evaluating company performance."
+			},
+			{
+				"headline_reworded": "Questions arise over Blinkit's competitive edge as Eternal's shareholder letter sparks debate",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/will-blinkit-growth-sustain-amid-competition-5-things-to-know-from-eternals-shareholder-letter/articleshow/132556814.cms",
+				"timestamp": "2026-07-22T10:36:31+00:00",
+				"why_it_matters": "Investor communications can reveal strategic challenges, impacting stock perceptions."
+			},
+			{
+				"headline_reworded": "Foreign institutional investors reduce stakes in Adani Enterprises, shifting ownership dynamics",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fiis-are-leaving-adani-enterprises-heres-who-is-buying/videoshow/132556643.cms",
+				"timestamp": "2026-07-22T10:26:32+00:00",
+				"why_it_matters": "FII movements often indicate changing confidence levels in major corporations."
+			},
+			{
+				"headline_reworded": "Airbus shares jump following announcement of a large share buyback and future profit goals",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-airbus-shares-surge-over-5-after-5-billion-buyback-ambitious-2029-profit-targets/articleshow/132556495.cms",
+				"timestamp": "2026-07-22T10:24:27+00:00",
+				"why_it_matters": "Corporate actions like buybacks can drive short-term stock performance and sector interest."
+			},
+			{
+				"headline_reworded": "Indo-MIM IPO anticipated with a high gray market premium, drawing investor attention",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/indo-mim-ipo-opens-tomorrow-gmp-signals-37-listing-premium-check-price-band-dates-and-key-details/articleshow/132556427.cms",
+				"timestamp": "2026-07-22T10:20:52+00:00",
+				"why_it_matters": "IPO performance can reflect market appetite for new listings and sector trends."
+			},
+			{
+				"headline_reworded": "HFCL turns profitable in Q1 with a dramatic revenue increase year-over-year",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hfcl-q1-results-firm-swings-to-black-net-profit-at-rs-246-crore-revenue-soars-120-yoy/articleshow/132556350.cms",
+				"timestamp": "2026-07-22T10:16:52+00:00",
+				"why_it_matters": "Positive earnings reversals can boost sector sentiment and individual stock trajectories."
+			},
+			{
+				"headline_reworded": "Bharat Coking Coal shares plummet after subsidiary reports a quarterly loss",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-coking-coal-shares-crash-8-after-coal-india-arm-posts-rs-68-crore-q1-net-loss/articleshow/132556293.cms",
+				"timestamp": "2026-07-22T10:12:54+00:00",
+				"why_it_matters": "Subsidiary performance can directly impact parent company valuations and investor decisions."
+			},
+			{
+				"headline_reworded": "Brent crude prices climb sharply amid geopolitical tensions affecting supply routes",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/commodities/news/brent-crude-surges-4-to-over-95-a-barrel-near-6-week-high-as-conflict-threatens-key-oil-transit-routes/articleshow/132556226.cms",
+				"timestamp": "2026-07-22T10:12:20+00:00",
+				"why_it_matters": "Oil price volatility can influence inflation expectations and energy sector stocks."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.31778670903822787,
+			"value": 23996.25
+		},
+		"sensex_close": {
+			"delta_pct": -0.559447481158379,
+			"value": 76755.05
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
