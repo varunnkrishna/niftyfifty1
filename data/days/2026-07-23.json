@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-23",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -3.2969136076717263,
+			"value": 56592.0
+		},
+		"conclusion": "Markets closed lower despite early gains, with Nifty and Sensex both declining over 1.9%. The downward movement contrasted with earlier bullish trends, as key indices failed to sustain momentum. Corporate earnings reports and guidance cuts, particularly from Infosys, weighed on sentiment. While volatility had cooled earlier in the week, the session's losses highlighted ongoing market sensitivity to earnings outlooks and external factors. The rupee's stability amid oil price pressures provided some offset, but overall, the day reflected a cautious tone among investors.",
+		"news": [
+			{
+				"headline_reworded": "Market struggles to maintain early gains, closes slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to sustain momentum despite initial positive movement."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "This indicates a sustained bullish trend supported by reduced volatility."
+			},
+			{
+				"headline_reworded": "Market rallies as volatility cools significantly",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The sharp drop in volatility suggests increased investor confidence and potential for continued gains."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak to three days",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "This reflects ongoing positive sentiment ahead of key quarterly results."
+			},
+			{
+				"headline_reworded": "Infosys ADRs drop sharply after revenue guidance cut",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/infosys-adrs-fall-over-4-as-q1-revenue-guidance-cut-overshadows-profit-growth/articleshow/132580004.cms",
+				"timestamp": "2026-07-23T11:57:46+00:00",
+				"why_it_matters": "This underscores the impact of corporate guidance on investor sentiment and stock performance."
+			},
+			{
+				"headline_reworded": "Key stocks show mixed performance on Nifty and Sensex",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-adani-enterprises-indigo-bajaj-auto-among-top-gainers-and-losers-on-nifty-and-sensex-on-thursday/articleshow/132578479.cms",
+				"timestamp": "2026-07-23T11:27:35+00:00",
+				"why_it_matters": "This provides insight into sector-specific movements and broader market trends."
+			},
+			{
+				"headline_reworded": "Infosys reports profit growth but revises revenue forecast downward",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/infosys-q1-results-profit-rises-12-yoy-to-rs-7769-crore-revenue-climbs-14/articleshow/132578431.cms",
+				"timestamp": "2026-07-23T10:58:01+00:00",
+				"why_it_matters": "This highlights the divergence between profitability and future growth expectations."
+			},
+			{
+				"headline_reworded": "Rupee stabilizes despite oil price pressures",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-ends-nearly-flat-as-central-bank-intervention-blunts-oil-strain/articleshow/132577509.cms",
+				"timestamp": "2026-07-23T10:20:58+00:00",
+				"why_it_matters": "This shows the effectiveness of central bank interventions in currency markets."
+			},
+			{
+				"headline_reworded": "IndiGo swings to loss despite revenue increase",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/interglobe-aviation-q1-results-airline-reports-rs-238-crore-loss-vs-profit-yoy-revenue-rises-20/articleshow/132577469.cms",
+				"timestamp": "2026-07-23T10:18:32+00:00",
+				"why_it_matters": "This reflects the challenges faced by airlines in converting top-line growth to profitability."
+			},
+			{
+				"headline_reworded": "Textile firm announces bonus issue shortly after IPO",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/bonus-bonanza-this-textile-player-announced-11-bonus-issue-dividend-just-14-sessions-after-market-debut-do-you-own/articleshow/132577408.cms",
+				"timestamp": "2026-07-23T10:16:39+00:00",
+				"why_it_matters": "This demonstrates how corporate actions can quickly impact shareholder value post-listing."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.909650164582506,
+			"value": 23869.6
+		},
+		"sensex_close": {
+			"delta_pct": -2.2521143241744044,
+			"value": 76391.39
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
