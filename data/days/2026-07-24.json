@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-24",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -2.1598067132625767,
+			"value": 56693.5
+		},
+		"conclusion": "Indian equities closed sharply lower today, with major indices dropping over 2%. The broad-based selloff particularly impacted banking stocks. While earlier sessions saw extended gains, today's reversal occurred despite some positive corporate earnings and central bank support for the rupee. Market sentiment turned cautious as volatility resurfaced after recent stability.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to maintain early advances, closing slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlighted the session's volatility despite initial positive momentum."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive rise as volatility recedes",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It signaled sustained bullish sentiment amid stabilizing market conditions."
+			},
+			{
+				"headline_reworded": "Midday surge follows sharp drop in fear gauge",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The VIX's dramatic plunge fueled optimism during trading hours."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned for quarterly results driving individual stock movements."
+			},
+			{
+				"headline_reworded": "ICICI Bank completes record $1bn overseas bond offering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/icici-bank-prices-1-billion-debt-in-largest-dollar-issue-by-indian-private-lender/articleshow/132603402.cms",
+				"timestamp": "2026-07-24T10:59:26+00:00",
+				"why_it_matters": "Demonstrated strong international appetite for Indian corporate debt."
+			},
+			{
+				"headline_reworded": "Central bank actions cushion rupee against external pressures",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-intervention-shields-rupee-in-face-of-oil-hedging-strain/articleshow/132603138.cms",
+				"timestamp": "2026-07-24T10:48:27+00:00",
+				"why_it_matters": "Showed RBI's active role in maintaining currency stability."
+			},
+			{
+				"headline_reworded": "ACC posts steep profit decline amid weaker sales",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/acc-q1-results-profit-falls-61-yoy-to-rs-147-crore-as-revenue-volumes-decline/articleshow/132603024.cms",
+				"timestamp": "2026-07-24T10:45:46+00:00",
+				"why_it_matters": "Reflected sector-specific challenges in building materials."
+			},
+			{
+				"headline_reworded": "Tata Consumer reports robust profit growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tata-consumer-q1-results-net-profit-rises-28-yoy-to-rs-427-crore-revenue-up-12/articleshow/132603103.cms",
+				"timestamp": "2026-07-24T10:45:05+00:00",
+				"why_it_matters": "Highlighted resilience in FMCG segment performance."
+			},
+			{
+				"headline_reworded": "SBI Life insurance profits climb on premium surge",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/sbi-life-q1-results-profit-rises-22-yoy-to-rs-720-crore-on-strong-premium-growth/articleshow/132602488.cms",
+				"timestamp": "2026-07-24T10:23:07+00:00",
+				"why_it_matters": "Indicated strong demand in life insurance products."
+			},
+			{
+				"headline_reworded": "Sterlite Tech earnings soar on AI-driven demand",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/sterlite-tech-q1-results-profit-skyrockets-870-yoy-to-rs-197-crore-as-ai-data-centre-orders-lift-earnings/articleshow/132602426.cms",
+				"timestamp": "2026-07-24T10:20:23+00:00",
+				"why_it_matters": "Showcased how AI infrastructure spending benefits tech firms."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.943395837201144,
+			"value": 23767.45
+		},
+		"sensex_close": {
+			"delta_pct": -2.1217107210380535,
+			"value": 76059.77
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],

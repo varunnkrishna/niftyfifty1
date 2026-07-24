@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 24 Jul 2026
-description: Nifty outlook — 24 Jul 2026. Pre-market bias is Strongly Short.
+title: Nifty & Sensex — 24 Jul 2026
+description: How markets closed — 24 Jul 2026. Nifty -1.94%, bias was Short.
 date: "2026-07-24"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/bonds/oil-shock-treasury-yield-spike-put-indian-bonds-under-pressure-before-debt-sale/articleshow/132596731.cms
     timestamp: "2026-07-24T05:04:24+00:00"
+eod:
+  nifty_close:
+    value: 23767.45
+    delta_pct: -1.943395837201144
+  sensex_close:
+    value: 76059.77
+    delta_pct: -2.1217107210380535
+  banknifty_close:
+    value: 56693.5
+    delta_pct: -2.1598067132625767
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities closed sharply lower today, with major indices dropping over 2%. The broad-based selloff particularly impacted banking stocks. While earlier sessions saw extended gains, today's reversal occurred despite some positive corporate earnings and central bank support for the rupee. Market sentiment turned cautious as volatility resurfaced after recent stability.
+  news:
+  - headline_reworded: Markets struggle to maintain early advances, closing slightly up
+    why_it_matters: This highlighted the session's volatility despite initial positive momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive rise as volatility recedes
+    why_it_matters: It signaled sustained bullish sentiment amid stabilizing market conditions.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge follows sharp drop in fear gauge
+    why_it_matters: The VIX's dramatic plunge fueled optimism during trading hours.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak ahead of earnings season
+    why_it_matters: Investors positioned for quarterly results driving individual stock movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: ICICI Bank completes record $1bn overseas bond offering
+    why_it_matters: Demonstrated strong international appetite for Indian corporate debt.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/bonds/icici-bank-prices-1-billion-debt-in-largest-dollar-issue-by-indian-private-lender/articleshow/132603402.cms
+    timestamp: "2026-07-24T10:59:26+00:00"
+  - headline_reworded: Central bank actions cushion rupee against external pressures
+    why_it_matters: Showed RBI's active role in maintaining currency stability.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-intervention-shields-rupee-in-face-of-oil-hedging-strain/articleshow/132603138.cms
+    timestamp: "2026-07-24T10:48:27+00:00"
+  - headline_reworded: ACC posts steep profit decline amid weaker sales
+    why_it_matters: Reflected sector-specific challenges in building materials.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/acc-q1-results-profit-falls-61-yoy-to-rs-147-crore-as-revenue-volumes-decline/articleshow/132603024.cms
+    timestamp: "2026-07-24T10:45:46+00:00"
+  - headline_reworded: Tata Consumer reports robust profit growth
+    why_it_matters: Highlighted resilience in FMCG segment performance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/tata-consumer-q1-results-net-profit-rises-28-yoy-to-rs-427-crore-revenue-up-12/articleshow/132603103.cms
+    timestamp: "2026-07-24T10:45:05+00:00"
+  - headline_reworded: SBI Life insurance profits climb on premium surge
+    why_it_matters: Indicated strong demand in life insurance products.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/sbi-life-q1-results-profit-rises-22-yoy-to-rs-720-crore-on-strong-premium-growth/articleshow/132602488.cms
+    timestamp: "2026-07-24T10:23:07+00:00"
+  - headline_reworded: Sterlite Tech earnings soar on AI-driven demand
+    why_it_matters: Showcased how AI infrastructure spending benefits tech firms.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/sterlite-tech-q1-results-profit-skyrockets-870-yoy-to-rs-197-crore-as-ai-data-centre-orders-lift-earnings/articleshow/132602426.cms
+    timestamp: "2026-07-24T10:20:23+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
