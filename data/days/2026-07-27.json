@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-27",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -1.293586016164857,
+			"value": 57087.2
+		},
+		"conclusion": "Indian markets closed lower amid broad-based selling pressure, with banking stocks leading declines. While select corporate earnings provided pockets of positivity, concerns over rising costs and global uncertainties dominated sentiment. The session saw defensive sectors relatively outperform as investors remained cautious, with midcaps showing resilience despite the downturn.",
+		"news": [
+			{
+				"headline_reworded": "Tata Chemicals reports steep 81% decline in Q1 earnings due to rising costs",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tata-chemicals-q1-profit-down-81-pc-to-rs-60-cr-on-higher-expenses/articleshow/132662595.cms",
+				"timestamp": "2026-07-27T13:12:19+00:00",
+				"why_it_matters": "The sharp profit drop signaled potential margin pressures in the chemical sector, weighing on investor sentiment."
+			},
+			{
+				"headline_reworded": "Tamilnad Mercantile Bank posts 35% surge in quarterly profit driven by robust revenue",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tamilnad-mercantile-bank-q1-profit-jumps-35-on-strong-income-growth/articleshow/132662506.cms",
+				"timestamp": "2026-07-27T13:04:48+00:00",
+				"why_it_matters": "Strong performance by regional banks provided a counterbalance to broader market weakness."
+			},
+			{
+				"headline_reworded": "Canara Bank plans $2.5 billion fundraising through foreign currency deposits and loans",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/canara-bank-targets-up-to-2-5-billion-via-fcnr-b-overseas-borrowings/articleshow/132661924.cms",
+				"timestamp": "2026-07-27T12:36:01+00:00",
+				"why_it_matters": "The capital raising strategy highlighted banks' efforts to strengthen liquidity amid economic uncertainty."
+			},
+			{
+				"headline_reworded": "Major Indian cities see retail space availability shrink as new mall supply halves",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/indias-top-7-cities-face-retail-space-crunch-in-malls-new-supply-down-57-pc-in-jan-jun-anarock/articleshow/132661802.cms",
+				"timestamp": "2026-07-27T12:33:45+00:00",
+				"why_it_matters": "The commercial real estate crunch pointed to shifting consumption patterns affecting retail investments."
+			},
+			{
+				"headline_reworded": "US stock futures climb as Middle East tensions ease temporarily",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/dow-jones-stock-market-live-updates-nasdaq-sp-500-us-iran-israel-war-hormuz-deal-brent-crude-oil-fed-warsh-microsoft-amazon-meta-alphabet-tesla-chip-stock-price-news-27th-july-2026/liveblog/132661511.cms",
+				"timestamp": "2026-07-27T12:23:47+00:00",
+				"why_it_matters": "Global risk appetite improved slightly, though domestic markets remained under pressure."
+			},
+			{
+				"headline_reworded": "Indian 10-year bond yields record largest two-month drop as oil prices retreat",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/india-10-year-bond-yield-logs-biggest-plunge-in-2-months-as-oil-rally-falters/articleshow/132661306.cms",
+				"timestamp": "2026-07-27T12:14:55+00:00",
+				"why_it_matters": "The bond market reacted positively to cooling energy costs, suggesting lower inflation expectations."
+			},
+			{
+				"headline_reworded": "Coal India announces modest Q1 profit growth and interim dividend payout",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/coal-india-q1-results-net-profit-rises-marginally-to-rs-8852-crore-psu-announces-rs-5-5-interim-dividend/articleshow/132661057.cms",
+				"timestamp": "2026-07-27T12:09:01+00:00",
+				"why_it_matters": "The state-run miner's stable performance offered some defensive support to the market."
+			},
+			{
+				"headline_reworded": "Tata Power delivers 11% earnings growth in Q1 with steady revenue increase",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/tata-power-q1-results-net-profit-rises-11-yoy-to-rs-1176-crore-revenue-up-6/articleshow/132660751.cms",
+				"timestamp": "2026-07-27T11:51:07+00:00",
+				"why_it_matters": "The utility's consistent performance reinforced confidence in power sector fundamentals."
+			},
+			{
+				"headline_reworded": "Seven midcap stocks including Laurus Labs reach yearly peaks with strong monthly gains",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/laurus-labs-among-7-midcap-stocks-that-hit-52-week-highs-and-rallied-up-to-20-in-a-month/slideshow/132660496.cms",
+				"timestamp": "2026-07-27T11:32:33+00:00",
+				"why_it_matters": "Select midcaps continued to outperform despite broader market declines."
+			},
+			{
+				"headline_reworded": "John Stuart Mill's insight on capital destruction during market panics",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/quote-of-the-day-by-john-stuart-mill-as-a-rule-panics-do-not-destroy-capital-they-merely-reveal-the-extent-to-which-it-has-been-previously-destroyed-by-its-betrayal-into-hopelessly-unproductive-works/articleshow/132652404.cms",
+				"timestamp": "2026-07-27T11:30:00+00:00",
+				"why_it_matters": "The philosophical quote provided context for interpreting today's market volatility."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.7927583027737238,
+			"value": 23995.95
+		},
+		"sensex_close": {
+			"delta_pct": -0.8188061176110395,
+			"value": 76835.78
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
