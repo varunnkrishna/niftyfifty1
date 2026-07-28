@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 28 Jul 2026
+description: Nifty outlook — 28 Jul 2026. Pre-market bias is Neutral.
+date: "2026-07-28"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7413.18
+    delta_pct: -0.40439161229994647
+    vote: -1
+  nasdaq_overnight:
+    value: 24932.082
+    delta_pct: -2.2580618604230005
+    vote: -1
+  us10y_yield:
+    value: 4.69
+    delta: -0.019999999999999574
+    vote: 0
+  dxy:
+    value: 101.571
+    delta_pct: 0.1390121265897576
+    vote: 0
+  fii_net_cash:
+    value: -1688.23
+    vote: -1
+  dii_net_cash:
+    value: 2329.14
+    vote: 1
+  usdinr:
+    value: 95.7375
+    delta_pct: -0.6263175868193132
+    vote: 1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 12.61
+    delta: -0.05
+    vote: null
+  brent:
+    value: 87.2
+    delta_pct: -13.39755685768199
+    vote: null
+  bias_score: 0
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Neutral bias prevails with mixed global cues as US futures decline while the rupee strengthens. Domestic institutional buying offsets foreign outflows, but Brent crude's sharp drop may pressure energy stocks. The VIX remains subdued, suggesting limited near-term volatility despite the Nifty sitting near recent highs.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflects cautious optimism amid lingering volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight session of gains
+    why_it_matters: Sustained upward momentum could signal improving investor confidence.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as volatility cools sharply
+    why_it_matters: Plunging volatility suggests reduced fear in the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak ahead of earnings season
+    why_it_matters: Corporate results will drive individual stock movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Fed's inflation strategy faces credibility challenge
+    why_it_matters: Monetary policy uncertainty weighs on US market sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/us-stock-market-feds-inflation-fight-puts-kevin-warshs-credibility-to-the-test/articleshow/132675969.cms
+    timestamp: "2026-07-28T05:16:23+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
