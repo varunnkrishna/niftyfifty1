@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-29",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 1.0847823013853575,
+			"value": 57205.9
+		},
+		"conclusion": "Indian equities advanced for the third straight session, with both major indices climbing over one percent as reduced volatility supported bullish sentiment. The banking sector underperformed the broader market despite participating in the rally. Corporate earnings reports dominated stock-specific activity while institutional fundraising activities highlighted capital market dynamics. Though markets pared some gains by close, the sustained upward movement suggests cautious optimism among investors.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close with modest uptick",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Shows the session's struggle to maintain momentum despite initial optimism."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive session of gains amid calmer volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Highlights sustained bullish sentiment as market turbulence eases."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in fear gauge",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Points to improved investor confidence as volatility plummets."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak with earnings season in focus",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Emphasizes how corporate results are driving selective stock movements."
+			},
+			{
+				"headline_reworded": "Investment luminary underscores executive leadership's value impact",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/quote-of-the-day-by-lou-simpson-one-of-the-things-i-have-learned-over-the-years-is-how-important-management-is-in-building-or-subtracting-from-value/articleshow/132711787.cms",
+				"timestamp": "2026-07-29T12:12:27+00:00",
+				"why_it_matters": "Provides philosophical context about management's role in valuation."
+			},
+			{
+				"headline_reworded": "Dabur posts double-digit growth in both profit and revenue",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dabur-q1-results-profit-rises-15-to-rs-591-crore-revenue-up-11/articleshow/132711242.cms",
+				"timestamp": "2026-07-29T11:47:15+00:00",
+				"why_it_matters": "Demonstrates consumer goods resilience amid economic fluctuations."
+			},
+			{
+				"headline_reworded": "Dhanlaxmi Bank's earnings surge as bad loan buffers shrink",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dhanlaxmi-bank-q1-profit-more-than-doubles-on-lower-provisions/articleshow/132710312.cms",
+				"timestamp": "2026-07-29T11:10:05+00:00",
+				"why_it_matters": "Reveals improved financial health in the banking sector."
+			},
+			{
+				"headline_reworded": "Bajaj Housing registers strong profit growth alongside asset expansion",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-housing-finance-q1-results-net-profit-rises-23-yoy-to-rs-715-crore-aum-rises-24/articleshow/132710115.cms",
+				"timestamp": "2026-07-29T11:06:27+00:00",
+				"why_it_matters": "Indicates robust performance in the housing finance segment."
+			},
+			{
+				"headline_reworded": "Edelweiss secures major funding for alternative investment vehicle",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/aif-pms/edelweiss-alternatives-raises-over-rs-1200-crore-for-second-discovery-fund-backs-arboreal-bio/articleshow/132709897.cms",
+				"timestamp": "2026-07-29T10:52:50+00:00",
+				"why_it_matters": "Signals continued investor appetite for niche market opportunities."
+			},
+			{
+				"headline_reworded": "State Bank strengthens capital base with bond issuance",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/sbi-raises-rs-4691-crore-via-tier-1-bonds-at-7-75-coupon/articleshow/132709860.cms",
+				"timestamp": "2026-07-29T10:51:18+00:00",
+				"why_it_matters": "Reflects proactive balance sheet management by India's largest lender."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 1.5944967657606421,
+			"value": 24250.2
+		},
+		"sensex_close": {
+			"delta_pct": 1.6536025853175422,
+			"value": 77654.6
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
