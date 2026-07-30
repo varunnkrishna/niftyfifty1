@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-07-30",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 4,
+		"brent": {
+			"delta_pct": 2.716161158895434,
+			"value": 90.76,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 998.02,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.5851640232489491,
+			"value": 100.916,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 2981.87,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.13,
+			"value": 12.14,
+			"vote": null
+		},
+		"market_expectations": "Markets are poised for a bullish session, driven by positive indicators such as favorable currency movements, strong institutional inflows, and a supportive yield environment. However, overnight declines in major indices suggest caution amid global uncertainties.",
+		"nasdaq_overnight": {
+			"delta_pct": -4.8575915985816085,
+			"value": 24442.941,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "MTAR Tech rebounds sharply following recent decline, driven by two key factors",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/multibagger-mtar-tech-rallies-5-after-12-slide-in-4-days-here-are-2-triggers/articleshow/132727745.cms",
+				"timestamp": "2026-07-30T05:20:32+00:00",
+				"why_it_matters": "The recovery in MTAR Tech's stock could signal renewed investor confidence in the sector."
+			},
+			{
+				"headline_reworded": "Redington sees significant stock surge as Q1 profits and revenues soar",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/redington-shares-rally-15-after-q1-profit-surges-77-revenue-rises-35-yoy/articleshow/132727511.cms",
+				"timestamp": "2026-07-30T05:01:02+00:00",
+				"why_it_matters": "Strong earnings growth for Redington may attract attention to its performance and sector outlook."
+			},
+			{
+				"headline_reworded": "Former BOJ official hints at potential policy shift toward inflation control",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-boj-may-shift-to-inflation-fighting-mode-by-december-says-former-official-watanabe/articleshow/132727303.cms",
+				"timestamp": "2026-07-30T04:50:51+00:00",
+				"why_it_matters": "A potential change in BOJ policy could influence global market sentiment and currency dynamics."
+			},
+			{
+				"headline_reworded": "Zhongji Innolight struggles in Hong Kong debut following massive IPO",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-zhongji-innolight-shares-slip-in-hong-kong-debut-after-record-6-8-billion-ipo/articleshow/132726855.cms",
+				"timestamp": "2026-07-30T04:24:08+00:00",
+				"why_it_matters": "The weak debut could impact investor sentiment toward new listings and IPOs in the region."
+			},
+			{
+				"headline_reworded": "Analysts weigh in on Eicher Motors' outlook amid Royal Enfield focus",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/eicher-motors-share-price-target-what-are-morgan-stanley-nomura-saying-about-royal-enfield-maker/articleshow/132726822.cms",
+				"timestamp": "2026-07-30T04:21:51+00:00",
+				"why_it_matters": "Insights from major analysts could shape investor views on Eicher Motors' growth potential."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -2.437804708919642,
+			"value": 7316.15,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.040000000000000036,
+			"value": 4.61,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -1.266452580542937,
+			"value": 95.65,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
