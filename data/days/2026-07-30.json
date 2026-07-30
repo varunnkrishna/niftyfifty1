@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-07-30",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.8007972695282528,
+			"value": 57147.5
+		},
+		"conclusion": "Indian markets extended their winning streak to three sessions with both Sensex and Nifty posting significant gains, though momentum waned slightly by close. The rally was supported by plunging volatility levels and anticipation of earnings reports, while corporate actions like Vedanta's demerger plan added stock-specific interest. Global concerns emerged around AI sector risks and Asian market instability, though domestic indices remained resilient. Currency markets held steady despite oil price swings, completing a session where bullish sentiment overcame periodic profit-taking.",
+		"news": [
+			{
+				"headline_reworded": "Markets give up early gains, close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Showed resilience despite losing some momentum during the session."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Confirmed a sustained bullish trend amid reduced market volatility."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility plummets most in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Highlighted a sharp decline in fear gauge that fueled afternoon rally."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Set positive tone as investors awaited corporate results for direction."
+			},
+			{
+				"headline_reworded": "AI sector jitters grow as credit swaps echo 2008 patterns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-big-short-why-rising-credit-default-swaps-are-spooking-investors-and-how-is-it-similar-to-2008-housing-crisis/articleshow/132738317.cms",
+				"timestamp": "2026-07-30T11:30:30+00:00",
+				"why_it_matters": "Raised concerns about potential tech bubble parallels with financial crisis."
+			},
+			{
+				"headline_reworded": "Vedanta to spin off property arm as separate listed entity",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-announces-demerger-of-real-estate-business-into-new-listed-company/articleshow/132736690.cms",
+				"timestamp": "2026-07-30T10:37:34+00:00",
+				"why_it_matters": "Signaled major corporate restructuring in the metals and mining sector."
+			},
+			{
+				"headline_reworded": "Korean traders protest after market crash prompts government apology",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/wait-till-payback-time-south-korean-retail-investors-protest-as-govt-apologises-after-kospi-crashes-40-in-a-month/articleshow/132736424.cms",
+				"timestamp": "2026-07-30T10:29:00+00:00",
+				"why_it_matters": "Demonstrated global ripple effects from Asian market instability."
+			},
+			{
+				"headline_reworded": "Swiggy shows improving metrics with narrower quarterly loss",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/swiggy-q1-results-net-loss-narrows-to-rs-791-crore-revenue-jumps-37-yoy/articleshow/132736162.cms",
+				"timestamp": "2026-07-30T10:22:05+00:00",
+				"why_it_matters": "Indicated food delivery sector's path toward profitability."
+			},
+			{
+				"headline_reworded": "Rupee holds steady despite oil price fluctuations",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-ends-nearly-flat-at-95-68-vs-usd-wedged-between-oil-swings-rbi-intervention/articleshow/132736055.cms",
+				"timestamp": "2026-07-30T10:16:23+00:00",
+				"why_it_matters": "Showed currency stability amid competing economic pressures."
+			},
+			{
+				"headline_reworded": "Hyundai profits tumble amid challenging auto market conditions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/hyundai-motor-q1-results-profit-slumps-35-yoy-to-rs-889-crore-as-headwinds-weigh-on-volumes/articleshow/132735596.cms",
+				"timestamp": "2026-07-30T10:13:16+00:00",
+				"why_it_matters": "Reflected broader automotive industry headwinds affecting global players."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 2.31282699658567,
+			"value": 24317.15
+		},
+		"sensex_close": {
+			"delta_pct": 2.456462858091722,
+			"value": 77928.15
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
