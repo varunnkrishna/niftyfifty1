@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-07-31",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 3,
+		"brent": {
+			"delta_pct": -1.5391579900407417,
+			"value": 87.0,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": -1864.03,
+			"vote": -1
+		},
+		"dxy": {
+			"delta_pct": -1.2737661314156303,
+			"value": 100.217,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 3623.51,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.33,
+			"value": 11.83,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a positive open with long bias, supported by overnight S&P gains and dollar weakness. The setup shows mixed signals with Nasdaq slightly down but strong foreign inflows offsetting domestic outflows. Bond yields rose while oil declined sharply, creating sector-specific headwinds. Volatility remains subdued with previous close in the upper range, suggesting continued upside potential but with normal conviction levels.",
+		"nasdaq_overnight": {
+			"delta_pct": -0.061708136268681844,
+			"value": 25122.178,
+			"vote": 0
+		},
+		"news": [
+			{
+				"headline_reworded": "Indo-MIM stock continues upward trajectory, now 60% higher than IPO price within two days",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/indo-mim-shares-extend-rally-surge-60-above-ipo-price-in-two-trading-sessions/articleshow/132756933.cms",
+				"timestamp": "2026-07-31T05:12:15+00:00",
+				"why_it_matters": "This highlights strong investor appetite for recent IPOs, potentially boosting sentiment for new listings."
+			},
+			{
+				"headline_reworded": "Kospi's 17% jump raises concerns for Indian IT sector, dragging down major stocks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/kospis-mammoth-17-surge-spells-caution-for-indian-it-stocks-why-tcs-infosys-others-are-down-up-to-5/articleshow/132756687.cms",
+				"timestamp": "2026-07-31T05:02:09+00:00",
+				"why_it_matters": "Signals potential sector rotation away from Indian IT as global tech dynamics shift."
+			},
+			{
+				"headline_reworded": "Hyundai Motor India gains 7% despite quarterly profit drop, sparking debate on valuation",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/hyundai-motor-india-shares-rally-7-despite-q1-profit-decline-should-you-buy-sell-or-hold/articleshow/132756507.cms",
+				"timestamp": "2026-07-31T04:56:31+00:00",
+				"why_it_matters": "Shows market prioritizing growth prospects over short-term earnings in auto sector."
+			},
+			{
+				"headline_reworded": "Analysts bullish on Vedanta Aluminium with 20% upside targets post-earnings",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/vedanta-aluminium-share-price-target-why-citi-clsa-nuvama-see-up-to-20-upside-after-q1-earnings/articleshow/132756392.cms",
+				"timestamp": "2026-07-31T04:52:29+00:00",
+				"why_it_matters": "Indicates strong institutional confidence in metals sector following quarterly results."
+			},
+			{
+				"headline_reworded": "Zepto IPO delay fuels rally in Swiggy and Eternal shares, marking best monthly performance",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/zepto-ipo-hurdle-revives-investor-interest-in-swiggy-eternal-shares-set-for-best-month-in-years/articleshow/132756263.cms",
+				"timestamp": "2026-07-31T04:48:42+00:00",
+				"why_it_matters": "Demonstrates how competitor developments can create spillover effects in related stocks."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.3959072931711719,
+			"value": 7437.63,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.05999999999999961,
+			"value": 4.67,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -1.216560885517152,
+			"value": 95.3925,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
