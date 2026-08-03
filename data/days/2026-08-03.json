@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-03",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Strongly",
+		"bias_label": "Long",
+		"bias_score": 6,
+		"brent": {
+			"delta_pct": -0.6832708838439392,
+			"value": 90.12,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2260.37,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -1.1061507936507886,
+			"value": 99.685,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 277.48,
+			"vote": 0
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.21,
+			"value": 11.97,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a positive open with strong overnight gains in US indices and a weaker dollar supporting risk assets. The rupee's strength and lower oil prices add to favorable conditions, while domestic institutional buying outweighs foreign outflows. Volatility remains subdued, and the previous session's close in the upper range suggests continued bullish momentum. The overall bias leans long with normal conviction.",
+		"nasdaq_overnight": {
+			"delta_pct": 1.5936774047859075,
+			"value": 25373.854,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Japanese equities decline as export sector feels pressure from rising Yen",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japan-stocks-slide-as-stronger-yen-hits-exporters-nikkei-drops-over-2/articleshow/132820004.cms",
+				"timestamp": "2026-08-03T05:34:27+00:00",
+				"why_it_matters": "This reflects broader Asian market sentiment, which could influence regional trading patterns."
+			},
+			{
+				"headline_reworded": "Zee Entertainment shares plunge following regulatory action against top executives",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/zeel-shares-tumble-12-after-sebi-action-against-subhash-chandra-punit-goenka/articleshow/132819918.cms",
+				"timestamp": "2026-08-03T05:31:13+00:00",
+				"why_it_matters": "Regulatory scrutiny on major firms can impact investor confidence in related sectors."
+			},
+			{
+				"headline_reworded": "GAIL shares fall despite strong quarterly earnings, sparking analyst debate",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/gail-india-shares-tumble-5-despite-q1-net-profit-doubling-to-rs-4665-crore-buy-sell-or-hold/articleshow/132819846.cms",
+				"timestamp": "2026-08-03T05:26:54+00:00",
+				"why_it_matters": "Market reaction to earnings surprises can signal shifting sector valuations."
+			},
+			{
+				"headline_reworded": "Indian rupee strengthens against USD amid favorable oil prices and capital inflows",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/rupee-climbs-to-one-month-peak-on-oil-slump-stronger-inflows/articleshow/132819760.cms",
+				"timestamp": "2026-08-03T05:20:57+00:00",
+				"why_it_matters": "Currency movements affect import/export dynamics and foreign investor returns."
+			},
+			{
+				"headline_reworded": "Blue Dart shares rally post-earnings as broker upgrades outlook",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/blue-dart-express-shares-surge-7-after-q1-results-heres-why-nuvama-retains-buy-raises-target/articleshow/132819599.cms",
+				"timestamp": "2026-08-03T05:08:29+00:00",
+				"why_it_matters": "Positive analyst actions often drive short-term momentum in mid-cap stocks."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": 1.0488425494942066,
+			"value": 7489.72,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.009999999999999787,
+			"value": 4.68,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": -0.5863798250257621,
+			"value": 95.2125,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}

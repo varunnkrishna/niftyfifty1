@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 03 Aug 2026
+description: Nifty outlook — 03 Aug 2026. Pre-market bias is Strongly Long.
+date: "2026-08-03"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7489.72
+    delta_pct: 1.0488425494942066
+    vote: 1
+  nasdaq_overnight:
+    value: 25373.854
+    delta_pct: 1.5936774047859075
+    vote: 1
+  us10y_yield:
+    value: 4.68
+    delta: 0.009999999999999787
+    vote: 0
+  dxy:
+    value: 99.685
+    delta_pct: -1.1061507936507886
+    vote: 1
+  fii_net_cash:
+    value: 277.48
+    vote: 0
+  dii_net_cash:
+    value: 2260.37
+    vote: 1
+  usdinr:
+    value: 95.2125
+    delta_pct: -0.5863798250257621
+    vote: 1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 11.97
+    delta: 0.21
+    vote: null
+  brent:
+    value: 90.12
+    delta_pct: -0.6832708838439392
+    vote: null
+  bias_score: 6
+  bias_label: Long
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: Markets are positioned for a positive open with strong overnight gains in US indices and a weaker dollar supporting risk assets. The rupee's strength and lower oil prices add to favorable conditions, while domestic institutional buying outweighs foreign outflows. Volatility remains subdued, and the previous session's close in the upper range suggests continued bullish momentum. The overall bias leans long with normal conviction.
+  news:
+  - headline_reworded: Japanese equities decline as export sector feels pressure from rising Yen
+    why_it_matters: This reflects broader Asian market sentiment, which could influence regional trading patterns.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japan-stocks-slide-as-stronger-yen-hits-exporters-nikkei-drops-over-2/articleshow/132820004.cms
+    timestamp: "2026-08-03T05:34:27+00:00"
+  - headline_reworded: Zee Entertainment shares plunge following regulatory action against top executives
+    why_it_matters: Regulatory scrutiny on major firms can impact investor confidence in related sectors.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/zeel-shares-tumble-12-after-sebi-action-against-subhash-chandra-punit-goenka/articleshow/132819918.cms
+    timestamp: "2026-08-03T05:31:13+00:00"
+  - headline_reworded: GAIL shares fall despite strong quarterly earnings, sparking analyst debate
+    why_it_matters: Market reaction to earnings surprises can signal shifting sector valuations.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/gail-india-shares-tumble-5-despite-q1-net-profit-doubling-to-rs-4665-crore-buy-sell-or-hold/articleshow/132819846.cms
+    timestamp: "2026-08-03T05:26:54+00:00"
+  - headline_reworded: Indian rupee strengthens against USD amid favorable oil prices and capital inflows
+    why_it_matters: Currency movements affect import/export dynamics and foreign investor returns.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/rupee-climbs-to-one-month-peak-on-oil-slump-stronger-inflows/articleshow/132819760.cms
+    timestamp: "2026-08-03T05:20:57+00:00"
+  - headline_reworded: Blue Dart shares rally post-earnings as broker upgrades outlook
+    why_it_matters: Positive analyst actions often drive short-term momentum in mid-cap stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/blue-dart-express-shares-surge-7-after-q1-results-heres-why-nuvama-retains-buy-raises-target/articleshow/132819599.cms
+    timestamp: "2026-08-03T05:08:29+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
