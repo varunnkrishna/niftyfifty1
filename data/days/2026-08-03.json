@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-03",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 2.629432161760247,
+			"value": 58247.95
+		},
+		"conclusion": "Indian equities extended their winning streak with significant gains across major indices, fueled by declining volatility and sustained bullish sentiment. The Nifty and Sensex both posted strong advances, while banking stocks mirrored the broader market's upward trajectory. While early enthusiasm waned slightly by close, the session marked continued recovery momentum. Corporate earnings and central bank actions remained key focal points as select stocks outperformed, though sector performance varied considerably. Global cues provided additional support as risk assets found footing amid easing inflation concerns.",
+		"news": [
+			{
+				"headline_reworded": "Markets give up early gains, close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlighted the struggle to sustain momentum despite positive openings."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Continued gains signaled resilience amid easing market volatility."
+			},
+			{
+				"headline_reworded": "Sharp drop in volatility index fuels midday rally",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The plunge in India VIX boosted trader confidence during the session."
+			},
+			{
+				"headline_reworded": "Indices notch third straight gain as earnings take focus",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing strength shifted attention to upcoming corporate results."
+			},
+			{
+				"headline_reworded": "DLF posts modest profit growth despite revenue slump",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dlf-q1-results-profit-rises-4-to-rs-794-crore-revenue-declines-46/articleshow/132832859.cms",
+				"timestamp": "2026-08-03T13:07:04+00:00",
+				"why_it_matters": "Mixed real estate earnings revealed sector-specific challenges."
+			},
+			{
+				"headline_reworded": "Central bank intervenes heavily in forex markets",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-sells-usd-14-9-bn-during-jan-may-to-check-excess-volatility-in-rupee/articleshow/132832815.cms",
+				"timestamp": "2026-08-03T13:05:48+00:00",
+				"why_it_matters": "RBI's dollar sales aimed to stabilize currency fluctuations."
+			},
+			{
+				"headline_reworded": "Divi's Labs leads pack of stocks hitting yearly peaks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/divis-laboratories-among-7-stocks-to-hit-52-week-highs-and-surge-up-to-25-in-a-month/slideshow/132832705.cms",
+				"timestamp": "2026-08-03T12:55:31+00:00",
+				"why_it_matters": "Breakout performances demonstrated selective bullish momentum."
+			},
+			{
+				"headline_reworded": "Pharma and aviation stocks show divergent moves",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-tcs-indigo-sun-pharma-among-top-gainers-and-losers-on-nifty-and-sensex-on-monday/articleshow/132831712.cms",
+				"timestamp": "2026-08-03T12:30:37+00:00",
+				"why_it_matters": "Sector rotation created winners and losers among heavyweights."
+			},
+			{
+				"headline_reworded": "Cryptocurrency holds ground as oil decline eases fears",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-trades-near-63000-as-falling-oil-prices-ease-inflation-worries-weak-flows-limit-recovery/articleshow/132831639.cms",
+				"timestamp": "2026-08-03T12:25:19+00:00",
+				"why_it_matters": "Bitcoin stability reflected shifting macroeconomic concerns."
+			},
+			{
+				"headline_reworded": "US futures advance on geopolitical optimism",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/dow-jones-stock-market-live-updates-nasdaq-sp-500-trump-us-iran-attacks-hormuz-crude-oil-fed-warsh-spacex-micron-amazon-amd-chip-stock-price-news-3rd-august-2026/liveblog/132831640.cms",
+				"timestamp": "2026-08-03T12:23:36+00:00",
+				"why_it_matters": "Global risk appetite improved with Middle East developments."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 3.289299509909177,
+			"value": 24774.3
+		},
+		"sensex_close": {
+			"delta_pct": 2.4400280749582635,
+			"value": 78639.03
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
