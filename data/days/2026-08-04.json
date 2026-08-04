@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-04",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 1.2259225010007633,
+			"value": 57907.2
+		},
+		"conclusion": "Markets ended higher today, with Sensex and Nifty extending their gains for the third consecutive session. The rally was supported by easing volatility, which sparked investor optimism. However, the session saw some struggles as markets failed to hold onto early gains, closing marginally higher. Positive earnings reports from key companies like Bharti Airtel and Nykaa further bolstered sentiment. Overall, the day reflected sustained bullishness, though caution prevailed ahead of upcoming economic decisions.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain early gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's inability to maintain momentum despite positive trends."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscores the ongoing bullish sentiment in the market."
+			},
+			{
+				"headline_reworded": "Market rallies as volatility cools, India VIX records sharpest decline in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It emphasizes the role of reduced volatility in driving market gains."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak to three days",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It reflects sustained investor confidence and positive market sentiment."
+			},
+			{
+				"headline_reworded": "ICRA forecasts 7-9% revenue growth for India's hospitality sector by FY27",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/indias-hospitality-companies-revenue-to-grow-7-9-in-fy27-west-asia-conflict-poses-downside-risks-icra/articleshow/132859668.cms",
+				"timestamp": "2026-08-04T11:50:39+00:00",
+				"why_it_matters": "It provides insights into long-term growth prospects despite geopolitical risks."
+			},
+			{
+				"headline_reworded": "Rupee remains stable amid mixed signals and RBI policy anticipation",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/competing-cues-caution-ahead-of-rbi-policy-decision-keep-rupee-nearly-flat/articleshow/132858867.cms",
+				"timestamp": "2026-08-04T11:20:11+00:00",
+				"why_it_matters": "It highlights the cautious stance of investors ahead of key economic decisions."
+			},
+			{
+				"headline_reworded": "Bharti Airtel reports 37% YoY surge in Q1 net profit",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bharti-airtel-q1-results-net-profit-surges-37-to-rs-8167-crore-arpu-rises-to-rs-264/articleshow/132858553.cms",
+				"timestamp": "2026-08-04T11:07:54+00:00",
+				"why_it_matters": "It showcases strong financial performance in the telecom sector."
+			},
+			{
+				"headline_reworded": "Nykaa's Q1 net profit skyrockets 243% YoY",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/nykaa-q1-results-net-profit-spikes-243-yoy-to-rs-80-crore-revenue-jumps-29/articleshow/132858161.cms",
+				"timestamp": "2026-08-04T11:04:50+00:00",
+				"why_it_matters": "It highlights exceptional growth in the e-commerce and beauty sectors."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty snap four-day winning streak",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-210-points-nifty-closes-below-24650-as-market-snaps-4-day-gaining-streak/articleshow/132856959.cms",
+				"timestamp": "2026-08-04T10:21:12+00:00",
+				"why_it_matters": "It marks a shift in market momentum after a period of gains."
+			},
+			{
+				"headline_reworded": "Peter Lynch reflects on missed opportunity with Warren Buffett's favourite stock",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/how-dumb-i-was-when-peter-lynch-regretted-not-buying-warren-buffetts-favourite-stock-whose-product-his-daughter-used/articleshow/132855960.cms",
+				"timestamp": "2026-08-04T09:53:36+00:00",
+				"why_it_matters": "It offers a lesson in investment decision-making and missed opportunities."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 1.503905122431983,
+			"value": 24614.9
+		},
+		"sensex_close": {
+			"delta_pct": 0.9971720928315788,
+			"value": 78428.95
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
