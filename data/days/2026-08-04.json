@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-04",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 3,
+		"brent": {
+			"delta_pct": -4.425474559137367,
+			"value": 85.09,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 1571.18,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.000999900009989565,
+			"value": 100.011,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": 922.26,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.07,
+			"value": 12.0,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a bullish session with US indices showing strong overnight gains and positive domestic institutional flows. The rupee's slight strength and lower crude prices provide additional support, though Treasury yield movements and the previous close in the bottom third may temper optimism. Overall sentiment leans long with normal conviction levels.",
+		"nasdaq_overnight": {
+			"delta_pct": 3.9379626569463873,
+			"value": 25913.896,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "US Treasury anticipates increased Q3 borrowing due to weaker cash flow projections",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stock-market-treasury-sees-higher-q3-borrowing-needs-as-cash-flow-outlook-weakens/articleshow/132846616.cms",
+				"timestamp": "2026-08-04T04:42:20+00:00",
+				"why_it_matters": "This could impact bond markets and influence investor sentiment toward US debt instruments."
+			},
+			{
+				"headline_reworded": "Indian rupee begins trading flat, gains slightly against the US dollar",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/rupee-opens-on-flat-note-rises-3-paise-to-95-34-against-us-dollar-in-early-trade/articleshow/132846463.cms",
+				"timestamp": "2026-08-04T04:29:52+00:00",
+				"why_it_matters": "Currency movements affect import/export dynamics and foreign investment flows in Indian markets."
+			},
+			{
+				"headline_reworded": "Ather Energy stock surges following strong Q1 results and Nomura endorsement",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ather-energy-shares-zoom-18-after-q1-results-why-is-it-nomuras-top-2-wheeler-pick/articleshow/132846384.cms",
+				"timestamp": "2026-08-04T04:29:22+00:00",
+				"why_it_matters": "Significant moves in major stocks can drive sector-wide momentum and investor attention."
+			},
+			{
+				"headline_reworded": "South Korea's July inflation slows more than expected amid declining oil prices",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-south-koreas-july-inflation-cools-below-expectations-as-oil-prices-ease-rate-hike-bets-remain/articleshow/132846186.cms",
+				"timestamp": "2026-08-04T04:25:29+00:00",
+				"why_it_matters": "Global inflation trends influence central bank policies and international market expectations."
+			},
+			{
+				"headline_reworded": "Manipal Health Enterprises IPO set to debut tomorrow amid market anticipation",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/manipal-health-enterprises-ipo-listing-tomorrow-heres-what-gmp-indicates-ahead-of-market-debut/articleshow/132846312.cms",
+				"timestamp": "2026-08-04T04:24:24+00:00",
+				"why_it_matters": "IPO performances often set the tone for market sentiment toward new listings."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 2.5268508251519552,
+			"value": 7600.5,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.07000000000000028,
+			"value": 4.75,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.2915311609885915,
+			"value": 95.32,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
