@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-05",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Strongly",
+		"bias_label": "Long",
+		"bias_score": 5,
+		"brent": {
+			"delta_pct": -12.305814469596097,
+			"value": 79.03,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": -936.14,
+			"vote": -1
+		},
+		"dxy": {
+			"delta_pct": 0.051102204408819574,
+			"value": 99.851,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": 2446.47,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.27,
+			"value": 11.92,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to trend positively today, supported by strong overnight gains in U.S. indices and declining volatility. The bias leans long, with easing yields and a weaker dollar contributing to favorable conditions. However, Brent crude's sharp decline may weigh on energy-related sectors.",
+		"nasdaq_overnight": {
+			"delta_pct": 6.86613409784414,
+			"value": 26584.992,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to maintain momentum, signaling potential caution."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Continued gains suggest bullish sentiment and easing volatility could support further upward movement."
+			},
+			{
+				"headline_reworded": "Market rallies as volatility cools sharply, India VIX records steepest decline in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Declining volatility indicates reduced market uncertainty, fostering a favorable trading environment."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty notch third straight day of gains, Q4 earnings to drive stock-specific action",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Sustained gains and focus on earnings suggest investor optimism and selective opportunities."
+			},
+			{
+				"headline_reworded": "Nikkei surges over 3% as AI stocks and strong earnings boost sentiment",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-japans-nikkei-jumps-over-3-as-ai-stocks-rally-upbeat-earnings-lift-sentiment/articleshow/132893039.cms",
+				"timestamp": "2026-08-05T05:20:09+00:00",
+				"why_it_matters": "Global market optimism, driven by AI and earnings, could influence broader investor sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": 4.142537536446102,
+			"value": 7736.52,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": -0.04999999999999982,
+			"value": 4.7,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -0.6905982120285941,
+			"value": 95.0675,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
