@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-06",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Strongly",
+		"bias_label": "Long",
+		"bias_score": 5,
+		"brent": {
+			"delta_pct": -5.682225140265,
+			"value": 79.01,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2883.17,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.20908363345337033,
+			"value": 99.751,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -943.42,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.17,
+			"value": 12.23,
+			"vote": null
+		},
+		"market_expectations": "The market is expected to maintain a bullish bias today, supported by positive overnight movements in major indices and a decline in the US dollar. However, foreign institutional investors' net cash outflow and rising India VIX introduce caution. Brent crude's sharp drop and easing USDINR rates may further influence sentiment, while domestic institutional investors' inflows provide a counterbalance. Overall, the setup suggests a cautiously optimistic outlook.",
+		"nasdaq_overnight": {
+			"delta_pct": 7.8570744763109515,
+			"value": 26363.44,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's struggle to sustain momentum despite positive intraday moves."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "This indicates a potential continuation of the bullish trend supported by reduced volatility."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp decline in volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "This underscores the impact of cooling volatility on market sentiment and performance."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains for third day, focus shifts to Q4 results",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "This suggests that earnings reports will drive stock-specific movements in the near term."
+			},
+			{
+				"headline_reworded": "Gold and silver surge as oil prices decline, raising hopes for a major rally",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/commodities/news/gold-prices-jump-rs-6400/10-grams-in-3-days-silver-soars-rs-11000/kg-as-oil-slide-continues-big-rally-ahead/articleshow/132983009.cms",
+				"timestamp": "2026-08-06T05:26:04+00:00",
+				"why_it_matters": "This reflects the interplay between commodity prices and broader market trends."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": 5.5685025594062525,
+			"value": 7723.55,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": -0.07000000000000028,
+			"value": 4.63,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -0.5484674681872137,
+			"value": 95.16,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}

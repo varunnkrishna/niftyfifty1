@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 06 Aug 2026
+description: Nifty outlook — 06 Aug 2026. Pre-market bias is Strongly Long.
+date: "2026-08-06"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7723.55
+    delta_pct: 5.5685025594062525
+    vote: 1
+  nasdaq_overnight:
+    value: 26363.44
+    delta_pct: 7.8570744763109515
+    vote: 1
+  us10y_yield:
+    value: 4.63
+    delta: -0.07000000000000028
+    vote: 1
+  dxy:
+    value: 99.751
+    delta_pct: -0.20908363345337033
+    vote: 1
+  fii_net_cash:
+    value: -943.42
+    vote: -1
+  dii_net_cash:
+    value: 2883.17
+    vote: 1
+  usdinr:
+    value: 95.16
+    delta_pct: -0.5484674681872137
+    vote: 1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 12.23
+    delta: 0.17
+    vote: null
+  brent:
+    value: 79.01
+    delta_pct: -5.682225140265
+    vote: null
+  bias_score: 5
+  bias_label: Long
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: The market is expected to maintain a bullish bias today, supported by positive overnight movements in major indices and a decline in the US dollar. However, foreign institutional investors' net cash outflow and rising India VIX introduce caution. Brent crude's sharp drop and easing USDINR rates may further influence sentiment, while domestic institutional investors' inflows provide a counterbalance. Overall, the setup suggests a cautiously optimistic outlook.
+  news:
+  - headline_reworded: Markets relinquish early gains, closing slightly higher
+    why_it_matters: This highlights the market's struggle to sustain momentum despite positive intraday moves.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty continue upward trend for third consecutive day
+    why_it_matters: This indicates a potential continuation of the bullish trend supported by reduced volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday rally fueled by sharp decline in volatility
+    why_it_matters: This underscores the impact of cooling volatility on market sentiment and performance.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty extend gains for third day, focus shifts to Q4 results
+    why_it_matters: This suggests that earnings reports will drive stock-specific movements in the near term.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Gold and silver surge as oil prices decline, raising hopes for a major rally
+    why_it_matters: This reflects the interplay between commodity prices and broader market trends.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/commodities/news/gold-prices-jump-rs-6400/10-grams-in-3-days-silver-soars-rs-11000/kg-as-oil-slide-continues-big-rally-ahead/articleshow/132983009.cms
+    timestamp: "2026-08-06T05:26:04+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
