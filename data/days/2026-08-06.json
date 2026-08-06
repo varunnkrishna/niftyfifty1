@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-06",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 1.394922015861393,
+			"value": 58063.65
+		},
+		"conclusion": "Indian equities extended their winning streak with both major indices posting gains exceeding 1%. The session saw volatility indicators plunge dramatically, supporting a broad-based advance. While markets surrendered some intraday highs by the close, heavyweight stocks and select midcaps delivered standout performances. Trading activity centered around positioning for earnings season and reacting to sharp reductions in market uncertainty.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlighted the session's struggle to maintain upward momentum despite positive openings."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive day of gains as volatility subsides",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscored the sustained bullish sentiment amid decreasing market uncertainty."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The dramatic drop in volatility indicators drove significant intraday buying activity."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned themselves for upcoming corporate results amid the rally."
+			},
+			{
+				"headline_reworded": "Heavyweight stocks surge with elevated trading activity",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ril-sbi-shares-rally-up-to-3-5-on-heavy-volumes-as-heavyweights-lead-charge/articleshow/133004152.cms",
+				"timestamp": "2026-08-06T12:24:37+00:00",
+				"why_it_matters": "Major index constituents led the charge with substantial volume-backed gains."
+			},
+			{
+				"headline_reworded": "Bond market advance pauses amid profit-taking",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/profit-taking-debt-supply-stall-india-bond-rally/articleshow/133003162.cms",
+				"timestamp": "2026-08-06T12:05:14+00:00",
+				"why_it_matters": "Fixed income markets saw tempered enthusiasm after recent rallies."
+			},
+			{
+				"headline_reworded": "Several midcap names reach yearly peaks amid broad rally",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/exide-industries-among-6-midcap-stocks-that-hit-52-week-highs-amp-surged-up-to-20-in-a-month/slideshow/133003139.cms",
+				"timestamp": "2026-08-06T11:59:03+00:00",
+				"why_it_matters": "Secondary stocks demonstrated strong momentum alongside benchmark gains."
+			},
+			{
+				"headline_reworded": "Key blue chips dominate session's performance tables",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-wrap-reliance-industries-sbi-power-grid-among-top-gainers-and-losers-on-nifty-and-sensex-on-thursday/articleshow/133002408.cms",
+				"timestamp": "2026-08-06T11:57:36+00:00",
+				"why_it_matters": "Market leadership came from major index components during the trading day."
+			},
+			{
+				"headline_reworded": "Insurance giant posts robust quarterly earnings growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/lic-q1-results-profit-rises-23-yoy-to-rs-13492-crore/articleshow/133002094.cms",
+				"timestamp": "2026-08-06T11:51:18+00:00",
+				"why_it_matters": "The financial heavyweight's results exceeded prior-year performance metrics."
+			},
+			{
+				"headline_reworded": "Recent IPO continues meteoric rise beyond listing price",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/indo-mim-shares-surge-10-extend-gains-to-82-over-issue-price-should-investors-book-profits/articleshow/132997743.cms",
+				"timestamp": "2026-08-06T10:29:30+00:00",
+				"why_it_matters": "The stellar debutant's performance raised questions about valuation sustainability."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 1.0351219672238778,
+			"value": 24636.0
+		},
+		"sensex_close": {
+			"delta_pct": 1.101381605703023,
+			"value": 78954.76
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
