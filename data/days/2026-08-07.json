@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-07",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.8609745063989377,
+			"value": 57746.45
+		},
+		"conclusion": "Indian benchmarks closed lower after failing to sustain early gains. The Nifty and Bank Nifty underperformed the Sensex, with financial stocks dragging the indices down. While some reports highlighted a three-day winning streak earlier in the session, the market ultimately gave up its advances. Volatility remained a key theme as indices swung between gains and losses before settling in negative territory.",
+		"news": [
+			{
+				"headline_reworded": "Markets surrender early gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Showed intraday volatility despite marginal positive close."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to third session",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Highlighted sustained bullish momentum amid easing volatility."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility index plunges sharply",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Signaled improved investor sentiment during trading hours."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain ahead of earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Set expectations for corporate results to drive future moves."
+			},
+			{
+				"headline_reworded": "Reports suggest potential crypto tax benefits for Trump",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/trump-could-net-big-tax-windfall-in-crypto-bill-divestiture-plan-reports/articleshow/133032164.cms",
+				"timestamp": "2026-08-07T11:10:11+00:00",
+				"why_it_matters": "Unrelated to today's Indian market movements."
+			},
+			{
+				"headline_reworded": "Fossil Group considers Indian arm IPO with bankers",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/fossil-group-is-said-to-invite-banks-for-india-unit-ipo/articleshow/133031984.cms",
+				"timestamp": "2026-08-07T11:08:56+00:00",
+				"why_it_matters": "Unrelated to today's Indian market movements."
+			},
+			{
+				"headline_reworded": "Vikram Solar posts steep quarterly profit decline",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/vikram-solar-q1-net-profit-declines-85-pc-to-rs-20-cr/articleshow/133032114.cms",
+				"timestamp": "2026-08-07T11:08:24+00:00",
+				"why_it_matters": "Unrelated to today's Indian market movements."
+			},
+			{
+				"headline_reworded": "Lupin reports moderate quarterly profit growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/lupin-q1-pat-rises-16-pc-at-rs-1417-cr/articleshow/133031974.cms",
+				"timestamp": "2026-08-07T11:06:00+00:00",
+				"why_it_matters": "Unrelated to today's Indian market movements."
+			},
+			{
+				"headline_reworded": "Premier Energies sees strong quarterly earnings jump",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/premier-energies-q1-result-profit-jumps-53-to-rs-472-crore/articleshow/133031911.cms",
+				"timestamp": "2026-08-07T11:01:08+00:00",
+				"why_it_matters": "Unrelated to today's Indian market movements."
+			},
+			{
+				"headline_reworded": "JK Tyre reports sharp quarterly profit contraction",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/jk-tyre-industries-q1-results-net-profit-tumbles-73-at-rs-44-09-crore/articleshow/133031885.cms",
+				"timestamp": "2026-08-07T10:59:18+00:00",
+				"why_it_matters": "Unrelated to today's Indian market movements."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.8220212074609488,
+			"value": 24570.65
+		},
+		"sensex_close": {
+			"delta_pct": -0.17785061692648113,
+			"value": 78499.17
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
