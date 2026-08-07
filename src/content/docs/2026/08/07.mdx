@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 07 Aug 2026
+description: Nifty outlook — 07 Aug 2026. Pre-market bias is Strongly Long.
+date: "2026-08-07"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7709.96
+    delta_pct: 3.6615158323283077
+    vote: 1
+  nasdaq_overnight:
+    value: 26348.352
+    delta_pct: 4.880834386187818
+    vote: 1
+  us10y_yield:
+    value: 4.63
+    delta: 0.0
+    vote: 0
+  dxy:
+    value: 99.958
+    delta_pct: -0.0020008003201233884
+    vote: 0
+  fii_net_cash:
+    value: -17.86
+    vote: 0
+  dii_net_cash:
+    value: 4013.6
+    vote: 1
+  usdinr:
+    value: 95.257
+    delta_pct: -0.15219774806030517
+    vote: 1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 12.52
+    delta: 0.36
+    vote: null
+  brent:
+    value: 84.08
+    delta_pct: 0.3700608809836484
+    vote: null
+  bias_score: 5
+  bias_label: Long
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: Markets are positioned for a bullish opening with strong overnight gains in US indices and favorable domestic institutional flows. The rupee's strength against the dollar and stable bond yields provide support, though elevated oil prices and top-third valuation positioning may cap upside. Defense and FMCG sectors show relative strength, while geopolitical tensions and global tech sector concerns remain watchpoints. Trading bias leans long with normal conviction levels.
+  news:
+  - headline_reworded: South Korean markets show volatility amid chip sector uncertainty over AI investments
+    why_it_matters: Global tech sector sentiment could influence Asian markets, including Indian IT stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-south-korean-stocks-fluctuate-as-ai-spending-concerns-weigh-on-chipmakers/articleshow/133020896.cms
+    timestamp: "2026-08-07T04:16:59+00:00"
+  - headline_reworded: Indian market reforms face turbulent initial phase after major implementation
+    why_it_matters: Structural changes may create short-term volatility while investors adjust to new frameworks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/dalal-streets-biggest-stock-reform-in-years-endures-rocky-first-week/articleshow/133020712.cms
+    timestamp: "2026-08-07T04:11:14+00:00"
+  - headline_reworded: Indian benchmarks decline as Middle East tensions drive oil price concerns
+    why_it_matters: Geopolitical risks impacting crude prices could pressure domestic inflation and energy stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sensex-drops-over-200-points-nifty-tests-23600-as-strait-of-hormuz-tensions-rattle-oil-markets/articleshow/133020628.cms
+    timestamp: "2026-08-07T04:10:40+00:00"
+  - headline_reworded: Britannia gains on strong quarterly earnings performance
+    why_it_matters: Positive FMCG results may boost sector sentiment amid broader market weakness.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/britannia-shares-rally-4-as-q1-profit-rises-14-yoy-should-you-buy-sell-or-hold/articleshow/133020659.cms
+    timestamp: "2026-08-07T04:07:48+00:00"
+  - headline_reworded: Technical indicators suggest bullish momentum for select defense and aerospace stocks
+    why_it_matters: Sector-specific opportunities emerge despite mixed broader market conditions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/hindustan-aeronautics-among-4-stocks-flashing-bullish-signals-hinting-at-a-possible-uptrend/slideshow/133020514.cms
+    timestamp: "2026-08-07T03:46:56+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
