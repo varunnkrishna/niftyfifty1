@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-10",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.3803499392130858,
+			"value": 57686.95
+		},
+		"conclusion": "Markets showed divergent sector performance with benchmarks ending mixed. While the Sensex eked out modest gains, the Nifty and Bank Nifty slipped slightly, reflecting financial sector weakness. The session saw early enthusiasm fade by close, though reduced volatility supported a third straight day of advances for major indices. Corporate earnings reports drove stock-specific action, with severe reactions to disappointing results contrasting with the broader index resilience. Regulatory developments and macroeconomic crosscurrents added layers to the trading narrative.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close with minor uptick",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Highlights the session's inability to sustain intraday momentum despite a positive close."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive session of gains amid declining volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Indicates sustained bullish sentiment supported by reduced market uncertainty."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Shows how plunging fear gauge triggered broad-based buying during trading hours."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak as earnings reports drive selective moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Reveals how corporate results dictated individual stock performance amid the broader rally."
+			},
+			{
+				"headline_reworded": "Sovereign bonds stabilize as weak US data balances crude price pressures",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/indian-bonds-steady-as-soft-us-data-offsets-oil-rise/articleshow/133099683.cms",
+				"timestamp": "2026-08-10T11:11:49+00:00",
+				"why_it_matters": "Demonstrates countervailing forces affecting fixed income markets during the session."
+			},
+			{
+				"headline_reworded": "Regulator deploys AI system to monitor financial influencers' compliance",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/project-sudarsan-how-sebi-is-using-ai-to-police-finfluencers-with-60-of-investors-trusting-their-advice/articleshow/133099411.cms",
+				"timestamp": "2026-08-10T11:06:58+00:00",
+				"why_it_matters": "Addresses growing regulatory scrutiny over social media investment advice channels."
+			},
+			{
+				"headline_reworded": "Currency traders grow cautious despite RBI's defensive rupee actions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-weakness-cushioned-by-central-bank-intervention-shorts-grow-wary/articleshow/133098407.cms",
+				"timestamp": "2026-08-10T10:54:30+00:00",
+				"why_it_matters": "Reflects mounting bearish bets on the rupee despite central bank interventions."
+			},
+			{
+				"headline_reworded": "HSBC outlines competing market forces shaping near-term trajectory",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/has-dalal-streets-near-term-outlook-improved-hsbc-lists-4-headwinds-3-tailwinds-to-watch-out-for/articleshow/133097555.cms",
+				"timestamp": "2026-08-10T10:41:34+00:00",
+				"why_it_matters": "Provides institutional perspective on conflicting factors influencing investor outlook."
+			},
+			{
+				"headline_reworded": "Astra Microwave plummets on disappointing quarterly performance",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/astra-microwave-shares-tank-9-after-profit-revenue-take-a-hit-in-q1fy27/articleshow/133097251.cms",
+				"timestamp": "2026-08-10T10:35:17+00:00",
+				"why_it_matters": "Illustrates severe punishment for earnings misses in current market conditions."
+			},
+			{
+				"headline_reworded": "Bharat Forge nosedives after surprise quarterly loss despite revenue growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-forge-shares-plunge-9-after-firm-posts-rs-90-crore-q1-net-loss-on-exceptional-items-revenue-rises-19/articleshow/133097144.cms",
+				"timestamp": "2026-08-10T10:32:46+00:00",
+				"why_it_matters": "Shows how exceptional items can override top-line improvements in investor reactions."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.12634623744155848,
+			"value": 24583.8
+		},
+		"sensex_close": {
+			"delta_pct": 0.14470421955158808,
+			"value": 78542.44
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
