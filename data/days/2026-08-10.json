@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-10",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 1,
+		"brent": {
+			"delta_pct": 6.242920075519186,
+			"value": 84.41,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 235.56,
+			"vote": 0
+		},
+		"dxy": {
+			"delta_pct": 0.036111947035812386,
+			"value": 99.726,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": 480.24,
+			"vote": 0
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.55,
+			"value": 12.71,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias prevails with mixed global cues as US indices show strong overnight gains but Treasury yields rise. Domestic indices may open cautiously given oil price volatility and foreign institutional activity, though currency stability offers some support. The VIX's uptick suggests slightly heightened near-term volatility expectations.",
+		"nasdaq_overnight": {
+			"delta_pct": 5.189456862084403,
+			"value": 26690.615,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Titan stock climbs post-Q1 earnings as brokerages share mixed views",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/titan-shares-gain-2-after-q1-results-what-are-citi-motilal-two-other-brokerages-saying/articleshow/133081121.cms",
+				"timestamp": "2026-08-10T04:06:59+00:00",
+				"why_it_matters": "Brokerage reactions to Titan's results could influence retail and institutional trading sentiment today."
+			},
+			{
+				"headline_reworded": "Indian indices remain flat as robust corporate performance balances oil price concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-nifty-hold-steady-as-earnings-offset-oil-worries/articleshow/133080723.cms",
+				"timestamp": "2026-08-10T04:04:05+00:00",
+				"why_it_matters": "The market's equilibrium reflects competing forces of earnings strength and energy market volatility."
+			},
+			{
+				"headline_reworded": "South Korean equities advance, buoyed by semiconductor stocks and reduced rate hike anxieties",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-south-korean-shares-rise-as-chipmakers-gain-on-wall-street-rally-easing-rate-fears/articleshow/133080687.cms",
+				"timestamp": "2026-08-10T04:02:28+00:00",
+				"why_it_matters": "Asian market strength may bolster regional risk appetite amid global rally conditions."
+			},
+			{
+				"headline_reworded": "SBI gains on better-than-expected Q1; major brokerages revise outlooks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sbi-shares-rise-nearly-2-after-q1-beat-heres-what-nomura-morgan-stanley-and-other-top-brokerages-expect-next/articleshow/133080745.cms",
+				"timestamp": "2026-08-10T03:58:20+00:00",
+				"why_it_matters": "Banking sector momentum could drive broader market movements given SBI's index weight."
+			},
+			{
+				"headline_reworded": "US equity surge confronts inflation data as Fed policy uncertainty lingers",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stock-rally-faces-inflation-test-as-investors-weigh-fed-rate-path/articleshow/133080203.cms",
+				"timestamp": "2026-08-10T03:52:43+00:00",
+				"why_it_matters": "Upcoming economic indicators may test the sustainability of the current risk-on rally."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 3.577169774036947,
+			"value": 7757.64,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.0600000000000005,
+			"value": 4.69,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.10395293900447793,
+			"value": 95.2325,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
