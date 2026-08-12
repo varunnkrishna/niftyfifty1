@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 12 Aug 2026
+description: Nifty outlook — 12 Aug 2026. Pre-market bias is Strongly Short.
+date: "2026-08-12"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7728.2
+    delta_pct: -0.10754189222028274
+    vote: 0
+  nasdaq_overnight:
+    value: 26445.445
+    delta_pct: -0.5249014575518061
+    vote: -1
+  us10y_yield:
+    value: 4.72
+    delta: 0.0699999999999994
+    vote: -1
+  dxy:
+    value: 99.898
+    delta_pct: 0.2991967871485962
+    vote: -1
+  fii_net_cash:
+    value: 258.55
+    vote: 0
+  dii_net_cash:
+    value: 24.77
+    vote: 0
+  usdinr:
+    value: 95.4125
+    delta_pct: 0.35255523663377103
+    vote: -1
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 11.73
+    delta: -0.13
+    vote: null
+  brent:
+    value: 89.76
+    delta_pct: 7.432675044883314
+    vote: null
+  bias_score: -5
+  bias_label: Short
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: Markets face bearish pressure today with negative overnight cues from US indices and rising dollar strength. Treasury yields climbing alongside oil's surge and rupee weakness contribute to the short bias, though domestic institutional flows remain neutral. The VIX's minor decline offers limited comfort given the broader negative technical setup from yesterday's close near range lows.
+  news:
+  - headline_reworded: Markets relinquish early advances to close with minor gains
+    why_it_matters: This reflects ongoing fragility in market sentiment despite intraday rallies.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive rise as declining volatility aids bullish momentum
+    why_it_matters: Sustained gains with lower volatility could signal improving risk appetite.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp volatility contraction, VIX records worst drop in four years
+    why_it_matters: Rapid volatility compression may indicate shifting trader positioning.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to three sessions with earnings reports driving individual stocks
+    why_it_matters: Corporate results are becoming key differentiators in current market conditions.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: FMCG sector faces prolonged foreign institutional selling, raising rebound speculation
+    why_it_matters: Sustained FII exits may create oversold conditions in consumer staples.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/fmcgs-fii-nightmare-5-2-billion-selloff-in-12-straight-months-are-stocks-set-for-a-rebound/articleshow/133169799.cms
+    timestamp: "2026-08-12T04:20:59+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
