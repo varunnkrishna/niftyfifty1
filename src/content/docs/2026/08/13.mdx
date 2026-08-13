@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 13 Aug 2026
+description: Nifty outlook — 13 Aug 2026. Pre-market bias is Neutral.
+date: "2026-08-13"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7748.5
+    delta_pct: 0.32303798123919464
+    vote: 1
+  nasdaq_overnight:
+    value: 26588.488
+    delta_pct: 0.8536367029492453
+    vote: 1
+  us10y_yield:
+    value: 4.7
+    delta: -0.019999999999999574
+    vote: 0
+  dxy:
+    value: 100.019
+    delta_pct: 0.2093978559262631
+    vote: -1
+  fii_net_cash:
+    value: -1002.5
+    vote: -1
+  dii_net_cash:
+    value: 5841.66
+    vote: 1
+  usdinr:
+    value: 95.353
+    delta_pct: 0.04312158292930908
+    vote: 0
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 11.7
+    delta: 0.01
+    vote: null
+  brent:
+    value: 88.72
+    delta_pct: 1.1399908800729595
+    vote: null
+  bias_score: 0
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Global markets show modest gains overnight with tech leading, while Indian markets face headwinds from foreign outflows and rupee stability. Neutral bias suggests balanced risk-reward as oil prices climb and volatility remains subdued. Focus stays on large-cap resilience and corporate developments amid expiry week choppiness.
+  news:
+  - headline_reworded: Analysts weigh in on whether large-cap stocks will outperform small-caps in the current market
+    why_it_matters: This analysis could influence investor decisions on market capitalization preferences today.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/will-largecaps-outshine-smallcaps-on-dalal-street-heres-what-analysts-say/articleshow/133197383.cms
+    timestamp: "2026-08-13T04:04:17+00:00"
+  - headline_reworded: South Korean equities gain as AI sector lifts SK Hynix and Samsung shares
+    why_it_matters: Positive momentum in Asian tech stocks may spill over into global tech sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-sk-hynix-samsung-lead-south-korea-stocks-higher-on-ai-boost/articleshow/133197429.cms
+    timestamp: "2026-08-13T04:03:48+00:00"
+  - headline_reworded: Lenskart Solutions surges 7% post-Q1 earnings as major brokerages hike price targets
+    why_it_matters: Strong earnings and bullish analyst outlook could drive retail interest in the stock.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/lenskart-solutions-shares-jump-7-after-q1-results-jefferies-goldman-sachs-3-others-raise-target-price/articleshow/133197400.cms
+    timestamp: "2026-08-13T04:02:42+00:00"
+  - headline_reworded: Jio Financial shares attract attention amid Bank of America's planned stake purchase in Jio Credit
+    why_it_matters: A major financial deal could significantly impact Jio Financial's valuation and sector sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/jio-financial-shares-in-focus-as-bank-of-america-set-to-acquire-50-stake-in-jio-credit-for-rs-18268-crore/articleshow/133197203.cms
+    timestamp: "2026-08-13T04:01:52+00:00"
+  - headline_reworded: Sensex drops over 200 points as Nifty slips below 24,350 ahead of expiry-driven volatility
+    why_it_matters: Expiry-related pressure may dictate short-term trading strategies in Indian indices.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-over-150-points-nifty-below-24350-even-as-oil-prices-slightly-ease-what-lies-ahead/articleshow/133197185.cms
+    timestamp: "2026-08-13T03:56:34+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />

@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-13",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 0,
+		"brent": {
+			"delta_pct": 1.1399908800729595,
+			"value": 88.72,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 5841.66,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.2093978559262631,
+			"value": 100.019,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -1002.5,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.01,
+			"value": 11.7,
+			"vote": null
+		},
+		"market_expectations": "Global markets show modest gains overnight with tech leading, while Indian markets face headwinds from foreign outflows and rupee stability. Neutral bias suggests balanced risk-reward as oil prices climb and volatility remains subdued. Focus stays on large-cap resilience and corporate developments amid expiry week choppiness.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.8536367029492453,
+			"value": 26588.488,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Analysts weigh in on whether large-cap stocks will outperform small-caps in the current market",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/will-largecaps-outshine-smallcaps-on-dalal-street-heres-what-analysts-say/articleshow/133197383.cms",
+				"timestamp": "2026-08-13T04:04:17+00:00",
+				"why_it_matters": "This analysis could influence investor decisions on market capitalization preferences today."
+			},
+			{
+				"headline_reworded": "South Korean equities gain as AI sector lifts SK Hynix and Samsung shares",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-sk-hynix-samsung-lead-south-korea-stocks-higher-on-ai-boost/articleshow/133197429.cms",
+				"timestamp": "2026-08-13T04:03:48+00:00",
+				"why_it_matters": "Positive momentum in Asian tech stocks may spill over into global tech sentiment."
+			},
+			{
+				"headline_reworded": "Lenskart Solutions surges 7% post-Q1 earnings as major brokerages hike price targets",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/lenskart-solutions-shares-jump-7-after-q1-results-jefferies-goldman-sachs-3-others-raise-target-price/articleshow/133197400.cms",
+				"timestamp": "2026-08-13T04:02:42+00:00",
+				"why_it_matters": "Strong earnings and bullish analyst outlook could drive retail interest in the stock."
+			},
+			{
+				"headline_reworded": "Jio Financial shares attract attention amid Bank of America's planned stake purchase in Jio Credit",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jio-financial-shares-in-focus-as-bank-of-america-set-to-acquire-50-stake-in-jio-credit-for-rs-18268-crore/articleshow/133197203.cms",
+				"timestamp": "2026-08-13T04:01:52+00:00",
+				"why_it_matters": "A major financial deal could significantly impact Jio Financial's valuation and sector sentiment."
+			},
+			{
+				"headline_reworded": "Sensex drops over 200 points as Nifty slips below 24,350 ahead of expiry-driven volatility",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-over-150-points-nifty-below-24350-even-as-oil-prices-slightly-ease-what-lies-ahead/articleshow/133197185.cms",
+				"timestamp": "2026-08-13T03:56:34+00:00",
+				"why_it_matters": "Expiry-related pressure may dictate short-term trading strategies in Indian indices."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.32303798123919464,
+			"value": 7748.5,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": -0.019999999999999574,
+			"value": 4.7,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.04312158292930908,
+			"value": 95.353,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}
