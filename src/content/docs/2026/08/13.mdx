@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 13 Aug 2026
-description: Nifty outlook — 13 Aug 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 13 Aug 2026
+description: How markets closed — 13 Aug 2026. Nifty -0.71%, bias was Neutral.
 date: "2026-08-13"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-over-150-points-nifty-below-24350-even-as-oil-prices-slightly-ease-what-lies-ahead/articleshow/133197185.cms
     timestamp: "2026-08-13T03:56:34+00:00"
+eod:
+  nifty_close:
+    value: 24395.85
+    delta_pct: -0.7114178908576001
+  sensex_close:
+    value: 78079.96
+    delta_pct: -0.5340311241507291
+  banknifty_close:
+    value: 57635.25
+    delta_pct: -0.19256594994150653
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities closed lower after failing to maintain early gains, with the Nifty and Sensex both declining. The banking sector showed relative resilience with a smaller drop. Market sentiment appeared cautious despite earlier sessions' positive momentum, as investors weighed corporate earnings against broader economic indicators. Select stocks outperformed on strong results, while auto and currency markets faced pressure.
+  news:
+  - headline_reworded: Markets surrender early advances to close slightly up
+    why_it_matters: Shows inability to sustain intraday momentum despite positive opening.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive session of gains amid stabilizing volatility
+    why_it_matters: Highlights continuation of bullish trend with reduced market uncertainty.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharpest volatility drop in years
+    why_it_matters: Demonstrates how collapsing fear gauge propelled afternoon rally.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak as earnings season drives selective moves
+    why_it_matters: Emphasizes corporate results shaping individual stock performance.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Tata Motors passenger vehicle unit sees drastic profit contraction
+    why_it_matters: Reveals significant automotive sector weakness despite revenue growth.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/tata-motors-pv-q1-results-net-profit-plunges-80-yoy-to-rs-775-crore-revenue-rises-9/articleshow/133208589.cms
+    timestamp: "2026-08-13T10:38:27+00:00"
+  - headline_reworded: Currency weakens as volatility expectations hit five-month trough
+    why_it_matters: Indicates subdued forex market activity despite rupee depreciation.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/rupee-slips-muted-price-action-sinks-volatility-expectations-to-five-month-low/articleshow/133208793.cms
+    timestamp: "2026-08-13T10:36:27+00:00"
+  - headline_reworded: Portfolio managers deliver strong July returns across strategies
+    why_it_matters: Showcases outperformance by professional investment services.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/aif-pms/pms-tracker-amaltas-pluswealth-capital-emkay-7-others-deliver-up-to-11-returns-in-july/articleshow/133208683.cms
+    timestamp: "2026-08-13T10:34:42+00:00"
+  - headline_reworded: Solar Industries hits record high after earnings nearly double
+    why_it_matters: Spotlights exceptional performance in renewable energy sector.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/solar-industries-shares-jump-8-to-fresh-lifetime-high-after-q1-net-profit-soars-93-yoy-to-rs-653-crore/articleshow/133207168.cms
+    timestamp: "2026-08-13T09:45:24+00:00"
+  - headline_reworded: Investors eye historic tech IPO valuation surpassing SpaceX
+    why_it_matters: Reflects intense appetite for disruptive technology offerings.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-to-beat-spacex-investors-bet-on-2-trillion-valuation-in-record-ipo/articleshow/133206890.cms
+    timestamp: "2026-08-13T09:33:49+00:00"
+  - headline_reworded: Jubilant FoodWorks benefits from Domino's sales recovery
+    why_it_matters: Illustrates fast-food chain's operational turnaround.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/jubilant-foodworks-profit-rises-as-dominos-sales-growth-picks-up/articleshow/133206787.cms
+    timestamp: "2026-08-13T09:27:57+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
