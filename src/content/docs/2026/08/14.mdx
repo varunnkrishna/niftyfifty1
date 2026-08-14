@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 14 Aug 2026
+description: Nifty outlook — 14 Aug 2026. Pre-market bias is Neutral.
+date: "2026-08-14"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7798.99
+    delta_pct: 1.1547401024129793
+    vote: 1
+  nasdaq_overnight:
+    value: 26803.025
+    delta_pct: 1.7256298781517738
+    vote: 1
+  us10y_yield:
+    value: 4.68
+    delta: -0.020000000000000462
+    vote: 0
+  dxy:
+    value: 99.872
+    delta_pct: 0.062118024246065134
+    vote: 0
+  fii_net_cash:
+    value: -510.69
+    vote: -1
+  dii_net_cash:
+    value: 4353.09
+    vote: 1
+  usdinr:
+    value: 95.3975
+    delta_pct: 0.1966173827831548
+    vote: -1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 11.51
+    delta: 0.09
+    vote: null
+  brent:
+    value: 87.12
+    delta_pct: -0.6839945280437693
+    vote: null
+  bias_score: 1
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Markets are expected to remain neutral with a slight positive bias, supported by overnight gains in U.S. indices and easing volatility. Rising domestic institutional investment and a stable rupee provide additional support, though foreign institutional selling and higher crude prices may weigh on sentiment.
+  news:
+  - headline_reworded: Markets edge higher but struggle to sustain gains
+    why_it_matters: It highlights the market's inability to maintain momentum despite positive movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty continue upward trend for third consecutive day
+    why_it_matters: It signals sustained bullish sentiment supported by reduced volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Market rallies as volatility cools sharply
+    why_it_matters: It underscores the impact of declining volatility on market performance.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty extend gains for third day, focus shifts to Q4 results
+    why_it_matters: It emphasizes the role of earnings reports in driving stock-specific movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Honasa Consumer shares surge 4% on strong Q1 results
+    why_it_matters: It reflects positive investor sentiment driven by robust earnings and analyst forecasts.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/honasa-consumer-shares-jump-4-after-record-q1-jefferies-emkay-forecast-strong-upside/articleshow/133228847.cms
+    timestamp: "2026-08-14T04:14:13+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
