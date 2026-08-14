@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-14",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.3395048620181836,
+			"value": 57491.1
+		},
+		"conclusion": "Markets closed lower after failing to sustain early gains, with both major indices declining. The session saw volatile swings as investors weighed corporate earnings prospects against broader economic concerns. While some individual stocks benefited from deal activity, most sectors faced pressure, particularly in the broader market. Currency and crypto markets reflected cautious sentiment despite intermittent rallies during the trading day.",
+		"news": [
+			{
+				"headline_reworded": "Markets surrender early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlighted the session's volatility as early optimism faded by closing."
+			},
+			{
+				"headline_reworded": "Benchmarks extend winning streak amid declining volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains signaled resilience despite broader market uncertainty."
+			},
+			{
+				"headline_reworded": "Midday surge follows sharp drop in fear gauge",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The VIX's plunge to multi-year lows fueled a temporary rally."
+			},
+			{
+				"headline_reworded": "Indices notch third straight gain ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned for upcoming corporate results driving individual stocks."
+			},
+			{
+				"headline_reworded": "Adani Energy rises on transmission asset acquisition",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-energy-solution-shares-end-2-higher-after-acquiring-vizag-power-transmission/articleshow/133238587.cms",
+				"timestamp": "2026-08-14T10:49:03+00:00",
+				"why_it_matters": "Sector-specific M&A activity provided isolated upside in power stocks."
+			},
+			{
+				"headline_reworded": "Rupee ends week weaker despite central bank support",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/rupee-logs-weekly-decline-with-rbi-intervention-curbing-losses/articleshow/133237831.cms",
+				"timestamp": "2026-08-14T10:24:16+00:00",
+				"why_it_matters": "Currency markets reflected persistent macroeconomic pressures."
+			},
+			{
+				"headline_reworded": "Benchmarks retreat as small-caps under pressure",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-71-points-nifty-closes-below-24400-broader-markets-underperform-what-lies-ahead/articleshow/133237775.cms",
+				"timestamp": "2026-08-14T10:23:41+00:00",
+				"why_it_matters": "Broader market weakness overshadowed large-cap performance."
+			},
+			{
+				"headline_reworded": "Quest Global reportedly hires IPO underwriters",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/quest-global-said-to-pick-banks-for-1-billion-india-ipo/articleshow/133237705.cms",
+				"timestamp": "2026-08-14T10:21:25+00:00",
+				"why_it_matters": "Potential new listing signaled continued primary market activity."
+			},
+			{
+				"headline_reworded": "Bitcoin stalls near key level despite inflation data",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-hovers-near-63000-despite-softer-us-inflation-as-weak-liquidity-weighs-on-crypto/articleshow/133236737.cms",
+				"timestamp": "2026-08-14T10:01:03+00:00",
+				"why_it_matters": "Crypto markets showed muted reaction to macroeconomic cues."
+			},
+			{
+				"headline_reworded": "Exchanges diversify into multipurpose financial platforms",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/crypto-exchanges-are-evolving-into-financial-superapps-traditional-assets-emerge-as-key-growth-engine-binance/articleshow/133236327.cms",
+				"timestamp": "2026-08-14T09:48:15+00:00",
+				"why_it_matters": "Industry evolution pointed to crypto's mainstream integration."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.885949283674612,
+			"value": 24366.0
+		},
+		"sensex_close": {
+			"delta_pct": -0.678855915349717,
+			"value": 78009.25
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
