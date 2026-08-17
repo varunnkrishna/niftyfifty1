@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 17 Aug 2026
+description: Nifty outlook — 17 Aug 2026. Pre-market bias is Mildly Long.
+date: "2026-08-17"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7785.76
+    delta_pct: 0.3624813732011268
+    vote: 1
+  nasdaq_overnight:
+    value: 26729.164
+    delta_pct: 0.1444102834628858
+    vote: 0
+  us10y_yield:
+    value: 4.63
+    delta: -0.04999999999999982
+    vote: 1
+  dxy:
+    value: 99.536
+    delta_pct: -0.28451212181926655
+    vote: 1
+  fii_net_cash:
+    value: 508.12
+    vote: 1
+  dii_net_cash:
+    value: 356.4
+    vote: 0
+  usdinr:
+    value: 95.467
+    delta_pct: 0.07369227656722208
+    vote: 0
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 11.32
+    delta: -0.1
+    vote: null
+  brent:
+    value: 88.8
+    delta_pct: -0.12372061635361538
+    vote: null
+  bias_score: 4
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets anticipate a positive opening with moderate bullish sentiment. Overnight gains in US indices and declining dollar strength support risk assets, though mixed domestic institutional flows and stable crude prices may limit upside. The VIX remains subdued while bond yields retreat slightly, creating favorable conditions for equities. Focus stays on large-cap earnings momentum and new listings amid normal trading conviction.
+  news:
+  - headline_reworded: Nifty earnings surge to decade-best quarterly performance, driven by handful of stocks
+    why_it_matters: This highlights concentrated market performance, which could influence investor focus on top-performing equities.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/picture-perfect-quarter-nifty-profit-growth-hits-a-10-quarter-high-but-5-stocks-do-the-heavy-lifting/articleshow/133285622.cms
+    timestamp: "2026-08-17T03:09:57+00:00"
+  - headline_reworded: Fixed-income strategist recommends phased bond investments with AAA-rated preference
+    why_it_matters: Provides actionable debt market insights as investors assess yield movements.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/bonds/etmarkets-smart-talk-dhawal-dalals-fixed-income-playbook-stagger-bond-bets-favour-aaa-debt/articleshow/133284956.cms
+    timestamp: "2026-08-17T02:52:05+00:00"
+  - headline_reworded: Four equities, including Apollo Hospitals, demonstrate strengthening momentum signals
+    why_it_matters: Technical indicators may attract short-term traders to these specific counters.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/apollo-hospitals-among-4-stocks-showing-bullish-rsi-upswing/slideshow/133285355.cms
+    timestamp: "2026-08-17T02:46:28+00:00"
+  - headline_reworded: Molbio Diagnostics prepares for stock exchange debut amid grey market activity
+    why_it_matters: New listings can impact sector sentiment and test IPO market appetite.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/molbio-diagnostics-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/133285025.cms
+    timestamp: "2026-08-17T02:38:27+00:00"
+  - headline_reworded: Lalithaa Jewellery's public offering launches with grey market suggesting premium listing
+    why_it_matters: Retail investor participation in this IPO may indicate broader market risk appetite.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/lalithaa-jewellery-mart-ipo-opens-today-gmp-signals-15-premium-should-you-subscribe/articleshow/133285001.cms
+    timestamp: "2026-08-17T02:37:09+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />

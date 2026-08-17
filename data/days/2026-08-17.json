@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-17",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 4,
+		"brent": {
+			"delta_pct": -0.12372061635361538,
+			"value": 88.8,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 356.4,
+			"vote": 0
+		},
+		"dxy": {
+			"delta_pct": -0.28451212181926655,
+			"value": 99.536,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 508.12,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.1,
+			"value": 11.32,
+			"vote": null
+		},
+		"market_expectations": "Markets anticipate a positive opening with moderate bullish sentiment. Overnight gains in US indices and declining dollar strength support risk assets, though mixed domestic institutional flows and stable crude prices may limit upside. The VIX remains subdued while bond yields retreat slightly, creating favorable conditions for equities. Focus stays on large-cap earnings momentum and new listings amid normal trading conviction.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.1444102834628858,
+			"value": 26729.164,
+			"vote": 0
+		},
+		"news": [
+			{
+				"headline_reworded": "Nifty earnings surge to decade-best quarterly performance, driven by handful of stocks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/picture-perfect-quarter-nifty-profit-growth-hits-a-10-quarter-high-but-5-stocks-do-the-heavy-lifting/articleshow/133285622.cms",
+				"timestamp": "2026-08-17T03:09:57+00:00",
+				"why_it_matters": "This highlights concentrated market performance, which could influence investor focus on top-performing equities."
+			},
+			{
+				"headline_reworded": "Fixed-income strategist recommends phased bond investments with AAA-rated preference",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/etmarkets-smart-talk-dhawal-dalals-fixed-income-playbook-stagger-bond-bets-favour-aaa-debt/articleshow/133284956.cms",
+				"timestamp": "2026-08-17T02:52:05+00:00",
+				"why_it_matters": "Provides actionable debt market insights as investors assess yield movements."
+			},
+			{
+				"headline_reworded": "Four equities, including Apollo Hospitals, demonstrate strengthening momentum signals",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/apollo-hospitals-among-4-stocks-showing-bullish-rsi-upswing/slideshow/133285355.cms",
+				"timestamp": "2026-08-17T02:46:28+00:00",
+				"why_it_matters": "Technical indicators may attract short-term traders to these specific counters."
+			},
+			{
+				"headline_reworded": "Molbio Diagnostics prepares for stock exchange debut amid grey market activity",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/molbio-diagnostics-shares-to-list-today-check-gmp-ahead-of-debut/articleshow/133285025.cms",
+				"timestamp": "2026-08-17T02:38:27+00:00",
+				"why_it_matters": "New listings can impact sector sentiment and test IPO market appetite."
+			},
+			{
+				"headline_reworded": "Lalithaa Jewellery's public offering launches with grey market suggesting premium listing",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/lalithaa-jewellery-mart-ipo-opens-today-gmp-signals-15-premium-should-you-subscribe/articleshow/133285001.cms",
+				"timestamp": "2026-08-17T02:37:09+00:00",
+				"why_it_matters": "Retail investor participation in this IPO may indicate broader market risk appetite."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.3624813732011268,
+			"value": 7785.76,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": -0.04999999999999982,
+			"value": 4.63,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": 0.07369227656722208,
+			"value": 95.467,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}
