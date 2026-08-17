@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-17",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.08973605761908376,
+			"value": 57497.8
+		},
+		"conclusion": "Indian equities closed lower after failing to hold early gains, with the Nifty and Sensex both declining while Bank Nifty eked out a slight advance. Market sentiment wavered as participants weighed corporate earnings against macroeconomic concerns, though reduced volatility provided some support. The rupee faced pressure from regulatory changes, while global markets remained cautious ahead of key central bank decisions and amid persistent inflation fears.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the session's volatility and inability to sustain gains."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive rise amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Continued gains signal resilience despite broader market fluctuations."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp drop in volatility index",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The VIX's plunge to a multi-year low buoyed trader confidence."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak as earnings season guides moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Corporate results drove selective buying amid the broader uptrend."
+			},
+			{
+				"headline_reworded": "Rupee weakens after central bank restricts foreign exchange inflows",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-slips-as-sentiment-drags-on-rbi-curtailing-fx-inflow-window/articleshow/133294246.cms",
+				"timestamp": "2026-08-17T10:44:40+00:00",
+				"why_it_matters": "RBI's policy shift dampened currency market sentiment."
+			},
+			{
+				"headline_reworded": "Tempsens Instruments sets price band for upcoming IPO",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/tempsens-instruments-rs-650-crore-ipo-opens-on-august-20-price-band-fixed-at-rs-285-300-per-share/articleshow/133294143.cms",
+				"timestamp": "2026-08-17T10:42:20+00:00",
+				"why_it_matters": "The offering's terms drew attention to the primary market pipeline."
+			},
+			{
+				"headline_reworded": "Market veteran critiques timing of Zepto's public listing",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/zepto-ipo-raamdeo-agrawal-says-it-was-premature-for-the-quick-commerce-firm-to-tap-public-market-heres-why/articleshow/133293788.cms",
+				"timestamp": "2026-08-17T10:27:44+00:00",
+				"why_it_matters": "Comments sparked debate about startup valuation benchmarks."
+			},
+			{
+				"headline_reworded": "Bitcoin stabilizes near key level ahead of Fed meeting",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-hovers-near-63k-ahead-of-fed-rate-decision-as-investors-assess-liquidity-outlook/articleshow/133293649.cms",
+				"timestamp": "2026-08-17T10:24:50+00:00",
+				"why_it_matters": "Crypto markets tread cautiously before monetary policy cues."
+			},
+			{
+				"headline_reworded": "Euro zone bond yields near decade-plus highs on inflation worries",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-euro-zone-bond-yields-hover-near-15-year-highs-as-middle-east-war-fuels-inflation-fears/articleshow/133293555.cms",
+				"timestamp": "2026-08-17T10:20:15+00:00",
+				"why_it_matters": "Geopolitical risks continued to pressure fixed income markets."
+			},
+			{
+				"headline_reworded": "Yes Bank returns to debt markets after past troubles",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/yes-bank-makes-bond-market-comeback-years-after-at1-write-off/articleshow/133291828.cms",
+				"timestamp": "2026-08-17T10:05:52+00:00",
+				"why_it_matters": "The comeback attempt signaled progress in the lender's recovery."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.7520932342256536,
+			"value": 24287.65
+		},
+		"sensex_close": {
+			"delta_pct": -0.5451910804594715,
+			"value": 77728.16
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
