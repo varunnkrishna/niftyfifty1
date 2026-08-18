@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 18 Aug 2026
+description: Nifty outlook — 18 Aug 2026. Pre-market bias is Neutral.
+date: "2026-08-18"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7745.06
+    delta_pct: -0.103829302047814
+    vote: 0
+  nasdaq_overnight:
+    value: 26644.91
+    delta_pct: 0.1486542561348513
+    vote: 0
+  us10y_yield:
+    value: 4.68
+    delta: 0.04999999999999982
+    vote: -1
+  dxy:
+    value: 99.595
+    delta_pct: -0.41495850414959123
+    vote: 1
+  fii_net_cash:
+    value: -2535.1
+    vote: -1
+  dii_net_cash:
+    value: 5101.46
+    vote: 1
+  usdinr:
+    value: 95.592
+    delta_pct: 0.2223738963869666
+    vote: -1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 11.3
+    delta: -0.01
+    vote: null
+  brent:
+    value: 91.42
+    delta_pct: 2.7421892560125847
+    vote: null
+  bias_score: -1
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Neutral bias prevails with mixed global cues as US yields rise and dollar weakens. Domestic institutional buying offsets foreign outflows while oil's surge adds inflationary pressure. The VIX remains subdued, suggesting limited near-term volatility despite currency headwinds. Focus stays on earnings amid tepid overnight moves in US indices.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflects cautious investor sentiment despite a positive opening.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight session of gains amid lower volatility
+    why_it_matters: Sustained buying interest and stable volatility could signal continued bullish momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as volatility plunges most sharply in four years
+    why_it_matters: A sharp drop in volatility often precedes or accompanies strong market rallies.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to three days with focus on earnings
+    why_it_matters: Corporate results will likely drive individual stock movements in the near term.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Investment strategist outlines fixed-income approach for three-year horizon
+    why_it_matters: This provides alternative strategies for risk-averse capital in uncertain markets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/bonds/etmarkets-smart-talk-have-1-crore-for-3-years-puneet-pals-fixed-income-playbook/articleshow/133309569.cms
+    timestamp: "2026-08-18T02:20:15+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
