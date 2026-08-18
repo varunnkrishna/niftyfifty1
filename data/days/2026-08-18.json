@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-18",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -1.0770335064614187,
+			"value": 57262.4
+		},
+		"conclusion": "Indian equities closed lower despite early gains, with the Nifty and Sensex both declining over 1%. While morning sessions showed resilience from reduced volatility and earnings anticipation, selling pressure emerged later. Defense stocks outperformed on policy support, contrasting with broader market weakness. The rupee held relatively steady amid central bank efforts to offset external pressures, as global bond markets remained tense over inflation concerns.",
+		"news": [
+			{
+				"headline_reworded": "Markets give up early gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflects a session where initial optimism faded, signaling cautious trading."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third straight day of gains amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained buying interest and easing volatility suggested underlying bullish sentiment."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The dramatic VIX decline provided temporary relief, boosting intraday momentum."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned for upcoming corporate results drove continued upside."
+			},
+			{
+				"headline_reworded": "Rupee dips slightly as RBI counters external pressures",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-ends-marginally-lower-as-central-bank-shields-from-oil-yield-strain/articleshow/133318793.cms",
+				"timestamp": "2026-08-18T10:14:58+00:00",
+				"why_it_matters": "Currency markets saw central bank intervention temper oil-related declines."
+			},
+			{
+				"headline_reworded": "Defense stocks rally on government localization push",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/defence-stocks-fire-up-paras-defence-grse-other-stocks-jump-up-to-10-as-govt-notifies-6th-indigenisation-list/articleshow/133318729.cms",
+				"timestamp": "2026-08-18T10:13:16+00:00",
+				"why_it_matters": "Policy tailwinds triggered sector-wide buying in government-linked firms."
+			},
+			{
+				"headline_reworded": "Bitcoin rebounds near $64k on improving macro conditions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-climbs-towards-64000-as-cooling-inflation-and-falling-treasury-yields-aid-recovery/articleshow/133318408.cms",
+				"timestamp": "2026-08-18T09:58:44+00:00",
+				"why_it_matters": "Crypto markets mirrored risk-on sentiment from traditional finance cues."
+			},
+			{
+				"headline_reworded": "Tracking institutional investor positioning trends",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/following-smart-money-where-are-indias-top-investors-betting-next/articleshow/133317828.cms",
+				"timestamp": "2026-08-18T09:43:17+00:00",
+				"why_it_matters": "Market participants sought clues from major funds' allocation shifts."
+			},
+			{
+				"headline_reworded": "Bond yields spike globally on inflation and debt worries",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-bond-yields-rise-to-multi-year-highs-as-inflation-and-fiscal-concerns-intensify/articleshow/133317680.cms",
+				"timestamp": "2026-08-18T09:26:34+00:00",
+				"why_it_matters": "Fixed income markets priced in prolonged monetary tightening risks."
+			},
+			{
+				"headline_reworded": "Pune gets Maharashtra's first standardized property registration hub",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/digital-real-estate/vfs-global-launches-mahas-first-model-sro-in-pune-to-streamline-property-registration/articleshow/133317646.cms",
+				"timestamp": "2026-08-18T09:26:25+00:00",
+				"why_it_matters": "Real estate facilitation efforts signaled administrative streamlining."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.1501496770127588,
+			"value": 24154.9
+		},
+		"sensex_close": {
+			"delta_pct": -0.9374428840134228,
+			"value": 77235.46
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],

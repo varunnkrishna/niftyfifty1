@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 18 Aug 2026
-description: Nifty outlook — 18 Aug 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 18 Aug 2026
+description: How markets closed — 18 Aug 2026. Nifty -1.15%, bias was Neutral.
 date: "2026-08-18"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/bonds/etmarkets-smart-talk-have-1-crore-for-3-years-puneet-pals-fixed-income-playbook/articleshow/133309569.cms
     timestamp: "2026-08-18T02:20:15+00:00"
+eod:
+  nifty_close:
+    value: 24154.9
+    delta_pct: -1.1501496770127588
+  sensex_close:
+    value: 77235.46
+    delta_pct: -0.9374428840134228
+  banknifty_close:
+    value: 57262.4
+    delta_pct: -1.0770335064614187
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities closed lower despite early gains, with the Nifty and Sensex both declining over 1%. While morning sessions showed resilience from reduced volatility and earnings anticipation, selling pressure emerged later. Defense stocks outperformed on policy support, contrasting with broader market weakness. The rupee held relatively steady amid central bank efforts to offset external pressures, as global bond markets remained tense over inflation concerns.
+  news:
+  - headline_reworded: Markets give up early gains to close slightly higher
+    why_it_matters: This reflects a session where initial optimism faded, signaling cautious trading.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight day of gains amid lower volatility
+    why_it_matters: Sustained buying interest and easing volatility suggested underlying bullish sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharpest volatility drop in four years
+    why_it_matters: The dramatic VIX decline provided temporary relief, boosting intraday momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak ahead of earnings season
+    why_it_matters: Investors positioned for upcoming corporate results drove continued upside.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Rupee dips slightly as RBI counters external pressures
+    why_it_matters: Currency markets saw central bank intervention temper oil-related declines.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-ends-marginally-lower-as-central-bank-shields-from-oil-yield-strain/articleshow/133318793.cms
+    timestamp: "2026-08-18T10:14:58+00:00"
+  - headline_reworded: Defense stocks rally on government localization push
+    why_it_matters: Policy tailwinds triggered sector-wide buying in government-linked firms.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/defence-stocks-fire-up-paras-defence-grse-other-stocks-jump-up-to-10-as-govt-notifies-6th-indigenisation-list/articleshow/133318729.cms
+    timestamp: "2026-08-18T10:13:16+00:00"
+  - headline_reworded: Bitcoin rebounds near $64k on improving macro conditions
+    why_it_matters: Crypto markets mirrored risk-on sentiment from traditional finance cues.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-climbs-towards-64000-as-cooling-inflation-and-falling-treasury-yields-aid-recovery/articleshow/133318408.cms
+    timestamp: "2026-08-18T09:58:44+00:00"
+  - headline_reworded: Tracking institutional investor positioning trends
+    why_it_matters: Market participants sought clues from major funds' allocation shifts.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/following-smart-money-where-are-indias-top-investors-betting-next/articleshow/133317828.cms
+    timestamp: "2026-08-18T09:43:17+00:00"
+  - headline_reworded: Bond yields spike globally on inflation and debt worries
+    why_it_matters: Fixed income markets priced in prolonged monetary tightening risks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-bond-yields-rise-to-multi-year-highs-as-inflation-and-fiscal-concerns-intensify/articleshow/133317680.cms
+    timestamp: "2026-08-18T09:26:34+00:00"
+  - headline_reworded: Pune gets Maharashtra's first standardized property registration hub
+    why_it_matters: Real estate facilitation efforts signaled administrative streamlining.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/digital-real-estate/vfs-global-launches-mahas-first-model-sro-in-pune-to-streamline-property-registration/articleshow/133317646.cms
+    timestamp: "2026-08-18T09:26:25+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
