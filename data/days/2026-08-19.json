@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-19",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.6862119969983647,
+			"value": 57239.75
+		},
+		"conclusion": "Indian equities closed lower after failing to sustain early gains, with both major benchmarks declining over 1%. The session saw volatility as markets initially rallied on reduced uncertainty before surrendering advances. While some sectors showed resilience, broader sentiment turned cautious amid global macroeconomic crosscurrents and currency pressures. Energy stocks remained in focus amid shifting crude forecasts, though financials outperformed the wider downturn.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflected a lack of sustained buying interest despite initial optimism."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak amid declining volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Continued upward momentum suggested resilience despite broader concerns."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility plunges most sharply in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A sharp drop in fear gauge fueled a temporary rally during the session."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned for corporate results while maintaining bullish momentum."
+			},
+			{
+				"headline_reworded": "Rupee weakens to three-week low amid RBI intervention watch",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/rupee-hits-three-week-low-traders-wary-about-fall-to-96/usd-as-rbi-stands-guard/articleshow/133344824.cms",
+				"timestamp": "2026-08-19T10:22:12+00:00",
+				"why_it_matters": "Currency depreciation raised concerns about imported inflation risks."
+			},
+			{
+				"headline_reworded": "Analyst outlook on oil stocks diverges amid price forecast",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/oil-india-vs-ongc-vs-omcs-what-jm-financials-80-brent-call-means-for-oil-stocks/articleshow/133344751.cms",
+				"timestamp": "2026-08-19T10:20:10+00:00",
+				"why_it_matters": "Sector rotation possibilities emerged as crude projections shifted."
+			},
+			{
+				"headline_reworded": "Climbing Treasury yields pose mounting threat to US growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/why-rising-treasury-yields-are-becoming-a-growing-risk-for-the-us-economy/articleshow/133344713.cms",
+				"timestamp": "2026-08-19T10:17:48+00:00",
+				"why_it_matters": "Global risk sentiment dampened by tightening financial conditions."
+			},
+			{
+				"headline_reworded": "SK Hynix launches buyback after catastrophic share collapse",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/south-koreas-sk-hynix-announces-buyback-after-stock-crashes-50-in-two-months-wipes-off-massive-retail-wealth/articleshow/133344672.cms",
+				"timestamp": "2026-08-19T10:15:54+00:00",
+				"why_it_matters": "Semiconductor sector volatility highlighted risks in tech investments."
+			},
+			{
+				"headline_reworded": "European markets stall with Middle East tensions lingering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-flat-as-middle-east-risks-weigh-fed-minutes-in-focus/articleshow/133344247.cms",
+				"timestamp": "2026-08-19T09:57:43+00:00",
+				"why_it_matters": "Geopolitical unease contributed to cautious global trading sentiment."
+			},
+			{
+				"headline_reworded": "Eurozone bond selloff pauses but energy prices keep caution high",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-eurozone-bond-rout-loses-steam-but-rising-oil-prices-keep-investors-wary/articleshow/133344103.cms",
+				"timestamp": "2026-08-19T09:55:23+00:00",
+				"why_it_matters": "Fixed income markets stabilized while commodity inflation loomed."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.3016558144110548,
+			"value": 24078.3
+		},
+		"sensex_close": {
+			"delta_pct": -1.4988224891508823,
+			"value": 76909.68
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
