@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-20",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": -1,
+		"brent": {
+			"delta_pct": 3.682783551739726,
+			"value": 91.78,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 3973.72,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.8447877997391379,
+			"value": 98.828,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 407.99,
+			"vote": 0
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.07,
+			"value": 11.32,
+			"vote": null
+		},
+		"market_expectations": "The market is expected to remain neutral with a slight negative bias, driven by overnight declines in major indices and a mixed sentiment across key indicators. Reduced volatility and strong domestic institutional activity may provide some support, while currency and yield movements suggest cautious trading.",
+		"nasdaq_overnight": {
+			"delta_pct": -0.9680880711917129,
+			"value": 26331.09,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to maintain momentum, signaling potential caution."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "The consistent gains suggest a bullish sentiment supported by reduced volatility."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp decline in India VIX",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The steepest drop in volatility in years indicates improved investor confidence."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains for third day, focus shifts to Q4 results",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "The market's focus on earnings results could drive stock-specific movements."
+			},
+			{
+				"headline_reworded": "Sunshine Pictures IPO sees strong subscription, GMP hints at listing gains",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/sunshine-pictures-ipo-day-3-gmp-points-to-21-per-cent-listing-gain-issue-subscribed-18-47x-should-you-subscribe/articleshow/133362885.cms",
+				"timestamp": "2026-08-20T03:15:14+00:00",
+				"why_it_matters": "The IPO's performance reflects investor interest in new market offerings."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.5229399238562359,
+			"value": 7707.98,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.009999999999999787,
+			"value": 4.71,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.35827641581027503,
+			"value": 95.743,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
