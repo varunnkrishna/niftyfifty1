@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-20",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.008349118385285566,
+			"value": 57495.9
+		},
+		"conclusion": "Indian benchmarks closed lower after failing to maintain early gains, with the Nifty and Sensex both declining while Bank Nifty barely held ground. The session saw volatility as markets initially extended their winning streak before retreating, with attention turning to upcoming earnings reports. While domestic equities wavered, global developments including cryptocurrency surges and central bank policy complexities created crosscurrents across asset classes.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflected the session's volatility as gains couldn't be sustained despite positive momentum."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive day of gains amid easing volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained upward movement signaled resilience despite broader market fluctuations."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Plunging VIX levels briefly boosted trader confidence during the session."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned for upcoming corporate results that could drive selective movements."
+			},
+			{
+				"headline_reworded": "Pediatric therapy firm Mom's Belief files for IPO to expand centers",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/moms-belief-operator-files-ipo-papers-with-sebi-to-fund-319-new-child-therapy-centres/articleshow/133373902.cms",
+				"timestamp": "2026-08-20T10:19:45+00:00",
+				"why_it_matters": "New listing plans emerged in healthcare sector despite unrelated market movements."
+			},
+			{
+				"headline_reworded": "Fed's inflation fight complicated by Treasury buyback program",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-treasury-bond-buybacks-complicate-feds-path-to-price-stability/articleshow/133373763.cms",
+				"timestamp": "2026-08-20T10:17:45+00:00",
+				"why_it_matters": "Global monetary policy uncertainties lingered as central banks balance tools."
+			},
+			{
+				"headline_reworded": "SK Hynix announces stock bonus scheme for South Korean staff",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-sk-hynix-unveils-stock-based-bonus-plan-for-south-korean-workers/articleshow/133373506.cms",
+				"timestamp": "2026-08-20T10:10:14+00:00",
+				"why_it_matters": "Corporate compensation trends in tech sector drew attention internationally."
+			},
+			{
+				"headline_reworded": "Zerodha founder urges fintechs to reconsider trading models amid AI rise",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/why-zerodhas-nithin-kamath-wants-fintech-founders-to-rethink-trading-in-the-age-of-ai/articleshow/133373513.cms",
+				"timestamp": "2026-08-20T10:09:29+00:00",
+				"why_it_matters": "Industry leader's commentary sparked debate about technological disruption."
+			},
+			{
+				"headline_reworded": "BSE shares retreat after rival exchange considers self-listing report",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/bse-shares-fall-over-3-from-days-high-after-report-says-nse-weighs-trading-shares-on-own-platform/articleshow/133373365.cms",
+				"timestamp": "2026-08-20T10:01:31+00:00",
+				"why_it_matters": "Exchange operator stocks reacted to potential competitive landscape shifts."
+			},
+			{
+				"headline_reworded": "Bitcoin surges to two-month peak following political crypto endorsement",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-jumps-11-to-71k-hits-2-month-high-190-billion-added-to-crypto-market-cap-after-trumps-crypto-push/articleshow/133373099.cms",
+				"timestamp": "2026-08-20T09:56:43+00:00",
+				"why_it_matters": "Digital assets rallied on regulatory optimism, diverging from equity trends."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.550562258885338,
+			"value": 24231.85
+		},
+		"sensex_close": {
+			"delta_pct": -0.6044539589856316,
+			"value": 77537.72
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
