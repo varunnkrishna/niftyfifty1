@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-21",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.459408881731117,
+			"value": 57761.95
+		},
+		"conclusion": "Indian equity markets closed mixed with Nifty and Sensex declining slightly while Bank Nifty gained. The session reflected cautious trading amid global market uncertainties, with banking stocks showing resilience. Currency markets faced pressure from oil price movements, while corporate earnings and IPO activity indicated ongoing investor interest in select sectors. Global bond markets showed signs of stabilization after recent volatility, and cryptocurrency markets experienced significant gains, highlighting diverse investor sentiment across asset classes.",
+		"news": [
+			{
+				"headline_reworded": "Indian PMS sector sees 2% asset growth and 1.3% client increase in July",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/aif-pms/indias-pms-industry-aum-rises-2-in-july-to-rs-44-lakh-crore-client-base-grows-1-3-apmi/articleshow/133401330.cms",
+				"timestamp": "2026-08-21T10:26:21+00:00",
+				"why_it_matters": "This highlights growing investor confidence and capital inflows into India's portfolio management services."
+			},
+			{
+				"headline_reworded": "Indian currency weakens amid persistent oil price pressures",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/rupee-dips-on-week-as-oil-pangs-linger-intervention-prevents-fall-past-96/usd/articleshow/133401294.cms",
+				"timestamp": "2026-08-21T10:22:09+00:00",
+				"why_it_matters": "The rupee's movement reflects ongoing energy market volatility impacting India's trade balance."
+			},
+			{
+				"headline_reworded": "European markets stabilize despite rising bond yields and Middle East tensions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-european-shares-little-changed-as-bond-yields-rise-and-gulf-tensions-lift-oil/articleshow/133399383.cms",
+				"timestamp": "2026-08-21T10:01:20+00:00",
+				"why_it_matters": "This indicates global investors balancing fixed income concerns with geopolitical risks."
+			},
+			{
+				"headline_reworded": "Twelve companies maintain double-digit profit margins for two consecutive years",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/multibaggers-12-stocks-with-profit-margins-above-10-for-8-straight-quarters-do-you-own-any/slideshow/133401278.cms",
+				"timestamp": "2026-08-21T10:01:18+00:00",
+				"why_it_matters": "These consistent performers attract investor attention in volatile market conditions."
+			},
+			{
+				"headline_reworded": "US Treasury actions provide temporary respite for Japanese bond markets",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-treasury-intervention-gives-japanese-bonds-temporary-relief-as-3-yield-looms/articleshow/133400257.cms",
+				"timestamp": "2026-08-21T09:53:21+00:00",
+				"why_it_matters": "This shows interconnected global debt markets and policy coordination effects."
+			},
+			{
+				"headline_reworded": "Eurozone bond yields decline after global debt market turbulence",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-eurozone-bond-yields-edge-lower-after-turbulent-week-in-global-debt-markets/articleshow/133400209.cms",
+				"timestamp": "2026-08-21T09:50:32+00:00",
+				"why_it_matters": "This signals easing pressure on European borrowing costs after recent volatility."
+			},
+			{
+				"headline_reworded": "Ethereum leads top cryptocurrencies in investor activity during second quarter",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/ethereum-records-highest-buy-to-sell-ratio-among-top-5-cryptos-by-investor-participation-in-q2-2026-report/slideshow/133400200.cms",
+				"timestamp": "2026-08-21T09:44:05+00:00",
+				"why_it_matters": "This demonstrates Ethereum's growing prominence in the digital asset space."
+			},
+			{
+				"headline_reworded": "Nobel Hygiene seeks Rs 150 crore through public offering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/quadria-capital-backed-nobel-hygiene-files-ipo-papers-to-raise-rs-150-crore/articleshow/133399510.cms",
+				"timestamp": "2026-08-21T09:20:03+00:00",
+				"why_it_matters": "This IPO reflects private equity exits and healthcare sector investment opportunities."
+			},
+			{
+				"headline_reworded": "Bitcoin surges past $79,000 amid institutional interest and regulatory developments",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-jumps-9-in-a-single-day-to-cross-79k-as-institutional-flows-regulatory-optimism-fuel-crypto-rally/articleshow/133399434.cms",
+				"timestamp": "2026-08-21T09:17:27+00:00",
+				"why_it_matters": "This rally indicates renewed crypto market optimism and mainstream adoption."
+			},
+			{
+				"headline_reworded": "Unitree Robotics CEO cautions about AI software development timeline despite market success",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/missed-the-ai-rally-after-bumper-600-market-debut-chinese-robot-maker-unitrees-ceo-still-feels-a-software-leap-is-years-away/articleshow/133398647.cms",
+				"timestamp": "2026-08-21T08:45:35+00:00",
+				"why_it_matters": "This tempers expectations about near-term AI advancements despite market enthusiasm."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.1467824182249063,
+			"value": 24252.0
+		},
+		"sensex_close": {
+			"delta_pct": -0.24100660558541684,
+			"value": 77540.83
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
