@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-21",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": -1,
+		"brent": {
+			"delta_pct": 3.004291845493551,
+			"value": 93.6,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 3537.71,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.917302288237657,
+			"value": 98.726,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -583.36,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.0,
+			"value": 10.76,
+			"vote": null
+		},
+		"market_expectations": "Global markets show weakness with US indices down significantly overnight, while Treasury yields and the dollar index declined. Domestic institutional investors remain net buyers despite foreign outflows. Oil prices rose sharply, potentially impacting inflation concerns. The rupee weakened slightly against the dollar. Market volatility remains stable at previous levels. Overall sentiment appears neutral with mixed signals across asset classes.",
+		"nasdaq_overnight": {
+			"delta_pct": -2.74545079418259,
+			"value": 26067.166,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Analyst suggests Nifty50 value strategy could be timely now",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/expert-view/why-a-value-strategy-in-nifty50-makes-sense-now-chintan-haria/articleshow/133391664.cms",
+				"timestamp": "2026-08-21T03:18:31+00:00",
+				"why_it_matters": "Investors may consider shifting to value stocks amid current market conditions."
+			},
+			{
+				"headline_reworded": "Gaja Alternative Asset IPO sees strong demand with 2.5x subscription",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/gaja-alternative-asset-management-ipo-day-3-issue-subscribed-nearly-2-5-times-gmp-at-11-should-you-subscribe/articleshow/133391697.cms",
+				"timestamp": "2026-08-21T03:16:44+00:00",
+				"why_it_matters": "High subscription levels indicate investor interest in alternative asset offerings."
+			},
+			{
+				"headline_reworded": "Five stocks including Glenmark Pharma show rising momentum signals",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/glenmark-pharmaceuticals-among-5-stocks-showing-bullish-rsi-upswing/slideshow/133391643.cms",
+				"timestamp": "2026-08-21T03:07:39+00:00",
+				"why_it_matters": "Technical indicators highlight potential buying opportunities in select stocks."
+			},
+			{
+				"headline_reworded": "Crompton executive discusses premium product strategy for future growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/expert-view/etmarkets-management-talk-crompton-2-0-how-premiumisation-innovation-and-smart-products-could-reshape-growth-kaleeswaran-arunachalam/articleshow/133391267.cms",
+				"timestamp": "2026-08-21T02:57:05+00:00",
+				"why_it_matters": "Company's focus on innovation could influence consumer durables sector performance."
+			},
+			{
+				"headline_reworded": "Fund manager identifies electronics and defense as key growth sectors",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/expert-view/etmarkets-smart-talk-indias-next-growth-leaders-bajaj-alts-jitendra-gohil-bets-on-electronics-solar-defence/articleshow/133391126.cms",
+				"timestamp": "2026-08-21T02:43:41+00:00",
+				"why_it_matters": "Expert sector picks may guide investor allocations in emerging industries."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": -2.023723584720585,
+			"value": 7641.16,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.05999999999999961,
+			"value": 4.65,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": 0.23017214194193536,
+			"value": 95.67,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}

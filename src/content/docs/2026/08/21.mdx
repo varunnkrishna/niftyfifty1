@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 21 Aug 2026
+description: Nifty outlook — 21 Aug 2026. Pre-market bias is Neutral.
+date: "2026-08-21"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7641.16
+    delta_pct: -2.023723584720585
+    vote: -1
+  nasdaq_overnight:
+    value: 26067.166
+    delta_pct: -2.74545079418259
+    vote: -1
+  us10y_yield:
+    value: 4.65
+    delta: -0.05999999999999961
+    vote: 1
+  dxy:
+    value: 98.726
+    delta_pct: -0.917302288237657
+    vote: 1
+  fii_net_cash:
+    value: -583.36
+    vote: -1
+  dii_net_cash:
+    value: 3537.71
+    vote: 1
+  usdinr:
+    value: 95.67
+    delta_pct: 0.23017214194193536
+    vote: -1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 10.76
+    delta: 0.0
+    vote: null
+  brent:
+    value: 93.6
+    delta_pct: 3.004291845493551
+    vote: null
+  bias_score: -1
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Global markets show weakness with US indices down significantly overnight, while Treasury yields and the dollar index declined. Domestic institutional investors remain net buyers despite foreign outflows. Oil prices rose sharply, potentially impacting inflation concerns. The rupee weakened slightly against the dollar. Market volatility remains stable at previous levels. Overall sentiment appears neutral with mixed signals across asset classes.
+  news:
+  - headline_reworded: Analyst suggests Nifty50 value strategy could be timely now
+    why_it_matters: Investors may consider shifting to value stocks amid current market conditions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/expert-view/why-a-value-strategy-in-nifty50-makes-sense-now-chintan-haria/articleshow/133391664.cms
+    timestamp: "2026-08-21T03:18:31+00:00"
+  - headline_reworded: Gaja Alternative Asset IPO sees strong demand with 2.5x subscription
+    why_it_matters: High subscription levels indicate investor interest in alternative asset offerings.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/gaja-alternative-asset-management-ipo-day-3-issue-subscribed-nearly-2-5-times-gmp-at-11-should-you-subscribe/articleshow/133391697.cms
+    timestamp: "2026-08-21T03:16:44+00:00"
+  - headline_reworded: Five stocks including Glenmark Pharma show rising momentum signals
+    why_it_matters: Technical indicators highlight potential buying opportunities in select stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/glenmark-pharmaceuticals-among-5-stocks-showing-bullish-rsi-upswing/slideshow/133391643.cms
+    timestamp: "2026-08-21T03:07:39+00:00"
+  - headline_reworded: Crompton executive discusses premium product strategy for future growth
+    why_it_matters: Company's focus on innovation could influence consumer durables sector performance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/expert-view/etmarkets-management-talk-crompton-2-0-how-premiumisation-innovation-and-smart-products-could-reshape-growth-kaleeswaran-arunachalam/articleshow/133391267.cms
+    timestamp: "2026-08-21T02:57:05+00:00"
+  - headline_reworded: Fund manager identifies electronics and defense as key growth sectors
+    why_it_matters: Expert sector picks may guide investor allocations in emerging industries.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/expert-view/etmarkets-smart-talk-indias-next-growth-leaders-bajaj-alts-jitendra-gohil-bets-on-electronics-solar-defence/articleshow/133391126.cms
+    timestamp: "2026-08-21T02:43:41+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
