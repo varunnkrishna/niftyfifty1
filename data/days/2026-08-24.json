@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-24",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.46024965771605036,
+			"value": 57525.95
+		},
+		"conclusion": "Indian equities extended gains for a third consecutive session, with benchmarks closing modestly higher after relinquishing stronger intraday advances. The Nifty and Sensex both edged upward alongside a sharper rise in banking stocks, while plummeting volatility levels supported the bullish undertone. Market participants remained focused on upcoming earnings reports that could drive individual stock performance, even as global attention turned to tech earnings and cryptocurrency markets staged significant rallies.",
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday highs but close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Showed resilience despite losing earlier gains, reflecting cautious optimism."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Continued upward momentum signaled stability amid easing market volatility."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility plunges most in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Sharp drop in fear gauge fueled a broad-based rally during trading hours."
+			},
+			{
+				"headline_reworded": "Indices notch third straight gain ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Sustained rally set stage for stock-specific moves based on upcoming results."
+			},
+			{
+				"headline_reworded": "Japanese shares dip as AI stocks retreat pre-Nvidia report",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-japans-nikkei-weighed-down-by-ai-stocks-ahead-of-nvidia-earnings/articleshow/133461403.cms",
+				"timestamp": "2026-08-24T10:28:17+00:00",
+				"why_it_matters": "Highlighted global tech sector sensitivity to key earnings announcements."
+			},
+			{
+				"headline_reworded": "Rupee rangebound amid intervention, Iran sanction watch",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/interventions-hold-rupee-on-narrow-leash-traders-await-us-sanctions-on-iran/articleshow/133461311.cms",
+				"timestamp": "2026-08-24T10:25:44+00:00",
+				"why_it_matters": "Showed currency market caution ahead of potential geopolitical developments."
+			},
+			{
+				"headline_reworded": "Bitcoin rockets 22% weekly on Treasury demand optimism",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-surges-22-in-a-week-climbs-to-nearly-78k-as-us-treasury-bond-buying-plan-boosts-sentiment/articleshow/133460825.cms",
+				"timestamp": "2026-08-24T10:08:41+00:00",
+				"why_it_matters": "Crypto rally reflected shifting capital flows in alternative asset classes."
+			},
+			{
+				"headline_reworded": "Asset classes compete for 2026 performance leadership",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/gold-bitcoin-or-stocks-whos-winning-the-2026-race-for-returns/articleshow/133460698.cms",
+				"timestamp": "2026-08-24T10:06:30+00:00",
+				"why_it_matters": "Illustrated ongoing investor debate about optimal portfolio allocation strategies."
+			},
+			{
+				"headline_reworded": "Shanthi Gears stock soars 37% in two days on catalysts",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/shanthi-gears-shares-surge-37-in-two-trading-sessions-heres-why/articleshow/133460616.cms",
+				"timestamp": "2026-08-24T10:03:11+00:00",
+				"why_it_matters": "Demonstrated how specific corporate developments can drive outsized equity moves."
+			},
+			{
+				"headline_reworded": "MP Steel initiates IPO process with Rs 95 crore fresh issue",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/mp-steel-files-ipo-papers-plans-rs-95-crore-fresh-issue-23-07-lakh-share-ofs/articleshow/133460038.cms",
+				"timestamp": "2026-08-24T09:44:02+00:00",
+				"why_it_matters": "Marked another addition to the pipeline of primary market offerings."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 0.26557758467225207,
+			"value": 24219.05
+		},
+		"sensex_close": {
+			"delta_pct": 0.17304227876676614,
+			"value": 77369.11
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
