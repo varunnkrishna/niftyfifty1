@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-24",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Short",
+		"bias_score": -2,
+		"brent": {
+			"delta_pct": 2.362118215776759,
+			"value": 93.17,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2124.14,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.8359257400903286,
+			"value": 98.817,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -542.71,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.0,
+			"value": 11.2,
+			"vote": null
+		},
+		"market_expectations": "Markets face bearish pressure with tech and bonds leading declines, while dollar weakness offers partial relief. Institutional flows show divergence as FIIs withdraw but DIIs inject capital. Oil's surge and mixed currency movements suggest cautious trading with a short bias prevailing. Normal conviction accompanies negative overnight cues across major indices.",
+		"nasdaq_overnight": {
+			"delta_pct": -2.052832936014443,
+			"value": 26180.455,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "JBM Auto and four other stocks exhibit rising RSI momentum",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jbm-auto-among-5-stocks-showing-bullish-rsi-upswing/slideshow/133450057.cms",
+				"timestamp": "2026-08-24T03:01:16+00:00",
+				"why_it_matters": "This signals potential short-term bullish opportunities for traders."
+			},
+			{
+				"headline_reworded": "Hero MotoCorp's stock behavior aligns with its beta characteristics",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hero-motocorp-stock-price-today-live-24-aug-2026/liveblog/133449731.cms",
+				"timestamp": "2026-08-24T02:40:22+00:00",
+				"why_it_matters": "Investors gauge volatility expectations based on beta trends."
+			},
+			{
+				"headline_reworded": "Lalithaa Jewellery Mart set for debut with strong gray market premium",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/lalithaa-jewellery-mart-shares-to-debut-today-gmp-signals-37-premium-ahead-of-listing/articleshow/133449448.cms",
+				"timestamp": "2026-08-24T02:26:59+00:00",
+				"why_it_matters": "The listing could attract IPO interest amid positive gray market signals."
+			},
+			{
+				"headline_reworded": "Analysts identify five long-term picks including Jubilant FoodWorks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-jubilant-foodworks-max-financial-among-5-stocks-that-could-give-10-30-return/slideshow/133449559.cms",
+				"timestamp": "2026-08-24T02:20:58+00:00",
+				"why_it_matters": "High-conviction stock ideas may influence institutional positioning."
+			},
+			{
+				"headline_reworded": "Crude dips under $93 as market anticipates US Iran sanctions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-august-24-crude-oil-slips-below-93-ahead-of-us-sanctions-announcement-on-iran-what-are-experts-saying/articleshow/133449404.cms",
+				"timestamp": "2026-08-24T02:12:15+00:00",
+				"why_it_matters": "Energy sector volatility may ripple through related equities today."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.4306888473315427,
+			"value": 7674.37,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": 0.040000000000000036,
+			"value": 4.69,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.043994352838894885,
+			"value": 95.652,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}

@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 24 Aug 2026
+description: Nifty outlook — 24 Aug 2026. Pre-market bias is Mildly Short.
+date: "2026-08-24"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7674.37
+    delta_pct: -1.4306888473315427
+    vote: -1
+  nasdaq_overnight:
+    value: 26180.455
+    delta_pct: -2.052832936014443
+    vote: -1
+  us10y_yield:
+    value: 4.69
+    delta: 0.040000000000000036
+    vote: -1
+  dxy:
+    value: 98.817
+    delta_pct: -0.8359257400903286
+    vote: 1
+  fii_net_cash:
+    value: -542.71
+    vote: -1
+  dii_net_cash:
+    value: 2124.14
+    vote: 1
+  usdinr:
+    value: 95.652
+    delta_pct: -0.043994352838894885
+    vote: 0
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 11.2
+    delta: 0.0
+    vote: null
+  brent:
+    value: 93.17
+    delta_pct: 2.362118215776759
+    vote: null
+  bias_score: -2
+  bias_label: Short
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets face bearish pressure with tech and bonds leading declines, while dollar weakness offers partial relief. Institutional flows show divergence as FIIs withdraw but DIIs inject capital. Oil's surge and mixed currency movements suggest cautious trading with a short bias prevailing. Normal conviction accompanies negative overnight cues across major indices.
+  news:
+  - headline_reworded: JBM Auto and four other stocks exhibit rising RSI momentum
+    why_it_matters: This signals potential short-term bullish opportunities for traders.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/jbm-auto-among-5-stocks-showing-bullish-rsi-upswing/slideshow/133450057.cms
+    timestamp: "2026-08-24T03:01:16+00:00"
+  - headline_reworded: Hero MotoCorp's stock behavior aligns with its beta characteristics
+    why_it_matters: Investors gauge volatility expectations based on beta trends.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/hero-motocorp-stock-price-today-live-24-aug-2026/liveblog/133449731.cms
+    timestamp: "2026-08-24T02:40:22+00:00"
+  - headline_reworded: Lalithaa Jewellery Mart set for debut with strong gray market premium
+    why_it_matters: The listing could attract IPO interest amid positive gray market signals.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/lalithaa-jewellery-mart-shares-to-debut-today-gmp-signals-37-premium-ahead-of-listing/articleshow/133449448.cms
+    timestamp: "2026-08-24T02:26:59+00:00"
+  - headline_reworded: Analysts identify five long-term picks including Jubilant FoodWorks
+    why_it_matters: High-conviction stock ideas may influence institutional positioning.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/stocks-to-buy-in-2026-for-long-term-jubilant-foodworks-max-financial-among-5-stocks-that-could-give-10-30-return/slideshow/133449559.cms
+    timestamp: "2026-08-24T02:20:58+00:00"
+  - headline_reworded: Crude dips under $93 as market anticipates US Iran sanctions
+    why_it_matters: Energy sector volatility may ripple through related equities today.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-august-24-crude-oil-slips-below-93-ahead-of-us-sanctions-announcement-on-iran-what-are-experts-saying/articleshow/133449404.cms
+    timestamp: "2026-08-24T02:12:15+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
