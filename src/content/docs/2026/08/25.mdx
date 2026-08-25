@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 25 Aug 2026
-description: Nifty outlook — 25 Aug 2026. Pre-market bias is Mildly Short.
+title: Nifty & Sensex — 25 Aug 2026
+description: How markets closed — 25 Aug 2026. Nifty +1.06%, bias was Short.
 date: "2026-08-25"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/etmarkets-nri-talk-why-private-credit-reits-and-pms-are-entering-the-nri-investment-conversation-explains-sumegh-bhatia/articleshow/133488027.cms
     timestamp: "2026-08-25T03:03:45+00:00"
+eod:
+  nifty_close:
+    value: 24334.55
+    delta_pct: 1.0642362625268396
+  sensex_close:
+    value: 77656.09
+    delta_pct: 0.9705020226322661
+  banknifty_close:
+    value: 57514.2
+    delta_pct: 0.479474491066081
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equity markets extended gains for a third consecutive session, though off intraday highs. The benchmarks closed moderately higher as reduced volatility supported the bullish trend. Attention turned to upcoming earnings reports for stock-specific direction, while currency and commodity movements provided additional market influences. The day's trading reflected cautious optimism amid evolving macroeconomic conditions.
+  news:
+  - headline_reworded: Markets give up early gains but still close slightly higher
+    why_it_matters: It highlights the market's struggle to maintain momentum despite a positive start.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Indices notch third straight day of gains as volatility eases
+    why_it_matters: Shows sustained bullish sentiment supported by declining market volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp drop in volatility index
+    why_it_matters: Explains the midday rally driven by the steepest VIX decline in years.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Benchmarks extend winning streak to three sessions amid earnings focus
+    why_it_matters: Indicates continued upward movement with attention turning to quarterly results.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Mom's Belief IPO price band set for September debut
+    why_it_matters: Mentions a new IPO entering the market with defined pricing parameters.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/rays-of-belief-ipo-moms-belief-operator-announces-price-band-for-issue-opening-on-september-1/articleshow/133506271.cms
+    timestamp: "2026-08-25T10:42:07+00:00"
+  - headline_reworded: Several stocks deliver multibagger returns over past year
+    why_it_matters: Highlights exceptional performers that have significantly outpaced the market.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/multibagger-stocks-ather-energy-hind-copper-mcx-among-stocks-which-surged-up-to-250-in-one-year/slideshow/133506231.cms
+    timestamp: "2026-08-25T10:34:07+00:00"
+  - headline_reworded: Rupee strengthens as oil price decline offsets RBI interventions
+    why_it_matters: Shows currency gains amid favorable commodity price movements.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/oil-fall-lifts-rupee-to-over-one-week-high-after-central-bank-keeps-lid-on-losses/articleshow/133505392.cms
+    timestamp: "2026-08-25T10:17:02+00:00"
+  - headline_reworded: Japanese firms increase forex hedging amid weak yen pressures
+    why_it_matters: Illustrates corporate responses to currency-driven cost inflation.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-japanese-businesses-turn-to-currency-hedging-as-weak-yen-drives-up-import-costs/articleshow/133505126.cms
+    timestamp: "2026-08-25T10:16:32+00:00"
+  - headline_reworded: Indices finish higher in first expiry after CAS implementation
+    why_it_matters: Notes market resilience during a significant derivatives expiry event.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sensex-rises-287-points-nifty-closes-above-24300-as-market-swings-into-green-on-first-monthly-expiry-after-cas/articleshow/133505296.cms
+    timestamp: "2026-08-25T10:15:00+00:00"
+  - headline_reworded: Mutual funds consistently accumulated these largecaps amid rallies
+    why_it_matters: Reveals institutional buying patterns behind certain stock surges.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/mfs-kept-buying-these-9-largecap-stocks-for-2-quarters-shares-surged-up-to-50/slideshow/133505362.cms
+    timestamp: "2026-08-25T10:08:36+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
