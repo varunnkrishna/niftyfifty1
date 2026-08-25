@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-25",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Short",
+		"bias_score": -2,
+		"brent": {
+			"delta_pct": 0.709452084697655,
+			"value": 92.27,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2493.41,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.2104624101993306,
+			"value": 99.038,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": 1181.66,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.5,
+			"value": 11.7,
+			"vote": null
+		},
+		"market_expectations": "Markets face downward pressure today with negative overnight moves in US indices and rising Treasury yields. The short bias reflects weak global cues despite domestic institutional buying. Brent crude's climb and dollar strength may weigh on sentiment, though reduced volatility could provide some support. Focus remains on earnings-driven stock selection amid mixed technical signals.",
+		"nasdaq_overnight": {
+			"delta_pct": -2.4947316391761167,
+			"value": 25980.191,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflects ongoing volatility and cautious investor sentiment."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third straight session of gains amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained upward momentum could signal improving market confidence."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility cools sharply, VIX sees historic drop",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Sharp decline in fear gauge may indicate reduced hedging activity."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to third day with focus on earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Corporate results will likely drive individual stock movements."
+			},
+			{
+				"headline_reworded": "NRI investors increasingly consider alternative asset classes like private credit",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/etmarkets-nri-talk-why-private-credit-reits-and-pms-are-entering-the-nri-investment-conversation-explains-sumegh-bhatia/articleshow/133488027.cms",
+				"timestamp": "2026-08-25T03:03:45+00:00",
+				"why_it_matters": "Shifting capital flows could influence sectoral performance long-term."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.1904362264462862,
+			"value": 7652.86,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": 0.04999999999999982,
+			"value": 4.74,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.08495414146221537,
+			"value": 95.735,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}
