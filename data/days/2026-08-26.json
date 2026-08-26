@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-26",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.5006443937741623,
+			"value": 57783.75
+		},
+		"conclusion": "Indian benchmarks closed marginally lower after a volatile session, with the Nifty and Sensex dipping slightly while Bank Nifty eked out gains. Early advances were erased as investors turned cautious, though banking stocks showed resilience. The market's inability to hold morning gains reflected ongoing uncertainty, even as some sectors demonstrated relative strength. Global cues and corporate developments remained in focus throughout the trading day.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to finish slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the session's volatility despite an initial upward push."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive day of gains amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained buying interest and reduced volatility signaled continued bullish sentiment."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp drop in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A dramatic plunge in the India VIX index spurred a broad rally."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak as earnings reports loom",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned ahead of quarterly results drove the third day of gains."
+			},
+			{
+				"headline_reworded": "Indices surrender morning rise to end lower",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-183-points-nifty-closes-below-24250-as-market-erases-all-morning-gains-what-lies-ahead/articleshow/133537326.cms",
+				"timestamp": "2026-08-26T10:11:49+00:00",
+				"why_it_matters": "The reversal demonstrated persistent profit-taking pressure at higher levels."
+			},
+			{
+				"headline_reworded": "Bitcoin steadies near key level as traders await US economic data",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-consolidates-near-79k-ahead-of-us-pce-gdp-data-whales-book-record-1-2-billion-profit-in-3-days/articleshow/133536752.cms",
+				"timestamp": "2026-08-26T09:53:30+00:00",
+				"why_it_matters": "Crypto markets paused ahead of macroeconomic indicators that could impact risk assets."
+			},
+			{
+				"headline_reworded": "Adani cement unit reportedly preparing major equity offering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/adanis-cemindia-is-said-to-near-up-to-524-million-share-sale/articleshow/133536591.cms",
+				"timestamp": "2026-08-26T09:46:36+00:00",
+				"why_it_matters": "Potential capital raising plans drew attention to the conglomerate's expansion strategy."
+			},
+			{
+				"headline_reworded": "Mexican peso strength squeezes export-driven businesses",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-mexicos-super-peso-rally-puts-exporters-under-pressure/articleshow/133536190.cms",
+				"timestamp": "2026-08-26T09:33:06+00:00",
+				"why_it_matters": "Currency appreciation created headwinds for the country's trade competitiveness."
+			},
+			{
+				"headline_reworded": "ECB may hike rates amid Middle East inflation risks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-ecb-may-raise-rates-in-september-as-iran-war-fuels-inflation-concerns-reports/articleshow/133535841.cms",
+				"timestamp": "2026-08-26T09:10:35+00:00",
+				"why_it_matters": "Geopolitical tensions renewed concerns about prolonged monetary tightening."
+			},
+			{
+				"headline_reworded": "Packaging firm approves bonus shares and dividend payout",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/mold-tek-packaging-board-approves-11-bonus-issue-rs-3-final-dividend/articleshow/133535801.cms",
+				"timestamp": "2026-08-26T09:08:02+00:00",
+				"why_it_matters": "Corporate action signaled confidence in the company's financial health."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.09945588141226751,
+			"value": 24207.75
+		},
+		"sensex_close": {
+			"delta_pct": -0.08354643391629112,
+			"value": 77472.94
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],

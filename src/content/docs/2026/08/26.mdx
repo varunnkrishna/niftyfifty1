@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 26 Aug 2026
-description: Nifty outlook — 26 Aug 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 26 Aug 2026
+description: How markets closed — 26 Aug 2026. Nifty -0.10%, bias was Neutral.
 date: "2026-08-26"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/stocks/news/crorepati-investors-touch-record-rs-10-lakh-crore-milestone-which-stocks-are-making-them-richer/articleshow/133528419.cms
     timestamp: "2026-08-26T03:27:02+00:00"
+eod:
+  nifty_close:
+    value: 24207.75
+    delta_pct: -0.09945588141226751
+  sensex_close:
+    value: 77472.94
+    delta_pct: -0.08354643391629112
+  banknifty_close:
+    value: 57783.75
+    delta_pct: 0.5006443937741623
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian benchmarks closed marginally lower after a volatile session, with the Nifty and Sensex dipping slightly while Bank Nifty eked out gains. Early advances were erased as investors turned cautious, though banking stocks showed resilience. The market's inability to hold morning gains reflected ongoing uncertainty, even as some sectors demonstrated relative strength. Global cues and corporate developments remained in focus throughout the trading day.
+  news:
+  - headline_reworded: Markets relinquish early advances to finish slightly up
+    why_it_matters: This highlights the session's volatility despite an initial upward push.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive day of gains amid lower volatility
+    why_it_matters: Sustained buying interest and reduced volatility signaled continued bullish sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp drop in market volatility
+    why_it_matters: A dramatic plunge in the India VIX index spurred a broad rally.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak as earnings reports loom
+    why_it_matters: Investors positioned ahead of quarterly results drove the third day of gains.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Indices surrender morning rise to end lower
+    why_it_matters: The reversal demonstrated persistent profit-taking pressure at higher levels.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sensex-falls-183-points-nifty-closes-below-24250-as-market-erases-all-morning-gains-what-lies-ahead/articleshow/133537326.cms
+    timestamp: "2026-08-26T10:11:49+00:00"
+  - headline_reworded: Bitcoin steadies near key level as traders await US economic data
+    why_it_matters: Crypto markets paused ahead of macroeconomic indicators that could impact risk assets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/bitcoin-consolidates-near-79k-ahead-of-us-pce-gdp-data-whales-book-record-1-2-billion-profit-in-3-days/articleshow/133536752.cms
+    timestamp: "2026-08-26T09:53:30+00:00"
+  - headline_reworded: Adani cement unit reportedly preparing major equity offering
+    why_it_matters: Potential capital raising plans drew attention to the conglomerate's expansion strategy.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/adanis-cemindia-is-said-to-near-up-to-524-million-share-sale/articleshow/133536591.cms
+    timestamp: "2026-08-26T09:46:36+00:00"
+  - headline_reworded: Mexican peso strength squeezes export-driven businesses
+    why_it_matters: Currency appreciation created headwinds for the country's trade competitiveness.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-mexicos-super-peso-rally-puts-exporters-under-pressure/articleshow/133536190.cms
+    timestamp: "2026-08-26T09:33:06+00:00"
+  - headline_reworded: ECB may hike rates amid Middle East inflation risks
+    why_it_matters: Geopolitical tensions renewed concerns about prolonged monetary tightening.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-ecb-may-raise-rates-in-september-as-iran-war-fuels-inflation-concerns-reports/articleshow/133535841.cms
+    timestamp: "2026-08-26T09:10:35+00:00"
+  - headline_reworded: Packaging firm approves bonus shares and dividend payout
+    why_it_matters: Corporate action signaled confidence in the company's financial health.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/mold-tek-packaging-board-approves-11-bonus-issue-rs-3-final-dividend/articleshow/133535801.cms
+    timestamp: "2026-08-26T09:08:02+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
