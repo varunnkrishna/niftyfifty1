@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-27",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": -1,
+		"brent": {
+			"delta_pct": -5.034175979168928,
+			"value": 87.53,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 4977.17,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.21919191919191794,
+			"value": 99.217,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -298.26,
+			"vote": 0
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.53,
+			"value": 11.1,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias expected as global markets show weakness overnight with US indices and yields declining, while domestic institutional inflows provide some support. The rupee's strength against the dollar and lower crude prices may offer relief, but foreign outflows and bottom-third previous close positioning suggest caution. Volatility remains elevated with India VIX rising, indicating potential choppiness despite recent gains.",
+		"nasdaq_overnight": {
+			"delta_pct": -0.7629498057239561,
+			"value": 26130.197,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates a lack of sustained bullish momentum despite intraday optimism."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive gain as volatility decline favors bulls",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Extended gains with lower volatility suggest improving risk appetite among investors."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp volatility drop, with India VIX posting 4-year record fall",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A dramatic decline in volatility signals reduced market uncertainty and potential stability."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to three sessions as earnings season drives selective moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued gains amid earnings reports highlight stock-specific opportunities in current conditions."
+			},
+			{
+				"headline_reworded": "Solar Industries leads five stocks scaling new 52-week peaks with monthly gains up to 22%",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/solar-industries-among-5-stocks-hitting-52-week-highs-surge-up-to-22-in-a-month/slideshow/133568796.cms",
+				"timestamp": "2026-08-27T12:32:56+00:00",
+				"why_it_matters": "Strong performers hitting new highs may attract momentum-driven trading interest."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.41878676384733415,
+			"value": 7675.7,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.0600000000000005,
+			"value": 4.64,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -0.26333320107505304,
+			"value": 95.52,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}

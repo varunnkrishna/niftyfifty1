@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 27 Aug 2026
+description: Nifty outlook — 27 Aug 2026. Pre-market bias is Neutral.
+date: "2026-08-27"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7675.7
+    delta_pct: -0.41878676384733415
+    vote: -1
+  nasdaq_overnight:
+    value: 26130.197
+    delta_pct: -0.7629498057239561
+    vote: -1
+  us10y_yield:
+    value: 4.64
+    delta: -0.0600000000000005
+    vote: 1
+  dxy:
+    value: 99.217
+    delta_pct: 0.21919191919191794
+    vote: -1
+  fii_net_cash:
+    value: -298.26
+    vote: 0
+  dii_net_cash:
+    value: 4977.17
+    vote: 1
+  usdinr:
+    value: 95.52
+    delta_pct: -0.26333320107505304
+    vote: 1
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 11.1
+    delta: 0.53
+    vote: null
+  brent:
+    value: 87.53
+    delta_pct: -5.034175979168928
+    vote: null
+  bias_score: -1
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Neutral bias expected as global markets show weakness overnight with US indices and yields declining, while domestic institutional inflows provide some support. The rupee's strength against the dollar and lower crude prices may offer relief, but foreign outflows and bottom-third previous close positioning suggest caution. Volatility remains elevated with India VIX rising, indicating potential choppiness despite recent gains.
+  news:
+  - headline_reworded: Markets relinquish early advances to close slightly up
+    why_it_matters: This indicates a lack of sustained bullish momentum despite intraday optimism.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive gain as volatility decline favors bulls
+    why_it_matters: Extended gains with lower volatility suggest improving risk appetite among investors.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp volatility drop, with India VIX posting 4-year record fall
+    why_it_matters: A dramatic decline in volatility signals reduced market uncertainty and potential stability.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to three sessions as earnings season drives selective moves
+    why_it_matters: Continued gains amid earnings reports highlight stock-specific opportunities in current conditions.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Solar Industries leads five stocks scaling new 52-week peaks with monthly gains up to 22%
+    why_it_matters: Strong performers hitting new highs may attract momentum-driven trading interest.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/solar-industries-among-5-stocks-hitting-52-week-highs-surge-up-to-22-in-a-month/slideshow/133568796.cms
+    timestamp: "2026-08-27T12:32:56+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
