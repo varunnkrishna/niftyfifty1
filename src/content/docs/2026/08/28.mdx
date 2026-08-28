@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 28 Aug 2026
+description: Nifty outlook — 28 Aug 2026. Pre-market bias is Mildly Long.
+date: "2026-08-28"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7739.04
+    delta_pct: 0.8426750339115793
+    vote: 1
+  nasdaq_overnight:
+    value: 26552.332
+    delta_pct: 1.4204181286348652
+    vote: 1
+  us10y_yield:
+    value: 4.66
+    delta: 0.020000000000000462
+    vote: 0
+  dxy:
+    value: 99.532
+    delta_pct: 0.5373737373737338
+    vote: -1
+  fii_net_cash:
+    value: -5039.8
+    vote: -1
+  dii_net_cash:
+    value: 5183.93
+    vote: 1
+  usdinr:
+    value: 95.368
+    delta_pct: -0.3472298414947535
+    vote: 1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 10.66
+    delta: -0.41
+    vote: null
+  brent:
+    value: 87.84
+    delta_pct: -4.697840946077898
+    vote: null
+  bias_score: 3
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: The market is poised for a bullish session, driven by positive overnight gains in U.S. indices and a decline in India VIX. The U.S. dollar's weakness and a favorable bias score further support this outlook. However, rising U.S. Treasury yields and foreign institutional investor outflows may introduce some caution. Overall, the setup suggests a long bias with normal conviction.
+  news:
+  - headline_reworded: Markets struggle to maintain gains, closing slightly higher
+    why_it_matters: This highlights the market's inability to sustain momentum, signaling potential caution among investors.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty continue upward trend for third consecutive day
+    why_it_matters: The ongoing rally suggests bullish sentiment, supported by easing volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Market rallies as volatility cools, India VIX records sharpest decline in years
+    why_it_matters: Reduced volatility fosters investor confidence, driving market gains.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty extend gains for third day, focus shifts to Q4 earnings
+    why_it_matters: Corporate earnings will likely influence stock-specific movements in the near term.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Fed chairman expresses concern over elevated inflation levels
+    why_it_matters: Inflation worries could impact future monetary policy decisions, affecting global markets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-fed-chairman-kevin-warsh-says-inflation-is-elevated-and-concerning-at-jackson-hole/articleshow/133593773.cms
+    timestamp: "2026-08-28T14:18:26+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
