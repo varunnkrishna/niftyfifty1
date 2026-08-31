@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-08-31",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 1,
+		"brent": {
+			"delta_pct": 1.2978142076502739,
+			"value": 88.98,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 5183.93,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.3841887667641426,
+			"value": 99.551,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -5039.8,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.5,
+			"value": 11.18,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to remain neutral with a slight positive bias, influenced by overnight gains in U.S. indices and a dip in the USDINR. The India VIX shows increased volatility, while global oil prices have risen, potentially impacting energy stocks. Investor sentiment appears mixed, with foreign institutional investors showing net selling and domestic institutional investors net buying.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.8478231474924427,
+			"value": 26402.424,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "G20 Summit, US Employment Figures, and Central Bank Rate Announcements: Major Global Market Influencers This Week",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/g20-us-jobs-data-rate-decisions-5-key-global-market-triggers-this-week/slideshow/133647015.cms",
+				"timestamp": "2026-08-31T08:02:09+00:00",
+				"why_it_matters": "These events could significantly sway global market sentiment and investment strategies."
+			},
+			{
+				"headline_reworded": "Priority Jewels IPO Sees Strong Demand with Significant Listing Gains Predicted",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/priority-jewels-ipo-day-2-issue-book-over-15-times-so-far-gmp-signals-23-listing-gain-should-you-subscribe/articleshow/133646567.cms",
+				"timestamp": "2026-08-31T07:58:52+00:00",
+				"why_it_matters": "High subscription rates and positive GMP indicate robust investor confidence in the IPO."
+			},
+			{
+				"headline_reworded": "Jefferies Adjusts HDFC Bank's Share Price Forecast Amid CEO Transition",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/jefferies-cuts-hdfc-bank-share-price-target-but-retains-buy-after-ceo-opts-out-of-new-term-heres-why/articleshow/133645941.cms",
+				"timestamp": "2026-08-31T07:29:28+00:00",
+				"why_it_matters": "Leadership changes can impact investor perceptions and stock performance."
+			},
+			{
+				"headline_reworded": "Transformers and Rectifiers Stock Surges Following Major Order Win",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/transformers-and-rectifiers-shares-rally-8-after-receiving-order-worth-up-to-rs-100-500-crore-from-meil/articleshow/133645581.cms",
+				"timestamp": "2026-08-31T07:19:10+00:00",
+				"why_it_matters": "Large contracts can boost company revenues and investor interest."
+			},
+			{
+				"headline_reworded": "Chinese Real Estate Stocks Decline Amid Regulatory Changes",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-chinese-property-stocks-slide-as-new-rules-raise-consolidation-fears/articleshow/133645736.cms",
+				"timestamp": "2026-08-31T07:17:55+00:00",
+				"why_it_matters": "New regulations may lead to sector consolidation and affect investor sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.4872061159417689,
+			"value": 7711.76,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.009999999999999787,
+			"value": 4.67,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": -0.5125199664448817,
+			"value": 95.2325,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}

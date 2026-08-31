@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 31 Aug 2026
+description: Nifty outlook — 31 Aug 2026. Pre-market bias is Neutral.
+date: "2026-08-31"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7711.76
+    delta_pct: 0.4872061159417689
+    vote: 1
+  nasdaq_overnight:
+    value: 26402.424
+    delta_pct: 0.8478231474924427
+    vote: 1
+  us10y_yield:
+    value: 4.67
+    delta: 0.009999999999999787
+    vote: 0
+  dxy:
+    value: 99.551
+    delta_pct: 0.3841887667641426
+    vote: -1
+  fii_net_cash:
+    value: -5039.8
+    vote: -1
+  dii_net_cash:
+    value: 5183.93
+    vote: 1
+  usdinr:
+    value: 95.2325
+    delta_pct: -0.5125199664448817
+    vote: 1
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 11.18
+    delta: 0.5
+    vote: null
+  brent:
+    value: 88.98
+    delta_pct: 1.2978142076502739
+    vote: null
+  bias_score: 1
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Markets are expected to remain neutral with a slight positive bias, influenced by overnight gains in U.S. indices and a dip in the USDINR. The India VIX shows increased volatility, while global oil prices have risen, potentially impacting energy stocks. Investor sentiment appears mixed, with foreign institutional investors showing net selling and domestic institutional investors net buying.
+  news:
+  - headline_reworded: "G20 Summit, US Employment Figures, and Central Bank Rate Announcements: Major Global Market Influencers This Week"
+    why_it_matters: These events could significantly sway global market sentiment and investment strategies.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/g20-us-jobs-data-rate-decisions-5-key-global-market-triggers-this-week/slideshow/133647015.cms
+    timestamp: "2026-08-31T08:02:09+00:00"
+  - headline_reworded: Priority Jewels IPO Sees Strong Demand with Significant Listing Gains Predicted
+    why_it_matters: High subscription rates and positive GMP indicate robust investor confidence in the IPO.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/priority-jewels-ipo-day-2-issue-book-over-15-times-so-far-gmp-signals-23-listing-gain-should-you-subscribe/articleshow/133646567.cms
+    timestamp: "2026-08-31T07:58:52+00:00"
+  - headline_reworded: Jefferies Adjusts HDFC Bank's Share Price Forecast Amid CEO Transition
+    why_it_matters: Leadership changes can impact investor perceptions and stock performance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/jefferies-cuts-hdfc-bank-share-price-target-but-retains-buy-after-ceo-opts-out-of-new-term-heres-why/articleshow/133645941.cms
+    timestamp: "2026-08-31T07:29:28+00:00"
+  - headline_reworded: Transformers and Rectifiers Stock Surges Following Major Order Win
+    why_it_matters: Large contracts can boost company revenues and investor interest.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/transformers-and-rectifiers-shares-rally-8-after-receiving-order-worth-up-to-rs-100-500-crore-from-meil/articleshow/133645581.cms
+    timestamp: "2026-08-31T07:19:10+00:00"
+  - headline_reworded: Chinese Real Estate Stocks Decline Amid Regulatory Changes
+    why_it_matters: New regulations may lead to sector consolidation and affect investor sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-chinese-property-stocks-slide-as-new-rules-raise-consolidation-fears/articleshow/133645736.cms
+    timestamp: "2026-08-31T07:17:55+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
