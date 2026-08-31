@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-08-31",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.8880415619099283,
+			"value": 58024.95
+		},
+		"conclusion": "Markets ended lower today, with Nifty and Sensex both declining, while Bank Nifty managed to post gains. The session was marked by volatility, with indices struggling to hold onto early advances. Despite some positive momentum in specific sectors, broader market sentiment remained cautious. Key developments included significant acquisitions and new financial products, but these failed to offset the overall downward trend.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain early momentum, close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's inability to maintain gains despite initial optimism."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive day of gains",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscores the continuation of a bullish trend amid reduced volatility."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp drop in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It explains the midday rally driven by a significant decline in volatility."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak for third straight session",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It emphasizes the ongoing positive momentum in the market."
+			},
+			{
+				"headline_reworded": "Blackstone's REIT sees strong demand on first day of offer",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/blackstones-knowledge-realty-trust-ofs-subscribed-1-4-times-on-day-1/articleshow/133659131.cms",
+				"timestamp": "2026-08-31T17:05:42+00:00",
+				"why_it_matters": "It reflects investor interest in real estate investment opportunities."
+			},
+			{
+				"headline_reworded": "GRT Jewellers to acquire majority stake in TBZ",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/grt-jewellers-to-buy-controlling-stake-in-tbz-for-up-to-rs-1034-crore/articleshow/133657769.cms",
+				"timestamp": "2026-08-31T16:07:28+00:00",
+				"why_it_matters": "It highlights a major acquisition in the jewelry sector."
+			},
+			{
+				"headline_reworded": "NCDEX introduces rainfall futures for monsoon hedging",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/commodities/news/ncdex-launches-chennai-rainfall-futures-to-hedge-monsoon-risks/articleshow/133657748.cms",
+				"timestamp": "2026-08-31T16:05:50+00:00",
+				"why_it_matters": "It showcases a new financial product to manage weather-related risks."
+			},
+			{
+				"headline_reworded": "Key factors influencing Tuesday's market activity",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-tuesday/articleshow/133657719.cms",
+				"timestamp": "2026-08-31T16:04:03+00:00",
+				"why_it_matters": "It provides insights into potential drivers of the next trading session."
+			},
+			{
+				"headline_reworded": "Blackstone-backed firm plans stake sale in EPL",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/blackstone-backed-epsilon-bidco-may-sell-26-stake-in-epl-in-rs-1985-crore-block-deal/articleshow/133657355.cms",
+				"timestamp": "2026-08-31T15:49:48+00:00",
+				"why_it_matters": "It signals a significant block deal in the packaging industry."
+			},
+			{
+				"headline_reworded": "Deepa Jewellers secures anchor funding ahead of IPO",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ahead-of-ipo-deepa-jewellers-raises-rs-138-cr-from-anchor-investors/articleshow/133657193.cms",
+				"timestamp": "2026-08-31T15:37:03+00:00",
+				"why_it_matters": "It indicates strong investor confidence in the upcoming public offering."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.0443998348027717,
+			"value": 24080.4
+		},
+		"sensex_close": {
+			"delta_pct": -0.8998907877025388,
+			"value": 76957.27
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
