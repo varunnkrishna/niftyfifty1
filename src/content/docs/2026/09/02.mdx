@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 02 Sep 2026
+description: Nifty outlook — 02 Sep 2026. Pre-market bias is Mildly Long.
+date: "2026-09-02"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7631.47
+    delta_pct: -0.5966957047287516
+    vote: -1
+  nasdaq_overnight:
+    value: 26099.773
+    delta_pct: -0.19703418185710928
+    vote: 0
+  us10y_yield:
+    value: 4.75
+    delta: 0.019999999999999574
+    vote: 0
+  dxy:
+    value: 99.789
+    delta_pct: 0.3610580307754145
+    vote: -1
+  fii_net_cash:
+    value: 1143.38
+    vote: 1
+  dii_net_cash:
+    value: 1846.94
+    vote: 1
+  usdinr:
+    value: 94.875
+    delta_pct: -0.5818906573698318
+    vote: 1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 11.67
+    delta: 0.18
+    vote: null
+  brent:
+    value: 94.86
+    delta_pct: 6.214309707759487
+    vote: null
+  bias_score: 2
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets are expected to lean bullish today, supported by positive cash flows from institutional investors and a favorable USDINR trend. However, overnight declines in major indices and a rising dollar index may temper gains. Brent crude's sharp rise could add pressure, while easing volatility suggests a stable trading environment.
+  news:
+  - headline_reworded: Markets struggle to sustain early gains, close slightly up
+    why_it_matters: This highlights ongoing market volatility and investor caution despite positive momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty notch third consecutive day of gains amid easing volatility
+    why_it_matters: Sustained gains and reduced volatility signal potential bullish sentiment in the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharpest drop in India VIX in four years
+    why_it_matters: A significant decline in volatility indicates increased investor confidence and market stability.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty extend winning streak, focus shifts to Q4 earnings
+    why_it_matters: Continued gains and earnings reports will drive stock-specific movements in the near term.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Yotta plans IPO targeting $1.5 billion by early 2027 amid AI expansion
+    why_it_matters: This reflects growing investor interest in AI-driven companies and future IPO potential.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/yotta-targets-jan-march-2027-ipo-seeks-up-to-1-5-billion-amid-ai-boom/articleshow/133701389.cms
+    timestamp: "2026-09-02T06:59:43+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
