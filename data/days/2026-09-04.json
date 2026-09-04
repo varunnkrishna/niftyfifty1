@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-04",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 3,
+		"brent": {
+			"delta_pct": 5.92330644270085,
+			"value": 95.85,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 4977.46,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.39424720909183353,
+			"value": 99.038,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -2345.87,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.56,
+			"value": 10.78,
+			"vote": null
+		},
+		"market_expectations": "Markets show modest bullish sentiment with S&P futures gaining slightly overnight while the dollar weakens. Domestic institutional investors remain net buyers, contrasting with foreign outflows. Currency markets favor the rupee, and oil prices surge significantly. Volatility remains contained with a neutral previous close positioning, suggesting steady opening conditions.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.16091871739758065,
+			"value": 26584.06,
+			"vote": 0
+		},
+		"news": [
+			{
+				"headline_reworded": "Fed rate cut likelihood dips below 50% following remarks by Governor Waller",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-fed-rate-cut-bets-fall-below-50-after-governor-chris-wallers-comments-what-did-he-say/articleshow/133754387.cms",
+				"timestamp": "2026-09-04T06:38:28+00:00",
+				"why_it_matters": "This could influence market sentiment as traders reassess interest rate expectations."
+			},
+			{
+				"headline_reworded": "Nomura cautions that global markets may be overexposed to AI-related risks in dollar assets",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/is-ai-boom-hiding-growing-us-risks-nomura-warns-dollar-asset-concentration-leaves-global-markets-vulnerable-to-ai-shocks/articleshow/133754300.cms",
+				"timestamp": "2026-09-04T06:34:00+00:00",
+				"why_it_matters": "Highlights potential systemic vulnerabilities in concentrated tech-driven markets."
+			},
+			{
+				"headline_reworded": "Kotak Securities identifies 10 preferred stocks for festive season investment opportunities",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/which-stocks-should-you-buy-ahead-of-the-festive-season-here-are-kotak-securities-top-10-picks/articleshow/133754154.cms",
+				"timestamp": "2026-09-04T06:30:07+00:00",
+				"why_it_matters": "Provides actionable sector-specific insights for domestic market participants."
+			},
+			{
+				"headline_reworded": "Chinese equities recover slightly but face weekly decline as AI enthusiasm wanes",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-china-stocks-rebound-but-weekly-loss-looms-as-ai-rally-cools/articleshow/133754061.cms",
+				"timestamp": "2026-09-04T06:20:28+00:00",
+				"why_it_matters": "Shows regional market volatility amid shifting tech sector dynamics."
+			},
+			{
+				"headline_reworded": "Indian bond markets hold steady awaiting new debt issuance",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-pause-before-weekly-debt-supply/articleshow/133753419.cms",
+				"timestamp": "2026-09-04T05:55:39+00:00",
+				"why_it_matters": "Indicates temporary equilibrium in fixed income markets before supply pressure."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.21627243082710307,
+			"value": 7747.71,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.0,
+			"value": 4.79,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": -0.954389952642219,
+			"value": 94.47,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
