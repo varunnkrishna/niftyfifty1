@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-08",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 3,
+		"brent": {
+			"delta_pct": 3.2416605667677594,
+			"value": 98.73,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 566.76,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.6639212535154694,
+			"value": 98.899,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 280.13,
+			"vote": 0
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.0,
+			"value": 11.16,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to open with a positive bias today, supported by overnight gains in US indices and a weaker dollar. The Nasdaq's strong performance and falling India VIX suggest favorable conditions for risk assets, though the previous close in the bottom third of its range indicates some caution. Foreign institutional investors turned net buyers while domestic institutions continued their buying spree, adding to the positive sentiment. Oil price movements and currency fluctuations may influence specific sectors during the session.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.39606217914874225,
+			"value": 26506.99,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday advances to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates potential profit-booking after recent gains, which could influence today's trading sentiment."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions amid declining volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained buying momentum with lower volatility suggests continued bullish sentiment in the market."
+			},
+			{
+				"headline_reworded": "Midday update: Markets rally as volatility index records sharpest decline in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The significant drop in volatility could encourage more participation from both retail and institutional investors."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain as quarterly earnings drive stock movements",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing corporate results season remains the key focus for investors' stock-specific decisions."
+			},
+			{
+				"headline_reworded": "PVR Inox announces share repurchase program with key details",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/pvr-inoxs-rs-300-crore-buyback-opens-on-sept-10-check-buyback-price-key-dates-entitlement-ratio/articleshow/133913344.cms",
+				"timestamp": "2026-09-08T07:02:34+00:00",
+				"why_it_matters": "This corporate action could attract investor attention to the media and entertainment sector."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.08869570629791572,
+			"value": 7718.6,
+			"vote": 0
+		},
+		"us10y_yield": {
+			"delta": -0.020000000000000462,
+			"value": 4.77,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": -0.2266331912312438,
+			"value": 94.74,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}

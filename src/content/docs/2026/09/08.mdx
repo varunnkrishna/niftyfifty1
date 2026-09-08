@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 08 Sep 2026
+description: Nifty outlook — 08 Sep 2026. Pre-market bias is Mildly Long.
+date: "2026-09-08"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7718.6
+    delta_pct: 0.08869570629791572
+    vote: 0
+  nasdaq_overnight:
+    value: 26506.99
+    delta_pct: 0.39606217914874225
+    vote: 1
+  us10y_yield:
+    value: 4.77
+    delta: -0.020000000000000462
+    vote: 0
+  dxy:
+    value: 98.899
+    delta_pct: -0.6639212535154694
+    vote: 1
+  fii_net_cash:
+    value: 280.13
+    vote: 0
+  dii_net_cash:
+    value: 566.76
+    vote: 1
+  usdinr:
+    value: 94.74
+    delta_pct: -0.2266331912312438
+    vote: 1
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 11.16
+    delta: 0.0
+    vote: null
+  brent:
+    value: 98.73
+    delta_pct: 3.2416605667677594
+    vote: null
+  bias_score: 3
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets are expected to open with a positive bias today, supported by overnight gains in US indices and a weaker dollar. The Nasdaq's strong performance and falling India VIX suggest favorable conditions for risk assets, though the previous close in the bottom third of its range indicates some caution. Foreign institutional investors turned net buyers while domestic institutions continued their buying spree, adding to the positive sentiment. Oil price movements and currency fluctuations may influence specific sectors during the session.
+  news:
+  - headline_reworded: Markets give up intraday advances to close slightly higher
+    why_it_matters: This indicates potential profit-booking after recent gains, which could influence today's trading sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices extend winning streak to three sessions amid declining volatility
+    why_it_matters: Sustained buying momentum with lower volatility suggests continued bullish sentiment in the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: "Midday update: Markets rally as volatility index records sharpest decline in years"
+    why_it_matters: The significant drop in volatility could encourage more participation from both retail and institutional investors.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices notch third consecutive gain as quarterly earnings drive stock movements
+    why_it_matters: Ongoing corporate results season remains the key focus for investors' stock-specific decisions.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: PVR Inox announces share repurchase program with key details
+    why_it_matters: This corporate action could attract investor attention to the media and entertainment sector.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/pvr-inoxs-rs-300-crore-buyback-opens-on-sept-10-check-buyback-price-key-dates-entitlement-ratio/articleshow/133913344.cms
+    timestamp: "2026-09-08T07:02:34+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
