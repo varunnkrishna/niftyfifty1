@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-09-09",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -1.8909701188206391,
+			"value": 56295.55
+		},
+		"conclusion": "Markets closed lower today, with major indices declining nearly 2%. Early gains proved unsustainable as volatility and oil price concerns weighed on sentiment. Regulatory updates and earnings reports drove stock-specific action, while currency and commodity markets reacted to geopolitical tensions. Analyst calls and enforcement actions added to the day's mixed developments.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to maintain early advances, close with slight gains",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to sustain upward momentum despite initial positive movement."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive day of gains amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Continued gains suggest a bullish trend supported by easing market uncertainty."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The significant drop in volatility indices spurred a rally, reflecting improved investor sentiment."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak as quarterly earnings drive stock movements",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing gains and focus on earnings reports indicate stock-specific opportunities for traders."
+			},
+			{
+				"headline_reworded": "Dow Jones drops sharply as oil prices breach key threshold",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-dow-jones-falls-300-points-as-oil-price-crosess-100/articleshow/133971560.cms",
+				"timestamp": "2026-09-09T13:44:21+00:00",
+				"why_it_matters": "Rising oil prices contributed to broader market declines, impacting global investor sentiment."
+			},
+			{
+				"headline_reworded": "Rupee weakens against dollar amid escalating oil price concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-falls-to-95-11-vs-us-dollar-as-west-asia-tensions-drive-oil-fears/articleshow/133971268.cms",
+				"timestamp": "2026-09-09T13:31:54+00:00",
+				"why_it_matters": "Currency depreciation reflects heightened anxiety over energy costs and geopolitical tensions."
+			},
+			{
+				"headline_reworded": "Sebi updates commodity derivatives rules on open interest limits",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-revises-rules-for-open-interest-violations-in-commodity-derivatives/articleshow/133970428.cms",
+				"timestamp": "2026-09-09T13:04:45+00:00",
+				"why_it_matters": "Regulatory changes aim to enhance market integrity and prevent excessive speculation."
+			},
+			{
+				"headline_reworded": "India reverses ban on JPMorgan unit linked to index issues",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/india-lifts-ban-on-jpmorgan-unit-in-index-manipulation-charge/articleshow/133969969.cms",
+				"timestamp": "2026-09-09T13:02:01+00:00",
+				"why_it_matters": "The decision signals regulatory flexibility and potential relief for affected financial entities."
+			},
+			{
+				"headline_reworded": "Jefferies recommends Vodafone Idea as a high-risk turnaround bet",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/vodafone-idea-a-high-beta-turnaround-play-says-jefferies-initiates-buy-with-29-upside-potential/articleshow/133969890.cms",
+				"timestamp": "2026-09-09T12:52:58+00:00",
+				"why_it_matters": "Analyst optimism could attract speculative interest in the struggling telecom firm."
+			},
+			{
+				"headline_reworded": "Sebi penalizes Jindal Steel executives for breach of trading rules",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-fines-two-jindal-steel-designated-persons-for-trading-window-violations/articleshow/133968938.cms",
+				"timestamp": "2026-09-09T12:23:52+00:00",
+				"why_it_matters": "Enforcement actions underscore regulatory scrutiny on insider trading violations."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.8512196603339723,
+			"value": 23431.5
+		},
+		"sensex_close": {
+			"delta_pct": -1.8234771484616659,
+			"value": 74764.23
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],

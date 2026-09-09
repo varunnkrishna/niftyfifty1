@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 09 Sep 2026
-description: Nifty outlook — 09 Sep 2026. Pre-market bias is Mildly Long.
+title: Nifty & Sensex — 09 Sep 2026
+description: How markets closed — 09 Sep 2026. Nifty -1.85%, bias was Long.
 date: "2026-09-09"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/stocks/news/paytm-shares-jump-5-as-workplace-ai-push-gains-traction/articleshow/133957200.cms
     timestamp: "2026-09-09T06:57:15+00:00"
+eod:
+  nifty_close:
+    value: 23431.5
+    delta_pct: -1.8512196603339723
+  sensex_close:
+    value: 74764.23
+    delta_pct: -1.8234771484616659
+  banknifty_close:
+    value: 56295.55
+    delta_pct: -1.8909701188206391
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Markets closed lower today, with major indices declining nearly 2%. Early gains proved unsustainable as volatility and oil price concerns weighed on sentiment. Regulatory updates and earnings reports drove stock-specific action, while currency and commodity markets reacted to geopolitical tensions. Analyst calls and enforcement actions added to the day's mixed developments.
+  news:
+  - headline_reworded: Markets struggle to maintain early advances, close with slight gains
+    why_it_matters: This highlights the market's inability to sustain upward momentum despite initial positive movement.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive day of gains amid lower volatility
+    why_it_matters: Continued gains suggest a bullish trend supported by easing market uncertainty.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp decline in market volatility
+    why_it_matters: The significant drop in volatility indices spurred a rally, reflecting improved investor sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak as quarterly earnings drive stock movements
+    why_it_matters: Ongoing gains and focus on earnings reports indicate stock-specific opportunities for traders.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Dow Jones drops sharply as oil prices breach key threshold
+    why_it_matters: Rising oil prices contributed to broader market declines, impacting global investor sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-dow-jones-falls-300-points-as-oil-price-crosess-100/articleshow/133971560.cms
+    timestamp: "2026-09-09T13:44:21+00:00"
+  - headline_reworded: Rupee weakens against dollar amid escalating oil price concerns
+    why_it_matters: Currency depreciation reflects heightened anxiety over energy costs and geopolitical tensions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-falls-to-95-11-vs-us-dollar-as-west-asia-tensions-drive-oil-fears/articleshow/133971268.cms
+    timestamp: "2026-09-09T13:31:54+00:00"
+  - headline_reworded: Sebi updates commodity derivatives rules on open interest limits
+    why_it_matters: Regulatory changes aim to enhance market integrity and prevent excessive speculation.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-revises-rules-for-open-interest-violations-in-commodity-derivatives/articleshow/133970428.cms
+    timestamp: "2026-09-09T13:04:45+00:00"
+  - headline_reworded: India reverses ban on JPMorgan unit linked to index issues
+    why_it_matters: The decision signals regulatory flexibility and potential relief for affected financial entities.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/india-lifts-ban-on-jpmorgan-unit-in-index-manipulation-charge/articleshow/133969969.cms
+    timestamp: "2026-09-09T13:02:01+00:00"
+  - headline_reworded: Jefferies recommends Vodafone Idea as a high-risk turnaround bet
+    why_it_matters: Analyst optimism could attract speculative interest in the struggling telecom firm.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/vodafone-idea-a-high-beta-turnaround-play-says-jefferies-initiates-buy-with-29-upside-potential/articleshow/133969890.cms
+    timestamp: "2026-09-09T12:52:58+00:00"
+  - headline_reworded: Sebi penalizes Jindal Steel executives for breach of trading rules
+    why_it_matters: Enforcement actions underscore regulatory scrutiny on insider trading violations.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-fines-two-jindal-steel-designated-persons-for-trading-window-violations/articleshow/133968938.cms
+    timestamp: "2026-09-09T12:23:52+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
