@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-10",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 1,
+		"brent": {
+			"delta_pct": 4.777731616119645,
+			"value": 100.88,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 1509.04,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.4124647035094714,
+			"value": 98.751,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -582.99,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.16,
+			"value": 11.76,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to remain neutral today, with mixed signals from global indices and domestic indicators. The Nasdaq shows slight strength, while the US dollar weakens slightly. Domestic institutional investors remain positive, but foreign institutional investors show caution. Brent crude prices rise significantly, potentially impacting energy-sensitive sectors. Overall, the bias leans neutral with normal conviction.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.5883959896964598,
+			"value": 26253.34,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets edge higher but struggle to maintain gains",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's inability to sustain momentum despite a positive session."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It reflects continued bullish sentiment supported by declining volatility."
+			},
+			{
+				"headline_reworded": "Market rallies as volatility cools, India VIX records sharpest decline in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It underscores the impact of reduced volatility on market performance."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third day, Q4 earnings drive stock-specific moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It emphasizes the role of quarterly results in shaping market direction."
+			},
+			{
+				"headline_reworded": "South Korea\u2019s corporate reform faces scrutiny amid Samsung and SK Hynix payouts",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-samsung-sk-hynix-payouts-put-south-koreas-corporate-reform-to-the-test/articleshow/133997642.cms",
+				"timestamp": "2026-09-10T07:03:58+00:00",
+				"why_it_matters": "It highlights broader implications for corporate governance and investor confidence."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.0640767768201856,
+			"value": 7636.36,
+			"vote": 0
+		},
+		"us10y_yield": {
+			"delta": 0.019999999999999574,
+			"value": 4.8,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.8361297805489982,
+			"value": 95.285,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
