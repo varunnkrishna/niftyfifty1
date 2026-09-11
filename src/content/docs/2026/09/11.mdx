@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 11 Sep 2026
-description: Nifty outlook — 11 Sep 2026. Pre-market bias is Mildly Short.
+title: Nifty & Sensex — 11 Sep 2026
+description: How markets closed — 11 Sep 2026. Nifty -1.60%, bias was Short.
 date: "2026-09-11"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/stocks/news/bernstein-names-paytm-stock-as-its-top-pick-lists-3-strong-growth-drivers-for-fintech-giant/articleshow/134051463.cms
     timestamp: "2026-09-11T07:00:34+00:00"
+eod:
+  nifty_close:
+    value: 23398.1
+    delta_pct: -1.6024542508878699
+  sensex_close:
+    value: 74781.76
+    delta_pct: -1.7745962614541655
+  banknifty_close:
+    value: 56606.55
+    delta_pct: -0.8438681831478603
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian benchmarks closed sharply lower despite early optimism, with both Nifty and Sensex dropping significantly. The banking sector showed relative resilience with a smaller decline. While morning sessions saw temporary rallies fueled by plunging volatility, the momentum couldn't sustain through closing. Global tech performances and domestic liquidity adjustments created crosscurrents, but ultimately earnings season developments and macroeconomic concerns dominated market sentiment.
+  news:
+  - headline_reworded: Markets relinquish early gains to close slightly higher
+    why_it_matters: It showed a lack of sustained bullish momentum despite initial optimism.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive day of gains amid lower volatility
+    why_it_matters: Continued upward movement signaled resilience despite broader economic uncertainties.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as volatility plummets most sharply in four years
+    why_it_matters: The dramatic VIX drop created favorable conditions for a temporary rally.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak with earnings season guiding individual stocks
+    why_it_matters: Corporate results became the focal point amid the broader market climb.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Oracle gains on strong AI-driven backlog despite cost concerns
+    why_it_matters: Demonstrated how tech firms can overcome spending fears with solid demand indicators.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/oracle-rises-as-ai-fueled-backlog-growth-deflects-spending-worries/articleshow/134072335.cms
+    timestamp: "2026-09-11T14:06:27+00:00"
+  - headline_reworded: Entrepreneurial couple shares blueprint for building dual business legacy
+    why_it_matters: Highlighted alternative success models beyond traditional corporate structures.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/bonds/lessons-in-starting-up-how-an-entrepreneurial-couple-built-a-joint-legacy/articleshow/134070790.cms
+    timestamp: "2026-09-11T13:46:50+00:00"
+  - headline_reworded: Wall Street rallies as falling oil prices offset inflation data
+    why_it_matters: Showed energy markets' outsized influence on equity performance during inflationary periods.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-dow-jones-soars-600-pts-nasdaq-1-as-oil-prices-fall-amid-high-august-inflation/articleshow/134071001.cms
+    timestamp: "2026-09-11T13:39:24+00:00"
+  - headline_reworded: Financial guide for couples navigating joint business ventures
+    why_it_matters: Addressed growing interest in partnership-based entrepreneurship models.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/bonds/joint-finances-joint-risks-a-couples-roadmap-to-starting-up/videoshow/134071113.cms
+    timestamp: "2026-09-11T13:38:41+00:00"
+  - headline_reworded: Central bank aggressively drains liquidity via major debt offering
+    why_it_matters: Marked a significant tightening move that could impact money market conditions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/indias-central-bank-opts-for-sharp-liquidity-drain-through-10-5-billion-debt-sale/articleshow/134070578.cms
+    timestamp: "2026-09-11T13:29:17+00:00"
+  - headline_reworded: Diesel price surge exacerbates supply chain cost pressures
+    why_it_matters: Highlighted inflationary transmission mechanisms affecting consumer goods.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/us-diesel-prices-soar-past-6-a-gallon-deepening-strain-for-hauling-everyday-goods/articleshow/134069226.cms
+    timestamp: "2026-09-11T13:03:40+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
