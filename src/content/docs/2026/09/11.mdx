@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 11 Sep 2026
+description: Nifty outlook — 11 Sep 2026. Pre-market bias is Mildly Short.
+date: "2026-09-11"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7591.7
+    delta_pct: -0.9769650170871123
+    vote: -1
+  nasdaq_overnight:
+    value: 26081.725
+    delta_pct: -0.519131446042648
+    vote: -1
+  us10y_yield:
+    value: 4.83
+    delta: 0.03000000000000025
+    vote: -1
+  dxy:
+    value: 99.065
+    delta_pct: 0.2276406313233451
+    vote: -1
+  fii_net_cash:
+    value: -438.24
+    vote: 0
+  dii_net_cash:
+    value: 1025.85
+    vote: 1
+  usdinr:
+    value: 95.6925
+    delta_pct: 1.3366472414044992
+    vote: -1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 12.3
+    delta: 0.5
+    vote: null
+  brent:
+    value: 105.27
+    delta_pct: 7.506127450980387
+    vote: null
+  bias_score: -3
+  bias_label: Short
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Short bias dominates with negative overnight moves in US indices and Treasury yields rising. The dollar strength and rupee weakness create additional headwinds, though domestic institutional buying provides some cushion. Energy price spikes and elevated US yields may pressure risk assets, but the previous close's top-third positioning and reduced volatility offer counterbalancing factors for selective opportunities.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This indicates potential resistance levels and profit-taking behavior among investors.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices extend winning streak to three sessions as volatility recedes
+    why_it_matters: Sustained gains with lower volatility could signal strengthening bullish momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp decline in market fear gauge
+    why_it_matters: The dramatic VIX drop suggests improved risk appetite among traders.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices notch third consecutive gain as earnings season drives selective moves
+    why_it_matters: Highlights how corporate results are creating divergent opportunities beneath index-level moves.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Analyst names Paytm as preferred choice citing growth catalysts
+    why_it_matters: Could spark renewed interest in beaten-down fintech stocks if institutional confidence grows.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/bernstein-names-paytm-stock-as-its-top-pick-lists-3-strong-growth-drivers-for-fintech-giant/articleshow/134051463.cms
+    timestamp: "2026-09-11T07:00:34+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
