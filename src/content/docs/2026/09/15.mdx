@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 15 Sep 2026
+description: Nifty outlook — 15 Sep 2026. Pre-market bias is Strongly Short.
+date: "2026-09-15"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7619.98
+    delta_pct: -1.2776928458528851
+    vote: -1
+  nasdaq_overnight:
+    value: 26186.414
+    delta_pct: -1.2094017464827236
+    vote: -1
+  us10y_yield:
+    value: 4.96
+    delta: 0.009999999999999787
+    vote: 0
+  dxy:
+    value: 99.606
+    delta_pct: 0.5207387223735909
+    vote: -1
+  fii_net_cash:
+    value: -930.9
+    vote: -1
+  dii_net_cash:
+    value: 1968.17
+    vote: 1
+  usdinr:
+    value: 95.9425
+    delta_pct: 1.1806207354755727
+    vote: -1
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 12.98
+    delta: 0.69
+    vote: null
+  brent:
+    value: 102.7
+    delta_pct: -4.580507293505522
+    vote: null
+  bias_score: -5
+  bias_label: Short
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: Markets are poised for a bearish session with significant overnight losses in major indices and a strengthening dollar. Bond yields remain elevated while crude prices retreat sharply. Domestic institutional investors show buying interest, but foreign investors remain net sellers. Volatility is rising, and the rupee weakens against the dollar. The overall bias suggests a short-oriented market approach.
+  news:
+  - headline_reworded: Public sector firms eye massive Rs 12,802 crore from NSE stake sales by 2026
+    why_it_matters: This highlights potential liquidity influx and investor interest in PSU stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/nse-ipo-jackpot-10-psus-could-pocket-rs-12802-crore-from-stake-sale/articleshow/134255369.cms
+    timestamp: "2026-09-15T07:35:56+00:00"
+  - headline_reworded: Cochin Shipyard shares drop sharply amid year-long correction
+    why_it_matters: This signals caution for investors in previously high-performing stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/cochin-shipyard-shares-tumble-12-over-2-sessions-should-you-buy-after-multibagger-corrects-26-in-a-year/articleshow/134255269.cms
+    timestamp: "2026-09-15T07:27:10+00:00"
+  - headline_reworded: Hexaware Technologies surges on AI partnership announcement
+    why_it_matters: This reflects growing market enthusiasm for AI-related collaborations.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/hexaware-technologies-stock-gains-5-on-project-nanda-fellowship-collaboration-to-advance-ai-agents/articleshow/134254868.cms
+    timestamp: "2026-09-15T07:14:28+00:00"
+  - headline_reworded: NSE IPO launch imminent with strong listing premium forecast
+    why_it_matters: This indicates robust investor appetite for major exchange listings.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/nse-ipo-set-to-open-on-september-17-gmp-signals-11-listing-gain/articleshow/134254563.cms
+    timestamp: "2026-09-15T06:56:17+00:00"
+  - headline_reworded: Bond market volatility intensifies focus on Fed rate decision
+    why_it_matters: This underscores the market's sensitivity to central bank policy moves.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/bond-market-turmoil-puts-fed-rate-decision-under-spotlight/articleshow/134254468.cms
+    timestamp: "2026-09-15T06:51:04+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />

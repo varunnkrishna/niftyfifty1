@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-15",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Strongly",
+		"bias_label": "Short",
+		"bias_score": -5,
+		"brent": {
+			"delta_pct": -4.580507293505522,
+			"value": 102.7,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 1968.17,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.5207387223735909,
+			"value": 99.606,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -930.9,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.69,
+			"value": 12.98,
+			"vote": null
+		},
+		"market_expectations": "Markets are poised for a bearish session with significant overnight losses in major indices and a strengthening dollar. Bond yields remain elevated while crude prices retreat sharply. Domestic institutional investors show buying interest, but foreign investors remain net sellers. Volatility is rising, and the rupee weakens against the dollar. The overall bias suggests a short-oriented market approach.",
+		"nasdaq_overnight": {
+			"delta_pct": -1.2094017464827236,
+			"value": 26186.414,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Public sector firms eye massive Rs 12,802 crore from NSE stake sales by 2026",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/nse-ipo-jackpot-10-psus-could-pocket-rs-12802-crore-from-stake-sale/articleshow/134255369.cms",
+				"timestamp": "2026-09-15T07:35:56+00:00",
+				"why_it_matters": "This highlights potential liquidity influx and investor interest in PSU stocks."
+			},
+			{
+				"headline_reworded": "Cochin Shipyard shares drop sharply amid year-long correction",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/cochin-shipyard-shares-tumble-12-over-2-sessions-should-you-buy-after-multibagger-corrects-26-in-a-year/articleshow/134255269.cms",
+				"timestamp": "2026-09-15T07:27:10+00:00",
+				"why_it_matters": "This signals caution for investors in previously high-performing stocks."
+			},
+			{
+				"headline_reworded": "Hexaware Technologies surges on AI partnership announcement",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/hexaware-technologies-stock-gains-5-on-project-nanda-fellowship-collaboration-to-advance-ai-agents/articleshow/134254868.cms",
+				"timestamp": "2026-09-15T07:14:28+00:00",
+				"why_it_matters": "This reflects growing market enthusiasm for AI-related collaborations."
+			},
+			{
+				"headline_reworded": "NSE IPO launch imminent with strong listing premium forecast",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/nse-ipo-set-to-open-on-september-17-gmp-signals-11-listing-gain/articleshow/134254563.cms",
+				"timestamp": "2026-09-15T06:56:17+00:00",
+				"why_it_matters": "This indicates robust investor appetite for major exchange listings."
+			},
+			{
+				"headline_reworded": "Bond market volatility intensifies focus on Fed rate decision",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/bond-market-turmoil-puts-fed-rate-decision-under-spotlight/articleshow/134254468.cms",
+				"timestamp": "2026-09-15T06:51:04+00:00",
+				"why_it_matters": "This underscores the market's sensitivity to central bank policy moves."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.2776928458528851,
+			"value": 7619.98,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": 0.009999999999999787,
+			"value": 4.96,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 1.1806207354755727,
+			"value": 95.9425,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
