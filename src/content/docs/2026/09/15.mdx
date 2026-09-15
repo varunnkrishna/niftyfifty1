@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 15 Sep 2026
-description: Nifty outlook — 15 Sep 2026. Pre-market bias is Strongly Short.
+title: Nifty & Sensex — 15 Sep 2026
+description: How markets closed — 15 Sep 2026. Nifty -1.34%, bias was Short.
 date: "2026-09-15"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/bond-market-turmoil-puts-fed-rate-decision-under-spotlight/articleshow/134254468.cms
     timestamp: "2026-09-15T06:51:04+00:00"
+eod:
+  nifty_close:
+    value: 23118.6
+    delta_pct: -1.3353818577555916
+  sensex_close:
+    value: 74003.82
+    delta_pct: -1.0170772841504405
+  banknifty_close:
+    value: 55794.75
+    delta_pct: -0.8895907402983059
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities retreated after failing to sustain early gains, with both major benchmarks closing lower. The session saw initial optimism fade as volatility concerns resurfaced, though mid-day trading had shown promise following a sharp drop in the fear index. Regulatory developments around IPOs and payment systems emerged alongside global market weakness, while domestic attention turned toward upcoming earnings reports. Market infrastructure resilience proposals underscored long-term stability efforts amid the day's pullback.
+  news:
+  - headline_reworded: Markets surrender early advances to close slightly up
+    why_it_matters: Showed fading momentum after initial optimism, reflecting cautious trading.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive rise as volatility recedes
+    why_it_matters: Extended bullish sentiment supported by stabilizing market conditions.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp decline in fear gauge
+    why_it_matters: Highlighted improved risk appetite during the session's peak.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices continue winning streak ahead of earnings season
+    why_it_matters: Set expectations for corporate results to drive individual stocks.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Digital lender Fibe cleared for public listing
+    why_it_matters: Signaled expanding IPO pipeline in the fintech sector.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/digital-lending-platform-fibe-gets-sebi-nod-to-launch-ipo/articleshow/134267101.cms
+    timestamp: "2026-09-15T14:38:05+00:00"
+  - headline_reworded: UPI transaction fees revised for equity investments
+    why_it_matters: Announced cost changes affecting retail trading activity.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/new-charges-on-upi-payments-heres-what-you-will-be-charged-for-stock-market-investments/articleshow/134266721.cms
+    timestamp: "2026-09-15T14:15:44+00:00"
+  - headline_reworded: Wall Street opens weaker despite AI share resilience
+    why_it_matters: Showed sector divergence amid monetary policy anticipation.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-today-nasdaq-sp-500-open-lower-as-ai-stocks-hold-steady-focus-shifts-to-fed-rate-decision/articleshow/134265991.cms
+    timestamp: "2026-09-15T13:45:48+00:00"
+  - headline_reworded: Regulator tightens exchange disaster preparedness rules
+    why_it_matters: Aimed to enhance market infrastructure reliability.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-plans-shorter-disaster-recovery-drills-stronger-backup-rules-for-exchanges/articleshow/134265901.cms
+    timestamp: "2026-09-15T13:40:28+00:00"
+  - headline_reworded: Sebi seeks faster recovery tests for trading systems
+    why_it_matters: Proposed stricter resilience standards for critical platforms.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-proposes-shorter-dr-drills-stronger-resilience-norms-for-mkt-infrastructure-institutions/articleshow/134263391.cms
+    timestamp: "2026-09-15T12:44:22+00:00"
+  - headline_reworded: Investment firm targets major IPO fundraising
+    why_it_matters: Indicated strong private market appetite for public exits.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/valmiki-leela-capital-eyes-rs-3000-crore-ipo-pipeline-over-18-months/articleshow/134262998.cms
+    timestamp: "2026-09-15T12:40:09+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
