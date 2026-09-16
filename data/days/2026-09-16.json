@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-16",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Short",
+		"bias_score": -3,
+		"brent": {
+			"delta_pct": 2.72440493260682,
+			"value": 107.46,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2686.05,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.4570217917675431,
+			"value": 99.573,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -2977.86,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.44,
+			"value": 12.99,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to trend bearish today, driven by declines in major indices and a strengthening dollar. Negative sentiment is reinforced by foreign institutional outflows and rising crude oil prices, though domestic institutional buying provides some balance. Volatility remains subdued, but caution prevails given the overall bias toward short positions.",
+		"nasdaq_overnight": {
+			"delta_pct": -1.6647105510266114,
+			"value": 25981.57,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Power sector stocks decline sharply amid global AI concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ge-vernova-cg-power-other-power-capex-stocks-tumble-up-to-16-in-2-days-amid-global-ai-caution-whats-ahead/articleshow/134281372.cms",
+				"timestamp": "2026-09-16T07:40:52+00:00",
+				"why_it_matters": "This highlights sector-specific volatility tied to broader tech caution."
+			},
+			{
+				"headline_reworded": "Tata Group shares drop following IPO rally",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/tata-group-stocks-fall-up-to-7-after-tuesdays-ipo-buzz-rally-which-stocks-led-the-losses/articleshow/134281314.cms",
+				"timestamp": "2026-09-16T07:29:24+00:00",
+				"why_it_matters": "This reflects post-IPO profit-taking and market sentiment shifts."
+			},
+			{
+				"headline_reworded": "Hong Kong outlines tech-focused five-year plan",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-hong-kong-unveils-first-five-year-plan-targets-bigger-push-into-technology/articleshow/134281079.cms",
+				"timestamp": "2026-09-16T07:22:04+00:00",
+				"why_it_matters": "This signals regional economic strategy shifts impacting global markets."
+			},
+			{
+				"headline_reworded": "Nithin Kamath criticizes new UPI charges on investing",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/nithin-kamath-says-new-upi-charges-on-investing-broking-dont-make-sense-i-dont-see-how-we-can-absorb-this-indefinitely/articleshow/134280407.cms",
+				"timestamp": "2026-09-16T06:53:46+00:00",
+				"why_it_matters": "This raises concerns about transaction costs affecting investor behavior."
+			},
+			{
+				"headline_reworded": "Chipotle shares fall amid selloff concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/chipotle-stock-slides-6-whats-behind-the-selloff/slideshow/134281001.cms",
+				"timestamp": "2026-09-16T06:45:19+00:00",
+				"why_it_matters": "This underscores market sensitivity to corporate performance trends."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.1440642625548754,
+			"value": 7585.73,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": 0.009999999999999787,
+			"value": 4.97,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.8760216923662372,
+			"value": 95.945,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}

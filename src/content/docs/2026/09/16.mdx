@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 16 Sep 2026
+description: Nifty outlook — 16 Sep 2026. Pre-market bias is Mildly Short.
+date: "2026-09-16"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7585.73
+    delta_pct: -1.1440642625548754
+    vote: -1
+  nasdaq_overnight:
+    value: 25981.57
+    delta_pct: -1.6647105510266114
+    vote: -1
+  us10y_yield:
+    value: 4.97
+    delta: 0.009999999999999787
+    vote: 0
+  dxy:
+    value: 99.573
+    delta_pct: 0.4570217917675431
+    vote: -1
+  fii_net_cash:
+    value: -2977.86
+    vote: -1
+  dii_net_cash:
+    value: 2686.05
+    vote: 1
+  usdinr:
+    value: 95.945
+    delta_pct: 0.8760216923662372
+    vote: -1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 12.99
+    delta: -0.44
+    vote: null
+  brent:
+    value: 107.46
+    delta_pct: 2.72440493260682
+    vote: null
+  bias_score: -3
+  bias_label: Short
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets are expected to trend bearish today, driven by declines in major indices and a strengthening dollar. Negative sentiment is reinforced by foreign institutional outflows and rising crude oil prices, though domestic institutional buying provides some balance. Volatility remains subdued, but caution prevails given the overall bias toward short positions.
+  news:
+  - headline_reworded: Power sector stocks decline sharply amid global AI concerns
+    why_it_matters: This highlights sector-specific volatility tied to broader tech caution.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/ge-vernova-cg-power-other-power-capex-stocks-tumble-up-to-16-in-2-days-amid-global-ai-caution-whats-ahead/articleshow/134281372.cms
+    timestamp: "2026-09-16T07:40:52+00:00"
+  - headline_reworded: Tata Group shares drop following IPO rally
+    why_it_matters: This reflects post-IPO profit-taking and market sentiment shifts.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/tata-group-stocks-fall-up-to-7-after-tuesdays-ipo-buzz-rally-which-stocks-led-the-losses/articleshow/134281314.cms
+    timestamp: "2026-09-16T07:29:24+00:00"
+  - headline_reworded: Hong Kong outlines tech-focused five-year plan
+    why_it_matters: This signals regional economic strategy shifts impacting global markets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-hong-kong-unveils-first-five-year-plan-targets-bigger-push-into-technology/articleshow/134281079.cms
+    timestamp: "2026-09-16T07:22:04+00:00"
+  - headline_reworded: Nithin Kamath criticizes new UPI charges on investing
+    why_it_matters: This raises concerns about transaction costs affecting investor behavior.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/nithin-kamath-says-new-upi-charges-on-investing-broking-dont-make-sense-i-dont-see-how-we-can-absorb-this-indefinitely/articleshow/134280407.cms
+    timestamp: "2026-09-16T06:53:46+00:00"
+  - headline_reworded: Chipotle shares fall amid selloff concerns
+    why_it_matters: This underscores market sensitivity to corporate performance trends.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/chipotle-stock-slides-6-whats-behind-the-selloff/slideshow/134281001.cms
+    timestamp: "2026-09-16T06:45:19+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
