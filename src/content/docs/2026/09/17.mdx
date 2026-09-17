@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 17 Sep 2026
+description: Nifty outlook — 17 Sep 2026. Pre-market bias is Strongly Short.
+date: "2026-09-17"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7551.81
+    delta_pct: -1.1072029081918515
+    vote: -1
+  nasdaq_overnight:
+    value: 25978.424
+    delta_pct: -1.0471658082362132
+    vote: -1
+  us10y_yield:
+    value: 5.0
+    delta: 0.03000000000000025
+    vote: -1
+  dxy:
+    value: 100.176
+    delta_pct: 0.7198873919163565
+    vote: -1
+  fii_net_cash:
+    value: -2032.61
+    vote: -1
+  dii_net_cash:
+    value: 3908.23
+    vote: 1
+  usdinr:
+    value: 95.9075
+    delta_pct: 0.2225833250604725
+    vote: -1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 12.42
+    delta: -0.75
+    vote: null
+  brent:
+    value: 104.53
+    delta_pct: -1.088190764572299
+    vote: null
+  bias_score: -5
+  bias_label: Short
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: Markets face a short bias today with negative overnight moves in US equities and rising Treasury yields. The dollar strengthened while oil declined, and foreign investors were net sellers in Indian markets. Domestic institutional buying provided some offset, but rupee weakness and mixed global cues suggest cautious trading. Volatility remains elevated despite recent easing, with focus on earnings for direction.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflects ongoing volatility despite marginal gains, signaling cautious investor sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight session of gains as volatility eases
+    why_it_matters: Sustained upward momentum amid lower volatility suggests potential for continued bullish momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday rally fueled by sharp drop in volatility index
+    why_it_matters: A steep decline in India VIX indicates reduced market fear, supporting risk appetite.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to third day with focus on earnings
+    why_it_matters: Corporate results will drive individual stock moves amid broader market gains.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: China expands yuan clearing to bolster global currency adoption
+    why_it_matters: This could influence forex markets and global currency dynamics long-term.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-china-broadens-yuan-fx-clearing-in-push-for-global-currency-use/articleshow/134305121.cms
+    timestamp: "2026-09-17T07:45:45+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
