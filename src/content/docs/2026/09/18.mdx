@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 18 Sep 2026
+description: Nifty outlook — 18 Sep 2026. Pre-market bias is Neutral.
+date: "2026-09-18"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7637.76
+    delta_pct: 0.6067152284732062
+    vote: 1
+  nasdaq_overnight:
+    value: 26418.299
+    delta_pct: 1.2904785420593348
+    vote: 1
+  us10y_yield:
+    value: 5.01
+    delta: 0.009999999999999787
+    vote: 0
+  dxy:
+    value: 100.32
+    delta_pct: 0.8646692137542726
+    vote: -1
+  fii_net_cash:
+    value: -3208.76
+    vote: -1
+  dii_net_cash:
+    value: 3617.75
+    vote: 1
+  usdinr:
+    value: 95.8125
+    delta_pct: 0.820453569714883
+    vote: -1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 11.55
+    delta: -0.74
+    vote: null
+  brent:
+    value: 102.13
+    delta_pct: -3.359197577592744
+    vote: null
+  bias_score: 1
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Markets are expected to remain neutral with a slight positive bias. Overnight gains in major indices suggest optimism, while rising USDINR and declining FII activity could weigh on sentiment. Brent crude's drop may ease inflation concerns, and India VIX's fall indicates reduced volatility. Overall, mixed signals point to cautious trading.
+  news:
+  - headline_reworded: Markets struggle to maintain early momentum, close with slight uptick
+    why_it_matters: It highlights the market's inability to sustain gains, signaling potential volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive rise amid declining volatility
+    why_it_matters: It reflects a bullish trend supported by easing market uncertainty.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp drop in market volatility
+    why_it_matters: It underscores the impact of reduced volatility on market performance.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak, focus shifts to quarterly earnings
+    why_it_matters: It emphasizes the influence of corporate results on stock-specific movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Jefferies raises Navin Fluorine target, cites growth potential
+    why_it_matters: It highlights analyst optimism around specific stock performance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/jefferies-hikes-navin-fluorine-share-price-target-forecasts-14-upside-4-reasons-why/articleshow/134328838.cms
+    timestamp: "2026-09-18T07:14:05+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
