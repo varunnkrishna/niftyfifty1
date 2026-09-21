@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-21",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Strongly",
+		"bias_label": "Long",
+		"bias_score": 5,
+		"brent": {
+			"delta_pct": -7.767173769252573,
+			"value": 97.61,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 1019.69,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.022928920346920678,
+			"value": 100.333,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": 599.54,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.12,
+			"value": 11.27,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to lean bullish today, supported by positive sentiment in Nasdaq futures and declining US Treasury yields. Institutional investor activity remains strong, while volatility in India continues to ease. Brent crude prices have dropped significantly, potentially easing inflationary pressures. The US dollar remains stable, and the Indian rupee shows slight appreciation.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.7196472568301927,
+			"value": 26522.545,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain gains, close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to maintain momentum despite positive moves."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "This signals a sustained bullish trend supported by reduced volatility."
+			},
+			{
+				"headline_reworded": "Market rallies as volatility cools, India VIX records sharpest decline in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "This underscores the impact of declining volatility on market sentiment."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains for third day, focus shifts to Q4 results",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "This emphasizes the role of earnings reports in driving stock-specific movements."
+			},
+			{
+				"headline_reworded": "Warren Buffett's $40 billion derivatives bet challenges his earlier stance",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/warren-buffett-once-called-derivatives-time-bombs-then-bet-40-billion-on-them-what-this-says-about-the-legendary-investor/articleshow/134383629.cms",
+				"timestamp": "2026-09-21T07:40:22+00:00",
+				"why_it_matters": "This reflects evolving investment strategies of a market legend."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.08462866560967332,
+			"value": 7650.5,
+			"vote": 0
+		},
+		"us10y_yield": {
+			"delta": -0.0699999999999994,
+			"value": 4.94,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -0.026503776266395038,
+			"value": 95.81,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}
