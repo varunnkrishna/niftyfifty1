@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-09-22",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -0.1366080175938233,
+			"value": 56215.55
+		},
+		"conclusion": "Indian equities extended gains for a third session, though momentum waned by the close as the Nifty and Sensex posted modest advances while Bank Nifty dipped slightly. The trading day saw reduced volatility supporting the uptrend, with attention shifting to ongoing earnings reports for individual stock direction. Regulatory developments and global tech strength provided additional market catalysts, though participants appeared cautious about sustaining the rally at current levels.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close with slight upticks",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Investors gauged the sustainability of the rally as indices pared gains by the close."
+			},
+			{
+				"headline_reworded": "Benchmarks extend winning streak amid declining market turbulence",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "A three-day ascent with calmer volatility reinforced bullish sentiment."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in half a decade",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Plummeting fear gauge triggered broad-based buying interest."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive rise as earnings season guides picks",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Corporate results dictated selective positioning despite the broader advance."
+			},
+			{
+				"headline_reworded": "Derivatives expiry pricing methodology under regulatory review",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-to-address-concerns-over-settlement-price-for-derivatives-on-expiry-days-says-chief-tuhin-kanta-pandey/articleshow/134414692.cms",
+				"timestamp": "2026-09-22T14:27:15+00:00",
+				"why_it_matters": "Sebi's intervention could alter settlement mechanics for futures traders."
+			},
+			{
+				"headline_reworded": "Fed official affirms effectiveness of current monetary tools",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/new-york-feds-williams-says-rate-control-toolkit-is-working-well/articleshow/134414643.cms",
+				"timestamp": "2026-09-22T14:24:39+00:00",
+				"why_it_matters": "Comments reinforced expectations of stable rate policy framework."
+			},
+			{
+				"headline_reworded": "Tech rebound propels Nasdaq to fresh intraday peak",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-nasdaq-hits-intraday-record-high-as-tech-stocks-regain-footing/articleshow/134414070.cms",
+				"timestamp": "2026-09-22T13:55:39+00:00",
+				"why_it_matters": "Sector resurgence influenced global tech-heavy indices."
+			},
+			{
+				"headline_reworded": "Corporate audit ruling may entangle firms in promoter debt disputes",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/fortis-audit-order-could-drag-listed-firms-into-promoters-personal-debt-cases-ingovern/articleshow/134413677.cms",
+				"timestamp": "2026-09-22T13:27:07+00:00",
+				"why_it_matters": "Legal precedent raised concerns about shareholder liability spillovers."
+			},
+			{
+				"headline_reworded": "Adani units resolve disclosure case with market regulator",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/after-hindenburg-5-adani-group-companies-settle-disclosure-violation-case-with-sebi/articleshow/134413631.cms",
+				"timestamp": "2026-09-22T13:24:56+00:00",
+				"why_it_matters": "Settlement removed lingering regulatory overhang for conglomerate stocks."
+			},
+			{
+				"headline_reworded": "Cryptocurrency markets eye key psychological resistance level",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/3-trillion-crypto-comeback-can-bitcoin-bulls-reclaim-100k-and-push-higher/articleshow/134412450.cms",
+				"timestamp": "2026-09-22T12:30:31+00:00",
+				"why_it_matters": "Bitcoin's momentum fueled speculation about broader digital asset recovery."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 0.4798084211977183,
+			"value": 23329.0
+		},
+		"sensex_close": {
+			"delta_pct": 0.25913263277975296,
+			"value": 74529.08
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],

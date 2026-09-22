@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 22 Sep 2026
-description: Nifty outlook — 22 Sep 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 22 Sep 2026
+description: How markets closed — 22 Sep 2026. Nifty +0.48%, bias was Neutral.
 date: "2026-09-22"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/will-roadster-reveal-trigger-a-fresh-rally-in-tesla-shares/slideshow/134405748.cms
     timestamp: "2026-09-22T06:58:55+00:00"
+eod:
+  nifty_close:
+    value: 23329.0
+    delta_pct: 0.4798084211977183
+  sensex_close:
+    value: 74529.08
+    delta_pct: 0.25913263277975296
+  banknifty_close:
+    value: 56215.55
+    delta_pct: -0.1366080175938233
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities extended gains for a third session, though momentum waned by the close as the Nifty and Sensex posted modest advances while Bank Nifty dipped slightly. The trading day saw reduced volatility supporting the uptrend, with attention shifting to ongoing earnings reports for individual stock direction. Regulatory developments and global tech strength provided additional market catalysts, though participants appeared cautious about sustaining the rally at current levels.
+  news:
+  - headline_reworded: Markets relinquish early advances to close with slight upticks
+    why_it_matters: Investors gauged the sustainability of the rally as indices pared gains by the close.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks extend winning streak amid declining market turbulence
+    why_it_matters: A three-day ascent with calmer volatility reinforced bullish sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharpest volatility drop in half a decade
+    why_it_matters: Plummeting fear gauge triggered broad-based buying interest.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices notch third consecutive rise as earnings season guides picks
+    why_it_matters: Corporate results dictated selective positioning despite the broader advance.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Derivatives expiry pricing methodology under regulatory review
+    why_it_matters: Sebi's intervention could alter settlement mechanics for futures traders.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-to-address-concerns-over-settlement-price-for-derivatives-on-expiry-days-says-chief-tuhin-kanta-pandey/articleshow/134414692.cms
+    timestamp: "2026-09-22T14:27:15+00:00"
+  - headline_reworded: Fed official affirms effectiveness of current monetary tools
+    why_it_matters: Comments reinforced expectations of stable rate policy framework.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/new-york-feds-williams-says-rate-control-toolkit-is-working-well/articleshow/134414643.cms
+    timestamp: "2026-09-22T14:24:39+00:00"
+  - headline_reworded: Tech rebound propels Nasdaq to fresh intraday peak
+    why_it_matters: Sector resurgence influenced global tech-heavy indices.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-nasdaq-hits-intraday-record-high-as-tech-stocks-regain-footing/articleshow/134414070.cms
+    timestamp: "2026-09-22T13:55:39+00:00"
+  - headline_reworded: Corporate audit ruling may entangle firms in promoter debt disputes
+    why_it_matters: Legal precedent raised concerns about shareholder liability spillovers.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/fortis-audit-order-could-drag-listed-firms-into-promoters-personal-debt-cases-ingovern/articleshow/134413677.cms
+    timestamp: "2026-09-22T13:27:07+00:00"
+  - headline_reworded: Adani units resolve disclosure case with market regulator
+    why_it_matters: Settlement removed lingering regulatory overhang for conglomerate stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/after-hindenburg-5-adani-group-companies-settle-disclosure-violation-case-with-sebi/articleshow/134413631.cms
+    timestamp: "2026-09-22T13:24:56+00:00"
+  - headline_reworded: Cryptocurrency markets eye key psychological resistance level
+    why_it_matters: Bitcoin's momentum fueled speculation about broader digital asset recovery.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/cryptocurrency/crypto-news/3-trillion-crypto-comeback-can-bitcoin-bulls-reclaim-100k-and-push-higher/articleshow/134412450.cms
+    timestamp: "2026-09-22T12:30:31+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
