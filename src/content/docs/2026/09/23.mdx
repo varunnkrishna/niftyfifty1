@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 23 Sep 2026
-description: Nifty outlook — 23 Sep 2026. Pre-market bias is Mildly Long.
+title: Nifty & Sensex — 23 Sep 2026
+description: How markets closed — 23 Sep 2026. Nifty +0.76%, bias was Long.
 date: "2026-09-23"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-singapore-core-inflation-hits-nearly-two-year-high-in-august/articleshow/134428523.cms
     timestamp: "2026-09-23T07:23:56+00:00"
+eod:
+  nifty_close:
+    value: 23446.8
+    delta_pct: 0.7571785858551165
+  sensex_close:
+    value: 74828.25
+    delta_pct: 0.6911967084794568
+  banknifty_close:
+    value: 56548.9
+    delta_pct: 0.8797491782734179
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian markets extended their winning streak for the third consecutive day, with key indices closing higher despite losing some momentum by the end of the session. Cooling volatility and optimism around corporate earnings supported the bullish trend. Meanwhile, global factors such as rising US Treasury yields and mortgage rates added pressure, influencing broader market sentiment. The rupee also snapped its winning streak against the dollar, reflecting shifts in currency dynamics.
+  news:
+  - headline_reworded: Markets edge higher but lose momentum by close
+    why_it_matters: It highlights the market's struggle to sustain gains despite a positive session.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty extend winning streak to three days
+    why_it_matters: It underscores the continued bullish momentum in the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Market rallies as volatility cools sharply
+    why_it_matters: It emphasizes the role of reduced volatility in driving market gains.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty notch third straight day of gains
+    why_it_matters: It reinforces the positive trend fueled by corporate earnings expectations.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: US Treasury yields hit 19-year high
+    why_it_matters: It reflects global bond market pressures impacting investor sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/10-year-us-treasury-yields-surges-over-5-05-to-19-year-high/articleshow/134441042.cms
+    timestamp: "2026-09-23T14:52:02+00:00"
+  - headline_reworded: HDFC Life and A91 sell stake in Sedemac Mechatronics
+    why_it_matters: It highlights significant block deal activity in the market.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sedemac-mechatronics-block-deal-hdfc-life-a91-to-offload-10-stake-worth-rs-1329-crore/articleshow/134440898.cms
+    timestamp: "2026-09-23T14:38:20+00:00"
+  - headline_reworded: US mortgage rates climb to two-year peak
+    why_it_matters: It signals tightening financial conditions affecting global markets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/us-30-year-mortgage-rate-tops-7-hits-2-year-high/articleshow/134440833.cms
+    timestamp: "2026-09-23T14:36:07+00:00"
+  - headline_reworded: HSBC raises STOXX 600 target on earnings optimism
+    why_it_matters: It indicates positive sentiment toward European equities.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/hsbc-lifts-stoxx-600-year-end-target-on-stronger-earnings-outlook/articleshow/134440690.cms
+    timestamp: "2026-09-23T14:25:22+00:00"
+  - headline_reworded: Rupee ends four-day rally against the dollar
+    why_it_matters: It marks a shift in currency market dynamics.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-snaps-four-day-winning-streak-ends-at-95-74-per-dollar/articleshow/134440663.cms
+    timestamp: "2026-09-23T14:23:46+00:00"
+  - headline_reworded: Henry Singleton emphasizes cash flow in business strategy
+    why_it_matters: It offers insights into effective financial management principles.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/quote-of-the-day-by-henry-singleton-our-attitude-toward-cash-generation-and-asset-management-came-out-of-our-own-thought-process-it-is-not-copied-after-we-acquired-a-number-of-businesses-we-reflected-on-aspects-of-business-our-own-conclusion-was-that-the-key-was-cash-flow-/articleshow/134440630.cms
+    timestamp: "2026-09-23T14:21:54+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />

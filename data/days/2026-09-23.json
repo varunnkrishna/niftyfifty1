@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-09-23",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.8797491782734179,
+			"value": 56548.9
+		},
+		"conclusion": "Indian markets extended their winning streak for the third consecutive day, with key indices closing higher despite losing some momentum by the end of the session. Cooling volatility and optimism around corporate earnings supported the bullish trend. Meanwhile, global factors such as rising US Treasury yields and mortgage rates added pressure, influencing broader market sentiment. The rupee also snapped its winning streak against the dollar, reflecting shifts in currency dynamics.",
+		"news": [
+			{
+				"headline_reworded": "Markets edge higher but lose momentum by close",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's struggle to sustain gains despite a positive session."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak to three days",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscores the continued bullish momentum in the market."
+			},
+			{
+				"headline_reworded": "Market rallies as volatility cools sharply",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It emphasizes the role of reduced volatility in driving market gains."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty notch third straight day of gains",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It reinforces the positive trend fueled by corporate earnings expectations."
+			},
+			{
+				"headline_reworded": "US Treasury yields hit 19-year high",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/10-year-us-treasury-yields-surges-over-5-05-to-19-year-high/articleshow/134441042.cms",
+				"timestamp": "2026-09-23T14:52:02+00:00",
+				"why_it_matters": "It reflects global bond market pressures impacting investor sentiment."
+			},
+			{
+				"headline_reworded": "HDFC Life and A91 sell stake in Sedemac Mechatronics",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sedemac-mechatronics-block-deal-hdfc-life-a91-to-offload-10-stake-worth-rs-1329-crore/articleshow/134440898.cms",
+				"timestamp": "2026-09-23T14:38:20+00:00",
+				"why_it_matters": "It highlights significant block deal activity in the market."
+			},
+			{
+				"headline_reworded": "US mortgage rates climb to two-year peak",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-30-year-mortgage-rate-tops-7-hits-2-year-high/articleshow/134440833.cms",
+				"timestamp": "2026-09-23T14:36:07+00:00",
+				"why_it_matters": "It signals tightening financial conditions affecting global markets."
+			},
+			{
+				"headline_reworded": "HSBC raises STOXX 600 target on earnings optimism",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/hsbc-lifts-stoxx-600-year-end-target-on-stronger-earnings-outlook/articleshow/134440690.cms",
+				"timestamp": "2026-09-23T14:25:22+00:00",
+				"why_it_matters": "It indicates positive sentiment toward European equities."
+			},
+			{
+				"headline_reworded": "Rupee ends four-day rally against the dollar",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-snaps-four-day-winning-streak-ends-at-95-74-per-dollar/articleshow/134440663.cms",
+				"timestamp": "2026-09-23T14:23:46+00:00",
+				"why_it_matters": "It marks a shift in currency market dynamics."
+			},
+			{
+				"headline_reworded": "Henry Singleton emphasizes cash flow in business strategy",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/quote-of-the-day-by-henry-singleton-our-attitude-toward-cash-generation-and-asset-management-came-out-of-our-own-thought-process-it-is-not-copied-after-we-acquired-a-number-of-businesses-we-reflected-on-aspects-of-business-our-own-conclusion-was-that-the-key-was-cash-flow-/articleshow/134440630.cms",
+				"timestamp": "2026-09-23T14:21:54+00:00",
+				"why_it_matters": "It offers insights into effective financial management principles."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 0.7571785858551165,
+			"value": 23446.8
+		},
+		"sensex_close": {
+			"delta_pct": 0.6911967084794568,
+			"value": 74828.25
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
