@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-23",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 4,
+		"brent": {
+			"delta_pct": -8.09665928564553,
+			"value": 95.46,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 4120.07,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.5657553382558445,
+			"value": 100.787,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -3809.99,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.57,
+			"value": 10.43,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a bullish session with strong overnight gains in US indices and favorable domestic cash flows, though elevated US yields and dollar strength may cap upside. The long bias is supported by declining volatility and previous session's strong closing position, but Brent crude's sharp drop adds a note of caution. Earnings reports will drive stock-specific action while global inflation data remains a watchpoint.",
+		"nasdaq_overnight": {
+			"delta_pct": 4.860010384283931,
+			"value": 27244.277,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates a lack of strong follow-through buying despite initial optimism."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions as volatility declines",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains with lower volatility suggest underlying bullish sentiment may continue."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp drop in volatility index",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The dramatic VIX decline signals reduced fear and potential for continued upward movement."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain as earnings season drives stock picks",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing earnings reports will likely dictate individual stock performance amid the broader rally."
+			},
+			{
+				"headline_reworded": "Singapore core inflation reaches highest level since late 2024",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-singapore-core-inflation-hits-nearly-two-year-high-in-august/articleshow/134428523.cms",
+				"timestamp": "2026-09-23T07:23:56+00:00",
+				"why_it_matters": "This unexpected inflationary pressure could influence regional central bank policies."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": 2.358507355257843,
+			"value": 7764.64,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": -0.04999999999999982,
+			"value": 4.96,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -0.43668985346235867,
+			"value": 95.7125,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
