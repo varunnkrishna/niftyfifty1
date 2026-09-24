@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-09-24",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -1.6327559010410053,
+			"value": 55438.5
+		},
+		"conclusion": "Indian markets closed lower after failing to sustain early gains, with major indices declining nearly 1-2%. While some sessions saw temporary rallies from reduced volatility and earnings anticipation, broader sentiment remained cautious. Corporate developments like insider buying and regulatory discussions provided stock-specific action, though global geopolitical concerns contributed to the downward pressure.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflects ongoing volatility despite attempts at recovery."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains suggested temporary bullish momentum."
+			},
+			{
+				"headline_reworded": "Midday surge follows sharp drop in volatility index",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Reduced volatility briefly boosted trader confidence."
+			},
+			{
+				"headline_reworded": "Indices rise for third consecutive day ahead of earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned for upcoming quarterly results."
+			},
+			{
+				"headline_reworded": "Godrej family acquires additional stake in consumer unit",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/four-godrej-family-members-buy-1-pc-stake-in-godrej-consumer-for-rs-900-cr/articleshow/134465297.cms",
+				"timestamp": "2026-09-24T14:50:51+00:00",
+				"why_it_matters": "Significant insider buying signaled confidence in the business."
+			},
+			{
+				"headline_reworded": "Regulator receives thousands of auction mechanism feedback",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-gets-over-3000-comments-in-closing-auction-review-chairman-says/articleshow/134465282.cms",
+				"timestamp": "2026-09-24T14:49:05+00:00",
+				"why_it_matters": "High response indicated market participant engagement."
+			},
+			{
+				"headline_reworded": "Analysts identify three stocks for short-term trades",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-allied-blenders-among-3-stock-recommendations-for-friday/slideshow/134465077.cms",
+				"timestamp": "2026-09-24T14:30:56+00:00",
+				"why_it_matters": "Recommended picks guided retail trader activity."
+			},
+			{
+				"headline_reworded": "Brokerage founder flags regulatory risks to industry",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/what-nithin-kamath-sees-as-the-biggest-risk-for-broking-after-irdai-shock/articleshow/134464882.cms",
+				"timestamp": "2026-09-24T14:21:52+00:00",
+				"why_it_matters": "Highlighted potential challenges for financial intermediaries."
+			},
+			{
+				"headline_reworded": "Casino operator slumps after abandoned acquisition",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/mgm-resorts-shares-tumble-10-after-dillers-people-withdraws-18-billion-bid/articleshow/134464362.cms",
+				"timestamp": "2026-09-24T13:57:02+00:00",
+				"why_it_matters": "Showed M&A developments impacting specific equities."
+			},
+			{
+				"headline_reworded": "Geopolitical tensions weigh on US equity markets",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-stocks-open-lower-as-oil-gains-on-mideast-uncertainty-eyes-on-trump-xi-talks/articleshow/134464197.cms",
+				"timestamp": "2026-09-24T13:47:48+00:00",
+				"why_it_matters": "Global risk factors influenced international investor sentiment."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.2134633176849658,
+			"value": 23063.1
+		},
+		"sensex_close": {
+			"delta_pct": -0.9615995486100439,
+			"value": 73580.54
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
