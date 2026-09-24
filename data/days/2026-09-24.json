@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-24",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 2,
+		"brent": {
+			"delta_pct": -2.172613115407621,
+			"value": 98.16,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2341.46,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.6332769092900484,
+			"value": 101.066,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": 1617.45,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 1.22,
+			"value": 11.57,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a long-biased session with supportive global cues as US indices rallied overnight and domestic institutional flows remain positive. The dollar's strength and elevated crude prices may cap gains, while lower volatility and bottom-third previous close suggest room for upside. Earnings and global yield stability will likely dictate stock-specific action.",
+		"nasdaq_overnight": {
+			"delta_pct": 3.6861619428117867,
+			"value": 26936.037,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets surrender intraday advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Shows fading intraday momentum despite positive closes, signaling potential fatigue."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive gain as lower volatility aids bullish momentum",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained rally with easing volatility suggests underlying strength in current uptrend."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Highlights how collapsing fear gauge can rapidly shift market sentiment intraday."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to third session with earnings guiding stock moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Emphasizes earnings season's role in driving selective opportunities amid broader rally."
+			},
+			{
+				"headline_reworded": "HSBC reportedly preparing to re-enter Indian equity broking after long hiatus",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/hsbc-plans-india-equity-broking-return-after-13-years-amid-ipo-boom-sources-say/articleshow/134455177.cms",
+				"timestamp": "2026-09-24T07:34:09+00:00",
+				"why_it_matters": "Foreign broker re-entry reflects confidence in India's growing capital markets potential."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 2.042159429328854,
+			"value": 7706.03,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.0,
+			"value": 4.96,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.09478158481490613,
+			"value": 95.89,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}

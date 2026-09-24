@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 24 Sep 2026
+description: Nifty outlook — 24 Sep 2026. Pre-market bias is Mildly Long.
+date: "2026-09-24"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7706.03
+    delta_pct: 2.042159429328854
+    vote: 1
+  nasdaq_overnight:
+    value: 26936.037
+    delta_pct: 3.6861619428117867
+    vote: 1
+  us10y_yield:
+    value: 4.96
+    delta: 0.0
+    vote: 0
+  dxy:
+    value: 101.066
+    delta_pct: 0.6332769092900484
+    vote: -1
+  fii_net_cash:
+    value: 1617.45
+    vote: 1
+  dii_net_cash:
+    value: 2341.46
+    vote: 1
+  usdinr:
+    value: 95.89
+    delta_pct: 0.09478158481490613
+    vote: 0
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 11.57
+    delta: 1.22
+    vote: null
+  brent:
+    value: 98.16
+    delta_pct: -2.172613115407621
+    vote: null
+  bias_score: 2
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets are positioned for a long-biased session with supportive global cues as US indices rallied overnight and domestic institutional flows remain positive. The dollar's strength and elevated crude prices may cap gains, while lower volatility and bottom-third previous close suggest room for upside. Earnings and global yield stability will likely dictate stock-specific action.
+  news:
+  - headline_reworded: Markets surrender intraday advances to close slightly up
+    why_it_matters: Shows fading intraday momentum despite positive closes, signaling potential fatigue.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive gain as lower volatility aids bullish momentum
+    why_it_matters: Sustained rally with easing volatility suggests underlying strength in current uptrend.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharpest volatility drop in four years
+    why_it_matters: Highlights how collapsing fear gauge can rapidly shift market sentiment intraday.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to third session with earnings guiding stock moves
+    why_it_matters: Emphasizes earnings season's role in driving selective opportunities amid broader rally.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: HSBC reportedly preparing to re-enter Indian equity broking after long hiatus
+    why_it_matters: Foreign broker re-entry reflects confidence in India's growing capital markets potential.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/hsbc-plans-india-equity-broking-return-after-13-years-amid-ipo-boom-sources-say/articleshow/134455177.cms
+    timestamp: "2026-09-24T07:34:09+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
