@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-09-25",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -1.5764826507221008,
+			"value": 55580.4
+		},
+		"conclusion": "Indian equities closed sharply lower after failing to sustain early gains, with financial stocks leading the decline. The session saw whipsaw action as initial optimism around reduced volatility gave way to broad-based selling pressure. Regulatory developments and IPO activity provided counterpoints to the dominant risk-off sentiment, though earnings season anticipation failed to prevent the late-day retreat across major benchmarks.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlighted the session's volatility as indices struggled to maintain momentum."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive rise amid stabilizing volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "The sustained uptrend signaled improving investor confidence before the downturn."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The VIX plunge temporarily buoyed sentiment before the late-session reversal."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Pre-earnings optimism initially overshadowed broader macroeconomic concerns."
+			},
+			{
+				"headline_reworded": "Liqvd Digital's IPO garners strong final-day demand",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/liqvd-digital-india-ipo-subscribed-5-08-times-on-final-day/articleshow/134488487.cms",
+				"timestamp": "2026-09-25T15:14:35+00:00",
+				"why_it_matters": "Robust subscription levels contrasted with the broader market's risk-off mood."
+			},
+			{
+				"headline_reworded": "Data center IPO candidates face heightened investor skepticism",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/data-center-ipo-hopefuls-brave-tougher-market-as-investor-scrutiny-grows/articleshow/134488469.cms",
+				"timestamp": "2026-09-25T15:11:20+00:00",
+				"why_it_matters": "Sector-specific headwinds emerged despite overall market weakness."
+			},
+			{
+				"headline_reworded": "Fed reportedly considering stricter bank oversight rules",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-federal-reserve-plans-to-raise-bank-oversight-thresholds-sources-say/articleshow/134488416.cms",
+				"timestamp": "2026-09-25T15:08:53+00:00",
+				"why_it_matters": "Global regulatory shifts contributed to financial sector underperformance."
+			},
+			{
+				"headline_reworded": "Anjali LabTech refiles draft papers for sizable IPO",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/lab-grown-diamond-manufacturer-anjali-labtech-files-updated-papers-for-rs-1225-cr-ipo/articleshow/134488307.cms",
+				"timestamp": "2026-09-25T15:07:07+00:00",
+				"why_it_matters": "The niche manufacturer's move defied unfavorable market conditions."
+			},
+			{
+				"headline_reworded": "Sebi sanctions Omaxe group for shareholding violations",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-bans-omaxe-5-others-for-violating-minimum-public-shareholding-norms/articleshow/134488287.cms",
+				"timestamp": "2026-09-25T15:05:20+00:00",
+				"why_it_matters": "Regulatory actions underscored compliance risks amid the selloff."
+			},
+			{
+				"headline_reworded": "Kian-M Export seeks approval for mid-sized public offering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/kian-m-export-files-ipo-paper-with-sebi-aims-to-raise-rs-500-crore-via-fresh-issue/articleshow/134488254.cms",
+				"timestamp": "2026-09-25T15:03:54+00:00",
+				"why_it_matters": "New filings demonstrated continued primary market activity despite secondary market stress."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.1693708545632338,
+			"value": 23140.5
+		},
+		"sensex_close": {
+			"delta_pct": -1.2867525997879479,
+			"value": 73895.74
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
