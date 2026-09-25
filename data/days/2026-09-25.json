@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-09-25",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 0,
+		"brent": {
+			"delta_pct": -0.9567470599960215,
+			"value": 99.38,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 4301.18,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.7059643532808811,
+			"value": 101.139,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -5027.36,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.07,
+			"value": 12.76,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias prevails as global equities show strength overnight while bond yields and the dollar rise. Domestic institutional buying counters foreign outflows, and rupee stability contrasts with oil price declines. The previous close in the lower range suggests caution despite improved risk appetite abroad. Volatility remains elevated slightly, indicating persistent uncertainty in the session ahead.",
+		"nasdaq_overnight": {
+			"delta_pct": 1.9723941358830825,
+			"value": 26939.373,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up early gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates cautious trading despite initial optimism, reflecting ongoing uncertainty."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains and easing volatility suggest a potential continuation of the bullish trend."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp drop in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A significant decline in volatility signals improved investor confidence during the session."
+			},
+			{
+				"headline_reworded": "Indices notch third straight gain as earnings season guides moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued upward momentum hinges on corporate performance in the ongoing results season."
+			},
+			{
+				"headline_reworded": "India's 10-year bond yield hits multi-month low amid global debt selloff",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/indian-10-year-bond-hits-4-month-low-on-us-debt-rout/articleshow/134479074.cms",
+				"timestamp": "2026-09-25T07:48:59+00:00",
+				"why_it_matters": "This reflects spillover effects from international fixed income markets on local yields."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.8689720546338179,
+			"value": 7704.13,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.15000000000000036,
+			"value": 5.11,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.21413744582769412,
+			"value": 95.8075,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
