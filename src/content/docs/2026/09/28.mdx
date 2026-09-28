@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 28 Sep 2026
-description: Nifty outlook — 28 Sep 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 28 Sep 2026
+description: How markets closed — 28 Sep 2026. Nifty -2.35%, bias was Neutral.
 date: "2026-09-28"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-corporate-debt-wall-4-3-trillion-maturities-loom-from-2027/articleshow/134536902.cms
     timestamp: "2026-09-28T08:38:27+00:00"
+eod:
+  nifty_close:
+    value: 22780.25
+    delta_pct: -2.352222555617472
+  sensex_close:
+    value: 72771.72
+    delta_pct: -2.357952090647034
+  banknifty_close:
+    value: 54471.65
+    delta_pct: -3.102166571349033
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Markets closed significantly lower after failing to sustain early gains. The Nifty and Sensex both dropped over 2%, with banking stocks underperforming at a 3% decline. While some midday reports highlighted reduced volatility and temporary rallies, selling pressure ultimately dominated the session. Regulatory resolutions involving major conglomerates and large corporate deals provided isolated points of interest, but couldn't offset the broader downward trend across key indices.
+  news:
+  - headline_reworded: Markets surrender early advances to close slightly up
+    why_it_matters: This highlighted the session's volatility as early optimism faded by closing.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive session of gains amid stabilizing conditions
+    why_it_matters: The sustained upward trend signaled improving investor confidence.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Sharp decline in volatility index fuels midday market surge
+    why_it_matters: The dramatic drop in volatility measures boosted trading activity.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak ahead of earnings reports
+    why_it_matters: Ongoing gains set the stage for earnings-driven stock movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Sebi settles shareholding compliance cases with multiple Adani firms
+    why_it_matters: Regulatory resolution removed uncertainty around these corporate entities.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/4-adani-group-companies-settle-public-shareholding-violations-case-with-sebi-check-details/articleshow/134547647.cms
+    timestamp: "2026-09-28T17:02:44+00:00"
+  - headline_reworded: Media giant launches massive debt offering for acquisition financing
+    why_it_matters: The landmark corporate deal reflected active M&A market conditions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/paramount-rolls-out-44-billion-bond-sale-to-fund-warner-bros-takeover/articleshow/134547217.cms
+    timestamp: "2026-09-28T16:49:21+00:00"
+  - headline_reworded: Regulator closes investigation into Adani group shareholding matters
+    why_it_matters: The dropped case reduced regulatory overhang for these stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-drops-minimum-public-shareholding-norms-violation-case-against-vinod-adani-and-4-adani-group-companies/articleshow/134546792.cms
+    timestamp: "2026-09-28T16:07:59+00:00"
+  - headline_reworded: Analysts outline key factors influencing tomorrow's market direction
+    why_it_matters: Forward-looking guidance helped traders position for the next session.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-tuesday/articleshow/134546556.cms
+    timestamp: "2026-09-28T15:49:46+00:00"
+  - headline_reworded: Major institutional stake sale in clean energy firm attracts global buyers
+    why_it_matters: The large block trade demonstrated foreign interest in Indian renewables.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/clean-max-enviro-bulk-deal-augment-india-divests-stakes-worth-rs-1096-crore-goldman-sachs-hsbc-india-among-buyers/articleshow/134546538.cms
+    timestamp: "2026-09-28T15:47:40+00:00"
+  - headline_reworded: Brokerages identify potential trading opportunities for the coming session
+    why_it_matters: Recommended stocks provided actionable ideas for active traders.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-quality-power-among-3-stock-recommendations-for-tuesday/slideshow/134546225.cms
+    timestamp: "2026-09-28T15:17:16+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
