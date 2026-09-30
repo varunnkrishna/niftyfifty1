@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 30 Sep 2026
-description: Nifty outlook — 30 Sep 2026. Pre-market bias is Strongly Short.
+title: Nifty & Sensex — 30 Sep 2026
+description: How markets closed — 30 Sep 2026. Nifty -1.92%, bias was Short.
 date: "2026-09-30"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/stocks/news/re-rating-on-cars-for-hal-shares-as-tejas-mk1a-aircraft-deliveries-near-jefferies/articleshow/134586938.cms
     timestamp: "2026-09-30T08:31:05+00:00"
+eod:
+  nifty_close:
+    value: 22620.45
+    delta_pct: -1.9192996604966281
+  sensex_close:
+    value: 72480.29
+    delta_pct: -1.495300251941614
+  banknifty_close:
+    value: 54633.05
+    delta_pct: -1.452871199617589
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities closed lower as early gains evaporated, with both Nifty and Sensex declining over 1.5%. The session saw volatile swings despite initial optimism from a sharp drop in the fear index, as foreign investor withdrawals and mixed corporate earnings expectations weighed on sentiment. While some stocks benefited from brokerage upgrades, broader indices failed to sustain momentum amid global currency fluctuations and domestic promoter selling activity.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflected a lack of sustained bullish momentum despite early optimism.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third consecutive day of gains amid lower volatility
+    why_it_matters: The extended rally signaled resilience despite broader economic uncertainties.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as volatility plummets most sharply in four years
+    why_it_matters: The dramatic drop in fear gauge VIX fueled a temporary risk-on sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak ahead of earnings season
+    why_it_matters: Investors positioned for upcoming corporate results that could drive individual stocks.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Avalon Tech founders sell 6% stake in block deal
+    why_it_matters: Major insider selling often signals shifting confidence in growth prospects.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/avalon-tech-block-deal-promoters-divest-6-stake-worth-rs-871-crore/articleshow/134598495.cms
+    timestamp: "2026-09-30T16:09:16+00:00"
+  - headline_reworded: Analysts outline key factors for tomorrow's market direction
+    why_it_matters: Forward-looking indicators help traders anticipate near-term price action.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-thursday/articleshow/134598291.cms
+    timestamp: "2026-09-30T15:56:32+00:00"
+  - headline_reworded: Foreign institutional investors accelerate equity withdrawals
+    why_it_matters: Sustained FII outflows typically pressure benchmark index performance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/fii-selling-worsens-foreign-investors-pull-out-rs-26000-crore-from-indian-equities-in-three-days/articleshow/134598196.cms
+    timestamp: "2026-09-30T15:50:46+00:00"
+  - headline_reworded: Brokerages identify five stocks as Thursday trading ideas
+    why_it_matters: Institutional recommendations often influence retail trading activity.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-jm-financial-idfc-first-bank-among-5-stock-recommendations-for-thursday/slideshow/134598185.cms
+    timestamp: "2026-09-30T15:43:31+00:00"
+  - headline_reworded: Avalon Technologies sees promoter stake reduction
+    why_it_matters: Significant ownership dilution can impact stock liquidity and valuations.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/promoters-dilute-6-stake-in-avalon-technologies-for-rs-871-crore/articleshow/134597842.cms
+    timestamp: "2026-09-30T15:25:08+00:00"
+  - headline_reworded: Dollar weakens following mild US inflation print
+    why_it_matters: Softer USD often benefits emerging market capital flows.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/us-dollar-retreats-after-softer-than-expected-inflation-data/articleshow/134597817.cms
+    timestamp: "2026-09-30T15:22:45+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
