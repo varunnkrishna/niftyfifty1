@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 30 Sep 2026
+description: Nifty outlook — 30 Sep 2026. Pre-market bias is Strongly Short.
+date: "2026-09-30"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7670.84
+    delta_pct: -1.2080405530713616
+    vote: -1
+  nasdaq_overnight:
+    value: 26797.541
+    delta_pct: -1.6397533720839668
+    vote: -1
+  us10y_yield:
+    value: 5.24
+    delta: 0.07000000000000028
+    vote: -1
+  dxy:
+    value: 101.23
+    delta_pct: 0.2575022283846738
+    vote: -1
+  fii_net_cash:
+    value: -9980.22
+    vote: -1
+  dii_net_cash:
+    value: 6952.71
+    vote: 1
+  usdinr:
+    value: 95.835
+    delta_pct: 0.09797245073175126
+    vote: 0
+  prev_close_in_range:
+    value: bottom third
+    vote: -1
+  india_vix:
+    value: 13.47
+    delta: 0.06
+    vote: null
+  brent:
+    value: 96.54
+    delta_pct: -7.457822085889558
+    vote: null
+  bias_score: -5
+  bias_label: Short
+  bias_intensity: Strongly
+  conviction: normal
+  market_expectations: Markets face downward pressure today with negative overnight cues from US indices and rising Treasury yields. The dollar's strength and FII outflows further weigh on sentiment, while DII buying provides limited support. With Brent crude falling sharply and India VIX edging up slightly, traders may adopt a short bias amid normal conviction. Previous session's close in the bottom third of its range suggests weak follow-through potential.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflects ongoing volatility despite marginal gains, signaling cautious trading sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight session of gains amid lower volatility
+    why_it_matters: Sustained upward movement with easing volatility suggests potential continuation of bullish momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Markets rally as volatility plunges most sharply in four years
+    why_it_matters: A sharp drop in fear gauge VIX could attract more buyers into the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to third day ahead of earnings season
+    why_it_matters: Continued gains set the tone for stock-specific moves driven by upcoming quarterly results.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Jefferies upgrades HAL citing upcoming Tejas aircraft deliveries
+    why_it_matters: Sector-specific upgrades may drive selective interest in defense stocks despite broader market caution.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/re-rating-on-cars-for-hal-shares-as-tejas-mk1a-aircraft-deliveries-near-jefferies/articleshow/134586938.cms
+    timestamp: "2026-09-30T08:31:05+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
