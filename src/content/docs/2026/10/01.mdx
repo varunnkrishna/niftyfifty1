@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 01 Oct 2026
+description: Nifty outlook — 01 Oct 2026. Pre-market bias is Mildly Short.
+date: "2026-10-01"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7651.54
+    delta_pct: -0.7071085889881012
+    vote: -1
+  nasdaq_overnight:
+    value: 26861.064
+    delta_pct: -0.2783482650011003
+    vote: -1
+  us10y_yield:
+    value: 5.26
+    delta: 0.019999999999999574
+    vote: 0
+  dxy:
+    value: 101.786
+    delta_pct: 0.579051383399208
+    vote: -1
+  fii_net_cash:
+    value: -10148.41
+    vote: -1
+  dii_net_cash:
+    value: 11271.73
+    vote: 1
+  usdinr:
+    value: 96.2075
+    delta_pct: 0.048044275607753754
+    vote: 0
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 14.62
+    delta: 1.13
+    vote: null
+  brent:
+    value: 100.51
+    delta_pct: -4.5307750759878385
+    vote: null
+  bias_score: -3
+  bias_label: Short
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets face bearish pressure with US indices and dollar weakening overnight, though domestic institutional buying provides some support. Brent crude's sharp decline and rising India VIX suggest volatile conditions. The setup favors short positions given negative bias across multiple indicators, but quarterly results may drive selective opportunities. Foreign outflows and currency pressures warrant caution despite recent index resilience.
+  news:
+  - headline_reworded: Markets surrender early advances, close with minor uptick
+    why_it_matters: Shows fading momentum despite intraday strength, suggesting cautious trader behavior.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive session of gains amid declining volatility
+    why_it_matters: Sustained upward movement with calmer markets could encourage further buying.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as fear gauge plunges most since 2020
+    why_it_matters: Sharp VIX drop indicates reduced hedging demand, potentially freeing capital for equities.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak ahead of earnings season
+    why_it_matters: Continued positivity sets stage for stock-specific moves based on upcoming results.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Industrial gas firm Inox Air initiates IPO approval process
+    why_it_matters: New listing pipeline activity reflects ongoing capital market participation despite global headwinds.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/inox-air-products-files-ipo-papers-issue-size-not-disclosed/articleshow/134613796.cms
+    timestamp: "2026-10-01T09:03:34+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
