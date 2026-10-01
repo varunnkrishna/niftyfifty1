@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 01 Oct 2026
-description: Nifty outlook — 01 Oct 2026. Pre-market bias is Mildly Short.
+title: Nifty & Sensex — 01 Oct 2026
+description: How markets closed — 01 Oct 2026. Nifty -3.11%, bias was Short.
 date: "2026-10-01"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/inox-air-products-files-ipo-papers-issue-size-not-disclosed/articleshow/134613796.cms
     timestamp: "2026-10-01T09:03:34+00:00"
+eod:
+  nifty_close:
+    value: 22421.95
+    delta_pct: -3.1051619455067923
+  sensex_close:
+    value: 71909.7
+    delta_pct: -2.6876244828186415
+  banknifty_close:
+    value: 54450.75
+    delta_pct: -2.0324610834035046
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities suffered broad declines amid global risk aversion, with both benchmark indices posting significant losses. Domestic markets mirrored international trends as surging bond yields worldwide dampened investor appetite. While regulatory developments and impending IPOs generated sector-specific interest, the overarching narrative centered on capital fleeing risk assets. Financial stocks showed relative resilience but still declined, with banking shares outperforming the broader market's steep fall.
+  news:
+  - headline_reworded: Adani Group reports substantial project investments underway in Maharashtra
+    why_it_matters: Significant capital deployment in infrastructure could influence sectoral investor sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/adani-group-has-rs-2-6-lakh-crore-projects-completed-or-under-execution-in-maharashtra-pranav-adani/articleshow/134622802.cms
+    timestamp: "2026-10-01T15:30:08+00:00"
+  - headline_reworded: US equities decline amid bond yield pressures despite tech sector resilience
+    why_it_matters: Global risk-off sentiment spilled over to emerging markets like India.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-markets-dip-as-surging-treasury-yields-overshadow-software-gains/articleshow/134621937.cms
+    timestamp: "2026-10-01T14:30:55+00:00"
+  - headline_reworded: Markets regulator enhances document verification protocols with new requirements
+    why_it_matters: Regulatory changes may impact compliance workflows for market participants.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-revamps-document-number-verification-system-adds-subject-matter-as-mandatory-field/articleshow/134621918.cms
+    timestamp: "2026-10-01T14:28:00+00:00"
+  - headline_reworded: British currency hits quarterly low on monetary policy and energy concerns
+    why_it_matters: Currency volatility affected global capital flows into emerging markets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/uk-pound-falls-to-three-month-lows-as-investors-fret-over-rates-oil/articleshow/134621868.cms
+    timestamp: "2026-10-01T14:23:53+00:00"
+  - headline_reworded: UK long-term sovereign debt yields reach 28-year highs
+    why_it_matters: Spiking global bond yields intensified selloffs across risk assets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/uk-30-year-gilt-yields-top-6-for-the-first-time-since-1998/articleshow/134621852.cms
+    timestamp: "2026-10-01T14:22:13+00:00"
+  - headline_reworded: Reliance's digital arm nears listing after completing international investor pitches
+    why_it_matters: Anticipation of major IPO created sector-specific trading activity.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/jio-platforms-ipo-in-final-stages-after-concluding-worldwide-roadshows/articleshow/134621273.cms
+    timestamp: "2026-10-01T13:57:17+00:00"
+  - headline_reworded: Central bank simplifies ownership rules for financial institutions in lenders
+    why_it_matters: Policy easing may trigger fresh institutional investments in banking stocks.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/rbi-eases-bank-stake-rules-allows-one-time-approval-for-mfs-insurers-for-holdings-up-to-10/articleshow/134621230.cms
+    timestamp: "2026-10-01T13:53:12+00:00"
+  - headline_reworded: Clean energy firm's public offering faces regulatory hold
+    why_it_matters: Sebi's scrutiny highlighted ongoing compliance challenges for new issuances.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/inox-clean-energy-ipo-papers-kept-in-abeyance-by-sebi/articleshow/134620687.cms
+    timestamp: "2026-10-01T13:28:06+00:00"
+  - headline_reworded: Regulator mandates enhanced risk disclosures by brokerage platforms
+    why_it_matters: New investor protection measures may alter digital trading behaviors.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-asks-stock-brokers-to-display-investor-warnings-on-apps-and-websites/articleshow/134620344.cms
+    timestamp: "2026-10-01T13:12:28+00:00"
+  - headline_reworded: Brewer among four companies cleared for public share sales
+    why_it_matters: Approvals signaled continued primary market activity despite volatile conditions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/carlsberg-india-ipo-gets-sebi-approval-along-with-three-other-public-offers-check-details/articleshow/134620190.cms
+    timestamp: "2026-10-01T13:10:55+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
