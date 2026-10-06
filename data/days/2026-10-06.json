@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-06",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 1,
+		"brent": {
+			"delta_pct": -3.4796207604339777,
+			"value": 98.75,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 5181.62,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.03330068560234262,
+			"value": 102.066,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": -4699.14,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -1.08,
+			"value": 13.7,
+			"vote": null
+		},
+		"market_expectations": "The market is expected to remain neutral with mixed signals from overnight gains in U.S. indices and a slight decline in the dollar index. Rising U.S. Treasury yields and foreign institutional investor outflows may weigh on sentiment, while easing volatility and domestic institutional inflows provide support. Brent crude's decline could alleviate inflationary pressures, but the rupee's weakness remains a concern.",
+		"nasdaq_overnight": {
+			"delta_pct": 2.4493687263193147,
+			"value": 27477.31,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to maintain momentum despite positive moves earlier in the day."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "This indicates a sustained bullish trend supported by easing market volatility."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The significant drop in volatility suggests increased investor confidence and potential for further gains."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains as Q4 earnings drive stock movements",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "This underscores the influence of quarterly results on specific stock performance and overall market direction."
+			},
+			{
+				"headline_reworded": "LIC sees substantial gains as Trent shares surge",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/lic-mints-rs-531-crore-in-one-day-as-trent-shares-rally-13-insurance-behemoths-stake-value-nears-rs-4700-cr/articleshow/134730569.cms",
+				"timestamp": "2026-10-06T08:56:56+00:00",
+				"why_it_matters": "This demonstrates the impact of strong stock performance on major institutional investors."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": 1.1746960119421817,
+			"value": 7773.95,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.040000000000000036,
+			"value": 5.28,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": 0.3766760679516007,
+			"value": 96.4125,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
