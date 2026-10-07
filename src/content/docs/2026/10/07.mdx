@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 07 Oct 2026
+description: Nifty outlook — 07 Oct 2026. Pre-market bias is Neutral.
+date: "2026-10-07"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7818.93
+    delta_pct: 1.930557800710224
+    vote: 1
+  nasdaq_overnight:
+    value: 27599.887
+    delta_pct: 2.9941069217547502
+    vote: 1
+  us10y_yield:
+    value: 5.31
+    delta: 0.02999999999999936
+    vote: 0
+  dxy:
+    value: 102.213
+    delta_pct: 0.27764151868928383
+    vote: -1
+  fii_net_cash:
+    value: -2961.3
+    vote: -1
+  dii_net_cash:
+    value: 5088.92
+    vote: 1
+  usdinr:
+    value: 96.8225
+    delta_pct: 0.9334171469793305
+    vote: -1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 13.7
+    delta: 0.09
+    vote: null
+  brent:
+    value: 101.37
+    delta_pct: -0.8606356968215114
+    vote: null
+  bias_score: 0
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: Global markets show strong overnight gains, with US indices rising sharply and Treasury yields edging higher. The dollar strengthens slightly while foreign investors remain net sellers in Indian markets. Crude prices pull back from recent highs. Given neutral bias and normal conviction levels, markets may consolidate after recent moves, with earnings reports and global cues likely driving direction. The rupee faces pressure from dollar strength and foreign outflows.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This indicates potential resistance levels and profit-taking behavior among investors.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices extend winning streak to three sessions as volatility subsides
+    why_it_matters: Sustained gains with lower volatility suggest strengthening bullish sentiment in the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday rally fueled by sharp decline in market volatility index
+    why_it_matters: The significant drop in India VIX reflects reduced fear and could support continued upward momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices notch third consecutive gain as earnings season drives stock moves
+    why_it_matters: Ongoing corporate results will likely dictate individual stock performance amid the broader rally.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: HD Fire Protect sets IPO price range for October offering
+    why_it_matters: Future IPO activity can indicate market appetite for new issuances and risk sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/hd-fire-protect-ipo-price-band-set-at-rs-258-271-rs-712-crore-issue-opens-on-october-13/articleshow/134761449.cms
+    timestamp: "2026-10-07T09:06:30+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />

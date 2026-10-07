@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-07",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 0,
+		"brent": {
+			"delta_pct": -0.8606356968215114,
+			"value": 101.37,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 5088.92,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.27764151868928383,
+			"value": 102.213,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": -2961.3,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.09,
+			"value": 13.7,
+			"vote": null
+		},
+		"market_expectations": "Global markets show strong overnight gains, with US indices rising sharply and Treasury yields edging higher. The dollar strengthens slightly while foreign investors remain net sellers in Indian markets. Crude prices pull back from recent highs. Given neutral bias and normal conviction levels, markets may consolidate after recent moves, with earnings reports and global cues likely driving direction. The rupee faces pressure from dollar strength and foreign outflows.",
+		"nasdaq_overnight": {
+			"delta_pct": 2.9941069217547502,
+			"value": 27599.887,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates potential resistance levels and profit-taking behavior among investors."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions as volatility subsides",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains with lower volatility suggest strengthening bullish sentiment in the market."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp decline in market volatility index",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The significant drop in India VIX reflects reduced fear and could support continued upward momentum."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain as earnings season drives stock moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing corporate results will likely dictate individual stock performance amid the broader rally."
+			},
+			{
+				"headline_reworded": "HD Fire Protect sets IPO price range for October offering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/hd-fire-protect-ipo-price-band-set-at-rs-258-271-rs-712-crore-issue-opens-on-october-13/articleshow/134761449.cms",
+				"timestamp": "2026-10-07T09:06:30+00:00",
+				"why_it_matters": "Future IPO activity can indicate market appetite for new issuances and risk sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "middle third",
+			"vote": 0
+		},
+		"sp500_overnight": {
+			"delta_pct": 1.930557800710224,
+			"value": 7818.93,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.02999999999999936,
+			"value": 5.31,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.9334171469793305,
+			"value": 96.8225,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
