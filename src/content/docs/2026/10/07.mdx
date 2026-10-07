@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 07 Oct 2026
-description: Nifty outlook — 07 Oct 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 07 Oct 2026
+description: How markets closed — 07 Oct 2026. Nifty +0.81%, bias was Neutral.
 date: "2026-10-07"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/hd-fire-protect-ipo-price-band-set-at-rs-258-271-rs-712-crore-issue-opens-on-october-13/articleshow/134761449.cms
     timestamp: "2026-10-07T09:06:30+00:00"
+eod:
+  nifty_close:
+    value: 22603.05
+    delta_pct: 0.8076906781078298
+  sensex_close:
+    value: 72638.7
+    delta_pct: 1.0137714383455918
+  banknifty_close:
+    value: 55055.55
+    delta_pct: 1.1107285023622318
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities extended gains for a third straight session, with benchmarks climbing over 0.8% as reduced volatility supported the upward momentum. While markets surrendered some intraday advances, the sustained rally reflected growing confidence ahead of earnings season. Financial stocks led the charge, outperforming broader indices. Global developments including currency policy signals and overseas market movements created secondary influences, though domestic factors dominated trading psychology throughout the session.
+  news:
+  - headline_reworded: Markets give up early advances to close with modest gains
+    why_it_matters: This highlighted the session's volatility despite an overall positive close.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices extend winning streak to three sessions amid lower volatility
+    why_it_matters: Sustained gains signaled continued investor confidence in the market trend.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp drop in market volatility index
+    why_it_matters: The dramatic VIX decline suggested reduced investor anxiety during trading.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices notch third consecutive gain as earnings reports loom
+    why_it_matters: Upcoming corporate results began influencing sector-specific trading patterns.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Central bank pledges to address rupee undervaluation
+    why_it_matters: This forward-looking currency policy stance could impact future forex markets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-says-it-will-ensure-undervalued-rupee-finds-its-correct-level/articleshow/134770024.cms
+    timestamp: "2026-10-07T16:06:09+00:00"
+  - headline_reworded: Analysts outline key factors for tomorrow's market direction
+    why_it_matters: Traders used these indicators to position for the next session.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-thursday/articleshow/134769947.cms
+    timestamp: "2026-10-07T16:00:50+00:00"
+  - headline_reworded: Brokerage identifies five stocks including Kotak Bank as buys
+    why_it_matters: Recommendations influenced late-session institutional trading activity.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-kotak-mahindra-bank-among-5-stock-recommendations-for-thursday/slideshow/134769639.cms
+    timestamp: "2026-10-07T15:30:12+00:00"
+  - headline_reworded: Webull stock crashes on China exposure concerns
+    why_it_matters: Global tech shares faced pressure from geopolitical risk reassessment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/webull-sinks-over-19-after-cnbc-reports-us-house-panel-flagged-china-ties/articleshow/134769396.cms
+    timestamp: "2026-10-07T15:18:23+00:00"
+  - headline_reworded: UK bond yields spike to generational highs
+    why_it_matters: The global fixed income selloff created cross-asset valuation pressures.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/uk-30-year-gilt-yields-hit-28-year-high-in-global-selloff/articleshow/134769020.cms
+    timestamp: "2026-10-07T14:55:28+00:00"
+  - headline_reworded: SEC avoids climate disclosure enforcement but issues warning
+    why_it_matters: Regulatory clarity affected ESG-focused investment strategies.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/us-sec-will-not-pursue-charges-against-climate-group-warns-of-disclosure-obligations/articleshow/134768910.cms
+    timestamp: "2026-10-07T14:53:50+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />

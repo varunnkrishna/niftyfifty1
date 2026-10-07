@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-07",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 1.1107285023622318,
+			"value": 55055.55
+		},
+		"conclusion": "Indian equities extended gains for a third straight session, with benchmarks climbing over 0.8% as reduced volatility supported the upward momentum. While markets surrendered some intraday advances, the sustained rally reflected growing confidence ahead of earnings season. Financial stocks led the charge, outperforming broader indices. Global developments including currency policy signals and overseas market movements created secondary influences, though domestic factors dominated trading psychology throughout the session.",
+		"news": [
+			{
+				"headline_reworded": "Markets give up early advances to close with modest gains",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlighted the session's volatility despite an overall positive close."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains signaled continued investor confidence in the market trend."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp drop in market volatility index",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The dramatic VIX decline suggested reduced investor anxiety during trading."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain as earnings reports loom",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Upcoming corporate results began influencing sector-specific trading patterns."
+			},
+			{
+				"headline_reworded": "Central bank pledges to address rupee undervaluation",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-says-it-will-ensure-undervalued-rupee-finds-its-correct-level/articleshow/134770024.cms",
+				"timestamp": "2026-10-07T16:06:09+00:00",
+				"why_it_matters": "This forward-looking currency policy stance could impact future forex markets."
+			},
+			{
+				"headline_reworded": "Analysts outline key factors for tomorrow's market direction",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-thursday/articleshow/134769947.cms",
+				"timestamp": "2026-10-07T16:00:50+00:00",
+				"why_it_matters": "Traders used these indicators to position for the next session."
+			},
+			{
+				"headline_reworded": "Brokerage identifies five stocks including Kotak Bank as buys",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-kotak-mahindra-bank-among-5-stock-recommendations-for-thursday/slideshow/134769639.cms",
+				"timestamp": "2026-10-07T15:30:12+00:00",
+				"why_it_matters": "Recommendations influenced late-session institutional trading activity."
+			},
+			{
+				"headline_reworded": "Webull stock crashes on China exposure concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/webull-sinks-over-19-after-cnbc-reports-us-house-panel-flagged-china-ties/articleshow/134769396.cms",
+				"timestamp": "2026-10-07T15:18:23+00:00",
+				"why_it_matters": "Global tech shares faced pressure from geopolitical risk reassessment."
+			},
+			{
+				"headline_reworded": "UK bond yields spike to generational highs",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/uk-30-year-gilt-yields-hit-28-year-high-in-global-selloff/articleshow/134769020.cms",
+				"timestamp": "2026-10-07T14:55:28+00:00",
+				"why_it_matters": "The global fixed income selloff created cross-asset valuation pressures."
+			},
+			{
+				"headline_reworded": "SEC avoids climate disclosure enforcement but issues warning",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-sec-will-not-pursue-charges-against-climate-group-warns-of-disclosure-obligations/articleshow/134768910.cms",
+				"timestamp": "2026-10-07T14:53:50+00:00",
+				"why_it_matters": "Regulatory clarity affected ESG-focused investment strategies."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 0.8076906781078298,
+			"value": 22603.05
+		},
+		"sensex_close": {
+			"delta_pct": 1.0137714383455918,
+			"value": 72638.7
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
