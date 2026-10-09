@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 09 Oct 2026
+description: Nifty outlook — 09 Oct 2026. Pre-market bias is Mildly Long.
+date: "2026-10-09"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7765.36
+    delta_pct: 1.2901668960209727
+    vote: 1
+  nasdaq_overnight:
+    value: 27193.34
+    delta_pct: 1.1973235683770285
+    vote: 1
+  us10y_yield:
+    value: 5.28
+    delta: 0.010000000000000675
+    vote: 0
+  dxy:
+    value: 102.088
+    delta_pct: -0.08025839287462841
+    vote: 0
+  fii_net_cash:
+    value: -12943.58
+    vote: -1
+  dii_net_cash:
+    value: 10703.11
+    vote: 1
+  usdinr:
+    value: 96.7125
+    delta_pct: 0.4019712370478027
+    vote: -1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 14.4
+    delta: -0.88
+    vote: null
+  brent:
+    value: 102.84
+    delta_pct: 2.5119617224880484
+    vote: null
+  bias_score: 2
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: US futures signal strong opening with tech and broad indices gaining, while Treasury yields inch higher. The dollar weakens slightly as oil surges. Domestic institutional flows remain positive against foreign outflows, with rupee depreciation pressure. Prevailing long bias suggests upside potential, though elevated US yields and currency volatility warrant caution. Earnings reports may drive stock-specific action.
+  news:
+  - headline_reworded: Markets relinquish early advances to close slightly up
+    why_it_matters: Shows resilience despite intraday pullbacks, suggesting underlying strength.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive gain as volatility decline aids bullish momentum
+    why_it_matters: Sustained uptrend with falling volatility reinforces positive market sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharpest volatility drop in four years
+    why_it_matters: Plummeting fear gauge signals strong investor confidence in current rally.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak with earnings season driving individual stocks
+    why_it_matters: Continued gains amid earnings focus highlights selective bullishness.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Damodaran decodes AI-driven US stock resilience post-Fed moves
+    why_it_matters: Explains divergence between monetary policy and equity performance globally.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/why-are-us-stocks-rallying-despite-fed-rate-shock-aswath-damodaran-explains-in-the-context-of-ai/articleshow/134829268.cms
+    timestamp: "2026-10-09T09:27:01+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
