@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-09",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.9916091099003784,
+			"value": 55256.65
+		},
+		"conclusion": "Markets ended the day with mixed results, as indices showed modest gains but struggled to hold earlier advances. The Nifty slipped slightly, while the Sensex and Bank Nifty posted marginal increases. Volatility eased, supporting a midday rally, but momentum waned toward the close. Earnings reports and global market trends influenced trading, with financial stocks performing well. Overall, the session reflected cautious optimism amid ongoing economic uncertainty.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to maintain early advances, closing slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's inability to sustain gains despite initial optimism."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak for third consecutive session",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscores the continued positive momentum in the market."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It explains the midday rally driven by reduced uncertainty."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third straight day of gains amid earnings focus",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It emphasizes the role of corporate results in shaping market direction."
+			},
+			{
+				"headline_reworded": "US market approaches fourth year of bullish trend amid concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-bull-market-nears-fourth-anniversary-but-narrow-rally-raises-risks/articleshow/134839055.cms",
+				"timestamp": "2026-10-09T16:53:51+00:00",
+				"why_it_matters": "It provides context on global market trends influencing sentiment."
+			},
+			{
+				"headline_reworded": "Portsmouth Technologies offloads Anthem Biosciences shares in block deal",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/anthem-biosciences-block-deal-portsmouth-technologies-sells-30-lakh-shares-worth-rs-250-crore/articleshow/134838383.cms",
+				"timestamp": "2026-10-09T16:23:16+00:00",
+				"why_it_matters": "It highlights significant trading activity in the healthcare sector."
+			},
+			{
+				"headline_reworded": "Poonawalla Fincorp reports massive profit surge in Q2",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/poonawalla-fincorp-q2-profit-surges-fivefold-as-income-rises/articleshow/134838286.cms",
+				"timestamp": "2026-10-09T16:15:36+00:00",
+				"why_it_matters": "It showcases strong financial performance driving sector interest."
+			},
+			{
+				"headline_reworded": "Rupee rebounds against dollar following central bank action",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-recovers-to-96-73-vs-us-dollar-after-rbi-intervention-but-dollar-demand-persists/articleshow/134838115.cms",
+				"timestamp": "2026-10-09T16:12:35+00:00",
+				"why_it_matters": "It reflects currency market dynamics impacting investor sentiment."
+			},
+			{
+				"headline_reworded": "US equities climb as oil prices ease, telecoms face pressure",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-market-opens-higher-as-oil-slips-telecoms-hit-by-spacex-spectrum-deal/articleshow/134836014.cms",
+				"timestamp": "2026-10-09T13:56:51+00:00",
+				"why_it_matters": "It illustrates global market movements affecting local investor outlook."
+			},
+			{
+				"headline_reworded": "Poonawalla Fincorp posts stellar Q2 results with sharp profit growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/poonawalla-fincorp-q2-results-profit-skyrockets-407-yoy-to-rs-375-crore-nii-rises-81/articleshow/134835689.cms",
+				"timestamp": "2026-10-09T13:43:49+00:00",
+				"why_it_matters": "It reinforces positive earnings momentum in the financial sector."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -0.15650111390665028,
+			"value": 22520.45
+		},
+		"sensex_close": {
+			"delta_pct": 0.12414608122657403,
+			"value": 72472.33
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
