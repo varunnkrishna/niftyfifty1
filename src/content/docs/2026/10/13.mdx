@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 13 Oct 2026
-description: Nifty outlook — 13 Oct 2026. Pre-market bias is Mildly Long.
+title: Nifty & Sensex — 13 Oct 2026
+description: How markets closed — 13 Oct 2026. Nifty +0.53%, bias was Long.
 date: "2026-10-13"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/stocks/news/hitachi-energy-e2e-networks-anant-raj-other-ai-linked-stocks-slide-up-to-5-as-global-ai-rout-hits-indian-markets/articleshow/134913521.cms
     timestamp: "2026-10-13T09:19:29+00:00"
+eod:
+  nifty_close:
+    value: 22721.95
+    delta_pct: 0.526035203213732
+  sensex_close:
+    value: 73033.78
+    delta_pct: 0.5438973990448642
+  banknifty_close:
+    value: 55481.05
+    delta_pct: 0.7728557792992714
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian equities extended gains for a third straight session, with benchmarks closing moderately higher despite relinquishing stronger intraday advances. The market drew support from easing volatility and maintained its upward trajectory ahead of earnings season. While global tech concerns created some crosscurrents, domestic sentiment remained positive as institutional activity picked up around new offerings and international partnerships developed.
+  news:
+  - headline_reworded: Markets surrender early advances but still finish slightly up
+    why_it_matters: Showed resilience despite losing intraday momentum.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks extend winning streak amid stabilizing volatility
+    why_it_matters: Confirmed sustained bullish sentiment in the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Sharp decline in fear gauge fuels midday surge
+    why_it_matters: Highlighted how reduced volatility boosted investor confidence.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices notch third consecutive gain as earnings season looms
+    why_it_matters: Set expectations for corporate results to drive future moves.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Semiconductor shares tumble on Chinese competition concerns
+    why_it_matters: Demonstrated global tech sector's impact on market sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-chip-stocks-slide-as-chinas-cxmt-advances-ai-spending-fears-rattle-investors/articleshow/134923498.cms
+    timestamp: "2026-10-13T17:26:34+00:00"
+  - headline_reworded: High-profile investors back Fusion CX's upcoming public offering
+    why_it_matters: Signaled strong institutional interest in new listings.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/ashish-kacholia-kotak-life-lead-fusion-cxs-rs-315-crore-anchor-book-ahead-of-rs-702-crore-ipo/articleshow/134923207.cms
+    timestamp: "2026-10-13T17:08:00+00:00"
+  - headline_reworded: Indian and UK exchanges forge closer cooperation ties
+    why_it_matters: Marked progress in international financial market integration.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/nseix-london-stock-exchange-sign-pact-to-deepen-india-uk-market-links/articleshow/134923014.cms
+    timestamp: "2026-10-13T17:00:07+00:00"
+  - headline_reworded: AI-driven prosperity creates historic windfall for tech elites
+    why_it_matters: Illustrated the transformative economic impact of artificial intelligence.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/845-billion-windfall-in-2026-ai-boom-drives-unprecedented-wealth-creation-for-tech-billionaires/articleshow/134922384.cms
+    timestamp: "2026-10-13T16:36:44+00:00"
+  - headline_reworded: Regulator considers overhaul of capital allocation oversight
+    why_it_matters: Suggested potential changes to corporate fundraising regulations.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sebi-proposes-review-of-framework-for-monitoring-utilization-of-issue-proceeds/articleshow/134922472.cms
+    timestamp: "2026-10-13T16:35:54+00:00"
+  - headline_reworded: Key factors likely to influence tomorrow's trading session
+    why_it_matters: Provided forward-looking guidance for market participants.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-wednesday/articleshow/134921558.cms
+    timestamp: "2026-10-13T15:43:30+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
