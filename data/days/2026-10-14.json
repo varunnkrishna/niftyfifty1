@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-14",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 1.4692273051203237,
+			"value": 55316.0
+		},
+		"conclusion": "Indian markets extended their winning streak as benchmark indices posted significant gains for the third consecutive session, buoyed by declining volatility. The Nifty and Sensex both climbed over 1.5%, with banking stocks joining the rally. While early enthusiasm waned slightly by close, the sustained upward movement reflected improving investor confidence. Attention also turned to major corporate developments including Jio's impending IPO and quarterly earnings reports that could drive future sectoral performance.",
+		"news": [
+			{
+				"headline_reworded": "Markets give up early gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflects cautious investor sentiment despite an initially strong session."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains signal resilience amid easing market volatility."
+			},
+			{
+				"headline_reworded": "Sharp drop in volatility fuels midday market surge",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The steepest VIX decline in years boosted trader confidence."
+			},
+			{
+				"headline_reworded": "Indices continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing momentum sets stage for earnings-driven stock movements."
+			},
+			{
+				"headline_reworded": "Reliance Jio sets price range for massive public offering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-announces-price-band-for-over-rs-30000-crore-ipo-check-key-dates-gmp-and-other-details/articleshow/134945465.cms",
+				"timestamp": "2026-10-14T14:54:51+00:00",
+				"why_it_matters": "The IPO details attracted attention as a major market event."
+			},
+			{
+				"headline_reworded": "Jio IPO closing date coincides with Ambani siblings' birthday",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/akash-isha-ambanis-birthday-to-mark-close-of-reliance-jios-mega-ipo/articleshow/134945459.cms",
+				"timestamp": "2026-10-14T14:49:28+00:00",
+				"why_it_matters": "The symbolic timing added narrative interest to the landmark offering."
+			},
+			{
+				"headline_reworded": "Key facts about Jio's upcoming blockbuster share sale",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-ipo-to-open-on-october-21-10-things-to-know-about-the-rs-30000-crore-mega-issue/articleshow/134945374.cms",
+				"timestamp": "2026-10-14T14:42:34+00:00",
+				"why_it_matters": "Investors evaluated one of India's largest-ever IPO opportunities."
+			},
+			{
+				"headline_reworded": "Canara Bank reports steady yearly profit growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/canara-bank-q2-profit-rises-8-yoy-to-rs-5175-crore/articleshow/134945099.cms",
+				"timestamp": "2026-10-14T14:27:31+00:00",
+				"why_it_matters": "The earnings beat supported banking sector performance."
+			},
+			{
+				"headline_reworded": "Bank of England official tempers rate hike expectations",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-boes-huw-pill-wary-of-market-bets-on-four-rate-hikes-over-next-year/articleshow/134944944.cms",
+				"timestamp": "2026-10-14T14:20:25+00:00",
+				"why_it_matters": "Global monetary policy outlook influenced market positioning."
+			},
+			{
+				"headline_reworded": "US Treasury yields surge on inflation data",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-yields-jump-as-hot-consumer-inflation-boosts-rate-hike-bets/articleshow/134944738.cms",
+				"timestamp": "2026-10-14T14:08:53+00:00",
+				"why_it_matters": "Rate hike fears reshaped international capital flows."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 1.7582921760721195,
+			"value": 22622.7
+		},
+		"sensex_close": {
+			"delta_pct": 1.6602824512481824,
+			"value": 72781.89
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],

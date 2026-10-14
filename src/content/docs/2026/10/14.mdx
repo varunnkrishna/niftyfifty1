@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 14 Oct 2026
-description: Nifty outlook — 14 Oct 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 14 Oct 2026
+description: How markets closed — 14 Oct 2026. Nifty +1.76%, bias was Neutral.
 date: "2026-10-14"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-lagarde-says-france-must-tackle-debt-woes-through-fiscal-consolidation/articleshow/134935514.cms
     timestamp: "2026-10-14T07:46:50+00:00"
+eod:
+  nifty_close:
+    value: 22622.7
+    delta_pct: 1.7582921760721195
+  sensex_close:
+    value: 72781.89
+    delta_pct: 1.6602824512481824
+  banknifty_close:
+    value: 55316.0
+    delta_pct: 1.4692273051203237
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian markets extended their winning streak as benchmark indices posted significant gains for the third consecutive session, buoyed by declining volatility. The Nifty and Sensex both climbed over 1.5%, with banking stocks joining the rally. While early enthusiasm waned slightly by close, the sustained upward movement reflected improving investor confidence. Attention also turned to major corporate developments including Jio's impending IPO and quarterly earnings reports that could drive future sectoral performance.
+  news:
+  - headline_reworded: Markets give up early gains to close slightly higher
+    why_it_matters: This reflects cautious investor sentiment despite an initially strong session.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices extend winning streak to three sessions
+    why_it_matters: Sustained gains signal resilience amid easing market volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Sharp drop in volatility fuels midday market surge
+    why_it_matters: The steepest VIX decline in years boosted trader confidence.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices continue upward trend for third consecutive day
+    why_it_matters: Ongoing momentum sets stage for earnings-driven stock movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Reliance Jio sets price range for massive public offering
+    why_it_matters: The IPO details attracted attention as a major market event.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/jio-announces-price-band-for-over-rs-30000-crore-ipo-check-key-dates-gmp-and-other-details/articleshow/134945465.cms
+    timestamp: "2026-10-14T14:54:51+00:00"
+  - headline_reworded: Jio IPO closing date coincides with Ambani siblings' birthday
+    why_it_matters: The symbolic timing added narrative interest to the landmark offering.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/akash-isha-ambanis-birthday-to-mark-close-of-reliance-jios-mega-ipo/articleshow/134945459.cms
+    timestamp: "2026-10-14T14:49:28+00:00"
+  - headline_reworded: Key facts about Jio's upcoming blockbuster share sale
+    why_it_matters: Investors evaluated one of India's largest-ever IPO opportunities.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/ipos/fpos/jio-ipo-to-open-on-october-21-10-things-to-know-about-the-rs-30000-crore-mega-issue/articleshow/134945374.cms
+    timestamp: "2026-10-14T14:42:34+00:00"
+  - headline_reworded: Canara Bank reports steady yearly profit growth
+    why_it_matters: The earnings beat supported banking sector performance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/canara-bank-q2-profit-rises-8-yoy-to-rs-5175-crore/articleshow/134945099.cms
+    timestamp: "2026-10-14T14:27:31+00:00"
+  - headline_reworded: Bank of England official tempers rate hike expectations
+    why_it_matters: Global monetary policy outlook influenced market positioning.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-boes-huw-pill-wary-of-market-bets-on-four-rate-hikes-over-next-year/articleshow/134944944.cms
+    timestamp: "2026-10-14T14:20:25+00:00"
+  - headline_reworded: US Treasury yields surge on inflation data
+    why_it_matters: Rate hike fears reshaped international capital flows.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/us-yields-jump-as-hot-consumer-inflation-boosts-rate-hike-bets/articleshow/134944738.cms
+    timestamp: "2026-10-14T14:08:53+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
