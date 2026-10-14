@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-14",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": -1,
+		"brent": {
+			"delta_pct": 1.3464476699770784,
+			"value": 106.13,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2439.24,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.04891889247627156,
+			"value": 102.16,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": -1305.13,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.68,
+			"value": 14.8,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias prevails with mixed global cues as Nasdaq futures decline sharply while US yields hover near highs. Domestic institutional buying offsets FII selling, but rupee strength and oil price gains add complexity. The market closed in the bottom third of its recent range yesterday, suggesting caution despite three days of gains. Volatility remains elevated after a recent spike.",
+		"nasdaq_overnight": {
+			"delta_pct": -1.4326558281784023,
+			"value": 27204.38,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates potential fatigue in the rally despite marginal gains."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third straight session of gains amid declining volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained buying with lower volatility suggests bullish momentum may continue."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility plunges most sharply in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Sharp drop in fear gauge could encourage more risk-taking in equities."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to third day ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing rally faces test from upcoming corporate results driving stock moves."
+			},
+			{
+				"headline_reworded": "ECB chief urges France to address debt via fiscal tightening",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-lagarde-says-france-must-tackle-debt-woes-through-fiscal-consolidation/articleshow/134935514.cms",
+				"timestamp": "2026-10-14T07:46:50+00:00",
+				"why_it_matters": "European fiscal concerns may weigh on global risk sentiment if unresolved."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.17240210617054344,
+			"value": 7805.45,
+			"vote": 0
+		},
+		"us10y_yield": {
+			"delta": 0.020000000000000462,
+			"value": 5.24,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": -1.714918227969509,
+			"value": 95.0975,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
