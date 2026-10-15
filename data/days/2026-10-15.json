@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-15",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 2,
+		"brent": {
+			"delta_pct": -2.62541022034694,
+			"value": 103.85,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2670.44,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.5000974848898472,
+			"value": 102.067,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -1857.44,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.15,
+			"value": 14.78,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to lean bullish today, supported by easing volatility and positive sentiment. However, overnight declines in major U.S. indices and rising yields may weigh on global risk appetite. The Indian rupee's strength and domestic institutional inflows could provide additional support, while foreign outflows and Brent crude's drop may introduce caution.",
+		"nasdaq_overnight": {
+			"delta_pct": -3.0713879273124456,
+			"value": 26692.87,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to maintain early gains, closing slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to sustain momentum, signaling potential caution among investors."
+			},
+			{
+				"headline_reworded": "Benchmark indices rise for third consecutive session amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Continued gains suggest a bullish trend supported by easing market uncertainty."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The steepest drop in volatility in years has boosted investor confidence, driving a rally."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak, focus shifts to quarterly earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing gains and earnings reports will likely influence stock-specific movements."
+			},
+			{
+				"headline_reworded": "Call for World Bank to lift oil and gas financing limits",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/bessent-urges-world-bank-to-end-restrictions-on-upstream-oil-gas-financing/articleshow/134961053.cms",
+				"timestamp": "2026-10-15T07:34:16+00:00",
+				"why_it_matters": "This could impact energy sector investments and global market dynamics in the long term."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.0616821567413655,
+			"value": 7718.94,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.03000000000000025,
+			"value": 5.21,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -1.927015501434063,
+			"value": 94.9575,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
