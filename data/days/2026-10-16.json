@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-16",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 1.6861502603882152,
+			"value": 55844.0
+		},
+		"conclusion": "Indian equities extended gains for a third consecutive session, with both benchmark indices climbing sharply amid declining volatility. The rally was supported by positive corporate earnings and sector-specific developments, though markets pared some early advances by close. Financial and real estate stocks outperformed as several firms reported strong results, while global tech sector jitters created some crosscurrents. The rupee's appreciation and progress on high-profile IPOs added to the broadly positive tone.",
+		"news": [
+			{
+				"headline_reworded": "Markets give up early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the session's volatility despite positive momentum."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third straight session of gains amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained upward movement signaled continued bullish sentiment."
+			},
+			{
+				"headline_reworded": "Midday surge follows sharp drop in volatility index",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The VIX's plunge to multi-year lows fueled a broad rally."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Investors positioned for upcoming corporate results drove the advance."
+			},
+			{
+				"headline_reworded": "Cult.fit clears regulatory hurdle for planned public offering",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/cult-fit-receives-sebi-approval-for-proposed-ipo/articleshow/134997161.cms",
+				"timestamp": "2026-10-16T14:02:27+00:00",
+				"why_it_matters": "IPO approval marked progress for the fitness chain's listing plans."
+			},
+			{
+				"headline_reworded": "US markets open flat as tech sector concerns persist",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-wall-st-opens-muted-as-tech-jitters-linger-tesla-gains/articleshow/134996865.cms",
+				"timestamp": "2026-10-16T13:45:27+00:00",
+				"why_it_matters": "Global tech weakness created headwinds for related sectors."
+			},
+			{
+				"headline_reworded": "DLF posts strong quarterly profit on luxury sales",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dlf-q2-profit-rises-to-rs-1301-crore-as-luxury-project-sells-out/articleshow/134996827.cms",
+				"timestamp": "2026-10-16T13:40:03+00:00",
+				"why_it_matters": "Robust real estate earnings boosted sector confidence."
+			},
+			{
+				"headline_reworded": "Ujjivan Small Finance Bank secures major funding round",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ujjivan-sfb-to-raise-rs-409-crore-from-ifc-three-insurers/articleshow/134996772.cms",
+				"timestamp": "2026-10-16T13:37:46+00:00",
+				"why_it_matters": "Capital infusion strengthened the lender's balance sheet."
+			},
+			{
+				"headline_reworded": "Rupee strengthens significantly against the dollar",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-rises-1-9-in-a-week-closes-below-95-per-dollar/articleshow/134996292.cms",
+				"timestamp": "2026-10-16T13:14:16+00:00",
+				"why_it_matters": "Currency gains improved import cost outlook for businesses."
+			},
+			{
+				"headline_reworded": "Federal Bank reports record quarterly earnings growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/federal-bank-q2-profit-jumps-45-to-record-rs-1386-crore/articleshow/134996156.cms",
+				"timestamp": "2026-10-16T13:09:30+00:00",
+				"why_it_matters": "Strong banking results lifted financial sector sentiment."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 3.5003700250633423,
+			"value": 23146.15
+		},
+		"sensex_close": {
+			"delta_pct": 3.899343034963814,
+			"value": 74729.27
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
