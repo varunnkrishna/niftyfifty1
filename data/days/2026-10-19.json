@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-19",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 0.012707041413231425,
+			"value": 55488.1
+		},
+		"conclusion": "Indian markets closed higher today, with Sensex and Nifty extending their gains for the third consecutive session. The day saw a midday rally fueled by easing volatility, though markets struggled to hold onto earlier momentum. Investor focus remained on quarterly earnings reports, which are expected to drive stock-specific actions. Despite modest gains, the overall sentiment remained bullish, supported by reduced market uncertainty.",
+		"news": [
+			{
+				"headline_reworded": "Markets edge higher after losing earlier momentum",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's struggle to sustain gains despite a positive close."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscores the continued bullish sentiment in the market."
+			},
+			{
+				"headline_reworded": "Volatility drop fuels midday market surge",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It explains the midday rally driven by reduced market uncertainty."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty notch third day of gains amid focus on Q4 results",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It emphasizes the role of earnings reports in shaping market trends."
+			},
+			{
+				"headline_reworded": "AI stocks recover following CoreWeave upgrade",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-rebound-as-coreweave-jumps-on-goldman-upgrade/articleshow/135052127.cms",
+				"timestamp": "2026-10-19T16:17:35+00:00",
+				"why_it_matters": "It reflects the impact of analyst upgrades on AI-related equities."
+			},
+			{
+				"headline_reworded": "Ireda posts Rs 554 crore net profit in September quarter",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/ireda-net-profit-grows-to-rs-554-cr-in-sep-qtr/articleshow/135051929.cms",
+				"timestamp": "2026-10-19T15:59:01+00:00",
+				"why_it_matters": "It highlights the company's financial performance during the quarter."
+			},
+			{
+				"headline_reworded": "Amazon claims AI chip compatibility with popular coding language",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/amazon-says-its-ai-chips-will-work-with-popular-coding-language-challenging-nvidia/articleshow/135051867.cms",
+				"timestamp": "2026-10-19T15:52:49+00:00",
+				"why_it_matters": "It signals Amazon's competitive move in the AI hardware space."
+			},
+			{
+				"headline_reworded": "French markets decline amid political unrest",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-french-markets-tumble-as-riots-add-to-political-crisis/articleshow/135051572.cms",
+				"timestamp": "2026-10-19T15:22:55+00:00",
+				"why_it_matters": "It shows how geopolitical instability affects global markets."
+			},
+			{
+				"headline_reworded": "US Treasury yields rise as AI concerns subside",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/us-treasury-yields-nudge-higher-as-ai-fears-ebb/articleshow/135051546.cms",
+				"timestamp": "2026-10-19T15:21:19+00:00",
+				"why_it_matters": "It indicates shifting investor sentiment toward riskier assets."
+			},
+			{
+				"headline_reworded": "Bajaj Finance reports 29% jump in Q2 net profit",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-finance-q2-consolidated-net-profit-rises-29-to-rs-6367-crore/articleshow/135051459.cms",
+				"timestamp": "2026-10-19T15:13:16+00:00",
+				"why_it_matters": "It demonstrates the company's strong financial growth."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 0.7349721304729567,
+			"value": 22888.95
+		},
+		"sensex_close": {
+			"delta_pct": 1.1215631999329563,
+			"value": 73852.9
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],

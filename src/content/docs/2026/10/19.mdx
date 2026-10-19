@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 19 Oct 2026
-description: Nifty outlook — 19 Oct 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 19 Oct 2026
+description: How markets closed — 19 Oct 2026. Nifty +0.73%, bias was Neutral.
 date: "2026-10-19"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/global-market-indonesia-stock-exchange-to-meet-msci-after-downgrade-warning-triggers-market-rout/articleshow/135043186.cms
     timestamp: "2026-10-19T07:45:06+00:00"
+eod:
+  nifty_close:
+    value: 22888.95
+    delta_pct: 0.7349721304729567
+  sensex_close:
+    value: 73852.9
+    delta_pct: 1.1215631999329563
+  banknifty_close:
+    value: 55488.1
+    delta_pct: 0.012707041413231425
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian markets closed higher today, with Sensex and Nifty extending their gains for the third consecutive session. The day saw a midday rally fueled by easing volatility, though markets struggled to hold onto earlier momentum. Investor focus remained on quarterly earnings reports, which are expected to drive stock-specific actions. Despite modest gains, the overall sentiment remained bullish, supported by reduced market uncertainty.
+  news:
+  - headline_reworded: Markets edge higher after losing earlier momentum
+    why_it_matters: It highlights the market's struggle to sustain gains despite a positive close.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty extend winning streak for third consecutive day
+    why_it_matters: It underscores the continued bullish sentiment in the market.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Volatility drop fuels midday market surge
+    why_it_matters: It explains the midday rally driven by reduced market uncertainty.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty notch third day of gains amid focus on Q4 results
+    why_it_matters: It emphasizes the role of earnings reports in shaping market trends.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: AI stocks recover following CoreWeave upgrade
+    why_it_matters: It reflects the impact of analyst upgrades on AI-related equities.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/ai-stocks-rebound-as-coreweave-jumps-on-goldman-upgrade/articleshow/135052127.cms
+    timestamp: "2026-10-19T16:17:35+00:00"
+  - headline_reworded: Ireda posts Rs 554 crore net profit in September quarter
+    why_it_matters: It highlights the company's financial performance during the quarter.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/ireda-net-profit-grows-to-rs-554-cr-in-sep-qtr/articleshow/135051929.cms
+    timestamp: "2026-10-19T15:59:01+00:00"
+  - headline_reworded: Amazon claims AI chip compatibility with popular coding language
+    why_it_matters: It signals Amazon's competitive move in the AI hardware space.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/amazon-says-its-ai-chips-will-work-with-popular-coding-language-challenging-nvidia/articleshow/135051867.cms
+    timestamp: "2026-10-19T15:52:49+00:00"
+  - headline_reworded: French markets decline amid political unrest
+    why_it_matters: It shows how geopolitical instability affects global markets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-french-markets-tumble-as-riots-add-to-political-crisis/articleshow/135051572.cms
+    timestamp: "2026-10-19T15:22:55+00:00"
+  - headline_reworded: US Treasury yields rise as AI concerns subside
+    why_it_matters: It indicates shifting investor sentiment toward riskier assets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/bonds/us-treasury-yields-nudge-higher-as-ai-fears-ebb/articleshow/135051546.cms
+    timestamp: "2026-10-19T15:21:19+00:00"
+  - headline_reworded: Bajaj Finance reports 29% jump in Q2 net profit
+    why_it_matters: It demonstrates the company's strong financial growth.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/bajaj-finance-q2-consolidated-net-profit-rises-29-to-rs-6367-crore/articleshow/135051459.cms
+    timestamp: "2026-10-19T15:13:16+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
