@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-21",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Short",
+		"bias_score": -3,
+		"brent": {
+			"delta_pct": -0.19115237575095007,
+			"value": 109.65,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 3201.19,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.09033778476040726,
+			"value": 101.748,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": -1148.64,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 1.18,
+			"value": 15.95,
+			"vote": null
+		},
+		"market_expectations": "The market is expected to lean bearish today, with a short bias driven by declines in major indices and rising US Treasury yields. Foreign institutional investors show net selling, while domestic institutional investors remain net buyers. The Indian rupee strengthens against the dollar, and Brent crude prices dip slightly. Prevailing conditions suggest cautious trading, with volatility remaining a key factor.",
+		"nasdaq_overnight": {
+			"delta_pct": -2.86558267455462,
+			"value": 26424.816,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early gains, close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's struggle to sustain momentum, signaling potential caution among investors."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "The sustained gains suggest a bullish sentiment, supported by reduced volatility."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp decline in India VIX",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The steepest drop in volatility in four years indicates a shift toward market stability."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains, Q4 earnings to drive stock movements",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued gains and focus on earnings reports may influence investor decisions."
+			},
+			{
+				"headline_reworded": "Jio IPO shatters records ahead of listing",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/rs-30213-crore-100-minutes-rs-2-5-lakh-crore-how-jio-ipo-broke-3-records-even-before-listing/articleshow/135085644.cms",
+				"timestamp": "2026-10-21T07:31:37+00:00",
+				"why_it_matters": "This underscores the significant investor interest in high-profile IPOs, shaping market sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.1899377998706047,
+			"value": 7712.57,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": 0.0600000000000005,
+			"value": 5.15,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.5137081679388635,
+			"value": 94.6625,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
