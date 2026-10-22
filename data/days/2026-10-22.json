@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-22",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -1.5853647611112656,
+			"value": 54925.7
+		},
+		"conclusion": "Indian equity markets closed lower after failing to maintain early session strength. Both benchmark indices and banking stocks saw declines exceeding one percent, reflecting broad-based selling pressure. While some midday reports suggested temporary optimism from reduced volatility, the session ultimately ended with losses across major indices as investors remained cautious ahead of earnings season.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Investor sentiment wavered as initial gains couldn't be sustained through closing."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive positive session",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained buying momentum signaled potential continuation of bullish trends."
+			},
+			{
+				"headline_reworded": "Midday surge follows sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Plummeting fear gauge triggered broad-based buying across sectors."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak ahead of earnings reports",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Upcoming corporate results became the focal point for selective investments."
+			},
+			{
+				"headline_reworded": "Regulator cautions about social media investment schemes",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-warns-investors-against-whatsapp-stock-tips-heres-how-you-can-avoid-such-traps/articleshow/135121957.cms",
+				"timestamp": "2026-10-22T15:17:48+00:00",
+				"why_it_matters": "SEBI's warning highlighted growing concerns over unverified trading advice."
+			},
+			{
+				"headline_reworded": "AI firm's public debut contrasts with sector apprehension",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-ipo-stands-alone-as-ai-market-jitters-sideline-others/articleshow/135121938.cms",
+				"timestamp": "2026-10-22T15:16:29+00:00",
+				"why_it_matters": "Anthropic's listing stood out amid broader artificial intelligence sector unease."
+			},
+			{
+				"headline_reworded": "Commodity exchange ventures into equity index products",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ncdex-launches-ndex-and-finndex-to-expand-into-equity-benchmarks/articleshow/135121233.cms",
+				"timestamp": "2026-10-22T14:25:22+00:00",
+				"why_it_matters": "NCDEX's expansion diversified India's financial instrument offerings."
+			},
+			{
+				"headline_reworded": "Microfinance lender posts significant quarterly profit growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/creditaccess-grameen-q2-profit-jumps-fourfold-to-rs-502-crore/articleshow/135121186.cms",
+				"timestamp": "2026-10-22T14:22:46+00:00",
+				"why_it_matters": "CreditAccess Grameen's stellar earnings boosted financial sector optimism."
+			},
+			{
+				"headline_reworded": "EV maker's stock dips amid spending reduction concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/tesla-shares-slip-after-capex-cut-raises-doubts-over-musks-ai-and-robotics-push/articleshow/135121152.cms",
+				"timestamp": "2026-10-22T14:18:54+00:00",
+				"why_it_matters": "Tesla's capital expenditure cuts raised questions about future technology development."
+			},
+			{
+				"headline_reworded": "Kolkata housing market sees shifting preference toward larger units",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/kolkata-home-registrations-dip-12-per-cent-in-jan-sep-larger-flats-gain-share/articleshow/135121131.cms",
+				"timestamp": "2026-10-22T14:17:16+00:00",
+				"why_it_matters": "Regional real estate trends showed changing consumer preferences in property sizes."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -1.346676899729739,
+			"value": 22687.65
+		},
+		"sensex_close": {
+			"delta_pct": -1.4347187623165594,
+			"value": 73249.39
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
