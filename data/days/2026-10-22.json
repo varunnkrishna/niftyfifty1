@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-22",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 3,
+		"brent": {
+			"delta_pct": 2.199908717480599,
+			"value": 111.96,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 1614.32,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.4118454598940985,
+			"value": 101.56,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 1022.32,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.31,
+			"value": 15.99,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a bullish session with overnight gains in US indices and falling dollar index supporting risk assets. Bond yields retreating from recent highs may ease pressure on equities, while institutional buying provides fundamental support. However, the rupee's weakness and oil price surge could cap upside. Trading is expected to remain in the lower range of recent levels with normal conviction for long positions.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.03741448559109976,
+			"value": 26702.857,
+			"vote": 0
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates potential resistance levels and investor caution despite positive momentum."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains with reduced volatility suggest strengthening bullish sentiment in the near term."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by sharp decline in market volatility gauge",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The significant drop in India VIX reflects improved risk appetite among traders."
+			},
+			{
+				"headline_reworded": "Indices notch third consecutive gain as earnings season drives stock moves",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Ongoing corporate results will likely dictate individual stock performance in coming sessions."
+			},
+			{
+				"headline_reworded": "Prominent investor reshuffles portfolio with new additions and stake reductions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ashish-kacholia-portfolio-ace-investor-adds-3-new-stocks-trims-stake-in-13-companies-in-q2/articleshow/135111945.cms",
+				"timestamp": "2026-10-22T07:49:31+00:00",
+				"why_it_matters": "High-profile investment moves often influence retail trader sentiment and sector focus."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.4952752580017525,
+			"value": 7757.17,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": -0.03000000000000025,
+			"value": 5.12,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": 0.3043645688750476,
+			"value": 94.8125,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
