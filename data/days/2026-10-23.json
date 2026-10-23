@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-23",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Short",
+		"bias_score": -2,
+		"brent": {
+			"delta_pct": -0.19169329073481858,
+			"value": 109.34,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 2891.32,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.1774857815257868,
+			"value": 101.799,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -3458.7,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 1.11,
+			"value": 16.87,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to face downward pressure today, driven by overnight declines in major indices and a bearish sentiment. The US dollar weakened slightly, while yields remained stable. Foreign institutional investors reduced their cash holdings, contrasting with domestic inflows. The Indian rupee showed minimal movement, and volatility increased marginally. Overall, the bias leans toward a short-term bearish outlook.",
+		"nasdaq_overnight": {
+			"delta_pct": -2.636054389936291,
+			"value": 26008.86,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain early advances, closing slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights ongoing market uncertainty despite minor gains."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive rise amid lower volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Reduced volatility suggests potential stability for bullish momentum."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A significant decline in volatility could signal renewed investor confidence."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak, focus shifts to quarterly earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Corporate results may drive selective stock movements in the near term."
+			},
+			{
+				"headline_reworded": "Nasdaq leader warns of IPO slowdown due to market turbulence",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-ceo-flags-ipo-slowdown-amid-market-volatility/articleshow/135139313.cms",
+				"timestamp": "2026-10-23T07:42:25+00:00",
+				"why_it_matters": "This underscores broader market challenges impacting new listings."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.0411851147847526,
+			"value": 7663.43,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": 0.009999999999999787,
+			"value": 5.13,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": -0.04759011852255228,
+			"value": 94.9325,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}
