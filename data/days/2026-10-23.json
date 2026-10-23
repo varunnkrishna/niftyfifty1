@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-23",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": -2.787497313945995,
+			"value": 54287.35
+		},
+		"conclusion": "Indian markets experienced significant declines, with key indices dropping sharply amid global and domestic pressures. The Nifty and Sensex both fell over 2%, while Bank Nifty saw a steeper decline. US market selloffs, particularly in AI and telecom sectors, contributed to the negative sentiment. Domestically, concerns over midcap stocks and bond market performance added to the downturn. Despite some positive corporate earnings, broader market challenges dominated the session.",
+		"news": [
+			{
+				"headline_reworded": "Jio's IPO achieves unprecedented milestones with massive investor interest",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/ipos/fpos/jio-ipo-breaks-12-records-rs-4-5-lakh-crore-bids-highest-applications-and-more/articleshow/135149311.cms",
+				"timestamp": "2026-10-23T15:04:30+00:00",
+				"why_it_matters": "The record-breaking IPO highlights strong market confidence in telecom and tech sectors."
+			},
+			{
+				"headline_reworded": "Aditya Birla Real Estate targets significant revenue from Pune development",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/aditya-birla-real-estate-eyes-rs-1650-cr-revenue-from-new-project-in-pune/articleshow/135148283.cms",
+				"timestamp": "2026-10-23T14:10:45+00:00",
+				"why_it_matters": "The project underscores growth potential in India's real estate market."
+			},
+			{
+				"headline_reworded": "RBI Governor emphasizes managing rupee volatility over specific exchange rates",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/forex-news/rbi-does-not-target-any-specific-rupee-level-focuses-on-curbing-volatility-says-governor-sanjay-malhotra/articleshow/135148201.cms",
+				"timestamp": "2026-10-23T14:08:55+00:00",
+				"why_it_matters": "This clarifies RBI's approach to currency stability amid market fluctuations."
+			},
+			{
+				"headline_reworded": "SBI Cards reports sharp rise in Q2 profits due to reduced bad loan expenses",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/sbi-cards-q2-profit-jumps-75-yoy-to-rs-778-crore-as-bad-loan-costs-fall-sharply/articleshow/135147815.cms",
+				"timestamp": "2026-10-23T13:45:08+00:00",
+				"why_it_matters": "The results reflect improving financial health in the credit card sector."
+			},
+			{
+				"headline_reworded": "US markets plunge amid AI sector selloff and SpaceX-related concerns",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/why-us-stocks-are-falling-dow-jones-crashes-over-700-points-as-ai-selloff-spacex-fears-hit-markets/articleshow/135147604.cms",
+				"timestamp": "2026-10-23T13:38:31+00:00",
+				"why_it_matters": "Global market sentiment was impacted by the sharp decline in US equities."
+			},
+			{
+				"headline_reworded": "Four Sensex stocks, including Bharat Electronics, hit yearly lows",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/bharat-electronics-among-4-sensex-stocks-to-hit-52-week-lows-shares-fall-up-to-9-in-a-month/slideshow/135147674.cms",
+				"timestamp": "2026-10-23T13:34:27+00:00",
+				"why_it_matters": "The decline highlights ongoing pressure on certain blue-chip stocks."
+			},
+			{
+				"headline_reworded": "Dr Reddy\u2019s Q2 earnings show significant YoY profit drop despite stable revenue",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/dr-reddys-q2-results-net-profit-falls-36-yoy-to-rs-913-crore-revenue-declines-marginally/articleshow/135147475.cms",
+				"timestamp": "2026-10-23T13:32:47+00:00",
+				"why_it_matters": "The results reveal challenges in the pharmaceutical sector."
+			},
+			{
+				"headline_reworded": "Midcap stocks face risks as only a small fraction sustain above key moving average",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/only-15-of-midcap-stocks-above-50-dma-is-buying-the-dip-getting-riskier-jm-financial-spots-signs-of-leadership-shift/articleshow/135146815.cms",
+				"timestamp": "2026-10-23T13:07:51+00:00",
+				"why_it_matters": "This signals potential caution in midcap investments amid market shifts."
+			},
+			{
+				"headline_reworded": "Dow Jones tumbles as AI and telecom stocks lead market downturn",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-ai-selloff-wall-street-futures-telecom-stocks-spacex-meta-coreweave-earnings-treasury-bond-yield-news-23rd-october-2026/liveblog/135145607.cms",
+				"timestamp": "2026-10-23T12:09:43+00:00",
+				"why_it_matters": "The decline reflects broader concerns in the tech and communication sectors."
+			},
+			{
+				"headline_reworded": "India\u2019s 10-year bond continues historic losing streak",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/indias-10-year-bond-falls-for-10th-week-in-record-slump/articleshow/135145225.cms",
+				"timestamp": "2026-10-23T12:06:01+00:00",
+				"why_it_matters": "The prolonged slump indicates persistent challenges in the bond market."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": -2.3595716782272707,
+			"value": 22600.0
+		},
+		"sensex_close": {
+			"delta_pct": -2.1483416069767607,
+			"value": 73123.83
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
