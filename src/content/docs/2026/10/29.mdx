@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 29 Oct 2026
-description: Nifty outlook — 29 Oct 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 29 Oct 2026
+description: How markets closed — 29 Oct 2026. Nifty +1.49%, bias was Neutral.
 date: "2026-10-29"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/stocks/news/acme-solar-shares-rally-5-after-q2-profit-jumps-over-100-signs-400mv-agreement-with-ntpc/articleshow/135297383.cms
     timestamp: "2026-10-29T08:28:42+00:00"
+eod:
+  nifty_close:
+    value: 22936.75
+    delta_pct: 1.4900442477876106
+  sensex_close:
+    value: 74151.04
+    delta_pct: 1.4047540999972126
+  banknifty_close:
+    value: 54909.65
+    delta_pct: 1.1463075652062642
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Markets closed higher for the third consecutive session, driven by easing volatility and sustained bullish sentiment. Despite struggles to maintain earlier gains, benchmark indices ended positively, with focus shifting to upcoming quarterly earnings reports. The day's rally was supported by a sharp decline in market volatility, marking its steepest drop in years. Investor attention remains on corporate performance and strategic stake sales, which could influence future trading sessions.
+  news:
+  - headline_reworded: Markets struggle to maintain momentum, closing with slight upward movement
+    why_it_matters: It highlights the market's inability to sustain earlier gains despite a positive close.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices continue upward trajectory for third consecutive session
+    why_it_matters: It underscores the ongoing bullish trend supported by reduced volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge driven by sharp decline in market volatility
+    why_it_matters: It explains the midday rally fueled by the steepest drop in volatility in years.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak, focus shifts to quarterly earnings
+    why_it_matters: It emphasizes the market's sustained gains and the influence of upcoming earnings reports.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Sagility promoter plans to offload significant stake in block deal
+    why_it_matters: It highlights a major stake sale that could impact market sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/sagility-block-deal-promoter-sagility-bv-likely-to-sell-12-stake-for-rs-2377-crore/articleshow/135322817.cms
+    timestamp: "2026-10-29T15:56:22+00:00"
+  - headline_reworded: Key factors expected to shape Friday's market activity
+    why_it_matters: It provides insights into potential drivers of future trading sessions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-friday/articleshow/135322160.cms
+    timestamp: "2026-10-29T15:38:44+00:00"
+  - headline_reworded: Analysts recommend two stocks for Friday's trading session
+    why_it_matters: It offers actionable investment advice for the upcoming session.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-eternal-among-2-stocks-to-buy-for-friday-for-healthy-returns/articleshow/135321713.cms
+    timestamp: "2026-10-29T15:19:42+00:00"
+  - headline_reworded: Ambuja Cements reports sharp profit decline amid rising costs
+    why_it_matters: It highlights significant financial challenges faced by a major company.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/ambuja-cements-profit-slumps-90-on-higher-costs-high-previous-year-base/articleshow/135320851.cms
+    timestamp: "2026-10-29T14:54:27+00:00"
+  - headline_reworded: Milky Mist posts robust revenue and EBITDA growth in Q2
+    why_it_matters: It showcases strong financial performance by a key player.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/milky-mist-q2-revenue-surges-42-yoy-ebitda-soars-54/articleshow/135320553.cms
+    timestamp: "2026-10-29T14:44:41+00:00"
+  - headline_reworded: Brigade Group sees notable profit increase in second quarter
+    why_it_matters: It reflects positive financial results for a prominent real estate firm.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/brigade-group-reports-29-growth-in-q2-net-profit-at-rs-219-crore/articleshow/135320326.cms
+    timestamp: "2026-10-29T14:39:53+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />

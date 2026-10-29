@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-10-29",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 1.1463075652062642,
+			"value": 54909.65
+		},
+		"conclusion": "Markets closed higher for the third consecutive session, driven by easing volatility and sustained bullish sentiment. Despite struggles to maintain earlier gains, benchmark indices ended positively, with focus shifting to upcoming quarterly earnings reports. The day's rally was supported by a sharp decline in market volatility, marking its steepest drop in years. Investor attention remains on corporate performance and strategic stake sales, which could influence future trading sessions.",
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to maintain momentum, closing with slight upward movement",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "It highlights the market's inability to sustain earlier gains despite a positive close."
+			},
+			{
+				"headline_reworded": "Benchmark indices continue upward trajectory for third consecutive session",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "It underscores the ongoing bullish trend supported by reduced volatility."
+			},
+			{
+				"headline_reworded": "Midday surge driven by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "It explains the midday rally fueled by the steepest drop in volatility in years."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak, focus shifts to quarterly earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "It emphasizes the market's sustained gains and the influence of upcoming earnings reports."
+			},
+			{
+				"headline_reworded": "Sagility promoter plans to offload significant stake in block deal",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sagility-block-deal-promoter-sagility-bv-likely-to-sell-12-stake-for-rs-2377-crore/articleshow/135322817.cms",
+				"timestamp": "2026-10-29T15:56:22+00:00",
+				"why_it_matters": "It highlights a major stake sale that could impact market sentiment."
+			},
+			{
+				"headline_reworded": "Key factors expected to shape Friday's market activity",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ahead-of-market-10-things-that-will-decide-stock-market-action-on-friday/articleshow/135322160.cms",
+				"timestamp": "2026-10-29T15:38:44+00:00",
+				"why_it_matters": "It provides insights into potential drivers of future trading sessions."
+			},
+			{
+				"headline_reworded": "Analysts recommend two stocks for Friday's trading session",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-eternal-among-2-stocks-to-buy-for-friday-for-healthy-returns/articleshow/135321713.cms",
+				"timestamp": "2026-10-29T15:19:42+00:00",
+				"why_it_matters": "It offers actionable investment advice for the upcoming session."
+			},
+			{
+				"headline_reworded": "Ambuja Cements reports sharp profit decline amid rising costs",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/ambuja-cements-profit-slumps-90-on-higher-costs-high-previous-year-base/articleshow/135320851.cms",
+				"timestamp": "2026-10-29T14:54:27+00:00",
+				"why_it_matters": "It highlights significant financial challenges faced by a major company."
+			},
+			{
+				"headline_reworded": "Milky Mist posts robust revenue and EBITDA growth in Q2",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/milky-mist-q2-revenue-surges-42-yoy-ebitda-soars-54/articleshow/135320553.cms",
+				"timestamp": "2026-10-29T14:44:41+00:00",
+				"why_it_matters": "It showcases strong financial performance by a key player."
+			},
+			{
+				"headline_reworded": "Brigade Group sees notable profit increase in second quarter",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/brigade-group-reports-29-growth-in-q2-net-profit-at-rs-219-crore/articleshow/135320326.cms",
+				"timestamp": "2026-10-29T14:39:53+00:00",
+				"why_it_matters": "It reflects positive financial results for a prominent real estate firm."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 1.4900442477876106,
+			"value": 22936.75
+		},
+		"sensex_close": {
+			"delta_pct": 1.4047540999972126,
+			"value": 74151.04
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
