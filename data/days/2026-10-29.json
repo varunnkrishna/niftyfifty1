@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-29",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 0,
+		"brent": {
+			"delta_pct": -4.516017615059152,
+			"value": 110.58,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 643.35,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": 0.2873675951353535,
+			"value": 102.253,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": 871.83,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -1.01,
+			"value": 15.24,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias prevails with mixed global cues as US futures dip slightly while Indian institutional flows remain positive. The rupee weakens against the dollar and crude prices retreat sharply, but domestic cash levels from FIIs/DIIs provide support. With volatility cooling significantly and indices holding near range highs, the setup favors cautious optimism pending earnings catalysts.",
+		"nasdaq_overnight": {
+			"delta_pct": -0.5730022926383227,
+			"value": 26549.852,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday advances to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflects ongoing volatility and inability to sustain rallies, signaling cautious trader sentiment."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive gain as declining volatility favors bulls",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained upward momentum with reduced volatility suggests strengthening bullish conditions."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp volatility drop as fear gauge plunges",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The dramatic VIX collapse indicates improved risk appetite that could extend gains."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to three sessions with earnings in focus",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued upside amid earnings season highlights stock-specific opportunities."
+			},
+			{
+				"headline_reworded": "ACME Solar surges on doubled profits and major NTPC contract",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/acme-solar-shares-rally-5-after-q2-profit-jumps-over-100-signs-400mv-agreement-with-ntpc/articleshow/135297383.cms",
+				"timestamp": "2026-10-29T08:28:42+00:00",
+				"why_it_matters": "Strong renewable energy earnings and partnerships may lift sector sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.17003623744226967,
+			"value": 7743.98,
+			"vote": 0
+		},
+		"us10y_yield": {
+			"delta": -0.009999999999999787,
+			"value": 4.99,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.6426899430163021,
+			"value": 95.32,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
