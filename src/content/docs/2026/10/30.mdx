@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 30 Oct 2026
+description: Nifty outlook — 30 Oct 2026. Pre-market bias is Mildly Long.
+date: "2026-10-30"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7720.39
+    delta_pct: 0.7432703110748065
+    vote: 1
+  nasdaq_overnight:
+    value: 26184.725
+    delta_pct: 0.6761734270552341
+    vote: 1
+  us10y_yield:
+    value: 5.05
+    delta: 0.05999999999999961
+    vote: -1
+  dxy:
+    value: 101.685
+    delta_pct: -0.2697136131816315
+    vote: 1
+  fii_net_cash:
+    value: -943.6
+    vote: -1
+  dii_net_cash:
+    value: 1924.41
+    vote: 1
+  usdinr:
+    value: 95.0525
+    delta_pct: 0.1206050264382992
+    vote: -1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 15.32
+    delta: 0.2
+    vote: null
+  brent:
+    value: 112.64
+    delta_pct: -2.7372420343666364
+    vote: null
+  bias_score: 2
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets are positioned for a bullish open with US futures and Indian cash flow data supporting longs, though rising yields and rupee pressure warrant caution. Overnight gains in global tech and easing dollar index align with risk-on sentiment, while domestic institutional buying offsets FII outflows. Brent crude's drop may relieve inflation fears, but the VIX uptick signals lingering volatility risks. The previous close near range highs suggests follow-through potential if conviction holds.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflects ongoing volatility despite marginal gains, signaling cautious investor sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices notch third straight session of gains amid declining volatility
+    why_it_matters: Sustained upward momentum with lower volatility suggests strengthening bullish confidence.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge as volatility plunges most sharply in four years
+    why_it_matters: A sharp drop in fear gauge historically correlates with extended rally potential.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak to third day with focus on earnings
+    why_it_matters: Continued gains amid earnings season highlights stock-specific opportunities over broad moves.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Varun Beverages slumps on margin concerns despite strong revenue growth
+    why_it_matters: Shows market prioritizes profitability over top-line growth during earnings season.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/varun-beverages-shares-fall-over-4-as-q3-margin-pressure-weighs-despite-a-33-yoy-revenue-growth/articleshow/135352713.cms
+    timestamp: "2026-10-30T08:53:44+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />

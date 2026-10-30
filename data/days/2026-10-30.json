@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-10-30",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 2,
+		"brent": {
+			"delta_pct": -2.7372420343666364,
+			"value": 112.64,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 1924.41,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.2697136131816315,
+			"value": 101.685,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": -943.6,
+			"vote": -1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.2,
+			"value": 15.32,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a bullish open with US futures and Indian cash flow data supporting longs, though rising yields and rupee pressure warrant caution. Overnight gains in global tech and easing dollar index align with risk-on sentiment, while domestic institutional buying offsets FII outflows. Brent crude's drop may relieve inflation fears, but the VIX uptick signals lingering volatility risks. The previous close near range highs suggests follow-through potential if conviction holds.",
+		"nasdaq_overnight": {
+			"delta_pct": 0.6761734270552341,
+			"value": 26184.725,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflects ongoing volatility despite marginal gains, signaling cautious investor sentiment."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third straight session of gains amid declining volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained upward momentum with lower volatility suggests strengthening bullish confidence."
+			},
+			{
+				"headline_reworded": "Midday surge as volatility plunges most sharply in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A sharp drop in fear gauge historically correlates with extended rally potential."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak to third day with focus on earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued gains amid earnings season highlights stock-specific opportunities over broad moves."
+			},
+			{
+				"headline_reworded": "Varun Beverages slumps on margin concerns despite strong revenue growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/varun-beverages-shares-fall-over-4-as-q3-margin-pressure-weighs-despite-a-33-yoy-revenue-growth/articleshow/135352713.cms",
+				"timestamp": "2026-10-30T08:53:44+00:00",
+				"why_it_matters": "Shows market prioritizes profitability over top-line growth during earnings season."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": 0.7432703110748065,
+			"value": 7720.39,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.05999999999999961,
+			"value": 5.05,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": 0.1206050264382992,
+			"value": 95.0525,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
