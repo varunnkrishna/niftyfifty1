@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-11-02",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 2,
+		"brent": {
+			"delta_pct": -6.018036767256329,
+			"value": 108.38,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": -817.51,
+			"vote": -1
+		},
+		"dxy": {
+			"delta_pct": -0.5920344456404775,
+			"value": 101.585,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 3598.54,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.14,
+			"value": 15.44,
+			"vote": null
+		},
+		"market_expectations": "Markets are expected to lean bullish today, supported by a positive bias score and favorable indicators like the US dollar's decline and stable INR. However, overnight losses in US indices and rising US Treasury yields may temper gains. Investors should watch for stock-specific movements driven by earnings and easing volatility.",
+		"nasdaq_overnight": {
+			"delta_pct": -1.9970534001866305,
+			"value": 25436.998,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to sustain gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to maintain momentum, signaling potential caution among investors."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "The sustained rally suggests bullish sentiment, supported by easing market volatility."
+			},
+			{
+				"headline_reworded": "Midday momentum fueled by declining volatility, India VIX records sharpest drop in years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A significant drop in volatility indicates increased investor confidence and potential market stability."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains for third day, focus shifts to Q4 earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued gains and earnings focus suggest stock-specific movements will drive market activity."
+			},
+			{
+				"headline_reworded": "Japanese bond yields rise ahead of major JGB auctions",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/japan-bond-yields-edge-higher-ahead-of-key-jgb-auctions-10-year-yield-holds-at-2-77/articleshow/135453773.cms",
+				"timestamp": "2026-11-02T09:42:55+00:00",
+				"why_it_matters": "This reflects global bond market dynamics, which can influence broader financial market sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.5720334536601822,
+			"value": 7580.07,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.0699999999999994,
+			"value": 4.98,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -0.3120173973336664,
+			"value": 94.89,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
