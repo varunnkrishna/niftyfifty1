@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-11-03",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Long",
+		"bias_score": 3,
+		"brent": {
+			"delta_pct": -7.930013927576601,
+			"value": 105.77,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": -392.2,
+			"vote": 0
+		},
+		"dxy": {
+			"delta_pct": -0.27636221089769764,
+			"value": 101.758,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 3114.68,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.23,
+			"value": 15.73,
+			"vote": null
+		},
+		"market_expectations": "Markets are positioned for a bullish outlook, supported by positive indicators such as a decline in the US dollar and stable yields. However, overnight losses in major indices and a drop in Brent crude prices suggest caution. The bias leans long, with conviction remaining normal as investors navigate mixed signals.",
+		"nasdaq_overnight": {
+			"delta_pct": -3.8404310686764447,
+			"value": 25164.363,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's struggle to sustain momentum, signaling cautious trading sentiment."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "The sustained rally indicates growing investor confidence amid easing market volatility."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp decline in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The steepest drop in India VIX in four years suggests a potential shift toward calmer trading conditions."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend winning streak, focus shifts to Q4 earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "The third day of gains underscores market optimism, with earnings reports likely driving stock-specific movements."
+			},
+			{
+				"headline_reworded": "Mutual funds reduce holdings in smallcap stocks after prolonged buying spree",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/mfs-cut-stakes-in-8-smallcap-stocks-after-two-quarters-of-buying-shares-tumble-up-to-30-in-3-months/slideshow/135491144.cms",
+				"timestamp": "2026-11-03T09:23:37+00:00",
+				"why_it_matters": "This shift in fund allocation could impact smallcap stock performance and investor sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.7633718347690601,
+			"value": 7541.4,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.040000000000000036,
+			"value": 4.94,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -0.4599812141066613,
+			"value": 94.74,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}

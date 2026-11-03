@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 03 Nov 2026
+description: Nifty outlook — 03 Nov 2026. Pre-market bias is Mildly Long.
+date: "2026-11-03"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7541.4
+    delta_pct: -1.7633718347690601
+    vote: -1
+  nasdaq_overnight:
+    value: 25164.363
+    delta_pct: -3.8404310686764447
+    vote: -1
+  us10y_yield:
+    value: 4.94
+    delta: -0.040000000000000036
+    vote: 1
+  dxy:
+    value: 101.758
+    delta_pct: -0.27636221089769764
+    vote: 1
+  fii_net_cash:
+    value: 3114.68
+    vote: 1
+  dii_net_cash:
+    value: -392.2
+    vote: 0
+  usdinr:
+    value: 94.74
+    delta_pct: -0.4599812141066613
+    vote: 1
+  prev_close_in_range:
+    value: top third
+    vote: 1
+  india_vix:
+    value: 15.73
+    delta: 0.23
+    vote: null
+  brent:
+    value: 105.77
+    delta_pct: -7.930013927576601
+    vote: null
+  bias_score: 3
+  bias_label: Long
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Markets are positioned for a bullish outlook, supported by positive indicators such as a decline in the US dollar and stable yields. However, overnight losses in major indices and a drop in Brent crude prices suggest caution. The bias leans long, with conviction remaining normal as investors navigate mixed signals.
+  news:
+  - headline_reworded: Markets relinquish early gains, closing slightly higher
+    why_it_matters: This highlights the market's struggle to sustain momentum, signaling cautious trading sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Sensex and Nifty continue upward trend for third consecutive day
+    why_it_matters: The sustained rally indicates growing investor confidence amid easing market volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharp decline in market volatility
+    why_it_matters: The steepest drop in India VIX in four years suggests a potential shift toward calmer trading conditions.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Sensex and Nifty extend winning streak, focus shifts to Q4 earnings
+    why_it_matters: The third day of gains underscores market optimism, with earnings reports likely driving stock-specific movements.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Mutual funds reduce holdings in smallcap stocks after prolonged buying spree
+    why_it_matters: This shift in fund allocation could impact smallcap stock performance and investor sentiment.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/news/mfs-cut-stakes-in-8-smallcap-stocks-after-two-quarters-of-buying-shares-tumble-up-to-30-in-3-months/slideshow/135491144.cms
+    timestamp: "2026-11-03T09:23:37+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
