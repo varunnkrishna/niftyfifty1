@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-11-03",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 2.3451464415100065,
+			"value": 55540.05
+		},
+		"conclusion": "Indian equities extended gains for a third consecutive session, with both major indices closing significantly higher amid reduced volatility. The rally was supported by bullish sentiment as investors digested corporate earnings and regulatory developments. While early momentum waned slightly by close, the sustained upward trajectory reflected improving market confidence. Sector-specific movements emerged from REIT distributions and financial penalties, while cybersecurity concerns briefly dampened crypto-related interests.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This reflected fading momentum despite an initially strong session, signaling cautious trading."
+			},
+			{
+				"headline_reworded": "Benchmarks extend winning streak as volatility recedes",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains and lower volatility reinforced bullish sentiment among investors."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharp drop in market volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "The steepest VIX decline in years boosted confidence, driving intraday rallies."
+			},
+			{
+				"headline_reworded": "Indices notch third straight rise amid earnings focus",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued upward movement shifted attention to quarterly results for future direction."
+			},
+			{
+				"headline_reworded": "CleanMax exceeds earnings projections with robust half-year performance",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/cleanmax-beats-q2-ebitda-estimates-reports-strong-h1-growth/articleshow/135507102.cms",
+				"timestamp": "2026-11-03T16:59:11+00:00",
+				"why_it_matters": "Strong financials highlighted renewable energy sector resilience during the session."
+			},
+			{
+				"headline_reworded": "Bagmane REIT announces substantial quarterly payout to investors",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/digital-real-estate/realty-news/bagmane-reit-declares-rs-527cr-distribution-to-unitholders-for-september-quarter/articleshow/135506225.cms",
+				"timestamp": "2026-11-03T16:58:43+00:00",
+				"why_it_matters": "The distribution underscored REITs' income-generating appeal in volatile markets."
+			},
+			{
+				"headline_reworded": "Binance reports massive crypto theft by North Korean actors",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/cryptocurrency/binance-says-north-korean-hackers-stole-6-34-billion-funds-in-a-technical-breach/articleshow/135506955.cms",
+				"timestamp": "2026-11-03T16:46:58+00:00",
+				"why_it_matters": "The breach raised cybersecurity concerns across digital asset platforms globally."
+			},
+			{
+				"headline_reworded": "Regulator fines entities in mutual fund front-running scheme",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/sebi-levies-rs-40-lakh-penalty-on-four-entities-in-axis-mf-front-running-case/articleshow/135506148.cms",
+				"timestamp": "2026-11-03T16:35:56+00:00",
+				"why_it_matters": "SEBI's action demonstrated ongoing scrutiny of market manipulation practices."
+			},
+			{
+				"headline_reworded": "Utkarsh SFB continues losing streak with sixth quarterly deficit",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/utkarsh-small-finance-bank-reports-sixth-consecutive-quarterly-loss/articleshow/135506409.cms",
+				"timestamp": "2026-11-03T16:24:16+00:00",
+				"why_it_matters": "Persistent losses weighed on banking sector sentiment during the trading day."
+			},
+			{
+				"headline_reworded": "Nexus Select Trust posts higher operational income amid consumption growth",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/nexus-select-trusts-q2-noi-rises-8-to-rs-504-cr-consumption-up-13/articleshow/135505912.cms",
+				"timestamp": "2026-11-03T16:06:11+00:00",
+				"why_it_matters": "Retail-focused REIT performance indicated resilient consumer spending trends."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 4.898926597602963,
+			"value": 23810.85
+		},
+		"sensex_close": {
+			"delta_pct": 5.012995243564746,
+			"value": 76917.85
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
