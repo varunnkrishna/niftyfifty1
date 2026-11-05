@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-11-05",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 0,
+		"brent": {
+			"delta_pct": -8.685692469218283,
+			"value": 95.67,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": -3712.23,
+			"vote": -1
+		},
+		"dxy": {
+			"delta_pct": -0.29189189189188897,
+			"value": 101.453,
+			"vote": 1
+		},
+		"fii_net_cash": {
+			"value": 7284.03,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.4,
+			"value": 15.59,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias prevails with mixed signals across key indicators. Overnight declines in major indices and rising yields suggest caution, while a weaker dollar and positive FII activity offer some support. Volatility remains a factor, and the market's previous close in the top third indicates potential resistance. Overall, the setup points to a cautious trading environment.",
+		"nasdaq_overnight": {
+			"delta_pct": -3.0634297368911665,
+			"value": 25736.514,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets struggle to maintain gains, closing slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This highlights the market's inability to sustain momentum despite positive movements."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty continue upward trend for third consecutive day",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "This indicates a potential continuation of the bullish trend in the market."
+			},
+			{
+				"headline_reworded": "Midday rally fueled by declining volatility, India VIX hits four-year low",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "This suggests reduced market uncertainty, potentially encouraging investor participation."
+			},
+			{
+				"headline_reworded": "Sensex and Nifty extend gains, focus shifts to Q4 earnings",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "This emphasizes the influence of corporate earnings on market direction."
+			},
+			{
+				"headline_reworded": "EPL reports 4% YoY profit increase in Q2",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/earnings/epl-q2-results-profit-rises-4-yoy-to-rs-111-crore/articleshow/135565623.cms",
+				"timestamp": "2026-11-05T08:32:12+00:00",
+				"why_it_matters": "This showcases the company's financial performance, which could impact investor sentiment."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": -0.7148778793333619,
+			"value": 7688.62,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": 0.040000000000000036,
+			"value": 4.95,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.6646180232973672,
+			"value": 94.52,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
