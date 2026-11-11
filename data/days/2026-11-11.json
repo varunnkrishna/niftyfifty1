@@ -1,7 +1,94 @@
 {
 	"data_quality": "partial",
 	"date": "2026-11-11",
-	"eod_written": false,
+	"eod": {
+		"banknifty_close": {
+			"delta_pct": 8.72560521948149,
+			"value": 60792.4
+		},
+		"conclusion": "Indian equities extended their rally with significant percentage gains across major indices, though momentum faded slightly by the close. The session was characterized by reduced volatility and sustained buying interest, with investors focusing on corporate earnings for directional cues. While domestic markets maintained their upward trajectory, global tech sentiment showed mixed signals amid AI-related concerns and deal activity.",
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early advances to close slightly up",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "Investors gauged the sustainability of the rally amid intraday volatility."
+			},
+			{
+				"headline_reworded": "Benchmarks notch third consecutive session of gains as volatility recedes",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Declining fear gauge signaled growing confidence in the bullish momentum."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Plummeting uncertainty metrics triggered broad-based buying interest."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak with eyes on earnings reports",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Corporate results became the focal point for sector rotation."
+			},
+			{
+				"headline_reworded": "Yes Bank bond investors demand adherence to court ruling",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/yes-bank-bondholders-press-for-compliance-with-supreme-courts-at-1-order/articleshow/135744450.cms",
+				"timestamp": "2026-11-11T16:55:06+00:00",
+				"why_it_matters": "Credit market participants monitored resolution of contentious debt instruments."
+			},
+			{
+				"headline_reworded": "Anthropic's public offering attracts overwhelming demand",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/anthropics-ipo-is-said-to-be-multiple-times-oversubscribed/articleshow/135743507.cms",
+				"timestamp": "2026-11-11T16:25:21+00:00",
+				"why_it_matters": "IPO appetite reflected ongoing tech sector enthusiasm despite valuation concerns."
+			},
+			{
+				"headline_reworded": "Analysts highlight Astra Microwave among short-term picks",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/market-trading-guide-astra-microwave-among-3-stock-recommendations-for-thursday/slideshow/135742034.cms",
+				"timestamp": "2026-11-11T15:14:07+00:00",
+				"why_it_matters": "Sector-specific recommendations drove tactical positioning strategies."
+			},
+			{
+				"headline_reworded": "US tech rebounds as cloud earnings assuage AI investment fears",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-market-opens-higher-as-coreweave-lifts-ai-trade/articleshow/135741336.cms",
+				"timestamp": "2026-11-11T14:56:26+00:00",
+				"why_it_matters": "Global risk sentiment improved with easing concerns about capital expenditure sustainability."
+			},
+			{
+				"headline_reworded": "Nvidia faces downgrade amid China restrictions and AI doubts",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/baird-downgrades-nvidia-on-china-curbs-ai-demand-worries/articleshow/135740853.cms",
+				"timestamp": "2026-11-11T14:34:53+00:00",
+				"why_it_matters": "Semiconductor sentiment wavered on geopolitical and demand uncertainty."
+			},
+			{
+				"headline_reworded": "EasyJet investors greenlight major private equity acquisition",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/us-stocks/news/easyjet-shareholders-approve-5-7-billion-apollo-takeover/articleshow/135740460.cms",
+				"timestamp": "2026-11-11T14:16:04+00:00",
+				"why_it_matters": "Deal activity signaled continued consolidation in travel sector."
+			}
+		],
+		"nifty_close": {
+			"delta_pct": 5.4024106241079135,
+			"value": 25255.05
+		},
+		"sensex_close": {
+			"delta_pct": 5.922273076554888,
+			"value": 81879.4
+		}
+	},
+	"eod_written": true,
 	"missing": [
 		"gift_nifty"
 	],
