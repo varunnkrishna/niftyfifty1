@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 13 Nov 2026
+description: Nifty outlook — 13 Nov 2026. Pre-market bias is Neutral.
+date: "2026-11-13"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7592.4
+    delta_pct: 3.24556381591383
+    vote: 1
+  nasdaq_overnight:
+    value: 25366.094
+    delta_pct: 4.3228213037219865
+    vote: 1
+  us10y_yield:
+    value: 4.98
+    delta: 0.10000000000000053
+    vote: -1
+  dxy:
+    value: 103.215
+    delta_pct: 1.539596655189373
+    vote: -1
+  fii_net_cash:
+    value: 7830.6
+    vote: 1
+  dii_net_cash:
+    value: -6331.17
+    vote: -1
+  usdinr:
+    value: 94.2425
+    delta_pct: 0.3615432946764225
+    vote: -1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 15.48
+    delta: -1.14
+    vote: null
+  brent:
+    value: 95.88
+    delta_pct: 3.5756724640812387
+    vote: null
+  bias_score: -1
+  bias_label: Neutral
+  bias_intensity: null
+  conviction: normal
+  market_expectations: "Neutral bias expected as conflicting signals emerge: US equity futures show strong gains while Treasury yields and dollar strength weigh on risk appetite. Domestic institutional selling contrasts with foreign inflows, and oil's surge may pressure importers. The VIX's sharp drop suggests reduced hedging demand, but currency and yield moves warrant caution. Earnings reports will likely drive stock-specific action within a rangebound framework."
+  news:
+  - headline_reworded: Markets give up intraday advances to close slightly higher
+    why_it_matters: Shows fading momentum despite initial strength, signaling cautious trader behavior.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive gain as lower volatility sustains bullish momentum
+    why_it_matters: Extended winning streak with calmer markets may encourage further risk-taking.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by plunging volatility index, steepest drop in four years
+    why_it_matters: Sharp VIX decline reduces hedging costs, potentially freeing capital for equity exposure.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend rally into third session with earnings reports driving individual stocks
+    why_it_matters: Sustained uptrend shifts focus to corporate fundamentals for near-term direction.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Cisco stock jumps following better-than-expected quarterly results
+    why_it_matters: Tech earnings outperformance could influence sector sentiment despite dated relevance.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/cisco-shares-rally-after-earnings-beat-6-key-things-investors-need-to-know/slideshow/135794957.cms
+    timestamp: "2026-11-13T07:40:19+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
