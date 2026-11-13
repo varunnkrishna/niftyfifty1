@@ -1,12 +1,12 @@
 ---
-title: Nifty outlook — 13 Nov 2026
-description: Nifty outlook — 13 Nov 2026. Pre-market bias is Neutral.
+title: Nifty & Sensex — 13 Nov 2026
+description: How markets closed — 13 Nov 2026. Nifty +0.46%, bias was Neutral.
 date: "2026-11-13"
 type: trading-day
 data_quality: partial
 missing:
 - gift_nifty
-eod_written: false
+eod_written: true
 premarket:
   gift_nifty:
     unavailable: true
@@ -79,12 +79,77 @@ premarket:
     source_name: ET Markets
     source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/cisco-shares-rally-after-earnings-beat-6-key-things-investors-need-to-know/slideshow/135794957.cms
     timestamp: "2026-11-13T07:40:19+00:00"
+eod:
+  nifty_close:
+    value: 25144.3
+    delta_pct: 0.45524732974169646
+  sensex_close:
+    value: 81592.45
+    delta_pct: 0.6965861932699243
+  banknifty_close:
+    value: 61034.1
+    delta_pct: 3.297058524862063
+  advance_decline: null
+  sector_leaders: []
+  sector_laggards: []
+  conclusion: Indian markets extended gains for a third straight session, with banking stocks leading the advance. While early enthusiasm waned by close, reduced volatility supported the bullish trend. Attention turned to corporate earnings for individual stock movements, even as global markets grappled with tech sector weakness and evolving central bank policy expectations. The banking index significantly outperformed broader benchmarks during the session.
+  news:
+  - headline_reworded: Markets give up early advances to close slightly higher
+    why_it_matters: This highlights the session's volatility despite ending in positive territory.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmark indices extend winning streak to three sessions
+    why_it_matters: Sustained gains signal continued bullish sentiment amid reduced volatility.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Sharp VIX drop fuels midday market surge
+    why_it_matters: The dramatic fear index decline created favorable conditions for the rally.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices notch third consecutive gain as earnings take focus
+    why_it_matters: Ongoing results season shifted attention to individual stock performances.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Chinese Anthropic IPO bids reportedly rejected
+    why_it_matters: Shows geopolitical tensions affecting cross-border investment flows.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/anthropic-ipo-share-orders-from-china-are-said-to-be-rebuffed/articleshow/135809948.cms
+    timestamp: "2026-11-13T16:28:14+00:00"
+  - headline_reworded: BofA predicts accelerated Fed tightening timeline
+    why_it_matters: Changed rate expectations could influence global capital movements.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/bofa-adds-january-fed-hike-to-forecast-says-quarterly-pace-no-longer-enough/articleshow/135808910.cms
+    timestamp: "2026-11-13T15:45:53+00:00"
+  - headline_reworded: Tech-led reversal erases US stocks' early advance
+    why_it_matters: Nvidia's struggles dragged down the broader tech sector.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-market-opens-higher-after-soft-producer-prices-data/articleshow/135807296.cms
+    timestamp: "2026-11-13T14:45:46+00:00"
+  - headline_reworded: Chicago Fed chief warns against overheating risks
+    why_it_matters: Suggests potential caution in future monetary policy decisions.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/chicago-feds-goolsbee-says-on-cnbc-the-fed-needs-to-guard-against-demand-overheating/articleshow/135807011.cms
+    timestamp: "2026-11-13T14:44:42+00:00"
+  - headline_reworded: Treasury opposes rate hikes for energy-related inflation
+    why_it_matters: Reveals policy divergence views on handling supply shock impacts.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/us-stocks/news/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-to-iran-war/articleshow/135806960.cms
+    timestamp: "2026-11-13T14:31:51+00:00"
+  - headline_reworded: MAN Industries reports quarterly profit growth
+    why_it_matters: Positive earnings contributed to sector-specific trading activity.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/stocks/earnings/man-industries-pat-rises-to-rs-82-cr-in-q2/articleshow/135806024.cms
+    timestamp: "2026-11-13T14:00:47+00:00"
 ---
 
 import SignalTable from '../../../../components/SignalTable.astro';
 import NewsList from '../../../../components/NewsList.astro';
 import Eyebrow from '../../../../components/Eyebrow.astro';
-import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import CloseTable from '../../../../components/CloseTable.astro';
 import StructuredData from '../../../../components/StructuredData.astro';
 import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
@@ -104,6 +169,27 @@ import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
 
 <NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
 
-<AwaitingEod expected="~16:15 IST" />
+<hr class="section-divider" />
+
+<Eyebrow text="EOD · 16:20 IST" />
+
+## EOD
+
+### Close
+
+<p class="eod-conclusion">{frontmatter.eod.conclusion}</p>
+
+<CloseTable
+	nifty_close={frontmatter.eod.nifty_close}
+	sensex_close={frontmatter.eod.sensex_close}
+	banknifty_close={frontmatter.eod.banknifty_close}
+	advance_decline={frontmatter.eod.advance_decline}
+	sector_leaders={frontmatter.eod.sector_leaders}
+	sector_laggards={frontmatter.eod.sector_laggards}
+/>
+
+### News
+
+<NewsList items={frontmatter.eod.news} label="EOD News" />
 
 <PrevNextLinks date={frontmatter.date} />
