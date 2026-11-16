@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-11-16",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": 1,
+		"brent": {
+			"delta_pct": -0.010780508840022764,
+			"value": 92.75,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": -2253.58,
+			"vote": -1
+		},
+		"dxy": {
+			"delta_pct": 0.5849771645126848,
+			"value": 103.512,
+			"vote": -1
+		},
+		"fii_net_cash": {
+			"value": 5736.55,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.2,
+			"value": 15.7,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias expected with mixed global cues - US equity futures show strength while Treasury yields and dollar gains may pressure emerging markets. Domestic institutional flows remain positive but foreign investor activity could offset. Previous close in top third of range suggests some resistance potential. Volatility remains subdued, supporting gradual moves. Energy prices stable while currency shows minimal fluctuation. Focus likely on continuation of recent trends with earnings-driven stock selection.",
+		"nasdaq_overnight": {
+			"delta_pct": 2.2654837805433274,
+			"value": 25136.273,
+			"vote": 1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets relinquish early gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates potential profit-taking or lack of sustained bullish momentum despite intraday strength."
+			},
+			{
+				"headline_reworded": "Benchmark indices notch third consecutive session of gains amid declining volatility",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "The sustained upward movement coupled with easing volatility suggests improving risk appetite among investors."
+			},
+			{
+				"headline_reworded": "Midday surge fueled by sharpest volatility drop in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "Such a significant volatility contraction often precedes periods of market stability or continued upward movement."
+			},
+			{
+				"headline_reworded": "Indices extend winning streak as quarterly earnings drive selective action",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "The market's focus shifting to corporate fundamentals could lead to increased stock-specific movements."
+			},
+			{
+				"headline_reworded": "UPL stock breaches key technical indicator in notable move",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/stock-liveblog/upl-stock-price-live-updates-16-nov-2026/liveblog/135872604.cms",
+				"timestamp": "2026-11-16T04:17:59+00:00",
+				"why_it_matters": "This technical breakout may signal changing sentiment toward the agri-chem sector or specific company prospects."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "top third",
+			"vote": 1
+		},
+		"sp500_overnight": {
+			"delta_pct": 2.505266468388995,
+			"value": 7561.67,
+			"vote": 1
+		},
+		"us10y_yield": {
+			"delta": 0.11999999999999922,
+			"value": 5.1,
+			"vote": -1
+		},
+		"usdinr": {
+			"delta_pct": -0.025865702716853217,
+			"value": 93.9225,
+			"vote": 0
+		}
+	},
+	"type": "trading-day"
+}
