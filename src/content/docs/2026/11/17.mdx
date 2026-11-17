@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 17 Nov 2026
+description: Nifty outlook — 17 Nov 2026. Pre-market bias is Mildly Short.
+date: "2026-11-17"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7416.59
+    delta_pct: -1.7662392019009352
+    vote: -1
+  nasdaq_overnight:
+    value: 24509.758
+    delta_pct: -2.943721058054554
+    vote: -1
+  us10y_yield:
+    value: 5.15
+    delta: 0.05000000000000071
+    vote: -1
+  dxy:
+    value: 103.603
+    delta_pct: 0.4196956479596711
+    vote: -1
+  fii_net_cash:
+    value: 4864.68
+    vote: 1
+  dii_net_cash:
+    value: -3519.05
+    vote: -1
+  usdinr:
+    value: 93.46
+    delta_pct: -0.49507585839766133
+    vote: 1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 15.51
+    delta: -0.17
+    vote: null
+  brent:
+    value: 92.78
+    delta_pct: -3.172615320392394
+    vote: null
+  bias_score: -3
+  bias_label: Short
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Short bias dominates with negative overnight moves in US indices and rising Treasury yields pressuring risk assets. The rupee's strength contrasts with broad dollar index gains, while FII inflows partially offset DII outflows. Brent crude's sharp decline may relieve some inflation concerns, but elevated US yields and weak tech sector performance weigh on global sentiment. Expect defensive positioning as volatility remains elevated despite recent declines.
+  news:
+  - headline_reworded: Markets give up intraday gains to close slightly higher
+    why_it_matters: This reflects ongoing volatility despite marginal gains, signaling cautious trader sentiment.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third straight session of advances amid declining volatility
+    why_it_matters: Sustained upward momentum with lower volatility could encourage further bullish positioning.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday rally fueled by sharpest India VIX drop in four years
+    why_it_matters: Plummeting fear gauge may temporarily boost risk appetite in equities.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak as earnings season drives stock selection
+    why_it_matters: Corporate results will dictate individual stock moves amid broader index strength.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Rupee hits 7-month high on strong capital inflows and short covering
+    why_it_matters: Currency strength could impact export-oriented sectors while easing import cost pressures.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/robust-inflows-pullback-in-shorts-lift-rupee-to-seven-month-peak/articleshow/135921416.cms
+    timestamp: "2026-11-17T10:43:17+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
