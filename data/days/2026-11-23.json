@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-11-23",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": null,
+		"bias_label": "Neutral",
+		"bias_score": -1,
+		"brent": {
+			"delta_pct": -3.65415986949429,
+			"value": 88.59,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": -4859.8,
+			"vote": -1
+		},
+		"dxy": {
+			"delta_pct": 0.023108030040439927,
+			"value": 103.884,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": 10308.42,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": 0.54,
+			"value": 17.86,
+			"vote": null
+		},
+		"market_expectations": "Neutral bias prevails with mixed signals as US futures show significant declines while the dollar and rupee strengthen slightly. FIIs are net buyers but DIIs are selling, creating opposing pressures. The 10-year yield dipped but remains elevated, and oil's sharp drop may support Indian equities despite global tech weakness. Volatility is rising slightly from a low base, suggesting cautious trading ahead.",
+		"nasdaq_overnight": {
+			"delta_pct": -10.019537504967921,
+			"value": 22617.732,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Rupee and stocks pull back as recent rally pauses, though outlook remains positive",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/rupee-retreats-with-stocks-as-rally-takes-a-breather-positive-bias-lingers/articleshow/136098391.cms",
+				"timestamp": "2026-11-23T10:28:38+00:00",
+				"why_it_matters": "This indicates a temporary slowdown in the recent market upswing, which could influence investor sentiment today."
+			},
+			{
+				"headline_reworded": "German bond yields rise as recovering equities reduce demand for safer assets",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/german-bond-yields-edge-higher-as-equity-rebound-eases-safe-haven-demand/articleshow/136097404.cms",
+				"timestamp": "2026-11-23T09:55:49+00:00",
+				"why_it_matters": "Shifts in global bond yields can affect capital flows and risk appetite in emerging markets like India."
+			},
+			{
+				"headline_reworded": "Indian bonds surrender early minor gains as investors lock in profits",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/bonds/india-bonds-give-up-marginal-opening-gains-as-profit-booking-takes-over/articleshow/136093136.cms",
+				"timestamp": "2026-11-23T07:16:54+00:00",
+				"why_it_matters": "Profit-taking in bonds suggests cautious trading behavior that may spill over into other asset classes."
+			},
+			{
+				"headline_reworded": "Rupee dips slightly but Goldman highlights its stability amid AI sector volatility",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/forex/rupee-retreats-goldman-calls-it-a-port-of-stability-in-ai-storm/articleshow/136092977.cms",
+				"timestamp": "2026-11-23T07:09:49+00:00",
+				"why_it_matters": "The rupee's relative resilience could attract foreign investors despite broader market fluctuations."
+			},
+			{
+				"headline_reworded": "Analysts question sustainability of Indian market rebound and advise investor strategies",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/the-great-indian-stock-market-comeback-can-the-rally-sustain-and-what-should-investors-do/articleshow/136092236.cms",
+				"timestamp": "2026-11-23T06:39:55+00:00",
+				"why_it_matters": "This debate may influence domestic trading decisions as participants assess the rally's longevity."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -8.61291222706095,
+			"value": 6910.39,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.03000000000000025,
+			"value": 5.04,
+			"vote": 1
+		},
+		"usdinr": {
+			"delta_pct": -1.1207591065003182,
+			"value": 92.91,
+			"vote": 1
+		}
+	},
+	"type": "trading-day"
+}
