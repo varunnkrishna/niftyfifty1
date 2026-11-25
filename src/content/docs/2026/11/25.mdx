@@ -1,0 +1,109 @@
+---
+title: Nifty outlook — 25 Nov 2026
+description: Nifty outlook — 25 Nov 2026. Pre-market bias is Mildly Short.
+date: "2026-11-25"
+type: trading-day
+data_quality: partial
+missing:
+- gift_nifty
+eod_written: false
+premarket:
+  gift_nifty:
+    unavailable: true
+    vote: null
+  sp500_overnight:
+    value: 7201.09
+    delta_pct: -1.8995903565546302
+    vote: -1
+  nasdaq_overnight:
+    value: 23733.535
+    delta_pct: -2.445066214848671
+    vote: -1
+  us10y_yield:
+    value: 4.92
+    delta: 0.0
+    vote: 0
+  dxy:
+    value: 104.027
+    delta_pct: 0.2090357383681714
+    vote: -1
+  fii_net_cash:
+    value: 5672.99
+    vote: 1
+  dii_net_cash:
+    value: -2760.12
+    vote: -1
+  usdinr:
+    value: 92.22
+    delta_pct: -1.3323661294619502
+    vote: 1
+  prev_close_in_range:
+    value: middle third
+    vote: 0
+  india_vix:
+    value: 17.69
+    delta: -0.01
+    vote: null
+  brent:
+    value: 88.27
+    delta_pct: -4.64513341255266
+    vote: null
+  bias_score: -2
+  bias_label: Short
+  bias_intensity: Mildly
+  conviction: normal
+  market_expectations: Global risk-off sentiment dominates with US futures sharply lower and dollar strengthening, while domestic institutional selling counters foreign inflows. The rupee's appreciation and oil's plunge offer relief, but the negative bias score suggests caution prevails. Volatility remains subdued, potentially allowing for selective opportunities despite the weak overnight lead.
+  news:
+  - headline_reworded: Markets relinquish early advances to close slightly up
+    why_it_matters: Shows fading intraday momentum despite positive closes, signaling potential fatigue.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html
+    timestamp: "2024-04-23T10:16:31+00:00"
+  - headline_reworded: Benchmarks notch third consecutive rise as volatility retreats
+    why_it_matters: Sustained gains with calmer markets may encourage bullish positioning.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html
+    timestamp: "2024-04-23T09:21:26+00:00"
+  - headline_reworded: Midday surge fueled by sharpest volatility drop in years
+    why_it_matters: Highlights a dramatic shift in risk perception during the trading session.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html
+    timestamp: "2024-04-23T06:53:21+00:00"
+  - headline_reworded: Indices extend winning streak ahead of earnings season
+    why_it_matters: Sets tone for stock-specific moves as corporate results take center stage.
+    source_name: Moneycontrol
+    source_url: https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html
+    timestamp: "2024-04-23T04:15:50+00:00"
+  - headline_reworded: Rupee hits 8-month peak on sustained foreign equity inflows
+    why_it_matters: Strong currency reflects ongoing global confidence in Indian assets.
+    source_name: ET Markets
+    source_url: https://economictimes.indiatimes.com/markets/forex/forex-news/rupee-scales-8-month-high-after-holiday-as-foreign-flows-to-indian-equities-persist/articleshow/136158513.cms
+    timestamp: "2026-11-25T10:53:26+00:00"
+---
+
+import SignalTable from '../../../../components/SignalTable.astro';
+import NewsList from '../../../../components/NewsList.astro';
+import Eyebrow from '../../../../components/Eyebrow.astro';
+import AwaitingEod from '../../../../components/AwaitingEod.astro';
+import StructuredData from '../../../../components/StructuredData.astro';
+import PrevNextLinks from '../../../../components/PrevNextLinks.astro';
+
+<StructuredData frontmatter={frontmatter} />
+
+<Eyebrow text="PRE-MARKET · 08:40 IST" />
+
+## Pre-Market
+
+### Markets Data
+
+<p class="setup-copy">{frontmatter.premarket.market_expectations}</p>
+
+<SignalTable premarket={frontmatter.premarket} />
+
+### News
+
+<NewsList items={frontmatter.premarket.news} label="Pre-Market News" />
+
+<AwaitingEod expected="~16:15 IST" />
+
+<PrevNextLinks date={frontmatter.date} />
