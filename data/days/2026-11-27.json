@@ -1,0 +1,104 @@
+{
+	"data_quality": "partial",
+	"date": "2026-11-27",
+	"eod_written": false,
+	"missing": [
+		"gift_nifty"
+	],
+	"premarket": {
+		"bias_intensity": "Mildly",
+		"bias_label": "Short",
+		"bias_score": -2,
+		"brent": {
+			"delta_pct": -0.5725396996867095,
+			"value": 92.04,
+			"vote": null
+		},
+		"conviction": "normal",
+		"dii_net_cash": {
+			"value": 5630.72,
+			"vote": 1
+		},
+		"dxy": {
+			"delta_pct": -0.0009632983334984826,
+			"value": 103.809,
+			"vote": 0
+		},
+		"fii_net_cash": {
+			"value": 5843.33,
+			"vote": 1
+		},
+		"gift_nifty": {
+			"unavailable": true,
+			"vote": null
+		},
+		"india_vix": {
+			"delta": -0.16,
+			"value": 16.68,
+			"vote": null
+		},
+		"market_expectations": "Markets face bearish pressure today with US futures sharply lower and the rupee weakening, though domestic institutional flows remain supportive. The negative overnight moves in US indices and rising Treasury yields create headwinds, while oil's retreat offers some relief. With the Nifty previously closing in the bottom third of its range and a negative bias score, caution prevails despite recent three-day gains in domestic markets.",
+		"nasdaq_overnight": {
+			"delta_pct": -3.4551008846543705,
+			"value": 23585.803,
+			"vote": -1
+		},
+		"news": [
+			{
+				"headline_reworded": "Markets give up intraday gains to close slightly higher",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/taking-stock-market-fails-to-holdto-day39s-gains-ends-marginally-higher_17531871.html",
+				"timestamp": "2024-04-23T10:16:31+00:00",
+				"why_it_matters": "This indicates potential resistance at higher levels despite the positive close."
+			},
+			{
+				"headline_reworded": "Benchmark indices extend winning streak to three sessions as volatility recedes",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-gain-for-third-daya-row-easing-volatility-to-support-bull-trend_17531821.html",
+				"timestamp": "2024-04-23T09:21:26+00:00",
+				"why_it_matters": "Sustained gains with lower volatility could signal strengthening bullish momentum."
+			},
+			{
+				"headline_reworded": "Markets rally as volatility plunges most sharply in four years",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/mid-day-mood-|-cooling-volatility-sparks-market-rally-india-vix-sees-steepest-fall4-years_17531481.html",
+				"timestamp": "2024-04-23T06:53:21+00:00",
+				"why_it_matters": "A sharp drop in fear gauge often precedes sustained upward moves in equities."
+			},
+			{
+				"headline_reworded": "Indices notch third straight gain with focus shifting to earnings season",
+				"source_name": "Moneycontrol",
+				"source_url": "https://www.moneycontrol.com/news/local-markets/sensex-nifty-extend-gains-to-3rd-day-q4-results-to-guide-stock-specific-action_17530901.html",
+				"timestamp": "2024-04-23T04:15:50+00:00",
+				"why_it_matters": "Continued upside with earnings focus suggests stock-specific opportunities may emerge."
+			},
+			{
+				"headline_reworded": "Six stocks including Ion Exchange hit annual lows with steep monthly declines",
+				"source_name": "ET Markets",
+				"source_url": "https://economictimes.indiatimes.com/markets/stocks/news/ion-exchange-india-among-6-stocks-hitting-52-week-low-shares-slipped-up-to-20-in-a-month/slideshow/136219516.cms",
+				"timestamp": "2026-11-27T11:01:59+00:00",
+				"why_it_matters": "Broad weakness in certain counters may indicate sector-specific stress points."
+			}
+		],
+		"prev_close_in_range": {
+			"value": "bottom third",
+			"vote": -1
+		},
+		"sp500_overnight": {
+			"delta_pct": -1.9232265966467499,
+			"value": 7182.78,
+			"vote": -1
+		},
+		"us10y_yield": {
+			"delta": -0.009999999999999787,
+			"value": 4.91,
+			"vote": 0
+		},
+		"usdinr": {
+			"delta_pct": 0.3312723231146096,
+			"value": 92.98,
+			"vote": -1
+		}
+	},
+	"type": "trading-day"
+}
